@@ -1,5 +1,5 @@
-stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_station
-0,Rua Lauro Linhares (01),-27.5800711,-48.5264153,,,
-1,Rua Lauro Linhares (02),-27.5823453,-48.5263263,,,
-2,Rua Lauro Linhares (03),-27.5837150,-48.5256037,,,
-3,Rua Lauro Linhares (04),-27.5867802,-48.5247196,,,
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,direction,position
+0,2,A Ave & Chandler,Eastbound stop in Lake Oswego (Stop ID 2),-27.5800711,-48.5264153,B,http://trimet.org/arrivals/tracker?locationID=2,0,East,Nearside
+1,3,A Ave & Second St,Eastbound stop in Lake Oswego (Stop ID 3),-27.5823453,-48.5263263,B,http://trimet.org/arrivals/tracker?locationID=3,0,East,Farside
+2,4,A Ave & 10th St,Westbound stop in Lake Oswego (Stop ID 4),-27.5837150,-48.5256037,B,http://trimet.org/arrivals/tracker?locationID=4,0,West,Nearside
+3,6,A Ave & 8th St,Eastbound stop in Lake Oswego (Stop ID 6),-27.5867802,-48.5247196,B,http://trimet.org/arrivals/tracker?locationID=6,0,East,Nearside
