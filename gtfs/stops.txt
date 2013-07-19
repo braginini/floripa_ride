@@ -1,0 +1,5 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_station
+0,Rua Lauro Linhares (01),-27.5800711,-48.5264153,,,
+1,Rua Lauro Linhares (02),-27.5823453,-48.5263263,,,
+2,Rua Lauro Linhares (03),-27.5837150,-48.5256037,,,
+3,Rua Lauro Linhares (04),-27.5867802,-48.5247196,,,
