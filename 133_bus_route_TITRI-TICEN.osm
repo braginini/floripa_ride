@@ -1,0 +1,1020 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='true' generator='JOSM'>
+  <node id='419484344' timestamp='2013-03-03T20:34:55Z' uid='438811' user='Prblanco' visible='true' version='10' changeset='15239152' lat='-27.5808323' lon='-48.5434471'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='419484381' timestamp='2013-03-03T20:34:53Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='15239152' lat='-27.5839105' lon='-48.5446204'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='419484384' timestamp='2013-03-03T20:34:55Z' uid='438811' user='Prblanco' visible='true' version='8' changeset='15239152' lat='-27.5830332' lon='-48.5435048' />
+  <node id='419484386' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='8' changeset='15239152' lat='-27.5826003' lon='-48.5435917'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='419484975' timestamp='2012-10-27T14:44:20Z' uid='506085' user='Koyaani' visible='true' version='5' changeset='13650297' lat='-27.5740214' lon='-48.5352551' />
+  <node id='419484976' timestamp='2011-03-03T16:59:38Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7447403' lat='-27.5739498' lon='-48.5350151' />
+  <node id='419484977' timestamp='2011-03-03T16:59:38Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7447403' lat='-27.5739407' lon='-48.5347561' />
+  <node id='419484978' timestamp='2011-03-03T16:59:39Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7447403' lat='-27.5739496' lon='-48.5344955' />
+  <node id='419484979' timestamp='2011-03-03T16:59:39Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7447403' lat='-27.5739855' lon='-48.5343052' />
+  <node id='419484980' timestamp='2011-03-03T16:59:39Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7447403' lat='-27.5740816' lon='-48.534046' />
+  <node id='419484981' timestamp='2011-03-03T16:59:39Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7447403' lat='-27.5752924' lon='-48.5313304' />
+  <node id='419484982' timestamp='2011-09-27T13:33:20Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='9410717' lat='-27.5760369' lon='-48.5301389' />
+  <node id='419484984' timestamp='2011-09-27T13:33:19Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='9410717' lat='-27.5770386' lon='-48.5275484' />
+  <node id='419484987' timestamp='2013-03-04T03:26:09Z' uid='438811' user='Prblanco' visible='true' version='7' changeset='15242001' lat='-27.5773933' lon='-48.5270482' />
+  <node id='419484988' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='15242001' lat='-27.5777445' lon='-48.5267694'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='419485155' timestamp='2011-02-25T17:10:24Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5992202' lon='-48.5531924' />
+  <node id='447351123' timestamp='2011-02-25T17:09:19Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6001065' lon='-48.5523369' />
+  <node id='447351157' timestamp='2011-02-25T17:04:03Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5993272' lon='-48.5530921' />
+  <node id='447351166' timestamp='2011-02-25T17:05:50Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5999902' lon='-48.5524269' />
+  <node id='447351183' timestamp='2011-02-25T17:09:43Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6002888' lon='-48.5522367'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='447351198' timestamp='2011-02-25T17:03:04Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6003605' lon='-48.5522106' />
+  <node id='447351203' timestamp='2011-02-25T17:09:26Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6004638' lon='-48.5521561' />
+  <node id='447351206' timestamp='2011-02-25T17:08:49Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6005943' lon='-48.5520762' />
+  <node id='447351208' timestamp='2011-02-25T17:06:37Z' uid='232146' user='lucas9696' visible='true' version='6' changeset='7392202' lat='-27.6008598' lon='-48.5517909' />
+  <node id='553324141' timestamp='2011-02-25T17:06:28Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6013343' lon='-48.5460861' />
+  <node id='553324147' timestamp='2011-02-25T17:05:53Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6017509' lon='-48.546138' />
+  <node id='553324325' timestamp='2011-02-25T17:03:09Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6020525' lon='-48.5461801' />
+  <node id='553324331' timestamp='2011-02-25T17:05:26Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5998159' lon='-48.5454483'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553324334' timestamp='2011-02-25T17:05:04Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6009896' lon='-48.5460039'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553324337' timestamp='2011-02-25T17:05:01Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.6011027' lon='-48.5460408' />
+  <node id='553324339' timestamp='2011-02-25T17:03:25Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.601191' lon='-48.5460551' />
+  <node id='553324341' timestamp='2011-02-25T17:09:43Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6015302' lon='-48.5461167' />
+  <node id='553324342' timestamp='2011-02-25T17:11:20Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6016188' lon='-48.5461258' />
+  <node id='553324345' timestamp='2011-02-25T17:05:36Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.603052' lon='-48.5461969' />
+  <node id='553324347' timestamp='2011-02-25T17:04:04Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6032573' lon='-48.5462055' />
+  <node id='553324348' timestamp='2011-02-25T17:05:14Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6034475' lon='-48.5462313' />
+  <node id='553324349' timestamp='2011-02-25T17:10:37Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6035768' lon='-48.5462656' />
+  <node id='553324350' timestamp='2012-05-03T13:12:21Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='11488715' lat='-27.6037701' lon='-48.546323' />
+  <node id='553324351' timestamp='2012-05-03T13:12:20Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='11488715' lat='-27.6038135' lon='-48.5463385' />
+  <node id='553324352' timestamp='2011-02-25T17:06:20Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6039169' lon='-48.5463882'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553324499' timestamp='2011-02-25T17:03:36Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5982286' lon='-48.5546876' />
+  <node id='553324500' timestamp='2011-02-25T17:04:46Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5981829' lon='-48.5546533' />
+  <node id='553324501' timestamp='2011-02-25T17:09:59Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5980916' lon='-48.5547734' />
+  <node id='553324502' timestamp='2011-02-25T17:03:07Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5979471' lon='-48.5548078' />
+  <node id='553324503' timestamp='2011-02-25T17:07:51Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5978406' lon='-48.5547391' />
+  <node id='553324504' timestamp='2011-02-25T17:09:31Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5977974' lon='-48.5546169' />
+  <node id='553324505' timestamp='2011-02-25T17:05:49Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5978254' lon='-48.5544988' />
+  <node id='553324506' timestamp='2011-02-25T17:07:11Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5977494' lon='-48.5545718' />
+  <node id='553324507' timestamp='2011-02-25T17:04:18Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5976222' lon='-48.5545859' />
+  <node id='553324508' timestamp='2011-02-25T17:05:25Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5975117' lon='-48.5545149' />
+  <node id='553324509' timestamp='2011-02-25T17:10:59Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5974705' lon='-48.5543598' />
+  <node id='553324510' timestamp='2011-02-25T17:03:49Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5975215' lon='-48.5542324' />
+  <node id='553324511' timestamp='2011-02-25T17:08:54Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5976092' lon='-48.5541687' />
+  <node id='553324512' timestamp='2011-02-25T17:06:40Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5976885' lon='-48.5541554' />
+  <node id='553324513' timestamp='2011-02-25T17:03:47Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5975972' lon='-48.5540954' />
+  <node id='553324514' timestamp='2011-02-25T17:05:00Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.597544' lon='-48.5540009' />
+  <node id='553324515' timestamp='2011-02-25T17:10:18Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5975592' lon='-48.5538808' />
+  <node id='553324516' timestamp='2011-02-25T17:03:23Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5976124' lon='-48.5537864' />
+  <node id='553324517' timestamp='2011-02-25T17:08:09Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.5977037' lon='-48.5537349' />
+  <node id='553324519' timestamp='2011-02-25T17:06:03Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5977281' lon='-48.5535401' />
+  <node id='553324520' timestamp='2011-02-25T17:07:26Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.599232' lon='-48.5528684' />
+  <node id='553324521' timestamp='2011-02-25T17:04:33Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5995291' lon='-48.5536738' />
+  <node id='553324522' timestamp='2011-02-25T17:05:35Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.5988756' lon='-48.5544338' />
+  <node id='553324584' timestamp='2012-05-03T03:15:55Z' uid='612217' user='JakobNoBrasil' visible='true' version='6' changeset='11485133' lat='-27.6019137' lon='-48.550485'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553324586' timestamp='2011-02-25T17:09:35Z' uid='232146' user='lucas9696' visible='true' version='6' changeset='7392202' lat='-27.6016099' lon='-48.5508131' />
+  <node id='553411225' timestamp='2011-02-25T17:08:28Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6046539' lon='-48.5467887' />
+  <node id='553411228' timestamp='2013-05-13T22:34:44Z' uid='1010353' user='Rachmaninoff' visible='true' version='6' changeset='16118104' lat='-27.6046967' lon='-48.5468967'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553411232' timestamp='2012-07-06T01:21:04Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='12125912' lat='-27.6047206' lon='-48.547116' />
+  <node id='553411235' timestamp='2012-07-06T01:21:04Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='12125912' lat='-27.6046992' lon='-48.5472725' />
+  <node id='553411239' timestamp='2011-02-25T17:08:46Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6044012' lon='-48.5477373' />
+  <node id='553411250' timestamp='2012-05-03T03:15:55Z' uid='612217' user='JakobNoBrasil' visible='true' version='5' changeset='11485133' lat='-27.604' lon='-48.5481712'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553411254' timestamp='2012-09-16T11:54:51Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='13129469' lat='-27.6038936' lon='-48.548286'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='553411680' timestamp='2012-07-06T01:21:05Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='12125912' lat='-27.6043709' lon='-48.5466385' />
+  <node id='553411746' timestamp='2011-02-25T17:09:54Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6019929' lon='-48.5503918' />
+  <node id='553411894' timestamp='2012-05-03T03:15:55Z' uid='612217' user='JakobNoBrasil' visible='true' version='5' changeset='11485133' lat='-27.6022355' lon='-48.550107'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553411901' timestamp='2011-02-25T17:07:07Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7392202' lat='-27.6020679' lon='-48.5503007' />
+  <node id='553411965' timestamp='2011-02-25T17:09:23Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7392202' lat='-27.602529' lon='-48.5497802' />
+  <node id='553470423' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='15239152' lat='-27.5839511' lon='-48.5446751'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='553470469' timestamp='2011-04-29T22:18:06Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='8007420' lat='-27.5921406' lon='-48.5432608' />
+  <node id='553470508' timestamp='2011-04-29T22:18:01Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='8007420' lat='-27.5922333' lon='-48.5432688' />
+  <node id='553470531' timestamp='2013-02-09T20:31:22Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='14972375' lat='-27.5930363' lon='-48.5433428'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='553470716' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='15239152' lat='-27.5840296' lon='-48.5446168'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470721' timestamp='2013-03-03T20:34:55Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='15239152' lat='-27.5848482' lon='-48.5439971'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470727' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='15239152' lat='-27.5850368' lon='-48.5438846'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='553470741' timestamp='2011-02-25T17:03:53Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.5856422' lon='-48.5436778' />
+  <node id='553470754' timestamp='2011-02-25T17:06:58Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.5867909' lon='-48.5432486'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470758' timestamp='2011-12-23T11:40:43Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5870753' lon='-48.5431775'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470763' timestamp='2011-12-23T11:40:44Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5872209' lon='-48.5431343' />
+  <node id='553470767' timestamp='2011-12-23T11:40:42Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5874071' lon='-48.5431092' />
+  <node id='553470772' timestamp='2011-12-23T11:40:40Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5882653' lon='-48.5430885'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470776' timestamp='2011-12-23T11:40:39Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5900139' lon='-48.5430676'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470781' timestamp='2011-12-23T11:40:42Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5901483' lon='-48.5430848'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470786' timestamp='2011-02-25T17:04:03Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.5906174' lon='-48.5431371'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470796' timestamp='2011-02-25T17:03:08Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.5913401' lon='-48.5431971'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470854' timestamp='2011-04-29T22:18:05Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='8007420' lat='-27.5940648' lon='-48.5434363'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470860' timestamp='2011-04-29T22:18:07Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='8007420' lat='-27.5942422' lon='-48.5434536' />
+  <node id='553470863' timestamp='2011-04-29T22:18:07Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='8007420' lat='-27.5955161' lon='-48.5435662' />
+  <node id='553470868' timestamp='2011-12-23T14:40:24Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10187302' lat='-27.5963313' lon='-48.5438866'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470874' timestamp='2012-07-06T01:21:04Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='12125912' lat='-27.5964922' lon='-48.543961'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470882' timestamp='2011-12-23T14:40:28Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10187302' lat='-27.5985367' lon='-48.5448886'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553470889' timestamp='2013-07-23T01:03:58Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='17056341' lat='-27.5986397' lon='-48.5449318'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='553470894' timestamp='2011-12-23T14:40:30Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10187302' lat='-27.598711' lon='-48.5449576'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='553491599' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='4' changeset='15239152' lat='-27.5816221' lon='-48.543628' />
+  <node id='865711176' timestamp='2013-03-03T20:34:55Z' uid='438811' user='Prblanco' visible='true' version='7' changeset='15239152' lat='-27.5851993' lon='-48.5438201' />
+  <node id='865711348' timestamp='2010-12-01T12:57:45Z' uid='129321' user='ricardo_padilha' visible='true' version='3' changeset='6503312' lat='-27.5808096' lon='-48.5266213' />
+  <node id='865711350' timestamp='2012-11-18T09:29:05Z' uid='1010353' user='Rachmaninoff' visible='true' version='4' changeset='13915511' lat='-27.5804168' lon='-48.5264635'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='865711351' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='15242001' lat='-27.5797954' lon='-48.5262346' />
+  <node id='865711440' timestamp='2013-03-04T03:26:07Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='15242001' lat='-27.5779128' lon='-48.5266524' />
+  <node id='865711542' timestamp='2012-10-27T14:44:20Z' uid='506085' user='Koyaani' visible='true' version='5' changeset='13650297' lat='-27.5742038' lon='-48.5355782' />
+  <node id='865711546' timestamp='2011-03-03T16:59:35Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7447403' lat='-27.5744107' lon='-48.5361495' />
+  <node id='865711547' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='6' changeset='10185929' lat='-27.574852' lon='-48.5370058' />
+  <node id='865711548' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5749345' lon='-48.5371686' />
+  <node id='865711549' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5752242' lon='-48.5377108' />
+  <node id='865711550' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5751856' lon='-48.5387982' />
+  <node id='865711551' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5751292' lon='-48.5394032' />
+  <node id='865711552' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5751829' lon='-48.5395738' />
+  <node id='865711558' timestamp='2011-12-23T10:49:07Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5754673' lon='-48.5403428' />
+  <node id='865711559' timestamp='2011-12-23T10:49:07Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='10185929' lat='-27.5756991' lon='-48.540988' />
+  <node id='865711560' timestamp='2011-12-23T10:49:10Z' uid='129321' user='ricardo_padilha' visible='true' version='6' changeset='10185929' lat='-27.5764482' lon='-48.5423136' />
+  <node id='865711562' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='6' changeset='10185929' lat='-27.5768531' lon='-48.5424693' />
+  <node id='865711563' timestamp='2011-03-03T17:05:20Z' uid='232146' user='lucas9696' visible='true' version='5' changeset='7447403' lat='-27.577364' lon='-48.5426248' />
+  <node id='865711564' timestamp='2011-12-23T10:49:10Z' uid='129321' user='ricardo_padilha' visible='true' version='6' changeset='10185929' lat='-27.579642' lon='-48.5432025' />
+  <node id='865711626' timestamp='2012-07-28T13:28:26Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='12523305' lat='-27.5832934' lon='-48.5233113' />
+  <node id='865711627' timestamp='2012-07-28T13:28:26Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='12523305' lat='-27.5831916' lon='-48.522974' />
+  <node id='865711629' timestamp='2012-07-28T13:28:26Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='12523305' lat='-27.5846031' lon='-48.5223915' />
+  <node id='865711636' timestamp='2012-07-28T13:28:26Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='12523305' lat='-27.5847345' lon='-48.5227334' />
+  <node id='869713694' timestamp='2011-09-27T13:33:20Z' uid='129321' user='ricardo_padilha' visible='true' version='5' changeset='9410717' lat='-27.5771362' lon='-48.5283158' />
+  <node id='869713741' timestamp='2013-03-04T03:26:09Z' uid='438811' user='Prblanco' visible='true' version='4' changeset='15242001' lat='-27.5792884' lon='-48.5258329' />
+  <node id='869713747' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='4' changeset='15242001' lat='-27.5795941' lon='-48.5259129' />
+  <node id='869713749' timestamp='2013-03-04T03:26:09Z' uid='438811' user='Prblanco' visible='true' version='4' changeset='15242001' lat='-27.5794141' lon='-48.5258048' />
+  <node id='869713766' timestamp='2013-03-04T03:26:09Z' uid='438811' user='Prblanco' visible='true' version='6' changeset='15242001' lat='-27.5788816' lon='-48.5260275' />
+  <node id='872980891' timestamp='2010-12-01T12:57:43Z' uid='129321' user='ricardo_padilha' visible='true' version='2' changeset='6503312' lat='-27.5828383' lon='-48.5260832' />
+  <node id='872980954' timestamp='2013-05-18T00:24:30Z' uid='1010353' user='Rachmaninoff' visible='true' version='4' changeset='16174484' lat='-27.5819404' lon='-48.5264465' />
+  <node id='872980957' timestamp='2011-12-10T13:25:13Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='10080944' lat='-27.5822448' lon='-48.5262412'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Lauro Linhares (16)' />
+    <tag k='shelter' v='yes' />
+    <tag k='source' v='Bing' />
+    <tag k='source:name' v='survey' />
+  </node>
+  <node id='972596378' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='6' changeset='10185929' lat='-27.5761412' lon='-48.5420049' />
+  <node id='1014457493' timestamp='2013-03-04T03:26:09Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='15242001' lat='-27.5795177' lon='-48.5258364' />
+  <node id='1014457503' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='15242001' lat='-27.5797181' lon='-48.5261608' />
+  <node id='1014457531' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='2' changeset='13681271' lat='-27.5811542' lon='-48.5266983' />
+  <node id='1014457533' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='15242001' lat='-27.5786137' lon='-48.5261458' />
+  <node id='1014457541' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='15242001' lat='-27.5792054' lon='-48.5258881' />
+  <node id='1014474673' timestamp='2011-09-27T13:33:20Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='9410717' lat='-27.5756609' lon='-48.5304569' />
+  <node id='1014474676' timestamp='2011-09-27T13:33:20Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='9410717' lat='-27.5770605' lon='-48.5289197' />
+  <node id='1014474678' timestamp='2013-03-04T03:26:09Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.5796503' lon='-48.5260576' />
+  <node id='1014474691' timestamp='2011-09-27T13:33:20Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='9410717' lat='-27.5766381' lon='-48.5296894' />
+  <node id='1014474693' timestamp='2011-03-03T16:59:37Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7447403' lat='-27.576265' lon='-48.530035' />
+  <node id='1014474792' timestamp='2011-09-27T13:33:20Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='9410717' lat='-27.5749605' lon='-48.5319114' />
+  <node id='1014927225' timestamp='2013-03-03T20:34:55Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='15239152' lat='-27.5832254' lon='-48.5436452' />
+  <node id='1014927227' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='4' changeset='15239152' lat='-27.5820412' lon='-48.5437235' />
+  <node id='1014927239' timestamp='2011-03-03T17:05:22Z' uid='232146' user='lucas9696' visible='true' version='4' changeset='7447403' lat='-27.5776283' lon='-48.5426912' />
+  <node id='1014927342' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5753151' lon='-48.5379949' />
+  <node id='1014927343' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5753365' lon='-48.5381691' />
+  <node id='1014927345' timestamp='2011-03-03T16:59:41Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7447403' lat='-27.575309' lon='-48.5383821' />
+  <node id='1014927346' timestamp='2011-03-03T16:59:41Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7447403' lat='-27.5753318' lon='-48.5382551' />
+  <node id='1014927347' timestamp='2013-05-03T00:22:08Z' uid='1010353' user='Rachmaninoff' visible='true' version='4' changeset='15954287' lat='-27.575244' lon='-48.5386221'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='1014927349' timestamp='2011-03-03T16:59:42Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7447403' lat='-27.5751283' lon='-48.5389774' />
+  <node id='1014927351' timestamp='2011-03-03T16:59:43Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7447403' lat='-27.5751145' lon='-48.5391061' />
+  <node id='1014927352' timestamp='2012-02-26T18:16:35Z' uid='506085' user='Koyaani' visible='true' version='5' changeset='10801433' lat='-27.5751133' lon='-48.5392664' />
+  <node id='1014927353' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5758633' lon='-48.5414651' />
+  <node id='1014927356' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='4' changeset='10185929' lat='-27.5759466' lon='-48.5416537' />
+  <node id='1015075264' timestamp='2011-02-25T17:05:15Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.5991127' lon='-48.5528213' />
+  <node id='1132593460' timestamp='2011-02-25T17:06:44Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.6023754' lon='-48.5499525' />
+  <node id='1132613265' timestamp='2011-02-25T17:09:04Z' uid='232146' user='lucas9696' visible='true' version='3' changeset='7392202' lat='-27.5991859' lon='-48.5451268' />
+  <node id='1254208275' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.579369' lon='-48.5258068' />
+  <node id='1254208295' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.5794626' lon='-48.5258168' />
+  <node id='1254208308' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.5786943' lon='-48.5260963' />
+  <node id='1254208486' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.5795568' lon='-48.5258683' />
+  <node id='1422946497' timestamp='2012-10-30T00:56:56Z' uid='1010353' user='Rachmaninoff' visible='true' version='3' changeset='13681271' lat='-27.5835803' lon='-48.5256738' />
+  <node id='1422946505' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='2' changeset='13681271' lat='-27.5829347' lon='-48.526046' />
+  <node id='1432752479' timestamp='2012-05-19T16:52:19Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='11644258' lat='-27.6011637' lon='-48.5512772'>
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='note' v='placa com nome &quot;00&quot;' />
+    <tag k='shelter' v='no' />
+  </node>
+  <node id='1438405025' timestamp='2013-02-28T00:56:45Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='15191955' lat='-27.582703' lon='-48.5240944' />
+  <node id='1438405027' timestamp='2013-02-28T00:56:45Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='15191955' lat='-27.5826208' lon='-48.5240167' />
+  <node id='1438405028' timestamp='2013-05-18T03:35:24Z' uid='1010353' user='Rachmaninoff' visible='true' version='4' changeset='16175258' lat='-27.5840086' lon='-48.5252719'>
+    <tag k='highway' v='traffic_signals' />
+  </node>
+  <node id='1438405029' timestamp='2013-05-18T03:37:18Z' uid='1010353' user='Rachmaninoff' visible='true' version='3' changeset='16175258' lat='-27.5827345' lon='-48.5237495' />
+  <node id='1438405030' timestamp='2012-08-16T10:51:28Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='12749039' lat='-27.582847' lon='-48.5242126' />
+  <node id='1446977422' timestamp='2011-09-27T13:33:15Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='9410717' lat='-27.574883' lon='-48.5320995' />
+  <node id='1446977447' timestamp='2011-09-27T13:33:16Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='9410717' lat='-27.57582' lon='-48.5302855' />
+  <node id='1446977450' timestamp='2011-09-27T13:33:16Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='9410717' lat='-27.577065' lon='-48.5278809' />
+  <node id='1446977464' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.5771317' lon='-48.5273461' />
+  <node id='1446977468' timestamp='2011-09-27T13:33:17Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='9410717' lat='-27.5771428' lon='-48.5286173' />
+  <node id='1446977473' timestamp='2011-09-27T13:33:17Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='9410717' lat='-27.5769121' lon='-48.5292771' />
+  <node id='1450589838' timestamp='2012-05-19T16:52:19Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='11644258' lat='-27.6004008' lon='-48.5457626'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Avenida Mauro Ramos (13)' />
+    <tag k='note' v='posição não exata' />
+    <tag k='source' v='Bing' />
+    <tag k='source:name' v='survey' />
+  </node>
+  <node id='1457087066' timestamp='2011-10-10T18:16:20Z' uid='527533' user='Jonatan735' visible='true' version='2' changeset='9524169' lat='-27.5898633' lon='-48.5431225'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Avenida Mauro Ramos (09)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457087074' timestamp='2012-02-26T18:16:37Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='10801433' lat='-27.5801924' lon='-48.5434122'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Frei Caneca (02)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457087089' timestamp='2011-12-02T09:50:02Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='10015318' lat='-27.5748906' lon='-48.5319377'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Delminda Silveira (06)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457087092' timestamp='2012-10-27T14:44:19Z' uid='506085' user='Koyaani' visible='true' version='5' changeset='13650297' lat='-27.5769828' lon='-48.5274372'>
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Delminda Silveira (04)' />
+    <tag k='note' v='Abrigo de banco demolidos inverno 2012' />
+    <tag k='shelter' v='no' />
+    <tag k='source:name' v='survey' />
+    <tag k='unsigned' v='yes' />
+  </node>
+  <node id='1457087094' timestamp='2011-10-10T18:20:02Z' uid='527533' user='Jonatan735' visible='true' version='2' changeset='9524208' lat='-27.5738733' lon='-48.5350866'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Rui Barbosa (04)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457087104' timestamp='2011-12-02T09:50:18Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='10015318' lat='-27.5756419' lon='-48.5304145'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Delminda SIlveira (05)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457087114' timestamp='2012-02-26T18:16:37Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='10801433' lat='-27.5747501' lon='-48.5369619'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Rui Barbosa (05)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457087118' timestamp='2012-06-09T16:55:39Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='11846839' lat='-27.5973912' lon='-48.5444257'>
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Avenida Mauro Ramos (12)' />
+    <tag k='note' v='placa sem nome' />
+    <tag k='shelter' v='no' />
+    <tag k='source' v='GPS' />
+    <tag k='source:name' v='extrapolation' />
+  </node>
+  <node id='1457087122' timestamp='2011-10-10T18:16:20Z' uid='527533' user='Jonatan735' visible='true' version='2' changeset='9524169' lat='-27.5845762' lon='-48.5443188'>
+    <tag k='bench' v='yes' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Avenida Mauro Ramos (07)' />
+    <tag k='shelter' v='yes' />
+  </node>
+  <node id='1457918700' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='2' changeset='13681271' lat='-27.5826005' lon='-48.5261925' />
+  <node id='1457918879' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='3' changeset='13681271' lat='-27.5821584' lon='-48.5263594' />
+  <node id='1457971484' timestamp='2011-12-23T10:49:07Z' uid='129321' user='ricardo_padilha' visible='true' version='2' changeset='10185929' lat='-27.5760625' lon='-48.5418825' />
+  <node id='1457971513' timestamp='2011-12-23T10:49:07Z' uid='129321' user='ricardo_padilha' visible='true' version='2' changeset='10185929' lat='-27.5770857' lon='-48.5425475' />
+  <node id='1457971737' timestamp='2011-12-23T10:49:08Z' uid='129321' user='ricardo_padilha' visible='true' version='2' changeset='10185929' lat='-27.5754264' lon='-48.5402383' />
+  <node id='1457971768' timestamp='2011-12-23T10:49:09Z' uid='129321' user='ricardo_padilha' visible='true' version='2' changeset='10185929' lat='-27.5756743' lon='-48.5409056' />
+  <node id='1459256365' timestamp='2011-10-10T18:16:19Z' uid='527533' user='Jonatan735' visible='true' version='2' changeset='9524169' lat='-27.5938333' lon='-48.5434774'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Avenida Mauro Ramos (11)' />
+  </node>
+  <node id='1459256369' timestamp='2012-06-09T16:55:43Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='11846839' lat='-27.5779343' lon='-48.5428621'>
+    <tag k='highway' v='bus_stop' />
+  </node>
+  <node id='1459256372' timestamp='2011-10-10T18:16:21Z' uid='527533' user='Jonatan735' visible='true' version='2' changeset='9524169' lat='-27.5881378' lon='-48.5431473'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Avenida Mauro Ramos (08)' />
+  </node>
+  <node id='1461527537' timestamp='2011-10-10T18:16:19Z' uid='527533' user='Jonatan735' visible='true' version='1' changeset='9524169' lat='-27.5740613' lon='-48.5341008' />
+  <node id='1461558698' timestamp='2012-10-27T14:44:20Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='13650297' lat='-27.5740923' lon='-48.535402' />
+  <node id='1473023940' timestamp='2011-10-19T12:10:16Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='9599270' lat='-27.6041312' lon='-48.5479093'>
+    <tag k='highway' v='bus_stop' />
+  </node>
+  <node id='1473023941' timestamp='2011-10-19T12:10:16Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='9599270' lat='-27.6042315' lon='-48.5479208' />
+  <node id='1475116890' timestamp='2012-07-28T13:28:25Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='12523305' lat='-27.5832344' lon='-48.5234369' />
+  <node id='1475116901' timestamp='2011-10-21T16:30:59Z' uid='407722' user='bawlaw' visible='true' version='1' changeset='9617668' lat='-27.5831826' lon='-48.5235683' />
+  <node id='1475116904' timestamp='2012-07-28T13:28:25Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='12523305' lat='-27.5832539' lon='-48.5233822' />
+  <node id='1492870679' timestamp='2013-03-04T03:26:08Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15242001' lat='-27.5771663' lon='-48.5272813'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='1540247509' timestamp='2011-12-10T23:22:42Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10085837' lat='-27.5770097' lon='-48.5290469'>
+    <tag k='highway' v='crossing' />
+    <tag k='note' v='não visível no Bing -&gt; posição estimada' />
+    <tag k='source' v='survey' />
+  </node>
+  <node id='1540247534' timestamp='2011-12-10T23:22:43Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10085837' lat='-27.5766645' lon='-48.5296497'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='1540247561' timestamp='2011-12-10T23:22:44Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10085837' lat='-27.576569' lon='-48.5297534'>
+    <tag k='traffic_calming' v='hump' />
+  </node>
+  <node id='1540247582' timestamp='2011-12-10T23:22:45Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10085837' lat='-27.5770243' lon='-48.5290119'>
+    <tag k='note' v='não visível no Bing -&gt; posição estimada' />
+    <tag k='source' v='survey' />
+    <tag k='traffic_calming' v='hump' />
+  </node>
+  <node id='1540247624' timestamp='2011-12-10T23:22:46Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10085837' lat='-27.5769881' lon='-48.529094' />
+  <node id='1559219873' timestamp='2011-12-23T11:40:31Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='10185929' lat='-27.5869821' lon='-48.5432029' />
+  <node id='1559220009' timestamp='2011-12-23T11:40:33Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='10185929' lat='-27.5900821' lon='-48.5430763' />
+  <node id='1559220011' timestamp='2011-12-23T11:40:33Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='10185929' lat='-27.5799399' lon='-48.5432692' />
+  <node id='1559394796' timestamp='2012-12-25T20:07:51Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='14404545' lat='-27.5967378' lon='-48.5440601' />
+  <node id='1559394822' timestamp='2011-12-23T14:40:21Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='10187302' lat='-27.5952716' lon='-48.5435446' />
+  <node id='1559394827' timestamp='2011-12-23T14:40:21Z' uid='129321' user='ricardo_padilha' visible='true' version='1' changeset='10187302' lat='-27.5982639' lon='-48.5447813' />
+  <node id='1559394834' timestamp='2012-03-08T19:32:12Z' uid='620457' user='canjicaw' visible='true' version='2' changeset='10912683' lat='-27.5920366' lon='-48.5432553' />
+  <node id='1639803069' timestamp='2012-10-27T14:44:19Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='13650297' lat='-27.5803295' lon='-48.5263601'>
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Lauro Linhares (17)' />
+    <tag k='note' v='Fica em frente ao ponto 01' />
+    <tag k='shelter' v='no' />
+  </node>
+  <node id='1649117760' timestamp='2012-02-26T18:16:25Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10801433' lat='-27.5752367' lon='-48.5397206' />
+  <node id='1649117763' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='2' changeset='13681271' lat='-27.5836639' lon='-48.5256037' />
+  <node id='1649117765' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='2' changeset='13681271' lat='-27.5832405' lon='-48.5258848' />
+  <node id='1649117773' timestamp='2012-02-26T18:16:26Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='10801433' lat='-27.5750794' lon='-48.5374398' />
+  <node id='1649117787' timestamp='2012-04-23T22:11:18Z' uid='210371' user='miozzo' visible='true' version='2' changeset='11400371' lat='-27.5755924' lon='-48.5407918'>
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Rui Barbosa (06)' />
+    <tag k='note' v='entre de Paula e Nocetti. onde examente?' />
+    <tag k='source:name' v='survey' />
+  </node>
+  <node id='1695509205' timestamp='2012-03-29T03:02:04Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11133152' lat='-27.574879' lon='-48.5370591' />
+  <node id='1738827747' timestamp='2012-05-03T03:15:26Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11485133' lat='-27.5785472' lon='-48.5429245' />
+  <node id='1738827748' timestamp='2012-05-03T03:15:26Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11485133' lat='-27.5790179' lon='-48.543044' />
+  <node id='1738827749' timestamp='2012-05-03T03:15:26Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11485133' lat='-27.5793286' lon='-48.5431229' />
+  <node id='1738827755' timestamp='2012-05-03T03:15:26Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11485133' lat='-27.57971' lon='-48.5432177' />
+  <node id='1738827760' timestamp='2012-05-03T03:15:26Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11485133' lat='-27.5802537' lon='-48.5433435' />
+  <node id='1738827819' timestamp='2012-05-03T03:15:28Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11485133' lat='-27.5923839' lon='-48.5432827' />
+  <node id='1749056045' timestamp='2012-05-11T22:45:08Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11572342' lat='-27.5804677' lon='-48.526484' />
+  <node id='1751863855' timestamp='2012-05-14T00:22:47Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='11591772' lat='-27.6002121' lon='-48.5522788' />
+  <node id='1751863856' timestamp='2012-05-14T00:22:48Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='11591772' lat='-27.6000464' lon='-48.5523854' />
+  <node id='1763818684' timestamp='2012-05-24T04:20:29Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11686455' lat='-27.5760099' lon='-48.5417788' />
+  <node id='1763818687' timestamp='2012-05-24T04:20:29Z' uid='612217' user='JakobNoBrasil' visible='true' version='1' changeset='11686455' lat='-27.5765105' lon='-48.5423376' />
+  <node id='1814449698' timestamp='2012-07-06T01:21:01Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='12125912' lat='-27.6045766' lon='-48.5475201' />
+  <node id='1814449701' timestamp='2012-07-06T01:21:01Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='12125912' lat='-27.5978431' lon='-48.5445879' />
+  <node id='1814449706' timestamp='2012-07-06T01:21:01Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='12125912' lat='-27.6047212' lon='-48.5470112' />
+  <node id='1814449709' timestamp='2012-07-06T01:21:02Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='12125912' lat='-27.6045011' lon='-48.5476252' />
+  <node id='1868503885' timestamp='2012-08-16T10:51:26Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='12749039' lat='-27.5830795' lon='-48.5236142' />
+  <node id='1877678136' timestamp='2012-08-22T13:58:26Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='12821393' lat='-27.5846541' lon='-48.5225151' />
+  <node id='1877678137' timestamp='2012-08-22T13:58:26Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='12821393' lat='-27.5846907' lon='-48.5226285' />
+  <node id='1985708062' timestamp='2012-10-27T14:44:11Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='13650297' lat='-27.5740471' lon='-48.5353216'>
+    <tag k='highway' v='crossing' />
+    <tag k='source' v='Bing' />
+  </node>
+  <node id='1989040287' timestamp='2012-10-30T00:56:55Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='13681271' lat='-27.5837635' lon='-48.525462' />
+  <node id='2006196782' timestamp='2012-11-18T09:31:05Z' uid='1010353' user='Rachmaninoff' visible='true' version='2' changeset='13915511' lat='-27.5839799' lon='-48.5252453'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2019456123' timestamp='2012-11-18T09:27:30Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='13915511' lat='-27.5771253' lon='-48.528249'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2019456583' timestamp='2012-11-18T09:29:05Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='13915511' lat='-27.5820438' lon='-48.5264071'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2019457676' timestamp='2012-11-18T09:30:17Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='13915511' lat='-27.5828827' lon='-48.5260661'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2148200822' timestamp='2013-03-03T20:34:54Z' uid='438811' user='Prblanco' visible='true' version='2' changeset='15239152' lat='-27.5849463' lon='-48.5439265' />
+  <node id='2177867806' timestamp='2013-02-28T00:56:31Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='15191955' lat='-27.5837372' lon='-48.5251212'>
+    <tag k='bench' v='no' />
+    <tag k='highway' v='bus_stop' />
+    <tag k='name' v='Rua Prof. Milton Roque Ramos Krieger (01)' />
+    <tag k='shelter' v='no' />
+    <tag k='source' v='survey' />
+  </node>
+  <node id='2177867814' timestamp='2013-02-28T00:56:32Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='15191955' lat='-27.582661' lon='-48.5238069' />
+  <node id='2184462374' timestamp='2013-03-03T20:34:52Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='15239152' lat='-27.5831601' lon='-48.5435772' />
+  <node id='2184462383' timestamp='2013-03-03T20:34:52Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='15239152' lat='-27.5852921' lon='-48.5437903'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2184950582' timestamp='2013-03-04T03:26:06Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='15242001' lat='-27.5790925' lon='-48.5259437' />
+  <node id='2184950607' timestamp='2013-03-04T03:26:06Z' uid='438811' user='Prblanco' visible='true' version='1' changeset='15242001' lat='-27.5787883' lon='-48.5260527' />
+  <node id='2289784829' timestamp='2013-05-03T00:22:08Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5742823' lon='-48.5357949'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289784831' timestamp='2013-05-03T00:22:08Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.574841' lon='-48.5322016'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289784833' timestamp='2013-05-03T00:22:08Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.57539' lon='-48.540139'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289785252' timestamp='2013-05-03T00:27:50Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5919605' lon='-48.5432489'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289785253' timestamp='2013-05-03T00:27:50Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5931057' lon='-48.5433491'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289785256' timestamp='2013-05-03T00:27:50Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5929569' lon='-48.5433355'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289785257' timestamp='2013-05-03T00:27:50Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5955693' lon='-48.5435871'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289785259' timestamp='2013-05-03T00:27:50Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5920837' lon='-48.5432578'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2289785318' timestamp='2013-05-03T00:28:41Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='15954287' lat='-27.5981748' lon='-48.5447403'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2303099432' timestamp='2013-05-13T22:30:14Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='16118104' lat='-27.6014222' lon='-48.5460998'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2308954952' timestamp='2013-05-18T00:16:18Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='16174484' lat='-27.5778155' lon='-48.5267201' />
+  <node id='2308955278' timestamp='2013-05-18T00:19:46Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='16174484' lat='-27.5770586' lon='-48.5278006' />
+  <node id='2308956247' timestamp='2013-05-18T00:24:30Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='16174484' lat='-27.5826802' lon='-48.5261559'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2309010882' timestamp='2013-05-18T03:37:18Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='16175258' lat='-27.5831341' lon='-48.5235899'>
+    <tag k='highway' v='crossing' />
+  </node>
+  <node id='2309010883' timestamp='2013-05-18T03:37:18Z' uid='1010353' user='Rachmaninoff' visible='true' version='1' changeset='16175258' lat='-27.5826116' lon='-48.5239049' />
+  <way id='38050113' timestamp='2012-05-14T00:22:53Z' uid='506085' user='Koyaani' visible='true' version='3' changeset='11591772'>
+    <nd ref='447351123' />
+    <nd ref='1751863856' />
+    <nd ref='447351166' />
+    <nd ref='447351157' />
+    <nd ref='419485155' />
+    <tag k='access' v='no' />
+    <tag k='highway' v='service' />
+    <tag k='oneway' v='yes' />
+    <tag k='psv' v='yes' />
+  </way>
+  <way id='43719803' timestamp='2012-05-14T00:22:52Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='11591772'>
+    <nd ref='447351208' />
+    <nd ref='447351206' />
+    <nd ref='447351203' />
+    <nd ref='447351198' />
+    <nd ref='447351183' />
+    <nd ref='1751863855' />
+    <nd ref='447351123' />
+    <tag k='access' v='no' />
+    <tag k='highway' v='service' />
+    <tag k='oneway' v='yes' />
+    <tag k='psv' v='yes' />
+  </way>
+  <way id='43719805' timestamp='2012-07-06T01:21:06Z' uid='438811' user='Prblanco' visible='true' version='8' changeset='12125912'>
+    <nd ref='553411235' />
+    <nd ref='1814449698' />
+    <nd ref='1814449709' />
+    <nd ref='553411239' />
+    <nd ref='1473023941' />
+    <nd ref='553411250' />
+    <nd ref='553411254' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='4' />
+    <tag k='name' v='Avenida Governador Gustavo Richard' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='43719878' timestamp='2012-05-03T14:03:11Z' uid='506085' user='Koyaani' visible='true' version='6' changeset='11489151'>
+    <nd ref='553324499' />
+    <nd ref='553324500' />
+    <nd ref='553324501' />
+    <nd ref='553324502' />
+    <nd ref='553324503' />
+    <nd ref='553324504' />
+    <nd ref='553324505' />
+    <nd ref='553324506' />
+    <nd ref='553324507' />
+    <nd ref='553324508' />
+    <nd ref='553324509' />
+    <nd ref='553324510' />
+    <nd ref='553324511' />
+    <nd ref='553324512' />
+    <nd ref='553324513' />
+    <nd ref='553324514' />
+    <nd ref='553324515' />
+    <nd ref='553324516' />
+    <nd ref='553324517' />
+    <nd ref='553324519' />
+    <nd ref='1015075264' />
+    <nd ref='553324520' />
+    <nd ref='553324521' />
+    <nd ref='553324522' />
+    <nd ref='553324499' />
+    <tag k='addr:housenumber' v='701' />
+    <tag k='addr:street' v='Avenida Paulo Fontes' />
+    <tag k='alt_name' v='Terminal de Integração Centro' />
+    <tag k='amenity' v='bus_station' />
+    <tag k='area' v='yes' />
+    <tag k='landuse' v='commercial' />
+    <tag k='name' v='TICEN - Terminal Centro' />
+    <tag k='short_name' v='TICEN' />
+    <tag k='wheelchair' v='limited' />
+  </way>
+  <way id='43722611' timestamp='2012-07-06T01:21:11Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='12125912'>
+    <nd ref='553411225' />
+    <nd ref='553411228' />
+    <nd ref='1814449706' />
+    <nd ref='553411232' />
+    <nd ref='553411235' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Avenida Governador Gustavo Richard' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='43722629' timestamp='2013-05-13T22:30:15Z' uid='1010353' user='Rachmaninoff' visible='true' version='9' changeset='16118104'>
+    <nd ref='553324334' />
+    <nd ref='553324337' />
+    <nd ref='553324339' />
+    <nd ref='553324141' />
+    <nd ref='2303099432' />
+    <nd ref='553324341' />
+    <nd ref='553324342' />
+    <nd ref='553324147' />
+    <nd ref='553324325' />
+    <nd ref='553324345' />
+    <nd ref='553324347' />
+    <nd ref='553324348' />
+    <nd ref='553324349' />
+    <nd ref='553324350' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Rua Silva Jardim' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='43728572' timestamp='2012-06-14T20:13:13Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='11898891'>
+    <nd ref='419484381' />
+    <nd ref='553470423' />
+    <tag k='cycleway:right' v='lane' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Heitor Luz' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='43728576' timestamp='2012-10-27T14:44:17Z' uid='506085' user='Koyaani' visible='true' version='10' changeset='13650297'>
+    <nd ref='419484975' />
+    <nd ref='1985708062' />
+    <nd ref='1461558698' />
+    <nd ref='865711542' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Rui Barbosa' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='GPS;Bing' />
+  </way>
+  <way id='72944878' timestamp='2012-08-22T13:58:44Z' uid='506085' user='Koyaani' visible='true' version='6' changeset='12821393'>
+    <nd ref='865711626' />
+    <nd ref='865711627' />
+    <nd ref='865711629' />
+    <nd ref='1877678136' />
+    <nd ref='1877678137' />
+    <nd ref='865711636' />
+    <nd ref='865711626' />
+    <tag k='addr:housenumber' v='s/n' />
+    <tag k='addr:street' v='Avenida Professor Henrique da Silva Fontes' />
+    <tag k='amenity' v='bus_station' />
+    <tag k='area' v='yes' />
+    <tag k='landuse' v='commercial' />
+    <tag k='name' v='TITRI - Terminal Trindade' />
+    <tag k='short_name' v='TITRI' />
+  </way>
+  <way id='87244030' timestamp='2010-12-01T13:14:44Z' uid='129321' user='ricardo_padilha' visible='true' version='2' changeset='6503312'>
+    <nd ref='865711351' />
+    <nd ref='1014457503' />
+    <nd ref='1014474678' />
+    <nd ref='869713747' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Lauro Linhares' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='87244033' timestamp='2013-03-04T03:26:10Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='15242001'>
+    <nd ref='869713741' />
+    <nd ref='1014457541' />
+    <nd ref='2184950582' />
+    <nd ref='869713766' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Delminda Silveira' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='87244044' timestamp='2013-05-18T00:19:46Z' uid='1010353' user='Rachmaninoff' visible='true' version='14' changeset='16174484'>
+    <nd ref='869713766' />
+    <nd ref='2184950607' />
+    <nd ref='1254208308' />
+    <nd ref='1014457533' />
+    <nd ref='865711440' />
+    <nd ref='2308954952' />
+    <nd ref='419484988' />
+    <nd ref='419484987' />
+    <nd ref='1492870679' />
+    <nd ref='1446977464' />
+    <nd ref='419484984' />
+    <nd ref='2308955278' />
+    <nd ref='1446977450' />
+    <nd ref='2019456123' />
+    <nd ref='869713694' />
+    <nd ref='1446977468' />
+    <nd ref='1014474676' />
+    <nd ref='1540247582' />
+    <nd ref='1540247509' />
+    <nd ref='1540247624' />
+    <nd ref='1446977473' />
+    <nd ref='1540247534' />
+    <nd ref='1014474691' />
+    <nd ref='1540247561' />
+    <nd ref='1014474693' />
+    <nd ref='419484982' />
+    <nd ref='1446977447' />
+    <nd ref='1014474673' />
+    <nd ref='419484981' />
+    <tag k='highway' v='secondary' />
+    <tag k='maxspeed' v='40' />
+    <tag k='name' v='Rua Delminda Silveira' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='87244997' timestamp='2013-05-03T00:22:08Z' uid='1010353' user='Rachmaninoff' visible='true' version='6' changeset='15954287'>
+    <nd ref='419484981' />
+    <nd ref='1014474792' />
+    <nd ref='1446977422' />
+    <nd ref='2289784831' />
+    <nd ref='419484980' />
+    <nd ref='1461527537' />
+    <tag k='highway' v='secondary' />
+    <tag k='lanes' v='2' />
+    <tag k='maxspeed' v='40' />
+    <tag k='name' v='Rua Delminda Silveira' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='131620662' timestamp='2013-03-03T20:34:58Z' uid='438811' user='Prblanco' visible='true' version='4' changeset='15239152'>
+    <nd ref='419484384' />
+    <nd ref='2184462374' />
+    <nd ref='1014927225' />
+    <nd ref='419484381' />
+    <tag k='cycleway' v='lane' />
+    <tag k='cycleway:right' v='lane' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Heitor Luz' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='GPS;Bing' />
+  </way>
+  <way id='131620666' timestamp='2012-05-24T04:20:39Z' uid='612217' user='JakobNoBrasil' visible='true' version='9' changeset='11686455'>
+    <nd ref='972596378' />
+    <nd ref='865711560' />
+    <nd ref='1763818687' />
+    <nd ref='865711562' />
+    <nd ref='1457971513' />
+    <nd ref='865711563' />
+    <nd ref='1014927239' />
+    <nd ref='1738827747' />
+    <nd ref='1738827748' />
+    <nd ref='1738827749' />
+    <nd ref='865711564' />
+    <nd ref='1738827755' />
+    <nd ref='1559220011' />
+    <nd ref='1738827760' />
+    <nd ref='419484344' />
+    <nd ref='553491599' />
+    <nd ref='1014927227' />
+    <nd ref='419484386' />
+    <tag k='cycleway:left' v='lane' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Frei Caneca' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='GPS;Bing' />
+  </way>
+  <way id='132845567' timestamp='2011-10-10T18:20:02Z' uid='527533' user='Jonatan735' visible='true' version='1' changeset='9524208'>
+    <nd ref='1461527537' />
+    <nd ref='419484979' />
+    <nd ref='419484978' />
+    <nd ref='419484977' />
+    <nd ref='419484976' />
+    <nd ref='419484975' />
+    <tag k='highway' v='secondary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Rua Rui Barbosa' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='134133335' timestamp='2011-10-21T16:30:59Z' uid='407722' user='bawlaw' visible='true' version='1' changeset='9617668'>
+    <nd ref='1475116904' />
+    <nd ref='1475116890' />
+    <nd ref='1475116901' />
+    <tag k='highway' v='service' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='139355355' timestamp='2013-03-03T20:34:56Z' uid='438811' user='Prblanco' visible='true' version='5' changeset='15239152'>
+    <nd ref='419484386' />
+    <nd ref='419484384' />
+    <tag k='cycleway:left' v='lane' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Frei Caneca' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='GPS;Bing' />
+  </way>
+  <way id='151155092' timestamp='2013-05-03T00:22:08Z' uid='1010353' user='Rachmaninoff' visible='true' version='6' changeset='15954287'>
+    <nd ref='865711542' />
+    <nd ref='2289784829' />
+    <nd ref='865711546' />
+    <nd ref='865711547' />
+    <nd ref='1695509205' />
+    <nd ref='865711548' />
+    <nd ref='1649117773' />
+    <nd ref='865711549' />
+    <nd ref='1014927342' />
+    <nd ref='1014927343' />
+    <nd ref='1014927346' />
+    <nd ref='1014927345' />
+    <nd ref='1014927347' />
+    <nd ref='865711550' />
+    <nd ref='1014927349' />
+    <nd ref='1014927351' />
+    <nd ref='1014927352' />
+    <nd ref='865711551' />
+    <nd ref='865711552' />
+    <nd ref='1649117760' />
+    <nd ref='2289784833' />
+    <nd ref='1457971737' />
+    <nd ref='865711558' />
+    <nd ref='1457971768' />
+    <nd ref='865711559' />
+    <nd ref='1014927353' />
+    <nd ref='1014927356' />
+    <nd ref='1763818684' />
+    <nd ref='1457971484' />
+    <nd ref='972596378' />
+    <tag k='cycleway:left' v='lane' />
+    <tag k='highway' v='secondary' />
+    <tag k='name' v='Rua Rui Barbosa' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='GPS;Bing' />
+  </way>
+  <way id='159453127' timestamp='2012-11-27T01:57:23Z' uid='149876' user='dbusse' visible='true' version='4' changeset='14053546'>
+    <nd ref='553411254' />
+    <nd ref='553411965' />
+    <nd ref='1132593460' />
+    <nd ref='553411894' />
+    <nd ref='553411901' />
+    <nd ref='553411746' />
+    <nd ref='553324584' />
+    <nd ref='553324586' />
+    <nd ref='447351208' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='4' />
+    <tag k='name' v='Avenida Governador Gustavo Richard' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='161565673' timestamp='2012-07-06T01:21:13Z' uid='438811' user='Prblanco' visible='true' version='7' changeset='12125912'>
+    <nd ref='553324350' />
+    <nd ref='553324351' />
+    <nd ref='553324352' />
+    <nd ref='553411680' />
+    <nd ref='553411225' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Rua Silva Jardim' />
+    <tag k='oneway' v='yes' />
+  </way>
+  <way id='163517056' timestamp='2013-05-03T00:27:51Z' uid='1010353' user='Rachmaninoff' visible='true' version='7' changeset='15954287'>
+    <nd ref='553470423' />
+    <nd ref='553470716' />
+    <nd ref='553470721' />
+    <nd ref='2148200822' />
+    <nd ref='553470727' />
+    <nd ref='865711176' />
+    <nd ref='2184462383' />
+    <nd ref='553470741' />
+    <nd ref='553470754' />
+    <nd ref='1559219873' />
+    <nd ref='553470758' />
+    <nd ref='553470763' />
+    <nd ref='553470767' />
+    <nd ref='553470772' />
+    <nd ref='553470776' />
+    <nd ref='1559220009' />
+    <nd ref='553470781' />
+    <nd ref='553470786' />
+    <nd ref='553470796' />
+    <nd ref='2289785252' />
+    <nd ref='1559394834' />
+    <nd ref='2289785259' />
+    <nd ref='553470469' />
+    <nd ref='553470508' />
+    <nd ref='1738827819' />
+    <nd ref='2289785256' />
+    <nd ref='553470531' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Avenida Mauro Ramos' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='163517065' timestamp='2013-07-18T18:52:22Z' uid='438811' user='Prblanco' visible='true' version='3' changeset='17003359'>
+    <nd ref='869713747' />
+    <nd ref='1254208486' />
+    <nd ref='1014457493' />
+    <nd ref='1254208295' />
+    <nd ref='869713749' />
+    <nd ref='1254208275' />
+    <nd ref='869713741' />
+    <tag k='highway' v='secondary' />
+    <tag k='junction' v='roundabout' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='164211434' timestamp='2013-05-03T00:28:41Z' uid='1010353' user='Rachmaninoff' visible='true' version='6' changeset='15954287'>
+    <nd ref='553470531' />
+    <nd ref='2289785253' />
+    <nd ref='553470854' />
+    <nd ref='553470860' />
+    <nd ref='1559394822' />
+    <nd ref='553470863' />
+    <nd ref='2289785257' />
+    <nd ref='553470868' />
+    <nd ref='553470874' />
+    <nd ref='1559394796' />
+    <nd ref='1814449701' />
+    <nd ref='2289785318' />
+    <nd ref='1559394827' />
+    <nd ref='553470882' />
+    <nd ref='553470889' />
+    <nd ref='553470894' />
+    <nd ref='1132613265' />
+    <nd ref='553324331' />
+    <nd ref='553324334' />
+    <tag k='highway' v='primary' />
+    <tag k='lanes' v='2' />
+    <tag k='name' v='Avenida Mauro Ramos' />
+    <tag k='oneway' v='yes' />
+    <tag k='source' v='Bing' />
+  </way>
+  <way id='188928903' timestamp='2013-05-18T03:37:18Z' uid='1010353' user='Rachmaninoff' visible='true' version='5' changeset='16175258'>
+    <nd ref='1475116901' />
+    <nd ref='2309010882' />
+    <nd ref='1868503885' />
+    <nd ref='1438405029' />
+    <nd ref='2177867814' />
+    <nd ref='2309010883' />
+    <nd ref='1438405027' />
+    <tag k='access' v='yes' />
+    <tag k='foot' v='yes' />
+    <tag k='highway' v='residential' />
+    <tag k='maxspeed' v='40' />
+    <tag k='motor_vehicle' v='yes' />
+    <tag k='name' v='Rua Iracema Nunes da Silva' />
+    <tag k='oneway' v='yes' />
+    <tag k='sidewalk' v='both' />
+    <tag k='source' v='Bing' />
+    <tag k='source:name' v='survey' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <way id='206879751' timestamp='2013-02-28T00:56:45Z' uid='506085' user='Koyaani' visible='true' version='2' changeset='15191955'>
+    <nd ref='1438405027' />
+    <nd ref='1438405025' />
+    <nd ref='1438405030' />
+    <nd ref='2006196782' />
+    <nd ref='1438405028' />
+    <tag k='access' v='yes' />
+    <tag k='foot' v='yes' />
+    <tag k='highway' v='residential' />
+    <tag k='motor_vehicle' v='yes' />
+    <tag k='name' v='Rua Professor Milton Roque Ramos Krieger' />
+    <tag k='oneway' v='yes' />
+    <tag k='sidewalk' v='both' />
+    <tag k='source' v='Bing' />
+    <tag k='source:name' v='survey' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <way id='231932882' timestamp='2013-07-31T14:40:41Z' uid='506085' user='Koyaani' visible='true' version='1' changeset='17167220'>
+    <nd ref='1438405028' />
+    <nd ref='1989040287' />
+    <nd ref='1649117763' />
+    <nd ref='1422946497' />
+    <nd ref='1649117765' />
+    <nd ref='1422946505' />
+    <nd ref='2019457676' />
+    <nd ref='872980891' />
+    <nd ref='2308956247' />
+    <nd ref='1457918700' />
+    <nd ref='1457918879' />
+    <nd ref='2019456583' />
+    <nd ref='872980954' />
+    <nd ref='1014457531' />
+    <nd ref='865711348' />
+    <nd ref='1749056045' />
+    <nd ref='865711350' />
+    <nd ref='865711351' />
+    <tag k='access' v='yes' />
+    <tag k='highway' v='secondary' />
+    <tag k='lanes' v='2' />
+    <tag k='maxspeed' v='40' />
+    <tag k='motor_vehicle' v='yes' />
+    <tag k='name' v='Rua Lauro Linhares' />
+    <tag k='oneway' v='no' />
+    <tag k='surface' v='asphalt' />
+  </way>
+  <relation id='2521698' timestamp='2013-07-31T16:03:55Z' uid='1654294' user='mbraginini' visible='true' version='15' changeset='17168111'>
+    <member type='way' ref='72944878' role='platform' />
+    <member type='way' ref='43719878' role='platform' />
+    <member type='node' ref='2177867806' role='platform' />
+    <member type='node' ref='872980957' role='platform' />
+    <member type='node' ref='1639803069' role='platform' />
+    <member type='node' ref='1457087092' role='platform' />
+    <member type='node' ref='1457087104' role='platform' />
+    <member type='node' ref='1457087089' role='platform' />
+    <member type='node' ref='1457087094' role='platform' />
+    <member type='node' ref='1457087114' role='platform' />
+    <member type='node' ref='1649117787' role='platform' />
+    <member type='node' ref='1459256369' role='platform' />
+    <member type='node' ref='1457087074' role='platform' />
+    <member type='node' ref='1457087122' role='platform' />
+    <member type='node' ref='1459256372' role='platform' />
+    <member type='node' ref='1457087066' role='platform' />
+    <member type='node' ref='1459256365' role='platform' />
+    <member type='node' ref='1457087118' role='platform' />
+    <member type='node' ref='1450589838' role='platform' />
+    <member type='node' ref='1473023940' role='platform' />
+    <member type='node' ref='1432752479' role='platform' />
+    <member type='way' ref='134133335' role='' />
+    <member type='way' ref='188928903' role='' />
+    <member type='way' ref='206879751' role='' />
+    <member type='way' ref='231932882' role='' />
+    <member type='way' ref='87244030' role='' />
+    <member type='way' ref='163517065' role='' />
+    <member type='way' ref='87244033' role='' />
+    <member type='way' ref='87244044' role='' />
+    <member type='way' ref='87244997' role='' />
+    <member type='way' ref='132845567' role='' />
+    <member type='way' ref='43728576' role='' />
+    <member type='way' ref='151155092' role='' />
+    <member type='way' ref='131620666' role='' />
+    <member type='way' ref='139355355' role='' />
+    <member type='way' ref='131620662' role='' />
+    <member type='way' ref='43728572' role='' />
+    <member type='way' ref='163517056' role='' />
+    <member type='way' ref='164211434' role='' />
+    <member type='way' ref='43722629' role='' />
+    <member type='way' ref='161565673' role='' />
+    <member type='way' ref='43722611' role='' />
+    <member type='way' ref='43719805' role='' />
+    <member type='way' ref='159453127' role='' />
+    <member type='way' ref='43719803' role='' />
+    <member type='way' ref='38050113' role='' />
+    <tag k='description' v='Paradora' />
+    <tag k='from' v='TITRI' />
+    <tag k='name' v='Ônibus 133: Agronômica via Mauro Ramos, TITRI =&gt; TICEN' />
+    <tag k='operator' v='Transol' />
+    <tag k='ref' v='133' />
+    <tag k='route' v='bus' />
+    <tag k='source' v='survey' />
+    <tag k='to' v='TICEN A' />
+    <tag k='type' v='route' />
+    <tag k='wheelchair' v='no' />
+  </relation>
+</osm>
