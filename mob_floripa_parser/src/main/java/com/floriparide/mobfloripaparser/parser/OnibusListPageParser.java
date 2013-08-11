@@ -36,6 +36,8 @@ public class OnibusListPageParser implements PageParser<List<Route>> {
             List<Element> innerElements = element.getElementsByTag("td");
 
             String routeUrl = innerElements.get(0).getElementsByTag("a").attr("href");
+            routeUrl = "http://mobfloripa.com.br/" + routeUrl;
+
             String shortName = innerElements.get(0).getElementsByTag("a").text();
 
             String longName = innerElements.get(1).getElementsByTag("a").text();
