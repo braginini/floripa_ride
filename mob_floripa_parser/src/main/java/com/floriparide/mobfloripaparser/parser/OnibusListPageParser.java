@@ -14,12 +14,10 @@ import java.util.List;
  * @author mikhail.bragin
  * @since 8/11/13
  */
-public class OnibusListPageParser implements PageParser<List<Route>> {
-
-    Document document;
+public class OnibusListPageParser extends PageParser<List<Route>> {
 
     public OnibusListPageParser(Document document) {
-        this.document = document;
+        super(document);
     }
 
     @Override

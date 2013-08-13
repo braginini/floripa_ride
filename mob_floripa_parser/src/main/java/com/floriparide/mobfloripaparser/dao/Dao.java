@@ -112,4 +112,30 @@ public class Dao {
 
 		return result;
 	}
+
+	public List<Route> getAllRoutesSimple() {
+
+		List<Route> result = new ArrayList<>();
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT id, url FROM Route";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				result.add(new Route(
+						rs.getLong("id"),
+						rs.getString("url")));
+			}
+
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return result;
+	}
 }

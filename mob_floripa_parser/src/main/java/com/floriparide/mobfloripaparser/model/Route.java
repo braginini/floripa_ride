@@ -26,7 +26,12 @@ public class Route {
 
     Agency agency;
 
-    /**
+	public Route(Long id, String parseUrl) {
+		this.id = id;
+		this.parseUrl = parseUrl;
+	}
+
+	/**
      * Use this constructor to create new route
      *
      */

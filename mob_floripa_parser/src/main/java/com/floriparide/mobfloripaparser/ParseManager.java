@@ -2,11 +2,14 @@ package com.floriparide.mobfloripaparser;
 
 import com.floriparide.mobfloripaparser.dao.Dao;
 import com.floriparide.mobfloripaparser.dao.DataSourceKeeper;
+import com.floriparide.mobfloripaparser.model.Route;
 import com.floriparide.mobfloripaparser.model.Task;
 import com.floriparide.mobfloripaparser.workers.AgencyArchiveWorker;
 import com.floriparide.mobfloripaparser.workers.OnibusListPageWorker;
 import com.floriparide.mobfloripaparser.workers.RouteArchiveWorker;
 import com.floriparide.mobfloripaparser.workers.RoutePageWorker;
+
+import java.util.List;
 
 /**
  * @author mikhail.bragin
@@ -31,11 +34,21 @@ public class ParseManager {
 	}
 
 	public void start() {
-		mainPageWorker.addTask(new Task<String>() {
+		/*mainPageWorker.addTask(new Task<String>() {
 			@Override
 			public String taskObject() {
 				return mainUrl;
 			}
-		});
+		});*/
+
+		List<Route> routes = dao.getAllRoutesSimple();
+
+		for (final Route route : routes)
+			routePageWorker.addTask(new Task<Route>() {
+				@Override
+				public Route taskObject() {
+					return route;
+				}
+			});
 	}
 }

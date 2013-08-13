@@ -7,7 +7,13 @@ import org.jsoup.nodes.Document;
  * @author mikhail.bragin
  * @since 8/11/13
  */
-public interface PageParser<T> {
+public abstract class PageParser<T> {
 
-    ParseResult<T> parse();
+	Document document;
+
+	protected PageParser(Document document) {
+		this.document = document;
+	}
+
+	abstract ParseResult<T> parse();
 }

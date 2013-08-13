@@ -51,3 +51,21 @@ OIDS=FALSE
 );
 ALTER TABLE stop
 OWNER TO postgres;
+
+DROP TABLE IF EXISTS trip;
+CREATE TABLE trip
+(
+	id bigserial NOT NULL,
+	route_id bigint references route(id),
+	service_id bigint,
+	head_sign varchar(50),
+	short_name varchar(50),
+	shape_id bigint,
+	start_time varchar(8),
+	CONSTRAINT trip_pk PRIMARY KEY (id)
+)
+WITH (
+OIDS=FALSE
+);
+ALTER TABLE trip
+OWNER TO postgres;

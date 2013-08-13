@@ -13,6 +13,12 @@ public class Trip {
 
 	Long shapeId;
 
+	Calendar calendar;
+
+	Integer length;
+
+	Integer time;
+
 	public Trip(Long id, Long routeId, Long serviceId, Long shapeId) {
 		this.id = id;
 		this.routeId = routeId;
@@ -50,5 +56,21 @@ public class Trip {
 
 	public void setShapeId(Long shapeId) {
 		this.shapeId = shapeId;
+	}
+
+	public Calendar getCalendar() {
+		return calendar;
+	}
+
+	public void setCalendar(Calendar calendar) {
+		this.calendar = calendar;
+	}
+
+	public Integer getLength() {
+		return length;
+	}
+
+	public void setLength(Integer length) {
+		this.length = length;
 	}
 }
