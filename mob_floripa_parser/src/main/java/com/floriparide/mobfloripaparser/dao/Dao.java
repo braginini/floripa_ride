@@ -25,7 +25,7 @@ public class Dao {
 
 	public void saveRoute(List<Route> routes) {
 
-		String SQL = "INSERT INTO Route (short_name, long_name, agency_id, route_type, descr, url,active) " +
+		String SQL = "INSERT INTO Route (short_name, long_name, agency_id, route_type, descr, url, active) " +
 				"VALUES (?, ?, ?, ?, ?, ?, ?)";
 		Connection connection = null;
 
@@ -37,6 +37,7 @@ public class Dao {
 			for (Route route : routes) {
 				stmt.setString(1, route.getShortName());
 				stmt.setString(2, route.getLongName());
+				System.out.println(route.getLongName());
 				stmt.setLong(3, route.getAgencyId());   //todo get agencies
 				stmt.setShort(4, (short) route.getType().ordinal());
 				stmt.setString(5, route.getDescription());
@@ -47,7 +48,6 @@ public class Dao {
 			}
 
 			int[] rs = stmt.executeBatch();
-			connection.commit();
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -76,7 +76,7 @@ public class Dao {
 			}
 
 			int[] rs = stmt.executeBatch();
-			connection.commit();
+			//connection.commit();
 
 		} catch (SQLException e) {
 			e.printStackTrace();

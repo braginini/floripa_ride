@@ -4,8 +4,10 @@ import com.floriparide.mobfloripaparser.dao.Dao;
 import com.floriparide.mobfloripaparser.model.Agency;
 import com.floriparide.mobfloripaparser.model.ParseResult;
 import com.floriparide.mobfloripaparser.model.Route;
+import com.floriparide.mobfloripaparser.model.Station;
 import com.floriparide.mobfloripaparser.model.Task;
 import com.floriparide.mobfloripaparser.parser.OnibusListPageParser;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -25,9 +27,9 @@ import java.util.concurrent.Executors;
  */
 public class OnibusListPageWorker implements Worker<String> {
 
-    ExecutorService executorService;
+	ExecutorService executorService;
 
-    RoutePageWorker routePageWorker;
+	RoutePageWorker routePageWorker;
 
 	RouteArchiveWorker routeArchiveWorker;
 
@@ -35,51 +37,49 @@ public class OnibusListPageWorker implements Worker<String> {
 
 	Dao dao;
 
-    public OnibusListPageWorker(RoutePageWorker routePageWorker, RouteArchiveWorker routeArchiveWorker, Dao dao) {
-        this.routePageWorker = routePageWorker;
-	    this.routeArchiveWorker = routeArchiveWorker;
-	    this.dao = dao;
-        this.executorService = Executors.newFixedThreadPool(1, new CustomThreadFactory("main-page-worker"));
-    }
+	public OnibusListPageWorker(RoutePageWorker routePageWorker, RouteArchiveWorker routeArchiveWorker, Dao dao) {
+		this.routePageWorker = routePageWorker;
+		this.routeArchiveWorker = routeArchiveWorker;
+		this.dao = dao;
+		this.executorService = Executors.newFixedThreadPool(1, new CustomThreadFactory("main-page-worker"));
+	}
 
-    @Override
-    public void addTask(final Task<String> task) {
+	@Override
+	public void addTask(final Task<String> task) {
 
-        executorService.submit(new Runnable() {
-            @Override
-            public void run() {
-               try {
+		executorService.submit(new Runnable() {
+			@Override
+			public void run() {
+				try {
 
-                   Document pageDoc =  Jsoup.parse(new URL(task.taskObject()), 20 * 1000);
-	               ParseResult<List<Route>> parseResult = new OnibusListPageParser(pageDoc).parse();
-	               final List<Route> routes = parseResult.result();
+					Document pageDoc = Jsoup.parse(new URL(task.taskObject()), 20 * 1000);
+					ParseResult<List<Route>> parseResult = new OnibusListPageParser(pageDoc).parse();
+					final List<Route> routes = parseResult.result();
 
-	               final Map<String, Agency> map = new HashMap<>();
+					final List<Agency> agencies = dao.getAgencies();
 
-	               List<Agency> agencies = dao.getAgencies();
+					Map<String, Agency> agencyMap = new HashMap<>();
 
-	               Map<String, Agency> agencyMap = new HashMap<>();
+					for (Agency agency : agencies) {
+						agencyMap.put(agency.getName(), agency);
+					}
 
-	               for (Agency agency : agencies) {
-		               agencyMap.put(agency.getName(), agency);
-	               }
+					for (Route route : routes) {
+						Agency agency = route.getAgency();
+						route.setAgencyId(agencyMap.get(agency.getName()).getId());
+					}
 
-	               for (Route route : routes) {
-		               Agency agency = route.getAgency();
-		               route.setAgencyId(agencyMap.get(agency.getName()).getId());
-	               }
+					routeArchiveWorker.addTask(new Task<List<Route>>() {
+						@Override
+						public List<Route> taskObject() {
+							return routes;
+						}
+					});
 
-	               routeArchiveWorker.addTask(new Task<List<Route>>() {
-		               @Override
-		               public List<Route> taskObject() {
-			               return routes;
-		               }
-	               });
-
-               } catch (IOException e) {
-                  e.printStackTrace();
-               }
-            }
-        });
-    }
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
 }
