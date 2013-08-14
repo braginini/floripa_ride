@@ -150,4 +150,21 @@ public class Calendar {
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
+
+	public enum CalendarType {
+
+		WEEK(0),
+		SATURDAY(1),
+		SUNDAY(2);
+
+		int id;
+
+		private CalendarType(int id) {
+			this.id = id;
+		}
+
+		public int getId() {
+			return id;
+		}
+	}
 }

@@ -15,9 +15,13 @@ public class Trip {
 
 	Calendar calendar;
 
-	Integer length;
+	Float length;  //km
 
-	Integer time;
+	Integer time;  //min
+
+	Float priceCard;
+
+	Float price;
 
 	public Trip(Long id, Long routeId, Long serviceId, Long shapeId) {
 		this.id = id;
@@ -66,11 +70,35 @@ public class Trip {
 		this.calendar = calendar;
 	}
 
-	public Integer getLength() {
+	public Float getLength() {
 		return length;
 	}
 
-	public void setLength(Integer length) {
+	public void setLength(Float length) {
 		this.length = length;
+	}
+
+	public Integer getTime() {
+		return time;
+	}
+
+	public void setTime(Integer time) {
+		this.time = time;
+	}
+
+	public Float getPriceCard() {
+		return priceCard;
+	}
+
+	public void setPriceCard(Float priceCard) {
+		this.priceCard = priceCard;
+	}
+
+	public Float getPrice() {
+		return price;
+	}
+
+	public void setPrice(Float price) {
+		this.price = price;
 	}
 }

@@ -24,7 +24,7 @@ public class RoutePageWorker implements Worker<Route> {
 
 
 	public RoutePageWorker() {
-		this.executorService = Executors.newFixedThreadPool(20, new CustomThreadFactory("route-page-parse-worker"));
+		this.executorService = Executors.newFixedThreadPool(1, new CustomThreadFactory("route-page-parse-worker"));
 	}
 
 	@Override

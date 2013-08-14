@@ -57,15 +57,38 @@ CREATE TABLE trip
 (
 	id bigserial NOT NULL,
 	route_id bigint references route(id),
-	service_id bigint,
-	head_sign varchar(50),
-	short_name varchar(50),
+	service_id bigint references calendar(id),
+	head_sign character varying(50),
+	short_name character varying(50),
 	shape_id bigint,
-	start_time varchar(8),
+	trip_time integer,
+	start_time character varying(8),
 	CONSTRAINT trip_pk PRIMARY KEY (id)
 )
 WITH (
 OIDS=FALSE
 );
 ALTER TABLE trip
+OWNER TO postgres;
+
+DROP TABLE IF EXISTS calendar;
+CREATE TABLE calendar
+(
+	id bigserial NOT NULL,
+	monday boolean NOT NULL,
+	tuesday boolean NOT NULL,
+	wednesday boolean NOT NULL,
+	thursday boolean NOT NULL,
+	friday boolean NOT NULL,
+	saturday boolean NOT NULL,
+	sunday boolean NOT NULL,
+	calendar_name character varying (20),
+	start_date character varying(8) NOT NULL,
+  	end_date character varying(8) NOT NULL,
+	CONSTRAINT calendar_pk PRIMARY KEY (id)
+)
+WITH (
+OIDS=FALSE
+);
+ALTER TABLE calendar
 OWNER TO postgres;
