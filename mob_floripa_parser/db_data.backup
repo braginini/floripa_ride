@@ -1,0 +1,714 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.2.4
+-- Dumped by pg_dump version 9.2.4
+-- Started on 2013-08-14 15:29:44
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 179 (class 3079 OID 11727)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 1984 (class 0 OID 0)
+-- Dependencies: 179
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 171 (class 1259 OID 23551)
+-- Name: agency; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE agency (
+    id bigint NOT NULL,
+    agency_name character varying(250),
+    url character varying(1000),
+    agency_timezone character varying(2)
+);
+
+
+ALTER TABLE public.agency OWNER TO postgres;
+
+--
+-- TOC entry 170 (class 1259 OID 23549)
+-- Name: agency_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE agency_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.agency_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 1985 (class 0 OID 0)
+-- Dependencies: 170
+-- Name: agency_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE agency_id_seq OWNED BY agency.id;
+
+
+--
+-- TOC entry 176 (class 1259 OID 23622)
+-- Name: calendar; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE calendar (
+    id bigint NOT NULL,
+    monday boolean,
+    tuesday boolean,
+    wednesday boolean,
+    thursday boolean,
+    friday boolean,
+    saturday boolean,
+    sunday boolean,
+    calendar_name character varying(20),
+    start_date character varying(8),
+    end_date character varying(8)
+);
+
+
+ALTER TABLE public.calendar OWNER TO postgres;
+
+--
+-- TOC entry 175 (class 1259 OID 23620)
+-- Name: calendar_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE calendar_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.calendar_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 1986 (class 0 OID 0)
+-- Dependencies: 175
+-- Name: calendar_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE calendar_id_seq OWNED BY calendar.id;
+
+
+--
+-- TOC entry 173 (class 1259 OID 23565)
+-- Name: route; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE route (
+    id bigint NOT NULL,
+    short_name character varying(20),
+    long_name character varying(250),
+    agency_id bigint,
+    route_type smallint,
+    descr character varying(1000),
+    url character varying(1000),
+    active boolean
+);
+
+
+ALTER TABLE public.route OWNER TO postgres;
+
+--
+-- TOC entry 172 (class 1259 OID 23563)
+-- Name: route_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE route_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.route_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 1987 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: route_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE route_id_seq OWNED BY route.id;
+
+
+--
+-- TOC entry 174 (class 1259 OID 23581)
+-- Name: station; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE station (
+);
+
+
+ALTER TABLE public.station OWNER TO postgres;
+
+--
+-- TOC entry 169 (class 1259 OID 23527)
+-- Name: stop; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE stop (
+    id bigint NOT NULL,
+    osm_id bigint,
+    code character varying(15),
+    stop_name character varying(500) NOT NULL,
+    descr character varying(1000),
+    latitude real,
+    longitude real,
+    type smallint
+);
+
+
+ALTER TABLE public.stop OWNER TO postgres;
+
+--
+-- TOC entry 168 (class 1259 OID 23525)
+-- Name: stop_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE stop_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.stop_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 1988 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: stop_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE stop_id_seq OWNED BY stop.id;
+
+
+--
+-- TOC entry 178 (class 1259 OID 23648)
+-- Name: trip; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE trip (
+    id bigint NOT NULL,
+    route_id bigint,
+    service_id bigint,
+    head_sign character varying(50),
+    short_name character varying(50),
+    shape_id bigint,
+    trip_time integer,
+    start_time character varying(8)
+);
+
+
+ALTER TABLE public.trip OWNER TO postgres;
+
+--
+-- TOC entry 177 (class 1259 OID 23646)
+-- Name: trip_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE trip_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.trip_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 1989 (class 0 OID 0)
+-- Dependencies: 177
+-- Name: trip_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE trip_id_seq OWNED BY trip.id;
+
+
+--
+-- TOC entry 1948 (class 2604 OID 23554)
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY agency ALTER COLUMN id SET DEFAULT nextval('agency_id_seq'::regclass);
+
+
+--
+-- TOC entry 1950 (class 2604 OID 23625)
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY calendar ALTER COLUMN id SET DEFAULT nextval('calendar_id_seq'::regclass);
+
+
+--
+-- TOC entry 1949 (class 2604 OID 23568)
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY route ALTER COLUMN id SET DEFAULT nextval('route_id_seq'::regclass);
+
+
+--
+-- TOC entry 1947 (class 2604 OID 23530)
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY stop ALTER COLUMN id SET DEFAULT nextval('stop_id_seq'::regclass);
+
+
+--
+-- TOC entry 1951 (class 2604 OID 23651)
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY trip ALTER COLUMN id SET DEFAULT nextval('trip_id_seq'::regclass);
+
+
+--
+-- TOC entry 1969 (class 0 OID 23551)
+-- Dependencies: 171
+-- Data for Name: agency; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY agency (id, agency_name, url, agency_timezone) FROM stdin;
+10	ESTRELA	http://www.tcestrela.com.br/index.htm	\N
+11	CANASVIEIRAS	http://www.canasvieirastc.com.br	\N
+12	INSULAR	http://www.insulartc.com.br 	\N
+13	COOPERCOSTA	http://portal.pmf.sc.gov.br/entidades/transportes/	\N
+14	EMFLOTUR	http://www.biguacutransportes.com.br/	\N
+15	COOPERBARCO	http://www.pmf.sc.gov.br/portal/quem/transporte.php	\N
+16	TRANSOL	http://www.transoltc.com.br	\N
+\.
+
+
+--
+-- TOC entry 1990 (class 0 OID 0)
+-- Dependencies: 170
+-- Name: agency_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('agency_id_seq', 16, true);
+
+
+--
+-- TOC entry 1974 (class 0 OID 23622)
+-- Dependencies: 176
+-- Data for Name: calendar; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY calendar (id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, calendar_name, start_date, end_date) FROM stdin;
+0	t	t	t	t	t	f	f	WEEK	20120101	20200101
+1	f	f	f	f	f	t	f	SATURDAY	20120101	20120101
+2	f	f	f	f	f	f	t	SUNDAY	20120101	20120101
+\.
+
+
+--
+-- TOC entry 1991 (class 0 OID 0)
+-- Dependencies: 175
+-- Name: calendar_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('calendar_id_seq', 1, false);
+
+
+--
+-- TOC entry 1971 (class 0 OID 23565)
+-- Dependencies: 173
+-- Data for Name: route; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY route (id, short_name, long_name, agency_id, route_type, descr, url, active) FROM stdin;
+372	665	ABRAÃO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=327	f
+373	849	ABRAÃO/UFSC	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=353	f
+374	132	AGRONÔMICA VIA GAMA D'EÇA - HI [HOSPITAL INFANTIL]	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=207	f
+375	762	ÂNGELO LAPORTA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=334	f
+376	560	ARMAÇÃO	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=305	f
+377	661	BALNEÁRIO	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=323	f
+378	10	BARCA DA COSTA DA LAGOA	13	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=198	f
+379	D360	BARRA DA LAGOA - DIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=384	f
+380	D260	CACHOEIRA DO BOM JESUS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=380	f
+381	280	CACHOEIRA ESCOLAR	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=408	f
+382	D846	CACUPÉ DIRETA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=387	f
+383	561	CAEIRA DA BARRA DO SUL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=306	f
+384	566	CAEIRA VIA TAPERA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=309	f
+385	462	CAMPECHE	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=295	f
+386	210	CANASVIEIRAS - DIRETO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=249	f
+387	840	CANASVIEIRAS - LAGOA DA CONCEIÇÃO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=344	f
+388	941	CANASVIEIRAS - SANTO ANTÔNIO VIA RATONES	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=355	f
+389	231	CANASVIEIRAS VIA MAURO RAMOS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=253	f
+390	291	CANASVIEIRAS/JURERÊ	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=416	f
+391	362	CANTO DOS ARAÇAS	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=286	f
+392	275	CAPIVARI VIA JOÃO GUALBERTO SOARES	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=272	f
+393	632	CAPOEIRAS VIA IVO SILVEIRA	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=321	f
+394	948	CAPOEIRAS/UFSC	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=361	f
+395	464	CASTANHEIRAS VIA GRAMAL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=297	f
+396	156	CENTRO ADMINISTRATIVO VIA MAURO RAMOS	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=422	f
+397	605	CIRCULAR ABRAÃO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=315	f
+398	601	CIRCULAR ABRAÃO	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=311	f
+399	101	CIRCULAR CENTRO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=201	f
+400	602	CIRCULAR CONTINENTE	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=312	f
+401	607	CIRCULAR CONTINENTE VIA BIBLIOTECA PÚBLICA	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=317	f
+402	663	COLONINHA	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=325	f
+403	186	CORREDOR SUDOESTE - SEMIDIRETO	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=245	f
+404	163	CÓRREGO GRANDE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=222	f
+405	164	CÓRREGO GRANDE - POÇÃO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=223	f
+406	562	COSTA DE CIMA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=307	f
+407	D563	COSTA DE DENTRO - DIRETO	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=385	f
+408	153	COSTEIRA DO PIRAJUBAÉ	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=216	f
+409	6120	EXEC.AEROPORTO/CORREDOR SUDOESTE	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=373	f
+410	2120	EXECUTIVO BARRA DA LAGOA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=371	f
+411	4124	EXECUTIVO CAIEIRA DA BARRA DO SUL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=421	f
+412	1120	EXECUTIVO CANASVIEIRAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=367	f
+413	1114	EXECUTIVO CÓRREGO GRANDE MAURO RAMOS	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=423	f
+414	1128	EXECUTIVO COSTA DO MOÇAMBIQUE	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=430	f
+415	7220	EXECUTIVO JARDIM ATLÂNTICO	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=376	f
+416	1123	EXECUTIVO JURERÊ	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=410	f
+417	4120	EXECUTIVO PÂNTANO DO SUL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=388	f
+418	1122	EXECUTIVO PONTA DAS CANAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=369	f
+419	1125	EXECUTIVO RIO VERMELHO - SITIO DE CIMA	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=370	f
+420	1112	EXECUTIVO SANTA MÔNICA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=363	f
+421	250	FORTE/CANASVIEIRAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=256	f
+422	120	GAMA D'EÇA - SEMIDIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=204	f
+423	D264	INGLESES	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=381	f
+424	165	ITACORUBI	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=224	f
+425	166	JARDIM ANCHIETA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=225	f
+426	167	JOÃO PAULO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=226	f
+427	272	JURERÊ	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=269	f
+428	311	LAGOA DA CONCEIÇÃO - DIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=279	f
+429	845	LAGOA DA CONCEIÇÃO VIA CÓRREGO GRANDE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=349	f
+430	841	LAGOA/RIO TAVARES	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=345	f
+431	604	MADRUGADÃO CONTINENTE	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=314	f
+432	300	MADRUGADÃO LESTE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=277	f
+433	500	MADRUGADÃO SUL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=303	f
+434	121	MAURO RAMOS - SEMIDIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=205	f
+435	764	MONTE SERRAT	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=336	f
+436	168	MONTE VERDE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=227	f
+437	160	MORRO DA CRUZ	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=219	f
+438	765	MORRO DA QUEIMADA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=337	f
+439	770	MORRO DO 25 VIA GAMA D'EÇA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=342	f
+440	767	MORRO DO HORÁCIO VIA GAMA D'EÇA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=339	f
+441	173	MORRO DO QUILOMBO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=232	f
+442	364	OSNI ORTIGA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=288	f
+443	11	PARQUE FLORESTAL	13	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=199	f
+444	172	PARQUE SÃO JORGE VIA SC 404	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=231	f
+445	460	PORTO DA LAGOA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=293	f
+446	D266	PRAIA BRAVA - DIRETO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=382	f
+447	668	PROMORAR VIA IVO SILVEIRA	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=329	f
+448	565	RIBEIRÃO DA ILHA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=418	f
+449	430	RIO TAVARES	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=292	f
+450	267	RIO VERMELHO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=264	f
+451	274	RIO VERMELHO VIA MUQUEM	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=271	f
+452	943	SACO DOS LIMÕES/TRINDADE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=356	f
+453	178	SACO GRANDE RETORNO SC 401	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=237	f
+454	174	SACO GRANDE VIA JOÃO PAULO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=233	f
+455	365	SAMBAQUI	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=289	f
+456	296	SANTINHO ESCOLAR	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=449	f
+457	310	SANTO ANTÔNIO - DIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=278	f
+458	332	SANTO ANTÔNIO VIA BEIRA MAR	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=283	f
+459	179	SERRINHA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=238	f
+460	155	SOL NASCENTE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=218	f
+461	461	TAPERA VIA TÚNEL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=294	f
+462	470	TAPERA/TITRI	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=301	f
+463	104	TICEN/ITACORUBI	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=202	f
+464	847	TIRIO/TITRI	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=351	f
+465	333	TITRI/TILAG	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=284	f
+466	180	TITRI/UFSC	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=239	f
+467	12	TRANSPORTE EXECUTIVO COSTA DA LAGOA	15	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=391	f
+468	284	TRAVESSÃO VIA R. DA INTENDÊNCIA	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=426	f
+469	184	UDESC VIA BEIRA MAR	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=243	f
+470	154	UFSC - SEMIDIRETO - SAÍDA SUL	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=217	f
+471	283	VARGEM DO BOM JESUS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=276	f
+472	671	VILA | PROMORAR	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=450	f
+473	669	VILA SÃO JOÃO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=330	f
+474	136	VOLTA AO MORRO CARVOEIRA SUL	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=211	f
+475	138	VOLTA AO MORRO PANTANAL SUL	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=213	f
+476	949	ABRAÃO/UFSC	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=362	f
+477	131	AGRONÔMICA VIA GAMA D'EÇA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=206	f
+478	133	AGRONÔMICA VIA MAURO RAMOS	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=208	f
+479	660	ARACI VAZ CALLADO	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=322	f
+480	844	BAIRRO DE FÁTIMA	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=348	f
+481	276	BALNEÁRIO CANASVIEIRAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=273	f
+482	360	BARRA DA LAGOA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=285	f
+483	134	BEIRA-MAR NORTE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=209	f
+484	260	CACHOEIRA DO BOM JESUS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=257	f
+485	846	CACUPÉ	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=350	f
+486	181	CACUPÉ/JOÃO PAULO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=240	f
+487	763	CAEIRA DO SACO DOS LIMÕES	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=335	f
+488	170	CAMINHO DA CRUZ VIA JOÃO PAULO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=229	f
+489	472	CAMPECHE VIA CAPELA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=428	f
+490	842	CANASVIEIRAS - LAGOA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=346	f
+491	940	CANASVIEIRAS - SANTO ANTÔNIO VIA JURERÊ	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=354	f
+492	230	CANASVIEIRAS VIA GAMA D'EÇA	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=252	f
+493	221	CANASVIEIRAS VIA MAURO RAMOS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=251	f
+494	233	CANASVIEIRAS/TRINDADE	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=254	f
+495	261	CAPIVARI	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=258	f
+496	631	CAPOEIRAS	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=320	f
+497	947	CAPOEIRAS/UFSC	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=360	f
+498	463	CASTANHEIRAS VIA EUCALIPTOS	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=296	f
+499	151	CENTRO ADMINISTRATIVO VIA BEIRA MAR	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=215	f
+500	772	CHICO MENDES	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=343	f
+501	608	CIRCULAR ABRAÃO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=318	f
+502	262	CIRCULAR CANASVIEIRAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=259	f
+503	606	CIRCULAR CONTINENTE	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=316	f
+504	603	CIRCULAR CONTINENTE VIA BIBLIOTECA PÚBLICA	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=313	f
+505	282	CIRCULAR VARGEM PEQUENA	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=275	f
+506	630	CORREDOR CONTINENTE	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=319	f
+507	183	CORREDOR SUDOESTE - VIA TISAC	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=242	f
+508	D163	CÓRREGO GRANDE - DIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=377	f
+509	187	CÓRREGO GRANDE VIA BEIRA MAR	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=246	f
+510	563	COSTA DE DENTRO	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=308	f
+511	281	COSTA DO MOÇAMBIQUE	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=274	f
+512	271	DANIELA VIA JURERÊ	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=268	f
+513	6220	EXECUTIVO ABRAÃO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=374	f
+514	6221	EXECUTIVO BOM ABRIGO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=375	f
+515	4122	EXECUTIVO CAMPECHE	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=389	f
+516	4125	EXECUTIVO CASTANHEIRAS	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=425	f
+517	1115	EXECUTIVO CÓRREGO GRANDE VIA GAMA D´EÇA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=365	f
+518	1121	EXECUTIVO INGLESES	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=368	f
+519	1117	EXECUTIVO JOÃO PAULO VIA CENTRO ADMINISTRATIVO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=366	f
+520	2123	EXECUTIVO LAGOA DA CONCEIÇÃO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=424	f
+521	1113	EXECUTIVO PARQUE SÃO JORGE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=364	f
+522	4123	EXECUTIVO RIBEIRÃO DA ILHA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=407	f
+523	2124	EXECUTIVO SAMBAQUI	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=443	f
+524	4126	EXECUTIVO TAPERA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=429	f
+525	263	GAIVOTA	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=260	f
+526	264	INGLESES	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=261	f
+527	294	INTERPRAIAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=248	f
+528	664	ITAGUAÇU	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=326	f
+529	946	JARDIM ATLÂNTICO/ UFSC	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=359	f
+530	363	JOAQUINA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=287	f
+531	330	LAGOA DA CONCEIÇÃO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=281	f
+532	320	LAGOA DA CONCEIÇÃO - SEMIDIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=280	f
+533	843	LAGOA/RIO TAVARES	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=347	f
+534	100	MADRUGADÃO CENTRO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=200	f
+535	600	MADRUGADÃO CONTINENTE	14	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=310	f
+536	200	MADRUGADÃO NORTE	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=247	f
+537	501	MADRUGADÃO SUL VIA TAPERA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=304	f
+538	670	MONTE CRISTO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=331	f
+539	D168	MONTE VERDE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=378	f
+540	169	MONTE VERDE VIA MANÉ VICENTE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=228	f
+541	161	MORRO DA PENITENCIÁRIA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=220	f
+542	766	MORRO DO 25	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=338	f
+543	760	MORRO DO GERALDO	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=332	f
+544	768	MORRO DO HORÁCIO VIA MAURO RAMOS	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=340	f
+545	769	MORRO NOVA TRENTO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=341	f
+546	564	PÂNTANO DO SUL	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=405	f
+547	171	PARQUE SÃO JORGE VIA MADRE BENVENUTA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=230	f
+548	265	PONTA DAS CANAS	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=262	f
+549	266	PRAIA BRAVA	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=263	f
+550	667	PROMORAR	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=328	f
+551	273	RATONES	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=270	f
+552	D565	RIBEIRÃO DA ILHA	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=386	f
+553	410	RIO TAVARES - DIRETO	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=290	f
+554	D267	RIO VERMELHO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=383	f
+555	162	SACO DOS LIMÕES	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=221	f
+556	944	SACO DOS LIMÕES/TRINDADE VIA MADRE BENVENUTA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=357	f
+557	176	SACO GRANDE VIA HU [HOSPITAL UNIVERSITÁRIO]	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=235	f
+558	D174	SACO GRANDE VIA JOÃO PAULO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=379	f
+559	177	SANTA MÔNICA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=236	f
+560	331	SANTO ANTÔNIO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=282	f
+561	212	SANTO ANTÔNIO - DIRETO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=250	f
+562	175	SC 401 RETORNO SACO GRANDE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=234	f
+563	268	SÍTIO DE BAIXO	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=265	f
+564	467	TAPERA VIA SACO DOS LIMÕES	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=299	f
+565	469	TAPERA/ RIO TAVARES	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=300	f
+566	182	TECNÓPOLIS	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=241	f
+567	110	TICEN/TITRI - DIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=203	f
+568	471	TITRI/TAPERA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=302	f
+569	848	TITRI/TIRIO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=352	f
+570	191	TRANSCAEIRA	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=444	f
+571	269	TRAVESSÃO VIA R. ALZIRA ROSA AGUIAR	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=266	f
+572	466	TREVO DO ERASMO	12	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=298	f
+573	185	UFSC - SEMIDIRETO	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=244	f
+574	150	ÚNICA VIA BEIRA MAR	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=214	f
+575	270	VARGEM GRANDE	11	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=267	f
+576	761	VILA APARECIDA	10	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=333	f
+577	135	VOLTA AO MORRO CARVOEIRA NORTE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=210	f
+578	137	VOLTA AO MORRO PANTANAL NORTE	16	3	\N	http://mobfloripa.com.br/linha_det.php?codigo=212	f
+\.
+
+
+--
+-- TOC entry 1992 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: route_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('route_id_seq', 578, true);
+
+
+--
+-- TOC entry 1972 (class 0 OID 23581)
+-- Dependencies: 174
+-- Data for Name: station; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY station  FROM stdin;
+\.
+
+
+--
+-- TOC entry 1967 (class 0 OID 23527)
+-- Dependencies: 169
+-- Data for Name: stop; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY stop (id, osm_id, code, stop_name, descr, latitude, longitude, type) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1993 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: stop_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('stop_id_seq', 1, false);
+
+
+--
+-- TOC entry 1976 (class 0 OID 23648)
+-- Dependencies: 178
+-- Data for Name: trip; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY trip (id, route_id, service_id, head_sign, short_name, shape_id, trip_time, start_time) FROM stdin;
+\.
+
+
+--
+-- TOC entry 1994 (class 0 OID 0)
+-- Dependencies: 177
+-- Name: trip_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('trip_id_seq', 1, false);
+
+
+--
+-- TOC entry 1955 (class 2606 OID 23561)
+-- Name: agency_name_unique; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY agency
+    ADD CONSTRAINT agency_name_unique UNIQUE (agency_name);
+
+
+--
+-- TOC entry 1957 (class 2606 OID 23559)
+-- Name: agency_pk; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY agency
+    ADD CONSTRAINT agency_pk PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1961 (class 2606 OID 23627)
+-- Name: calendar_pk; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY calendar
+    ADD CONSTRAINT calendar_pk PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1959 (class 2606 OID 23573)
+-- Name: route_pk; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY route
+    ADD CONSTRAINT route_pk PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1953 (class 2606 OID 23535)
+-- Name: stop_pk; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY stop
+    ADD CONSTRAINT stop_pk PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1963 (class 2606 OID 23653)
+-- Name: trip_pk; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY trip
+    ADD CONSTRAINT trip_pk PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1964 (class 2606 OID 23654)
+-- Name: trip_route_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY trip
+    ADD CONSTRAINT trip_route_id_fkey FOREIGN KEY (route_id) REFERENCES route(id);
+
+
+--
+-- TOC entry 1965 (class 2606 OID 23659)
+-- Name: trip_service_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY trip
+    ADD CONSTRAINT trip_service_id_fkey FOREIGN KEY (service_id) REFERENCES calendar(id);
+
+
+--
+-- TOC entry 1983 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2013-08-14 15:29:44
+
+--
+-- PostgreSQL database dump complete
+--
+
