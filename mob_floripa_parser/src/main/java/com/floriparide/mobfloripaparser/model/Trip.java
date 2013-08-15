@@ -13,21 +13,55 @@ public class Trip {
 
 	Long shapeId;
 
+	Long calendarId;
+
 	Calendar calendar;
 
 	Float length;  //km
 
-	Integer time;  //min
+	Integer tripTime;  //min
 
 	Float priceCard;
 
 	Float price;
+
+	TripDirection direction;
+
+	String startTime;
 
 	public Trip(Long id, Long routeId, Long serviceId, Long shapeId) {
 		this.id = id;
 		this.routeId = routeId;
 		this.serviceId = serviceId;
 		this.shapeId = shapeId;
+	}
+
+	public Trip(Long routeId,
+	            Long calendarId,
+	            Float length,
+	            Integer tripTime,
+	            Float priceCard,
+	            Float price,
+	            TripDirection direction,
+	            String startTime) {
+		this.routeId = routeId;
+		this.calendarId = calendarId;
+		this.length = length;
+		this.tripTime = tripTime;
+		this.priceCard = priceCard;
+		this.price = price;
+		this.direction = direction;
+		this.startTime = startTime;
+	}
+
+	public Trip(Long routeId,
+	            Long calendarId,
+	            TripDirection direction,
+	            String startTime) {
+		this.routeId = routeId;
+		this.calendarId = calendarId;
+		this.direction = direction;
+		this.startTime = startTime;
 	}
 
 	public Long getId() {
@@ -78,12 +112,12 @@ public class Trip {
 		this.length = length;
 	}
 
-	public Integer getTime() {
-		return time;
+	public Integer getTripTime() {
+		return tripTime;
 	}
 
-	public void setTime(Integer time) {
-		this.time = time;
+	public void setTripTime(Integer tripTime) {
+		this.tripTime = tripTime;
 	}
 
 	public Float getPriceCard() {
@@ -100,5 +134,49 @@ public class Trip {
 
 	public void setPrice(Float price) {
 		this.price = price;
+	}
+
+	public TripDirection getDirection() {
+		return direction;
+	}
+
+	public void setDirection(TripDirection direction) {
+		this.direction = direction;
+	}
+
+	public String getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+
+	public Long getCalendarId() {
+		return calendarId;
+	}
+
+	public void setCalendarId(Long calendarId) {
+		this.calendarId = calendarId;
+	}
+
+	public enum TripDirection {
+
+		OUTBOUND(false),
+		INBOUND(true);
+
+		boolean id;
+
+		private TripDirection(boolean id) {
+			this.id = id;
+		}
+
+		public boolean getId() {
+			return id;
+		}
+
+		public void setId(boolean id) {
+			this.id = id;
+		}
 	}
 }

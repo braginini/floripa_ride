@@ -1,5 +1,8 @@
 package com.floriparide.mobfloripaparser.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by Mikhail Bragin
  */
@@ -153,18 +156,39 @@ public class Calendar {
 
 	public enum CalendarType {
 
-		WEEK(0),
-		SATURDAY(1),
-		SUNDAY(2);
+		WEEK(0, "Dia da semana"),
+		SATURDAY(1, "Sábado"),
+		SUNDAY(2, "Domingo");
 
 		int id;
 
-		private CalendarType(int id) {
+		String ptName;
+
+		private static Map<String, CalendarType> ptMap = new HashMap<>();
+
+		static {
+
+			for (CalendarType calendarType : CalendarType.values()) {
+				ptMap.put(calendarType.getPtName(), calendarType);
+			}
+
+		}
+
+		private CalendarType(int id, String ptName) {
 			this.id = id;
+			this.ptName = ptName;
 		}
 
 		public int getId() {
 			return id;
+		}
+
+		public String getPtName() {
+			return ptName;
+		}
+
+		public CalendarType lookupPt(String ptName) {
+			return ptMap.get(ptName);
 		}
 	}
 }

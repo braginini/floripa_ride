@@ -37,7 +37,7 @@ public class RoutePageWorker implements Worker<Route> {
 				try {
 					Document document = Jsoup.parse(new URL(task.taskObject().getParseUrl()), 20 * 1000);
 
-					List<Trip> trips = new RoutePageParser(document).parse().result();
+					List<Trip> trips = new RoutePageParser(document, task.taskObject()).parse().result();
 
 				} catch (IOException e) {
 					e.printStackTrace();
