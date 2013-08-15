@@ -2,12 +2,14 @@ package com.floriparide.mobfloripaparser.dao;
 
 import com.floriparide.mobfloripaparser.model.Agency;
 import com.floriparide.mobfloripaparser.model.Route;
+import com.floriparide.mobfloripaparser.model.Trip;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +27,7 @@ public class Dao {
 
 	public void saveRoute(List<Route> routes) {
 
-		String SQL = "INSERT INTO Route (short_name, long_name, agency_id, route_type, descr, url, active) " +
+		String SQL = "INSERT INTO route (short_name, long_name, agency_id, route_type, descr, url, active) " +
 				"VALUES (?, ?, ?, ?, ?, ?, ?)";
 		Connection connection = null;
 
@@ -60,7 +62,7 @@ public class Dao {
 
 	public void saveAgency(List<Agency> batch) {
 
-		String SQL = "INSERT INTO Agency (agency_name, url) " +
+		String SQL = "INSERT INTO agency (agency_name, url) " +
 				"VALUES (?, ?)";
 		Connection connection = null;
 
@@ -92,7 +94,7 @@ public class Dao {
 		Connection con = dataSourceKeeper.getConnection();
 		try {
 
-			String SQL = "SELECT * FROM Agency";
+			String SQL = "SELECT * FROM agency";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(SQL);
 
@@ -119,17 +121,18 @@ public class Dao {
 		Connection con = dataSourceKeeper.getConnection();
 		try {
 
-			String SQL = "SELECT id, url FROM Route";
+			String SQL = "SELECT id, url, short_name FROM route";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(SQL);
 
 			while (rs.next()) {
 				result.add(new Route(
 						rs.getLong("id"),
+						rs.getString("short_name"),
 						rs.getString("url")));
 			}
 
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			System.exit(0);
 		} finally {
@@ -137,5 +140,35 @@ public class Dao {
 		}
 
 		return result;
+	}
+
+	public void saveTrip(List<Trip> batch) {
+		String SQL = "INSERT INTO trip (route_id, service_id, trip_time, start_time) " +
+				"VALUES (?, ?, ?, ?)";
+		Connection connection = null;
+
+		try {
+			connection = dataSourceKeeper.getConnection();
+
+			PreparedStatement stmt = connection.prepareStatement(SQL);
+
+			for (Trip trip : batch) {
+				stmt.setLong(1, trip.getRouteId());
+				stmt.setLong(2, trip.getCalendarId());
+				if (trip.getTripTime() != null)
+					stmt.setInt(3, trip.getTripTime());
+				else
+					stmt.setNull(3, Types.INTEGER);
+				stmt.setString(4, trip.getStartTime());
+				stmt.addBatch();
+			}
+
+			int[] rs = stmt.executeBatch();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DataSourceKeeper.closeConnection(connection);
+		}
 	}
 }

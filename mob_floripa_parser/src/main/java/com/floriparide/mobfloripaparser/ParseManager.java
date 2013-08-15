@@ -8,6 +8,7 @@ import com.floriparide.mobfloripaparser.workers.AgencyArchiveWorker;
 import com.floriparide.mobfloripaparser.workers.OnibusListPageWorker;
 import com.floriparide.mobfloripaparser.workers.RouteArchiveWorker;
 import com.floriparide.mobfloripaparser.workers.RoutePageWorker;
+import com.floriparide.mobfloripaparser.workers.TripArchiveWorker;
 
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class ParseManager {
 
 	public ParseManager() throws Exception {
 		dao = new Dao(new DataSourceKeeper());
-		this.routePageWorker = new RoutePageWorker();
+		this.routePageWorker = new RoutePageWorker(new TripArchiveWorker(dao));
 		this.routeArchiveWorker = new RouteArchiveWorker(dao);
 		this.agencyArchiveWorker = new AgencyArchiveWorker(dao);
 		this.mainPageWorker = new OnibusListPageWorker(routePageWorker, routeArchiveWorker, dao);

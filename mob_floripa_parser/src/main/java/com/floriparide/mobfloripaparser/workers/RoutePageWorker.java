@@ -22,9 +22,11 @@ public class RoutePageWorker implements Worker<Route> {
 
 	ExecutorService executorService;
 
+	TripArchiveWorker tripArchiveWorker;
 
-	public RoutePageWorker() {
+	public RoutePageWorker(TripArchiveWorker tripArchiveWorker) {
 		this.executorService = Executors.newFixedThreadPool(1, new CustomThreadFactory("route-page-parse-worker"));
+		this.tripArchiveWorker = tripArchiveWorker;
 	}
 
 	@Override
@@ -37,7 +39,14 @@ public class RoutePageWorker implements Worker<Route> {
 				try {
 					Document document = Jsoup.parse(new URL(task.taskObject().getParseUrl()), 20 * 1000);
 
-					List<Trip> trips = new RoutePageParser(document, task.taskObject()).parse().result();
+					final List<Trip> trips = new RoutePageParser(document, task.taskObject()).parse().result();
+
+					tripArchiveWorker.addTask(new Task<List<Trip>>() {
+						@Override
+						public List<Trip> taskObject() {
+							return trips;
+						}
+					});
 
 				} catch (IOException e) {
 					e.printStackTrace();

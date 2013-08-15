@@ -26,9 +26,10 @@ public class Route {
 
     Agency agency;
 
-	public Route(Long id, String parseUrl) {
+	public Route(Long id, String shortName, String parseUrl) {
 		this.id = id;
 		this.parseUrl = parseUrl;
+		this.shortName = shortName;
 	}
 
 	/**
