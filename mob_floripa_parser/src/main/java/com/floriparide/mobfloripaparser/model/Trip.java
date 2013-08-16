@@ -1,5 +1,10 @@
 package com.floriparide.mobfloripaparser.model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 /**
  * Created by Mikhail Bragin
  */
@@ -34,6 +39,15 @@ public class Trip {
 		this.routeId = routeId;
 		this.serviceId = serviceId;
 		this.shapeId = shapeId;
+	}
+
+	public Trip(Long id, Long routeId, Long serviceId, Long shapeId, String startTime, Integer tripTime) {
+		this.id = id;
+		this.routeId = routeId;
+		this.serviceId = serviceId;
+		this.shapeId = shapeId;
+		this.startTime = startTime;
+		this.tripTime = tripTime;
 	}
 
 	public Trip(Long routeId,
@@ -158,6 +172,14 @@ public class Trip {
 
 	public void setCalendarId(Long calendarId) {
 		this.calendarId = calendarId;
+	}
+
+	public java.util.Calendar getStartTimeCalendar() throws ParseException {
+		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
+		Date date = sdf.parse(startTime);
+		java.util.Calendar calendar = GregorianCalendar.getInstance();
+		calendar.setTime(date);
+		return calendar;
 	}
 
 	public enum TripDirection {

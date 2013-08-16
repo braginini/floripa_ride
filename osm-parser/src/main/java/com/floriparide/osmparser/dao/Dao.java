@@ -194,6 +194,33 @@ public class Dao {
 		return result;
 	}
 
+	public List<Shape> getShapes() {
+		List<Shape> result = new LinkedList<>();
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT * FROM osm_shape";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				result.add(new Shape(
+						rs.getDouble("lat"),
+						rs.getDouble("lon"),
+						rs.getLong("sequence"),
+						rs.getLong("route_id")));
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return result;
+	}
+
 	public List<OSMStop> getStops() {
 
 		List<OSMStop> result = new LinkedList<>();

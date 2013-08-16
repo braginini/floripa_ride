@@ -3,6 +3,7 @@ package com.floriparide.osmparser;
 import com.floriparide.osmparser.dao.Dao;
 import com.floriparide.osmparser.dao.DataSourceKeeper;
 import com.floriparide.osmparser.model.OSMStop;
+import com.floriparide.osmparser.model.Shape;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -17,17 +18,78 @@ import java.util.List;
  */
 public class GTFSRouteFeedGenerator {
 
+	static Dao dao;
+
 	public static final String DELIMETER = ",";
 
 	public static void main(String[] args) throws Exception {
 
-		Dao dao = new Dao(new DataSourceKeeper());
+		dao = new Dao(new DataSourceKeeper());
 
-		//routes.txt
+		writeStops();
+
+		writeShapes();
+	}
+
+	private static void writeShapes() throws FileNotFoundException, UnsupportedEncodingException {
+		writeShapeFileHeading();
+		List<Shape> shapes = dao.getShapes();
+
+		for (Shape shape : shapes) {
+			writeShape(shape);
+		}
+	}
+
+	private static void writeShape(Shape shape) {
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter(new BufferedWriter(new FileWriter("shapes.txt", true)));
+			writer.println(getShapeString(shape));
+		} catch (IOException e) {
+			//oh noes!
+		} finally {
+			if (writer != null) {
+				writer.close();
+			}
+		}
+	}
+
+	private static String getShapeString(Shape shape) {
+		StringBuilder sb = new StringBuilder()
+				.append(shape.getRouteId())
+				.append(DELIMETER)
+				.append(shape.getLat())
+				.append(DELIMETER)
+				.append(shape.getLon())
+				.append(DELIMETER)
+				.append(shape.getSequence())
+				.append(DELIMETER);
+
+		return sb.toString();
+	}
+
+	private static void writeShapeFileHeading() throws FileNotFoundException, UnsupportedEncodingException {
+		PrintWriter writer = new PrintWriter("shapes.txt", "UTF-8");
+
+		StringBuilder sb = new StringBuilder();
+		sb.append("shape_id");
+		sb.append(DELIMETER);
+		sb.append("shape_pt_lat");
+		sb.append(DELIMETER);
+		sb.append("shape_pt_lon");
+		sb.append(DELIMETER);
+		sb.append("shape_pt_sequence");
+		sb.append(DELIMETER);
+		sb.append("shape_dist_traveled");
+
+		writer.println(sb.toString());
+		writer.close();
+
+	}
+
+	private static void writeStops() throws FileNotFoundException, UnsupportedEncodingException {
 		writeStopFileHeading();
-
 		List<OSMStop> stops = dao.getStops();
-
 		for (OSMStop stop : stops)
 			writeStop(stop);
 	}
@@ -96,10 +158,5 @@ public class GTFSRouteFeedGenerator {
 		writer.close();
 	}
 
-	/*private static void writeRoute(Route route) throws FileNotFoundException, UnsupportedEncodingException {
 
-		writer.println(route.getId() + DELIMETER + route.getShortName() + DELIMETER + route.getLongName() + DELIMETER + DELIMETER + route.getType().ordinal());
-		writer.close();
-
-	}*/
 }

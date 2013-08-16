@@ -8,11 +8,19 @@ public class Shape implements Comparable<Shape> {
 	Double lat;
 	Double lon;
 	long sequence;
+	long routeId;
 
 	public Shape(Double lat, Double lon, long sequence) {
 		this.lat = lat;
 		this.lon = lon;
 		this.sequence = sequence;
+	}
+
+	public Shape(Double lat, Double lon, long sequence, long routeId) {
+		this.lat = lat;
+		this.lon = lon;
+		this.sequence = sequence;
+		this.routeId = routeId;
 	}
 
 	public Double getLat() {
@@ -37,6 +45,14 @@ public class Shape implements Comparable<Shape> {
 
 	public void setSequence(long sequence) {
 		this.sequence = sequence;
+	}
+
+	public long getRouteId() {
+		return routeId;
+	}
+
+	public void setRouteId(long routeId) {
+		this.routeId = routeId;
 	}
 
 	@Override

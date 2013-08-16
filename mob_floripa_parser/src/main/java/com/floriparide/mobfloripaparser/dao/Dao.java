@@ -1,6 +1,7 @@
 package com.floriparide.mobfloripaparser.dao;
 
 import com.floriparide.mobfloripaparser.model.Agency;
+import com.floriparide.mobfloripaparser.model.OSMStop;
 import com.floriparide.mobfloripaparser.model.Route;
 import com.floriparide.mobfloripaparser.model.Trip;
 
@@ -11,6 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Types;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -202,7 +204,7 @@ public class Dao {
 		return null;
 	}
 
-	public List<Trip> getTripsWithShape() {
+	public List<Trip> getTripsWithShapeSimple() {
 
 		List<Trip> result = new ArrayList<>();
 		Connection con = dataSourceKeeper.getConnection();
@@ -221,6 +223,66 @@ public class Dao {
 			}
 
 		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return result;
+	}
+
+	public List<Trip> getTripsWithShape() {
+
+		List<Trip> result = new ArrayList<>();
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT id, route_id, service_id, osm_route_id, start_time, trip_time  FROM trip WHERE osm_route_id IS NOT NULL";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				result.add(new Trip(
+						rs.getLong("id"),
+						rs.getLong("route_id"),
+						rs.getLong("service_id"),
+						rs.getLong("osm_route_id"),
+						rs.getString("start_time"),
+						rs.getInt("trip_time")));
+			}
+
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return result;
+	}
+
+	public List<OSMStop> getStopsByOsmRoute(long osmRouteId) {
+
+		List<OSMStop> result = new LinkedList<>();
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT os.*, ors.sequence FROM osm_stop os, osm_route_stop ors WHERE os.id = ors.stop_id " +
+					"AND ors.route_id = " + osmRouteId;
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				result.add(new OSMStop(
+						rs.getLong("id"),
+						rs.getString("stop_name"),
+						rs.getDouble("lat"),
+						rs.getDouble("lon"),
+						rs.getLong("sequence")));
+			}
+
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			System.exit(0);
 		} finally {
