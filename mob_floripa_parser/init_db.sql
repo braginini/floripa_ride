@@ -92,3 +92,66 @@ OIDS=FALSE
 );
 ALTER TABLE calendar
 OWNER TO postgres;
+
+DROP TABLE IF EXISTS osm_route;
+CREATE TABLE osm_route
+(
+	id bigint NOT NULL,
+	short_name character varying(20),
+	long_name character varying(500),
+	route_from character varying(250),
+	route_to character varying(250),
+	agency character varying(250),
+	CONSTRAINT osm_route_pk PRIMARY KEY (id)
+)
+WITH (
+OIDS=FALSE
+);
+ALTER TABLE osm_route
+OWNER TO postgres;
+
+DROP TABLE IF EXISTS osm_shape;
+CREATE TABLE osm_shape
+(
+	id bigserial NOT NULL,
+	lat double precision,
+	lon double precision,
+	sequence bigint,
+	dist_traveled integer,
+	route_id bigint references osm_route(id),
+	CONSTRAINT osm_shape_pk PRIMARY KEY (id)
+)
+WITH (
+OIDS=FALSE
+);
+ALTER TABLE osm_shape
+OWNER TO postgres;
+
+DROP TABLE IF EXISTS osm_stop;
+CREATE TABLE osm_stop
+(
+	id bigint NOT NULL,
+	bench boolean,
+	shelter boolean,
+	stop_name character varying(250),
+	CONSTRAINT osm_stop_pk PRIMARY KEY (id)
+)
+WITH (
+OIDS=FALSE
+);
+ALTER TABLE osm_shape
+OWNER TO postgres;
+
+DROP TABLE IF EXISTS osm_route_stop;
+CREATE TABLE osm_route_stop
+(
+	route_id bigint references osm_route(id) NOT NULL,
+	stop_id bigint references osm_stop(id) NOT NULL,
+	sequence bigint NOT NULL,
+	CONSTRAINT osm_route_stop_pk PRIMARY KEY (route_id, stop_id)
+)
+WITH (
+OIDS=FALSE
+);
+ALTER TABLE osm_route_stop
+OWNER TO postgres;
