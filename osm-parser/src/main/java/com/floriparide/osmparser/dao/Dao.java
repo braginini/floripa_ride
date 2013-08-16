@@ -1,6 +1,7 @@
 package com.floriparide.osmparser.dao;
 
 import com.floriparide.osmparser.model.OSMRoute;
+import com.floriparide.osmparser.model.OSMStop;
 import com.floriparide.osmparser.model.Shape;
 
 import java.sql.Connection;
@@ -56,8 +57,8 @@ public class Dao {
 	}
 
 	public void saveStops(List<OSMNode> stops) {
-		String SQL = "INSERT INTO osm_stop(id, stop_name, bench, shelter)" +
-				"    VALUES (?, ?, ?, ?)";
+		String SQL = "INSERT INTO osm_stop(id, stop_name, bench, shelter, lat, lon)" +
+				"    VALUES (?, ?, ?, ?, ?, ?)";
 		Connection connection = null;
 
 		try {
@@ -83,6 +84,9 @@ public class Dao {
 					stmt.setBoolean(4, node.tags.get("shelter").equals("yes") ? true : false);
 				else
 					stmt.setNull(4, Types.BOOLEAN);
+
+				stmt.setDouble(5, Double.parseDouble(node.lat));
+				stmt.setDouble(6, Double.parseDouble(node.lon));
 
 				stmt.addBatch();
 			}
@@ -178,6 +182,34 @@ public class Dao {
 						rs.getDouble("lat"),
 						rs.getDouble("lon"),
 						rs.getLong("sequence")));
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return result;
+	}
+
+	public List<OSMStop> getStops() {
+
+		List<OSMStop> result = new LinkedList<>();
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT * FROM osm_stop";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				result.add(new OSMStop(
+						rs.getLong("id"),
+						rs.getString("stop_name"),
+						rs.getDouble("lat"),
+						rs.getDouble("lon")));
 			}
 
 		} catch (Exception e) {

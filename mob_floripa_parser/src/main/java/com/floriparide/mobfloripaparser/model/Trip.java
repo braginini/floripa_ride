@@ -11,7 +11,7 @@ public class Trip {
 
 	Long serviceId;
 
-	Long shapeId;
+	Long shapeId; //osm_route id in our case
 
 	Long calendarId;
 

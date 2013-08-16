@@ -143,8 +143,8 @@ public class Dao {
 	}
 
 	public void saveTrip(List<Trip> batch) {
-		String SQL = "INSERT INTO trip (route_id, service_id, trip_time, start_time) " +
-				"VALUES (?, ?, ?, ?)";
+		String SQL = "INSERT INTO trip (route_id, service_id, trip_time, start_time, direction) " +
+				"VALUES (?, ?, ?, ?, ?)";
 		Connection connection = null;
 
 		try {
@@ -160,6 +160,8 @@ public class Dao {
 				else
 					stmt.setNull(3, Types.INTEGER);
 				stmt.setString(4, trip.getStartTime());
+
+				stmt.setBoolean(5, trip.getDirection().getId());
 				stmt.addBatch();
 			}
 
@@ -170,5 +172,61 @@ public class Dao {
 		} finally {
 			DataSourceKeeper.closeConnection(connection);
 		}
+	}
+
+	public Route getRoute(long routeId) {
+
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT id, long_name, short_name FROM route WHERE id=" + routeId;
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+
+				long id = rs.getLong("id");
+				String longName = rs.getString("long_name");
+				String shortName = rs.getString("short_name");
+				Route route = new Route(id, longName, shortName, Route.RouteType.BUS);
+				return route;
+			}
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return null;
+	}
+
+	public List<Trip> getTripsWithShape() {
+
+		List<Trip> result = new ArrayList<>();
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT id, route_id, service_id, osm_route_id FROM trip WHERE osm_route_id IS NOT NULL";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				result.add(new Trip(
+						rs.getLong("id"),
+						rs.getLong("route_id"),
+						rs.getLong("service_id"),
+						rs.getLong("osm_route_id")));
+			}
+
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return result;
 	}
 }

@@ -63,6 +63,8 @@ CREATE TABLE trip
 	shape_id bigint,
 	trip_time integer,
 	start_time character varying(8),
+	osm_route_id bigint references osm_route(id),
+	direction boolean,
 	CONSTRAINT trip_pk PRIMARY KEY (id)
 )
 WITH (
@@ -134,6 +136,8 @@ CREATE TABLE osm_stop
 	bench boolean,
 	shelter boolean,
 	stop_name character varying(250),
+	double precision lat,
+	double precision lon,
 	CONSTRAINT osm_stop_pk PRIMARY KEY (id)
 )
 WITH (

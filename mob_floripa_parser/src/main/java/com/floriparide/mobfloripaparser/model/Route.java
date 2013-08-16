@@ -32,6 +32,13 @@ public class Route {
 		this.shortName = shortName;
 	}
 
+	public Route(Long id, String longName, String shortName, RouteType type) {
+		this.id = id;
+		this.longName = longName;
+		this.shortName = shortName;
+		this.type = type;
+	}
+
 	/**
      * Use this constructor to create new route
      *
