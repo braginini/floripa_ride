@@ -12,6 +12,7 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Created by Mikhail Bragin
@@ -151,7 +152,7 @@ public class RoutePageParser extends PageParser<List<Trip>> {
 			split = split[0].split(":");
 			if (split.length > 1) {
 				int mins = Integer.parseInt(split[1]);
-				int hours = Integer.parseInt(split[0]);
+				int hours = Integer.parseInt(split[0].replace("\u00a0", ""));
 				if (hours == 0)
 					time = mins;
 				else
@@ -197,10 +198,12 @@ public class RoutePageParser extends PageParser<List<Trip>> {
 
 	private Trip.TripDirection chooseDirection(Element contentTable) {
 
-		if (!contentTable.getElementsMatchingOwnText("Ida").isEmpty())
+		if (!contentTable.getElementsMatchingOwnText(
+				Pattern.compile("Ida", Pattern.CASE_INSENSITIVE)).isEmpty())
 			return Trip.TripDirection.INBOUND;
 
-		if (!contentTable.getElementsMatchingOwnText("Volta").isEmpty())
+		if (!contentTable.getElementsMatchingOwnText(
+				Pattern.compile("Volta", Pattern.CASE_INSENSITIVE)).isEmpty())
 			return Trip.TripDirection.OUTBOUND;
 
 		return null;
@@ -208,13 +211,16 @@ public class RoutePageParser extends PageParser<List<Trip>> {
 
 	private Calendar.CalendarType chooseCalendarType(Element contentTable) {
 
-		if (!contentTable.getElementsMatchingOwnText(Calendar.CalendarType.WEEK.getPtName()).isEmpty())
+		if (!contentTable.getElementsMatchingOwnText(
+				Pattern.compile(Calendar.CalendarType.WEEK.getPtName(), Pattern.CASE_INSENSITIVE)).isEmpty())
 			return Calendar.CalendarType.WEEK;
 
-		if (!contentTable.getElementsMatchingOwnText(Calendar.CalendarType.SATURDAY.getPtName()).isEmpty())
+		if (!contentTable.getElementsMatchingOwnText(
+				Pattern.compile(Calendar.CalendarType.SATURDAY.getPtName(), Pattern.CASE_INSENSITIVE)).isEmpty())
 			return Calendar.CalendarType.SATURDAY;
 
-		if (!contentTable.getElementsMatchingOwnText(Calendar.CalendarType.SUNDAY.getPtName()).isEmpty())
+		if (!contentTable.getElementsMatchingOwnText(
+				Pattern.compile(Calendar.CalendarType.SUNDAY.getPtName(), Pattern.CASE_INSENSITIVE)).isEmpty())
 			return Calendar.CalendarType.SUNDAY;
 
 		return null;
