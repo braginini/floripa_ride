@@ -1,5 +1,5 @@
 stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,direction,position
-72944878,,TITRI - Terminal Trindade,,-27.582661,-48.5238069,,,,,
+72944878,,TITRI - Terminal Trindade,,-27.58406582857143,-48.52283787142857,,,,,
 2177867806,,Rua Prof. Milton Roque Ramos Krieger (01),,-27.5837372,-48.5251212,,,,,
 872980957,,Rua Lauro Linhares (16),,-27.5822448,-48.5262412,,,,,
 1639803069,,Rua Lauro Linhares (17),,-27.5803295,-48.5263601,,,,,
