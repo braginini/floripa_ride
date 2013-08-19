@@ -1,4 +1,5 @@
 stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,direction,position
+72944878,,TITRI - Terminal Trindade,,-27.582661,-48.5238069,,,,,
 2177867806,,Rua Prof. Milton Roque Ramos Krieger (01),,-27.5837372,-48.5251212,,,,,
 872980957,,Rua Lauro Linhares (16),,-27.5822448,-48.5262412,,,,,
 1639803069,,Rua Lauro Linhares (17),,-27.5803295,-48.5263601,,,,,
@@ -18,3 +19,4 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1450589838,,Avenida Mauro Ramos (13),,-27.6004008,-48.5457626,,,,,
 1473023940,,1473023940,,-27.6041312,-48.5479093,,,,,
 1432752479,,1432752479,,-27.6011637,-48.5512772,,,,,
+43719878,,TICEN - Terminal Centro,,-27.597992368000003,-48.55419556800001,,,,,
