@@ -1,8 +1,18 @@
 package com.floriparide.osmparser.parser;
 
 import com.floriparide.osmparser.model.OSMRoute;
+import com.vividsolutions.jts.geom.Coordinate;
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.geom.MultiPoint;
+import com.vividsolutions.jts.geom.Point;
+import com.vividsolutions.jts.geom.Polygon;
+import com.vividsolutions.jts.geom.PrecisionModel;
+import com.vividsolutions.jts.geom.impl.CoordinateArraySequence;
+import com.vividsolutions.jts.util.GeometricShapeFactory;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -59,8 +69,11 @@ public class RouteParser {
 						platformIds.add(id);
 						break;
 					case "way":
-						if (!member.role.equals("platform"))
-							wayIds.add(id);
+						if (member.role.equals("platform")) {  //here the OSM way with tag platform is the terminal
+							platformIds.add(id);
+							break;
+						}
+						wayIds.add(id);
 						break;
 				}
 			}
@@ -75,6 +88,22 @@ public class RouteParser {
 			}
 
 			for (Way way : osm.getWays()) {
+				if (platformIds.contains(way.id)) {
+					//here that OSM public transport station (platform) defined as way converted to OSMNode to platform
+					Point centroid = getTerminalCenter(way);
+					platforms.put(way.id,
+							new OSMNode(
+									way.id,
+									way.visible,
+									way.timestamp,
+									way.version,
+									way.changeset,
+									way.user,
+									way.uid,
+									String.valueOf(centroid.getY()),
+									String.valueOf(centroid.getX()),
+									way.tags));
+				}
 				if (wayIds.contains(way.id))
 					ways.put(way.id, way);
 			}
@@ -104,5 +133,24 @@ public class RouteParser {
 		}
 
 		return osmRoutes;
+	}
+
+	private Point getTerminalCenter(Way way) {
+
+		Point[] points = new Point[way.nodes.size()];
+		for (int i = 0; i < way.nodes.size(); i++) {
+			Coordinate[] coordinates = new Coordinate[]{
+					new Coordinate(
+							Double.parseDouble(way.nodes.get(i).lon),
+							Double.parseDouble(way.nodes.get(i).lat))};
+
+			points[i] = (new Point(
+					new CoordinateArraySequence(coordinates),
+					new GeometryFactory(new PrecisionModel())));
+		}
+
+		Geometry geometry = new MultiPoint(points, new GeometryFactory(new PrecisionModel()));
+
+		return geometry.getCentroid();
 	}
 }
