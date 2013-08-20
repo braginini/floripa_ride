@@ -123,6 +123,12 @@ public class RouteParser {
 			//prepare shapes
 			List<OSMNode> shapePoints = new LinkedList<>();
 			for (Way way : orderedWays) {
+				if (shapePoints.size() > 0) {
+					if (!way.nodes.get(0).equals(shapePoints.get(shapePoints.size() - 1))) {
+						//we need to reverse the way nodes as it goes wrong way
+						Collections.reverse(way.nodes);
+					}
+				}
 				for (OSMNode node : way.nodes) {
 					shapePoints.add(node);
 				}
