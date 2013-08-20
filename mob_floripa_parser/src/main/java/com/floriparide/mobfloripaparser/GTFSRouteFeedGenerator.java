@@ -33,10 +33,9 @@ public class GTFSRouteFeedGenerator {
 		dao = new Dao(new DataSourceKeeper());
 
 		//routes.txt
-		Route route = dao.getRoute(478l);
+		Route route = dao.getRoute(475l);
 
-
-		writeRoute(route);
+		//writeRoute(route);
 
 		writeTrips();
 
