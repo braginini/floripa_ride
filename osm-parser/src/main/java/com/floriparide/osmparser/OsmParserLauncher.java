@@ -23,17 +23,14 @@ public class OsmParserLauncher {
 		List<OSMRoute> routeList = parser.parse();
 
 		for (OSMRoute route : routeList) {
-			dao.saveRoute(route);
-			dao.saveStops(route.getStops());
+			//dao.saveRoute(route);
+
+			for (OSMNode stop : route.getStops()) {
+				dao.saveStop(stop);
+			}
 			dao.saveRouteStopsRelation(route, route.getStops());
 			dao.saveShape(route, route.getShape());
 
-		}
-
-		List<Shape> shapes =  dao.getShapeByRoute(2521698l);
-
-		for (Shape shape : shapes) {
-			System.out.println(shape.getLat() + " " + shape.getLon());
 		}
 	}
 }

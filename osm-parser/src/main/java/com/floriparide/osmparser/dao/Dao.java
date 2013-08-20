@@ -248,4 +248,45 @@ public class Dao {
 
 		return result;
 	}
+
+	public void saveStop(OSMNode node) {
+		String SQL = "INSERT INTO osm_stop(id, stop_name, bench, shelter, lat, lon)" +
+				"    VALUES (?, ?, ?, ?, ?, ?)";
+		Connection connection = null;
+
+		try {
+			connection = dataSourceKeeper.getConnection();
+
+			PreparedStatement stmt = connection.prepareStatement(SQL);
+
+			stmt.setLong(1, Long.parseLong(node.id));
+
+			if (node.tags.containsKey("name"))
+				stmt.setString(2, node.tags.get("name"));
+			else
+				stmt.setNull(2, Types.VARCHAR);
+
+			if (node.tags.containsKey("bench"))
+				stmt.setBoolean(3, node.tags.get("bench").equals("yes") ? true : false);
+			else
+				stmt.setNull(3, Types.BOOLEAN);
+
+			if (node.tags.containsKey("shelter"))
+				stmt.setBoolean(4, node.tags.get("shelter").equals("yes") ? true : false);
+			else
+				stmt.setNull(4, Types.BOOLEAN);
+
+			stmt.setDouble(5, Double.parseDouble(node.lat));
+			stmt.setDouble(6, Double.parseDouble(node.lon));
+
+			stmt.execute();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DataSourceKeeper.closeConnection(connection);
+		}
+	}
 }
