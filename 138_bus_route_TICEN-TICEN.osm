@@ -2515,6 +2515,7 @@
     <member type="node" ref="1450589838" role="platform"/>
     <member type="node" ref="1473023940" role="platform"/>
     <member type="node" ref="1432752479" role="platform"/>
+	<member type="way" ref="43719878" role="platform"/>
     <member type="way" ref="234300082" role=""/>
     <member type="way" ref="234300080" role=""/>
     <member type="way" ref="38050115" role=""/>

@@ -58,67 +58,33 @@ public class RouteParser {
 		List<OSMRoute> osmRoutes = new ArrayList<>();
 		for (Relation relation : routes) {
 
-			Set<String> platformIds = new LinkedHashSet<>();
-			Set<String> wayIds = new LinkedHashSet<>();
+			List<OSMNode> orderedPlatforms = new LinkedList<>();
+			List<Way> orderedWays = new LinkedList<>();
 
+			List<OSMNode> busStations = new ArrayList<>();
 			for (Member member : relation.members) {
 
 				String id = member.ref;
 				switch (member.type) {
 					case "node":
-						platformIds.add(id);
+						OSMNode platform = getNode(member.ref);
+						if (platform != null)
+							orderedPlatforms.add(platform);
 						break;
 					case "way":
-						if (member.role.equals("platform")) {  //here the OSM way with tag platform is the terminal
-							platformIds.add(id);
-							break;
+						Way way = getWay(id);
+						if (way != null) {
+							if (member.role.equals("platform")) {  //here the OSM way with tag platform is the terminal
+								OSMNode node = getPlatformFromWay(way);
+								orderedPlatforms.add(node);
+								busStations.add(node);
+								break;
+							}
+							orderedWays.add(way);
 						}
-						wayIds.add(id);
 						break;
 				}
 			}
-
-			Map<String, OSMNode> platforms = new LinkedHashMap<>();
-			Map<String, Way> ways = new LinkedHashMap<>();
-
-			for (OSMNode node : osm.getNodes()) {
-
-				if (platformIds.contains(node.id))
-					platforms.put(node.id, node);
-			}
-
-			for (Way way : osm.getWays()) {
-				if (platformIds.contains(way.id)) {
-					//here that OSM public transport station (platform) defined as way converted to OSMNode to platform
-					Point centroid = getTerminalCenter(way);
-					platforms.put(way.id,
-							new OSMNode(
-									way.id,
-									way.visible,
-									way.timestamp,
-									way.version,
-									way.changeset,
-									way.user,
-									way.uid,
-									String.valueOf(centroid.getY()),
-									String.valueOf(centroid.getX()),
-									way.tags));
-				}
-				if (wayIds.contains(way.id))
-					ways.put(way.id, way);
-			}
-
-			//here we keep the order
-			List<OSMNode> orderedPlatforms = new LinkedList<>();
-			for (String platformId : platformIds) {
-				orderedPlatforms.add(platforms.get(platformId));
-			}
-
-			List<Way> orderedWays = new LinkedList<>();
-			for (String wayId : wayIds) {
-				orderedWays.add(ways.get(wayId));
-			}
-
 
 			//prepare shapes
 			List<OSMNode> shapePoints = new LinkedList<>();
@@ -141,6 +107,25 @@ public class RouteParser {
 		return osmRoutes;
 	}
 
+	private OSMNode getPlatformFromWay(Way way) {
+		Point centroid = getTerminalCenter(way);
+		return new OSMNode(
+				way.id,
+				way.visible,
+				way.timestamp,
+				way.version,
+				way.changeset,
+				way.user,
+				way.uid,
+				String.valueOf(centroid.getY()),
+				String.valueOf(centroid.getX()),
+				way.tags);
+	}
+
+	private Way getWay(String id) {
+		return osm.getWay(id);
+	}
+
 	private Point getTerminalCenter(Way way) {
 
 		Point[] points = new Point[way.nodes.size()];
@@ -158,5 +143,15 @@ public class RouteParser {
 		Geometry geometry = new MultiPoint(points, new GeometryFactory(new PrecisionModel()));
 
 		return geometry.getCentroid();
+	}
+
+	private OSMNode getNode(String nodeId) {
+
+		for (OSMNode osmNode : osm.getNodes()) {
+			if (osmNode.id.equals(nodeId))
+				return osmNode;
+		}
+
+		return null;
 	}
 }

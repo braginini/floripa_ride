@@ -23,7 +23,7 @@ public class OsmParserLauncher {
 		List<OSMRoute> routeList = parser.parse();
 
 		for (OSMRoute route : routeList) {
-			//dao.saveRoute(route);
+			dao.saveRoute(route);
 
 			for (OSMNode stop : route.getStops()) {
 				dao.saveStop(stop);

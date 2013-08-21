@@ -152,7 +152,7 @@ CREATE TABLE osm_route_stop
 	route_id bigint references osm_route(id) NOT NULL,
 	stop_id bigint references osm_stop(id) NOT NULL,
 	sequence bigint NOT NULL,
-	CONSTRAINT osm_route_stop_pk PRIMARY KEY (route_id, stop_id)
+	CONSTRAINT osm_route_stop_pk PRIMARY KEY (route_id, stop_id, sequence)
 )
 WITH (
 OIDS=FALSE
