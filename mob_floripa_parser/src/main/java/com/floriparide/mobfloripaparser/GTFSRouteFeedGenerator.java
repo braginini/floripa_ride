@@ -33,9 +33,10 @@ public class GTFSRouteFeedGenerator {
 		dao = new Dao(new DataSourceKeeper());
 
 		//routes.txt
-		Route route = dao.getRoute(577l);
-
-		//writeRoute(route);
+		List<Route> routes = dao.getActiveRoutes();
+		writeRouteFileHeading();
+		for (Route route : routes)
+			writeRoute(route);
 
 		writeTrips();
 
@@ -177,13 +178,26 @@ public class GTFSRouteFeedGenerator {
 
 	}
 
-	private static void writeRoute(Route route) throws FileNotFoundException, UnsupportedEncodingException {
+	private static void writeRouteFileHeading() throws FileNotFoundException, UnsupportedEncodingException {
 		PrintWriter writer = new PrintWriter("routes.txt", "UTF-8");
 
-
 		writer.println("route_id" + DELIMETER + "route_short_name" + DELIMETER + "route_long_name" + DELIMETER + "route_type" + DELIMETER + "route_url");
-		writer.println(route.getId() + DELIMETER + route.getShortName() + DELIMETER + route.getLongName() + DELIMETER + route.getType().ordinal() + DELIMETER);
 		writer.close();
+
+	}
+
+	private static void writeRoute(Route route) throws FileNotFoundException, UnsupportedEncodingException {
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter(new BufferedWriter(new FileWriter("routes.txt", true)));
+			writer.println(route.getId() + DELIMETER + route.getShortName() + DELIMETER + route.getLongName() + DELIMETER + route.getType().ordinal() + DELIMETER);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (writer != null) {
+				writer.close();
+			}
+		}
 
 	}
 

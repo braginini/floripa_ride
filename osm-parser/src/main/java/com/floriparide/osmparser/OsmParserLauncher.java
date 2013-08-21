@@ -19,18 +19,20 @@ public class OsmParserLauncher {
 
 		Dao dao = new Dao(new DataSourceKeeper());
 
-		RouteParser parser = new RouteParser(args[0]);
-		List<OSMRoute> routeList = parser.parse();
+		for (int i = 0; i < args.length; i++) {
+			RouteParser parser = new RouteParser(args[i]);
+			List<OSMRoute> routeList = parser.parse();
 
-		for (OSMRoute route : routeList) {
-			dao.saveRoute(route);
+			for (OSMRoute route : routeList) {
+				dao.saveRoute(route);
 
-			for (OSMNode stop : route.getStops()) {
-				dao.saveStop(stop);
+				for (OSMNode stop : route.getStops()) {
+					dao.saveStop(stop);
+				}
+				dao.saveRouteStopsRelation(route, route.getStops());
+				dao.saveShape(route, route.getShape());
+
 			}
-			dao.saveRouteStopsRelation(route, route.getStops());
-			dao.saveShape(route, route.getShape());
-
 		}
 	}
 }
