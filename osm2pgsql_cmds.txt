@@ -1,0 +1,1 @@
+osm2pgsql -c -G -U postgres -d floripa_map_server -S C:\Users\mikhail\Documents\Dev\osm2pgsql\default.style C:\Users\mikhail\Documents\IdeaProjects\osm_data\brazil-latest.osm.pbf
