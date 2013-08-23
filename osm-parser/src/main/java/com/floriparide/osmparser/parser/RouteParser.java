@@ -50,7 +50,7 @@ public class RouteParser {
 
 			for (Relation relation : osm.getRelations()) {
 
-				if (relation.tags.containsKey("type"))
+				if (relation.tags.containsKey("route"))
 					routes.add(relation);
 			}
 		}
