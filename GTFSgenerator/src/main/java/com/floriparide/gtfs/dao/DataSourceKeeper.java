@@ -23,8 +23,9 @@ public class DataSourceKeeper {
 	private String databaseName;
 
 	public DataSourceKeeper(String databaseName) throws Exception {
-		createDataSource();
-		this.databaseName = databaseName;
+        this.databaseName = databaseName;
+        createDataSource();
+
 	}
 
 	private void createDataSource() throws Exception {

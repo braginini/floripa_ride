@@ -38,6 +38,7 @@ public class RelationDao extends Dao {
 
 			String SQL = "SELECT r.id FROM relations r, relation_tags t " +
 					"WHERE r.id = t.relation_id " +
+                    "AND r.id = 2521697 " +
 					"AND t.k = '" + tagKey +"' " +
 					"AND t.v = '" + tagValue +"' " +
 					"GROUP BY r.id";
@@ -51,7 +52,7 @@ public class RelationDao extends Dao {
 			}
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			e.printStackTrace();
 			System.exit(0);
 		} finally {
 			DataSourceKeeper.closeConnection(con);

@@ -2,6 +2,7 @@ package com.floriparide.gtfs.dao;
 
 import com.floriparide.gtfs.model.Node;
 
+import org.postgis.PGgeometry;
 import org.postgis.Point;
 
 import java.sql.Connection;
@@ -41,14 +42,14 @@ public class NodeDao extends Dao {
 			while (rs.next()) {
 
 				long id = rs.getLong("id");
-				Point point = (Point) rs.getObject("geom");
+				Point point = (Point) ((PGgeometry) rs.getObject("geom")).getGeometry();
 
 				nodes.add(new Node(id, new HashMap<String, String>(), point.getY(), point.getX()));
 
 			}
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+            e.printStackTrace();
 			System.exit(0);
 		} finally {
 			DataSourceKeeper.closeConnection(con);
@@ -80,7 +81,7 @@ public class NodeDao extends Dao {
 			return tags;
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+            e.printStackTrace();
 			System.exit(0);
 		} finally {
 			DataSourceKeeper.closeConnection(con);
@@ -90,7 +91,7 @@ public class NodeDao extends Dao {
 
 	}
 
-	public List<Node> getNodesByWayOrdered(Long wayId) {
+	public List<Node> getNodesInWayOrdered(long wayId) {
 
 		List<Node> nodes = new LinkedList<>();
 
@@ -99,21 +100,22 @@ public class NodeDao extends Dao {
 
 			String SQL = "SELECT * FROM nodes n, way_nodes w " +
 					"WHERE n.id = w.node_id " +
-					"AND w.way_id = " + wayId + " order by sequence_id";
+					"AND w.way_id = " + wayId + " " +
+                    "ORDER BY sequence_id";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(SQL);
 
 			while (rs.next()) {
 
 				long id = rs.getLong("id");
-				Point point = (Point) rs.getObject("geom");
+				Point point = (Point) ((PGgeometry) rs.getObject("geom")).getGeometry();
 
 				nodes.add(new Node(id, new HashMap<String, String>(), point.getY(), point.getX()));
 
 			}
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+            e.printStackTrace();
 			System.exit(0);
 		} finally {
 			DataSourceKeeper.closeConnection(con);

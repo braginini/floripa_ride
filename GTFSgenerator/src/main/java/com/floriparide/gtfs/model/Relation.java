@@ -10,6 +10,8 @@ public class Relation extends AbstractNode {
 
 	private List<Member> members;
 
+    private List<Way> ways;
+
 	public Relation(Long id, String visible, String timestamp, String version, String changeset, String user, String uid, Map<String, String> tags, List<Member> members) {
 		super(id, visible, timestamp, version, changeset, user, uid, tags);
 		this.members = members;
@@ -31,4 +33,12 @@ public class Relation extends AbstractNode {
 	public void setMembers(List<Member> members) {
 		this.members = members;
 	}
+
+    public List<Way> getWays() {
+        return ways;
+    }
+
+    public void setWays(List<Way> ways) {
+        this.ways = ways;
+    }
 }

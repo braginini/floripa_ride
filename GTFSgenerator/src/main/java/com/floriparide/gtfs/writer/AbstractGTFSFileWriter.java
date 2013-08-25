@@ -13,14 +13,14 @@ public abstract class AbstractGTFSFileWriter<T> {
 
 	public static final String DELIMETER = ",";
 
-	abstract void writeContents();
+	protected abstract void writeContents();
 
-	abstract void writeHeading() throws FileNotFoundException, UnsupportedEncodingException;
+    protected abstract void writeHeading() throws FileNotFoundException, UnsupportedEncodingException;
 
-	void write() throws FileNotFoundException, UnsupportedEncodingException {
+	public void write() throws FileNotFoundException, UnsupportedEncodingException {
 		writeHeading();
 		writeContents();
 	}
 
-	abstract String getLine(T obj);
+    protected abstract String getLine(T obj);
 }

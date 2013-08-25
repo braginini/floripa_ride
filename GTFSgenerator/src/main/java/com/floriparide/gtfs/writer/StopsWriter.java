@@ -18,13 +18,13 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 
 	NodeDao dao;
 
-	protected StopsWriter(NodeDao dao) {
+	public StopsWriter(NodeDao dao) {
 		this.dao = dao;
 	}
 
 	@Override
-	public void writeContents() {
-		List<Node> stops = ((NodeDao) dao).getNodesWithTag("highway", "bus_stop");
+    protected void writeContents() {
+		List<Node> stops = dao.getNodesWithTag("highway", "bus_stop");
 
 		if (stops.isEmpty())
 			return;
@@ -48,7 +48,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 	}
 
 	@Override
-	public void writeHeading() throws FileNotFoundException, UnsupportedEncodingException {
+    protected void writeHeading() throws FileNotFoundException, UnsupportedEncodingException {
 
 		PrintWriter writer = new PrintWriter("stops.txt", "UTF-8");
 
@@ -80,7 +80,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 	}
 
 	@Override
-	public String getLine(Node node) {
+    protected String getLine(Node node) {
 
 		StringBuilder sb = new StringBuilder()
 				.append(node.getId())

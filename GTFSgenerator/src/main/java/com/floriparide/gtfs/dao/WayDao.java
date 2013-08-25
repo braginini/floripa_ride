@@ -1,6 +1,5 @@
 package com.floriparide.gtfs.dao;
 
-import com.floriparide.gtfs.model.Relation;
 import com.floriparide.gtfs.model.Way;
 
 import java.sql.Connection;
@@ -15,11 +14,8 @@ import java.util.List;
  */
 public class WayDao extends Dao {
 
-	NodeDao nodeDao;
-
-	public WayDao(DataSourceKeeper dataSourceKeeper, NodeDao nodeDao) {
+	public WayDao(DataSourceKeeper dataSourceKeeper) {
 		super(dataSourceKeeper);
-		this.nodeDao = nodeDao;
 	}
 
 	public List<Way> getWays(List<Long> ids) {
@@ -44,18 +40,48 @@ public class WayDao extends Dao {
 			}
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+            e.printStackTrace();
 			System.exit(0);
 		} finally {
 			DataSourceKeeper.closeConnection(con);
 		}
 
-		for (Way way : ways) {
-			way.setNodes(nodeDao.getNodesByWayOrdered(way.getId()));
-		}
-
 		return ways;
 	}
+
+    public List<Way> getWaysInRelationOrdered(long relationId) {
+
+        List<Way> ways = new ArrayList<>();
+
+        Connection con = dataSourceKeeper.getConnection();
+
+        try {
+
+            String SQL = "SELECT w.id, m.sequence_id FROM ways w " +
+                    "JOIN relation_members m on w.id = m.member_id " +
+                    "AND m.relation_id = " + relationId + " " +
+                    "AND m.member_type = 'W' " +
+                    "AND m.member_role != 'platform' "  +
+                    "ORDER BY sequence_id ";
+
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(SQL);
+
+            while (rs.next()) {
+
+                long id = rs.getLong("id");
+                ways.add(new Way(id, new HashMap<String, String>()));
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(0);
+        } finally {
+            DataSourceKeeper.closeConnection(con);
+        }
+
+        return ways;
+    }
 
 	private String getInOperator(List<Long> ids) {
 		StringBuilder sb = new StringBuilder();

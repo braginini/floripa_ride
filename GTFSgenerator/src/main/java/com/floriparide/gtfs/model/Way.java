@@ -32,4 +32,9 @@ public class Way extends AbstractNode {
 	public void setNodes(List<Node> nodes) {
 		this.nodes = nodes;
 	}
+
+    public enum Intersection {
+
+        LAST_FIRST, LAST_LAST, FIRST_LAST, FIRST_FIRST, NONE
+    }
 }

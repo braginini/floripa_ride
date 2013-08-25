@@ -37,4 +37,6 @@ public class Node extends AbstractNode {
 	public void setLon(Double lon) {
 		this.lon = lon;
 	}
+
+
 }
