@@ -17,7 +17,7 @@ public class GTFSGeneratorLauncher {
 
         DataSourceKeeper osmFloripaDataSource = new DataSourceKeeper("floripa_osm_data");
 
-        AbstractGTFSFileWriter writer = new StopsWriter(new NodeDao(osmFloripaDataSource));
+        AbstractGTFSFileWriter writer = new StopsWriter(new NodeDao(osmFloripaDataSource), new WayDao(osmFloripaDataSource));
 
         writer.write();
 

@@ -1,7 +1,9 @@
 package com.floriparide.gtfs.writer;
 
 import com.floriparide.gtfs.dao.NodeDao;
+import com.floriparide.gtfs.dao.WayDao;
 import com.floriparide.gtfs.model.Node;
+import com.floriparide.gtfs.model.Way;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -16,15 +18,21 @@ import java.util.List;
  */
 public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 
-	NodeDao dao;
+	NodeDao nodeDao;
+	WayDao wayDao;
 
-	public StopsWriter(NodeDao dao) {
-		this.dao = dao;
+	public StopsWriter(NodeDao dao, WayDao wayDao) {
+		this.nodeDao = dao;
+        this.wayDao = wayDao;
 	}
 
 	@Override
     protected void writeContents() {
-		List<Node> stops = dao.getNodesWithTag("highway", "bus_stop");
+		List<Node> stops = nodeDao.getNodesWithTag("highway", "bus_stop");
+
+        List<Way> busStations = wayDao.getWaysWithTag("amenity", "bus_station");
+
+        //todo find the centroid for each way and convert to node
 
 		if (stops.isEmpty())
 			return;
