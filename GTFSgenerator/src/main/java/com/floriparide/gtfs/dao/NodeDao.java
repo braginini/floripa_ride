@@ -1,6 +1,8 @@
 package com.floriparide.gtfs.dao;
 
-import com.floriparide.gtfs.model.Node;
+import com.floriparide.gtfs.model.osm.AbstractNode;
+import com.floriparide.gtfs.model.osm.Node;
+import com.floriparide.gtfs.model.osm.Way;
 
 import org.postgis.PGgeometry;
 import org.postgis.Point;
@@ -116,6 +118,53 @@ public class NodeDao extends Dao {
 
 		} catch (Exception e) {
             e.printStackTrace();
+			System.exit(0);
+		} finally {
+			DataSourceKeeper.closeConnection(con);
+		}
+
+		return nodes;
+
+	}
+
+	/**
+	 * Here we return only ids
+	 * Platform can be way or node
+	 *
+	 * @param relationId
+	 * @return
+	 */
+	public List<AbstractNode> getPlatformsInRelationSimpleOrdered(long relationId) {
+
+		List<AbstractNode> nodes = new LinkedList<>();
+
+		Connection con = dataSourceKeeper.getConnection();
+		try {
+
+			String SQL = "SELECT member_id, sequence_id, member_type FROM relation_members m " +
+					"WHERE relation_id = " + relationId + " " +
+					"AND member_role = 'platform' " +
+					"ORDER BY sequence_id";
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+
+				long id = rs.getLong("member_id");
+				String type = rs.getString("member_type");
+
+				switch (type) {
+					case "W":
+						nodes.add(new Way(id));
+						break;
+					case "N":
+						nodes.add(new Node(id));
+						break;
+				}
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
 			System.exit(0);
 		} finally {
 			DataSourceKeeper.closeConnection(con);

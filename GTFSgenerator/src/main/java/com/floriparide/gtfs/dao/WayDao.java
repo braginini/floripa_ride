@@ -1,9 +1,6 @@
 package com.floriparide.gtfs.dao;
 
-import com.floriparide.gtfs.model.Node;
-import com.floriparide.gtfs.model.Way;
-import org.postgis.PGgeometry;
-import org.postgis.Point;
+import com.floriparide.gtfs.model.osm.Way;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -1,8 +1,5 @@
 package com.floriparide.gtfs.writer;
 
-import com.floriparide.gtfs.dao.Dao;
-import com.floriparide.gtfs.model.Node;
-
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 

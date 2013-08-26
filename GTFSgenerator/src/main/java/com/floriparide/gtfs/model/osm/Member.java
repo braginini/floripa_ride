@@ -1,4 +1,4 @@
-package com.floriparide.gtfs.model;
+package com.floriparide.gtfs.model.osm;
 
 /**
  * Created by Mikhail Bragin

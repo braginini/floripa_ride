@@ -1,7 +1,6 @@
 package com.floriparide.gtfs.dao;
 
-import com.floriparide.gtfs.model.Member;
-import com.floriparide.gtfs.model.Relation;
+import com.floriparide.gtfs.model.osm.Member;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

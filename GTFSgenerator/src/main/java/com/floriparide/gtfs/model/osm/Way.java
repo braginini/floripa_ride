@@ -1,5 +1,6 @@
-package com.floriparide.gtfs.model;
+package com.floriparide.gtfs.model.osm;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -23,6 +24,10 @@ public class Way extends AbstractNode {
 
 	public Way(Long id, Map<String, String> tags) {
 		super(id, tags);
+	}
+
+	public Way(Long id) {
+		super(id, new HashMap<String, String>());
 	}
 
 	public List<Node> getNodes() {

@@ -3,10 +3,10 @@ package com.floriparide.gtfs.writer;
 import com.floriparide.gtfs.dao.NodeDao;
 import com.floriparide.gtfs.dao.RelationDao;
 import com.floriparide.gtfs.dao.WayDao;
-import com.floriparide.gtfs.model.Node;
-import com.floriparide.gtfs.model.Relation;
+import com.floriparide.gtfs.model.osm.Node;
+import com.floriparide.gtfs.model.osm.Relation;
 import com.floriparide.gtfs.model.Shape;
-import com.floriparide.gtfs.model.Way;
+import com.floriparide.gtfs.model.osm.Way;
 
 import java.io.*;
 import java.util.ArrayList;

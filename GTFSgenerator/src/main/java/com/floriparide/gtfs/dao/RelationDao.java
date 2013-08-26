@@ -1,9 +1,6 @@
 package com.floriparide.gtfs.dao;
 
-import com.floriparide.gtfs.model.Node;
-import com.floriparide.gtfs.model.Relation;
-
-import org.postgis.Point;
+import com.floriparide.gtfs.model.osm.Relation;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -38,7 +35,7 @@ public class RelationDao extends Dao {
 
 			String SQL = "SELECT r.id FROM relations r, relation_tags t " +
 					"WHERE r.id = t.relation_id " +
-                    "AND r.id = 2521697 " +
+                    "AND r.id IN (2521697, 2521698, 2082735, 2168842, 2236714, 2236713, 2089834, 2089835) " +
 					"AND t.k = '" + tagKey +"' " +
 					"AND t.v = '" + tagValue +"' " +
 					"GROUP BY r.id";

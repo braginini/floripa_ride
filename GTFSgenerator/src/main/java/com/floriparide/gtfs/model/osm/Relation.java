@@ -1,4 +1,4 @@
-package com.floriparide.gtfs.model;
+package com.floriparide.gtfs.model.osm;
 
 import java.util.List;
 import java.util.Map;

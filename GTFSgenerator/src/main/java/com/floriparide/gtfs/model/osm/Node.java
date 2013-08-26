@@ -1,5 +1,6 @@
-package com.floriparide.gtfs.model;
+package com.floriparide.gtfs.model.osm;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -20,6 +21,10 @@ public class Node extends AbstractNode {
 		super(id, tags);
 		this.lat = lat;
 		this.lon = lon;
+	}
+
+	public Node(Long id) {
+		super(id, new HashMap<String, String>());
 	}
 
 	public Double getLat() {

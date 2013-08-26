@@ -2,8 +2,8 @@ package com.floriparide.gtfs.writer;
 
 import com.floriparide.gtfs.dao.NodeDao;
 import com.floriparide.gtfs.dao.WayDao;
-import com.floriparide.gtfs.model.Node;
-import com.floriparide.gtfs.model.Way;
+import com.floriparide.gtfs.model.osm.Node;
+import com.floriparide.gtfs.model.osm.Way;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
@@ -40,6 +40,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 		List<Way> busStations = wayDao.getWaysWithTag("amenity", "bus_station");
 
 		for (Way way : busStations) {
+			way.setNodes(nodeDao.getNodesInWayOrdered(way.getId()));
 			stops.add(getTerminalCenter(way));
 		}
 
