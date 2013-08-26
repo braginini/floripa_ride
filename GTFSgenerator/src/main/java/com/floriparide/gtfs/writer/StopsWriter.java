@@ -42,7 +42,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 			writer = new PrintWriter(new BufferedWriter(new FileWriter("stops.txt", true)));
 
 			for (Node node : stops) {
-				 writer.println(getLine(node));
+				writer.println(getLine(node));
 			}
 
 		} catch (IOException e) {
@@ -107,5 +107,24 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 				.append(DELIMETER);
 
 		return sb.toString();
+	}
+
+	private Point getTerminalCenter(Way way) {
+
+		Point[] points = new Point[way.getNodes().size()];
+		for (int i = 0; i < way.getNodes().size(); i++) {
+			Coordinate[] coordinates = new Coordinate[]{
+					new Coordinate(
+							way.getNodes().get(i).getLon(),
+							way.getNodes().get(i).getLat())};
+
+			points[i] = (new Point(
+					new CoordinateArraySequence(coordinates),
+					new GeometryFactory(new PrecisionModel())));
+		}
+
+		Geometry geometry = new MultiPoint(points, new GeometryFactory(new PrecisionModel()));
+
+		return geometry.getCentroid();
 	}
 }
