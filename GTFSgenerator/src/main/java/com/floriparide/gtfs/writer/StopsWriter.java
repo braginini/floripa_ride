@@ -4,6 +4,13 @@ import com.floriparide.gtfs.dao.NodeDao;
 import com.floriparide.gtfs.dao.WayDao;
 import com.floriparide.gtfs.model.Node;
 import com.floriparide.gtfs.model.Way;
+import com.vividsolutions.jts.geom.Coordinate;
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.geom.MultiPoint;
+import com.vividsolutions.jts.geom.Point;
+import com.vividsolutions.jts.geom.PrecisionModel;
+import com.vividsolutions.jts.geom.impl.CoordinateArraySequence;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -23,16 +30,18 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 
 	public StopsWriter(NodeDao dao, WayDao wayDao) {
 		this.nodeDao = dao;
-        this.wayDao = wayDao;
+		this.wayDao = wayDao;
 	}
 
 	@Override
-    protected void writeContents() {
+	protected void writeContents() {
 		List<Node> stops = nodeDao.getNodesWithTag("highway", "bus_stop");
 
-        List<Way> busStations = wayDao.getWaysWithTag("amenity", "bus_station");
+		List<Way> busStations = wayDao.getWaysWithTag("amenity", "bus_station");
 
-        //todo find the centroid for each way and convert to node
+		for (Way way : busStations) {
+			stops.add(getTerminalCenter(way));
+		}
 
 		if (stops.isEmpty())
 			return;
@@ -56,7 +65,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 	}
 
 	@Override
-    protected void writeHeading() throws FileNotFoundException, UnsupportedEncodingException {
+	protected void writeHeading() throws FileNotFoundException, UnsupportedEncodingException {
 
 		PrintWriter writer = new PrintWriter("stops.txt", "UTF-8");
 
@@ -88,7 +97,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 	}
 
 	@Override
-    protected String getLine(Node node) {
+	protected String getLine(Node node) {
 
 		StringBuilder sb = new StringBuilder()
 				.append(node.getId())
@@ -109,7 +118,7 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 		return sb.toString();
 	}
 
-	private Point getTerminalCenter(Way way) {
+	private Node getTerminalCenter(Way way) {
 
 		Point[] points = new Point[way.getNodes().size()];
 		for (int i = 0; i < way.getNodes().size(); i++) {
@@ -125,6 +134,6 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 
 		Geometry geometry = new MultiPoint(points, new GeometryFactory(new PrecisionModel()));
 
-		return geometry.getCentroid();
+		return new Node(way.getId(), way.getTags(), geometry.getCentroid().getY(), geometry.getCentroid().getX());
 	}
 }
