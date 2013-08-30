@@ -46,7 +46,7 @@ public class StopTimesWriter extends AbstractGTFSFileWriter {
 					List<AbstractNode> stops = nodeDao.getPlatformsInRelationSimpleOrdered(trip.getShapeId());
 
 					java.util.Calendar calendar = trip.getStartTimeCalendar();
-					DateFormat df = new SimpleDateFormat("hh:mm:ss");
+					DateFormat df = new SimpleDateFormat("HH:mm:ss");
 					String startTime = df.format(calendar.getTime());
 					calendar.add(Calendar.MINUTE, trip.getTripTime());
 					String endTime = df.format(calendar.getTime());
@@ -54,15 +54,15 @@ public class StopTimesWriter extends AbstractGTFSFileWriter {
 					int sequence = 0;
 					for (AbstractNode stop : stops) {
 						if (stops.indexOf(stop) == 0) {
-							writer.println(getStopTimeStringWithTime(trip, stop, startTime, sequence));
+							writer.println(getStopTimeStringWithTime(trip, stop, startTime, sequence++));
 							continue;
 						}
 						if (stops.indexOf(stop) == stops.size() - 1) {
-							writer.println(getStopTimeStringWithTime(trip, stop, endTime, sequence));
+							writer.println(getStopTimeStringWithTime(trip, stop, endTime, sequence++));
 							continue;
 						}
 
-						writer.println(getStopTimeString(trip, stop, sequence));
+						writer.println(getStopTimeString(trip, stop, sequence++));
 					}
 				}
 			} catch (IOException e) {
