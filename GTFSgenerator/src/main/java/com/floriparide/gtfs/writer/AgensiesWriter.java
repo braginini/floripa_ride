@@ -1,5 +1,6 @@
 package com.floriparide.gtfs.writer;
 
+import com.floriparide.gtfs.dao.AgencyDao;
 import com.floriparide.gtfs.model.Agency;
 
 import java.io.FileNotFoundException;
@@ -11,6 +12,10 @@ import java.io.UnsupportedEncodingException;
 public class AgensiesWriter extends AbstractGTFSFileWriter<Agency> {
 
 	AgencyDao agencyDao;
+
+	public AgensiesWriter(AgencyDao agencyDao) {
+		this.agencyDao = agencyDao;
+	}
 
 	@Override
 	protected void writeContents() {

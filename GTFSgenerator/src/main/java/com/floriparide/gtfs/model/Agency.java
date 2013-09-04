@@ -12,6 +12,12 @@ public class Agency {
 
     String url;
 
+	String timezone;
+
+	String phone;
+
+	String fareUrl;
+
     public Agency(Long id, String name, String url) {
         this.id = id;
         this.name = name;
@@ -23,7 +29,14 @@ public class Agency {
         this.url = url;
     }
 
-    public Long getId() {
+	public Agency(Long id, String name, String url, String timezone) {
+		this.id = id;
+		this.name = name;
+		this.url = url;
+		this.timezone = timezone;
+	}
+
+	public Long getId() {
         return id;
     }
 
@@ -46,4 +59,28 @@ public class Agency {
     public void setUrl(String url) {
         this.url = url;
     }
+
+	public String getTimezone() {
+		return timezone;
+	}
+
+	public void setTimezone(String timezone) {
+		this.timezone = timezone;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getFareUrl() {
+		return fareUrl;
+	}
+
+	public void setFareUrl(String fareUrl) {
+		this.fareUrl = fareUrl;
+	}
 }
