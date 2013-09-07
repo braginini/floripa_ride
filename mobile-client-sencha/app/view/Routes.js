@@ -1,30 +1,61 @@
 Ext.define('mobile-client-sencha.view.Routes', {
-	extend: 'Ext.Panel',
+    extend: 'Ext.Panel',
 
-	/*alias: 'widget.routes',*/
+    /*alias: 'widget.routes',*/
 
-	id: 'routesView',
+    id: 'routesView',
 
-	xtype: 'Routes',
+    xtype: 'Routes',
 
-	config: {
+    config: {
 
-		items: [
+        items: [
 
-			{
-				xtype: 'toolbar',
-				docked: 'top',
-				cls: 'x-toolbar'
-				//ui: 'light'
-			},
+            {
+                xtype: 'toolbar',
+                docked: 'top',
+                cls: 'x-toolbar',
+                title: 'Como obter?'
+                //ui: 'light'
+            },
 
-			{
-				xtype: 'button',
-				text: 'Btn',
-				cls: 'custom-button default'
-			}
-		]
-	}
+
+            {
+                xtype: 'textfield',
+                placeHolder: 'A: Especificar o ponto de partida',
+                name: 'firstName',
+                margin: 15
+            },
+            {
+                xtype: 'textfield',
+                placeHolder: 'B: Especificar o ponto final',
+                name: 'lastName',
+                margin: 15
+            },
+            {
+                xtype: 'segmentedbutton',
+                allowDepress: true,
+                margin: 15,
+                items: [
+
+                    {
+                        pressed: true,
+                        iconCls: 'team',
+                        iconMask: true
+                    },
+                    {
+                        iconCls: 'team',
+                        iconMask: true
+                    },
+                    {
+                        iconCls: 'team',
+                        iconMask: true
+                    }
+                ]
+            }
+
+        ]
+    }
 
 
 });
