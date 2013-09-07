@@ -1,11 +1,9 @@
-Ext.define('mobile-client-sencha.view.Routes', {
+Ext.define('mobile-client-sencha.view.ChoosePoint', {
     extend: 'Ext.Panel',
 
-    /*alias: 'widget.routes',*/
+    id: 'choosePointView',
 
-    id: 'routesView',
-
-    xtype: 'Routes',
+    xtype: 'ChoosePoint',
 
     config: {
 
@@ -16,17 +14,14 @@ Ext.define('mobile-client-sencha.view.Routes', {
                 docked: 'top',
                 cls: 'x-toolbar',
                 title: 'Como obter?',
-                /*iconCls: 'home',
-                iconMask: true*/
+
                 items: [
                     {
-                        xtype: 'button',
-                        iconCls: 'home',
-                        iconMask: true,
-                        ui: "action"
+                        xtype: 'searchfield',
+                        placeHolder: 'Encontrar um ponto'
                     }
                 ]
-                //ui: 'light'
+
             },
 
 
