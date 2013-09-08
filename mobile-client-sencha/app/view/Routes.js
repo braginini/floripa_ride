@@ -1,8 +1,6 @@
 Ext.define('mobile-client-sencha.view.Routes', {
     extend: 'Ext.Panel',
 
-    /*alias: 'widget.routes',*/
-
     id: 'routesView',
 
     xtype: 'Routes',
@@ -23,7 +21,8 @@ Ext.define('mobile-client-sencha.view.Routes', {
                         xtype: 'button',
                         iconCls: 'home',
                         iconMask: true,
-                        ui: "action"
+                        ui: 'action',
+                        id: 'homeBtn'
                     }
                 ]
                 //ui: 'light'
@@ -34,13 +33,15 @@ Ext.define('mobile-client-sencha.view.Routes', {
                 xtype: 'textfield',
                 placeHolder: 'A: Especificar o ponto de partida',
                 name: 'firstName',
-                margin: 15
+                margin: 15,
+                id: 'aField'
             },
             {
                 xtype: 'textfield',
                 placeHolder: 'B: Especificar o ponto final',
                 name: 'lastName',
-                margin: 15
+                margin: 15,
+                id: 'bField'
             },
             {
                 xtype: 'segmentedbutton',

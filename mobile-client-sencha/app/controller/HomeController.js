@@ -8,8 +8,8 @@ Ext.define('mobile-client-sencha.controller.HomeController', {
 
 	config: {
 		control: {
-			'button[action=homeRoutesBtn]': {
-				tap: "onTapHomeRoutesBtn"
+			'button[id=routesBtn]': {
+				tap: "onTapRoutesBtn"
 			}
 		},
 
@@ -28,7 +28,7 @@ Ext.define('mobile-client-sencha.controller.HomeController', {
 		}
 	},
 
-	onTapHomeRoutesBtn: function(button, e, eOpts) {
+	onTapRoutesBtn: function(button, e, eOpts) {
 		Ext.Viewport.getLayout().setAnimation({
 			type: 'slide',
 			direction: 'left'

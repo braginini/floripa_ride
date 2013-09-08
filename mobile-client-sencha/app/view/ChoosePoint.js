@@ -14,47 +14,15 @@ Ext.define('mobile-client-sencha.view.ChoosePoint', {
                 docked: 'top',
                 cls: 'x-toolbar',
                 title: 'Como obter?',
-
+                /*iconCls: 'home',
+                 iconMask: true*/
                 items: [
                     {
-                        xtype: 'searchfield',
-                        placeHolder: 'Encontrar um ponto'
-                    }
-                ]
-
-            },
-
-
-            {
-                xtype: 'textfield',
-                placeHolder: 'A: Especificar o ponto de partida',
-                name: 'firstName',
-                margin: 15
-            },
-            {
-                xtype: 'textfield',
-                placeHolder: 'B: Especificar o ponto final',
-                name: 'lastName',
-                margin: 15
-            },
-            {
-                xtype: 'segmentedbutton',
-                allowDepress: true,
-                margin: 15,
-                items: [
-
-                    {
-                        pressed: true,
-                        iconCls: 'team',
-                        iconMask: true
-                    },
-                    {
-                        iconCls: 'team',
-                        iconMask: true
-                    },
-                    {
-                        iconCls: 'team',
-                        iconMask: true
+                        xtype: 'button',
+                        iconCls: 'home',
+                        iconMask: true,
+                        ui: 'action',
+                        id: 'homeBtn'
                     }
                 ]
             }

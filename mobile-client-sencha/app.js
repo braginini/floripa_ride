@@ -27,11 +27,11 @@ Ext.application({
     ],
 
     views: [
-        'Home', 'Routes'
+        'Home', 'Routes', 'ChoosePoint'
     ],
 
 	controllers: [
-		'HomeController'
+		'HomeController', 'RoutesController'
 	],
 
     icon: {
