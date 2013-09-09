@@ -31,7 +31,7 @@ Ext.application({
     ],
 
 	controllers: [
-		'HomeController', 'RoutesController'
+		'HomeController', 'RoutesController', 'ChoosePointController'
 	],
 
     icon: {

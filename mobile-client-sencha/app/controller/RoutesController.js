@@ -8,11 +8,38 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
     ],
 
     config: {
+
+	    refs: {
+		    homeView: {
+			    autoCreate: true,
+			    selector: '#homeView',
+			    xtype: 'Home'
+		    },
+
+		    routesView: {
+			    autoCreate: true,
+			    selector: '#routesView',
+			    xtype: 'Routes'
+		    },
+
+		    choosePointView: {
+			    autoCreate: true,
+			    selector: '#choosePointView',
+			    xtype: 'ChoosePoint'
+		    }
+	    },
+
         control: {
+
             'button[id=homeBtn]': {
                 tap: "onTapHomeBtn"
-            }
-        },
+            },
+
+	        'textfield[id=aField]': {
+		        tap: 'onTapAField'
+	        }
+
+        }
 
         /*control: {
             '[id=aField]': {
@@ -20,25 +47,6 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
             }
         },*/
 
-        refs: {
-            homeView: {
-                autoCreate: true,
-                selector: '#homeView',
-                xtype: 'Home'
-            },
-
-            routesView: {
-                autoCreate: true,
-                selector: '#routesView',
-                xtype: 'Routes'
-            },
-
-            choosePointView: {
-                autoCreate: true,
-                selector: '#choosePointView',
-                xtype: 'ChoosePoint'
-            }
-        }
     },
 
     onTapHomeBtn: function (button, e, eOpts) {

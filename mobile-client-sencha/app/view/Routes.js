@@ -5,6 +5,10 @@ Ext.define('mobile-client-sencha.view.Routes', {
 
     xtype: 'Routes',
 
+	requires: [
+		'Ext.SegmentedButton'
+	],
+
     config: {
 
         items: [
@@ -34,7 +38,19 @@ Ext.define('mobile-client-sencha.view.Routes', {
                 placeHolder: 'A: Especificar o ponto de partida',
                 name: 'firstName',
                 margin: 15,
-                id: 'aField'
+                id: 'aField',
+
+	            initialize : function() {
+		            var me = this;
+
+		            me.element.on('tap', 'doBubbleTap', me);
+
+		            me.callParent();
+	            },
+
+	            doBubbleTap : function(e, t) {
+		            this.fireEvent('tap', this, e, t);
+	            }
             },
             {
                 xtype: 'textfield',
@@ -67,6 +83,18 @@ Ext.define('mobile-client-sencha.view.Routes', {
 
         ]
     }
+
+	/*doBubbleTap : function(e, t) {
+		this.fireEvent('tap', this, e, t);
+	},
+
+	addTapEventToField : function(field) {
+
+		field.element.on('tap', 'doBubbleTap', me);
+
+		field.callParent();
+	}*/
+
 
 
 });
