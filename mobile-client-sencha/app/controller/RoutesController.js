@@ -32,20 +32,21 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
         control: {
 
             'button[id=homeBtn]': {
-                tap: "onTapHomeBtn"
+                tap: 'onTapHomeBtn'
             },
 
 	        'textfield[id=aField]': {
-		        tap: 'onTapAField'
+		        tap: function() {
+			    	this.onTapField('aField')
+		        }
+	        },
+
+	        'textfield[id=bField]': {
+		        tap: function() {
+			        this.onTapField('bField')
+		        }
 	        }
-
         }
-
-        /*control: {
-            '[id=aField]': {
-                tap: "onTapAField"
-            }
-        },*/
 
     },
 
@@ -58,12 +59,27 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
         Ext.Viewport.setActiveItem(this.getHomeView());
     },
 
-    onTapAField: function (button, e, eOpts) {
-        Ext.Viewport.getLayout().setAnimation({
-            type: 'slide',
-            direction: 'left'
-        });
+	onTapField: function (field) {
 
-        Ext.Viewport.setActiveItem(this.getChoosePointView());
-    }
+		Ext.Viewport.getLayout().setAnimation({
+			type: 'slide',
+			direction: 'left'
+		});
+
+		var choosePointView = this.getChoosePointView();
+		switch(field) {
+			case 'aField' :
+				text = 'Encontrar o ponto de partida';
+				break;
+			case 'bField' :
+				text = 'Encontrar o ponto final';
+				break;
+			default :
+				text = 'Encontrar um ponto'
+				break;
+		}
+
+		choosePointView.setSearchFieldPlaceHolder(text);
+		Ext.Viewport.setActiveItem(choosePointView);
+	}
 });

@@ -41,7 +41,8 @@ Ext.define('mobile-client-sencha.view.ChoosePoint', {
             {
                 xtype: 'toolbar',
                 docked: 'top',
-                cls: 'x-toolbar',
+	            ui: 'light',
+                //cls: 'x-toolbar',
 
                 items: [
                     {
@@ -54,6 +55,7 @@ Ext.define('mobile-client-sencha.view.ChoosePoint', {
 
 	                {
 		                xtype: 'searchfield',
+		                flex: 1,
 		                placeHolder: 'Encontrar um ponto'
 	                }
                 ]
@@ -79,5 +81,12 @@ Ext.define('mobile-client-sencha.view.ChoosePoint', {
 	        }
 
         ]
-    }
+    },
+
+	setSearchFieldPlaceHolder : function(text) {
+		var searchField = Ext.ComponentQuery.query('searchfield')[0];
+		if (searchField){
+			searchField.setPlaceHolder(text);
+		}
+	}
 });

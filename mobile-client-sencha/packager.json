@@ -5,13 +5,13 @@
 	 * This is the name of your application, which is displayed on the device when the app is installed. On IOS, this should match
 	 * the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationName":"mobile-client-sencha",
+	"applicationName":"FloripaRide",
 
 	/**
 	 * @cfg  applicationId
 	 * This is the name namespace for your application. On IOS, this should match the name of your application in the Apple Provisioning Portal.
 	 */
-	"applicationId":"mobile-client-sencha",
+	"applicationId":"com.floriparide.mobile",
 
 	/**
 	 * @cfg  bundleSeedId
@@ -82,7 +82,7 @@
 	 *  - Android
 	 *  - AndroidEmulator
 	 */
-	"platform":"iOSSimulator",
+	"platform":"Android",
 
 	/**
 	 * @cfg  deviceType
@@ -103,7 +103,7 @@
 	 * This is the location of your certificate.
 	 * This is required when you are developing for Android or you are developing on Windows.
 	 */
-	"certificatePath":"/path/to/certificate.file",
+	"certificatePath":"",
 
 	/**
 	 * @cfg  certificateAlias
@@ -136,7 +136,7 @@
 	 * @cfg  sdkPath
 	 * This is the path to the Android SDK, if you are developing an Android application.
 	 */
-	"sdkPath":"/path/to/android-sdk",
+	"sdkPath":"C:/Users/mikhail/Documents/Dev/adt-bundle-windows-x86_64-20130522/sdk",
 
 	/**
 	 * @cfg  androidAPILevel

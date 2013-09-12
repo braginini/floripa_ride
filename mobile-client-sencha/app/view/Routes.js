@@ -16,7 +16,8 @@ Ext.define('mobile-client-sencha.view.Routes', {
             {
                 xtype: 'toolbar',
                 docked: 'top',
-                cls: 'x-toolbar',
+                //cls: 'x-toolbar',
+	            ui: 'light',
                 title: 'Como obter?',
                 /*iconCls: 'home',
                 iconMask: true*/
@@ -39,8 +40,9 @@ Ext.define('mobile-client-sencha.view.Routes', {
                 name: 'firstName',
                 margin: 15,
                 id: 'aField',
+	            disabled: "true",
 
-	            initialize : function() {
+	            /*initialize : function() {
 		            var me = this;
 
 		            me.element.on('tap', 'doBubbleTap', me);
@@ -50,6 +52,13 @@ Ext.define('mobile-client-sencha.view.Routes', {
 
 	            doBubbleTap : function(e, t) {
 		            this.fireEvent('tap', this, e, t);
+	            }*/
+
+	            listeners : {
+		            element : 'element',
+		            tap : function() {
+			            this.fireEvent('tap');
+		            }
 	            }
             },
             {
@@ -57,7 +66,15 @@ Ext.define('mobile-client-sencha.view.Routes', {
                 placeHolder: 'B: Especificar o ponto final',
                 name: 'lastName',
                 margin: 15,
-                id: 'bField'
+                id: 'bField',
+	            disabled: "true",
+
+	            listeners : {
+		            element : 'element',
+		            tap : function() {
+			            this.fireEvent('tap');
+		            }
+	            }
             },
             {
                 xtype: 'segmentedbutton',

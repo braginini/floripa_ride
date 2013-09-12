@@ -28,14 +28,7 @@ Ext.define('mobile-client-sencha.view.SearchPoint', {
 						placeHolder: ''
 					}
 				]
-			}/*,
-
-			{
-				xtype: 'list',
-				store: 'choosePointMenuStore',
-				itemTpl: '{title}'
-			}*/
-
+			}
 		]
 	}
 });
