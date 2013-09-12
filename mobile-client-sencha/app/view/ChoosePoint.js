@@ -66,6 +66,7 @@ Ext.define('mobile-client-sencha.view.ChoosePoint', {
 		        /*store: 'ChoosePointMenuStore',*/
 		        itemTpl: '{title}',
 		        margin: 10,
+		        id: 'choosePointMenu',
 
 		        data: [
 			        {

@@ -10,15 +10,15 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 	config: {
 		control: {
 			'button[id=homeBtn1]': {
-				tap: "onTapHomeBtn"
+				tap: 'onTapHomeBtn'
+			},
+
+			'list[id=choosePointMenu]': {
+				itemtap: function (list, idx, target, record, evt) {
+					this.onTapChoosePointListMenuItem(idx);
+				}
 			}
 		},
-
-		/*control: {
-		 '[id=aField]': {
-		 tap: "onTapAField"
-		 }
-		 },*/
 
 		refs: {
 			homeView: {
@@ -48,5 +48,46 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 		});
 
 		Ext.Viewport.setActiveItem(this.getHomeView());
+	},
+
+	onTapChoosePointListMenuItem: function (idx) {
+
+		switch (idx) {
+			case 0 :
+				this.getCurrentPosition();
+				break;
+			default :
+				break;
+		}
+	},
+
+	getCurrentPosition: function () {
+
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		// Take picture using device camera and retrieve image as base64-encoded string
+		navigator.geolocation.getCurrentPosition(
+
+			function (position) {
+				alert('Latitude: ' + position.coords.latitude + '<br />' +
+					'Longitude: ' + position.coords.longitude + '<br />' +
+					'Altitude: ' + position.coords.altitude + '<br />' +
+					'Accuracy: ' + position.coords.accuracy + '<br />' +
+					'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '<br />' +
+					'Heading: ' + position.coords.heading + '<br />' +
+					'Speed: ' + position.coords.speed + '<br />' +
+					'Timestamp: ' + position.timestamp + '<br />');
+
+			}, function (error) {
+				alert('code: ' + error.code + '\n' +
+					'message: ' + error.message + '\n');
+			});
+
+		/*-------------- Helper Functions -------------- */
+		function onDeviceReady () {
+			alert('ready');
+		}
+
+
 	}
 });

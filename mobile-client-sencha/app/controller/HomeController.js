@@ -10,6 +10,11 @@ Ext.define('mobile-client-sencha.controller.HomeController', {
 		control: {
 			'button[id=routesBtn]': {
 				tap: "onTapRoutesBtn"
+			},
+
+			'button[id=mapBtn]': {
+				tap: function () {
+				}
 			}
 		},
 
@@ -28,17 +33,14 @@ Ext.define('mobile-client-sencha.controller.HomeController', {
 		}
 	},
 
-	onTapRoutesBtn: function(button, e, eOpts) {
+	onTapRoutesBtn: function (button, e, eOpts) {
 		Ext.Viewport.getLayout().setAnimation({
 			type: 'slide',
 			direction: 'left'
 		});
 
 		Ext.Viewport.setActiveItem(this.getRoutesView());
-	}
+	},
 
-	/*init: function(){
-		var g = this.getHome();
-	}*/
 
 });
