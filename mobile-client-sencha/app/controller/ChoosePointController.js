@@ -65,27 +65,32 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 
 		document.addEventListener("deviceready", onDeviceReady, false);
 
+
+		/*navigator.camera.getPicture( function (imageData) {
+		   alert(imageData);
+
+		}, function (error) {
+			alert('code: ' + error.code + '\n' +
+				'message: ' + error.message + '\n');
+		});*/
 		// Take picture using device camera and retrieve image as base64-encoded string
-		navigator.geolocation.getCurrentPosition(
 
-			function (position) {
-				alert('Latitude: ' + position.coords.latitude + '<br />' +
-					'Longitude: ' + position.coords.longitude + '<br />' +
-					'Altitude: ' + position.coords.altitude + '<br />' +
-					'Accuracy: ' + position.coords.accuracy + '<br />' +
-					'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '<br />' +
-					'Heading: ' + position.coords.heading + '<br />' +
-					'Speed: ' + position.coords.speed + '<br />' +
-					'Timestamp: ' + position.timestamp + '<br />');
-
-			}, function (error) {
-				alert('code: ' + error.code + '\n' +
-					'message: ' + error.message + '\n');
-			});
 
 		/*-------------- Helper Functions -------------- */
 		function onDeviceReady () {
-			alert('ready');
+			navigator.geolocation.getCurrentPosition(function geolocationSuccess(position) {
+					alert('Latitude: '          + position.coords.latitude          + '\n' +
+						'Longitude: '         + position.coords.longitude         + '\n' +
+						'Altitude: '          + position.coords.altitude          + '\n' +
+						'Accuracy: '          + position.coords.accuracy          + '\n' +
+						'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+						'Heading: '           + position.coords.heading           + '\n' +
+						'Speed: '             + position.coords.speed             + '\n' +
+						'Timestamp: '         + position.timestamp                + '\n');
+				},
+				function(error) {
+					alert(error);
+				});
 		}
 
 

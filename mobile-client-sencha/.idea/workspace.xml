@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/src/main/java/com/floriparide/gtfs/dao/AgencyDao.java" afterPath="$PROJECT_DIR$/../GTFSgenerator/src/main/java/com/floriparide/gtfs/dao/AgencyDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/routes.txt" afterPath="$PROJECT_DIR$/../GTFSgenerator/routes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ChoosePointController.js" afterPath="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/src/main/java/com/floriparide/gtfs/dao/RelationDao.java" afterPath="$PROJECT_DIR$/../GTFSgenerator/src/main/java/com/floriparide/gtfs/dao/RelationDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/src/main/java/com/floriparide/gtfs/writer/ShapesWriter.java" afterPath="$PROJECT_DIR$/../GTFSgenerator/src/main/java/com/floriparide/gtfs/writer/ShapesWriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/shapes.txt" afterPath="$PROJECT_DIR$/../GTFSgenerator/shapes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/stop_times.txt" afterPath="$PROJECT_DIR$/../GTFSgenerator/stop_times.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/stops.txt" afterPath="$PROJECT_DIR$/../GTFSgenerator/stops.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GTFSgenerator/trips.txt" afterPath="$PROJECT_DIR$/../GTFSgenerator/trips.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
@@ -16,7 +14,7 @@
     <file path="/app.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378482603397" ignored="false" />
     <file path="/config.rb" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378481680395" ignored="false" />
     <file path="/buttons.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378498250873" ignored="false" />
-    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379107544262" ignored="false" />
+    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379169908326" ignored="false" />
     <file path="/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378740446121" ignored="false" />
     <file path="/MainNav.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378499273352" ignored="false" />
     <file path="/Home.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379012062417" ignored="false" />
@@ -43,7 +41,7 @@
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001233349" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-common/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001239850" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-hbase-filters/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001247202" ignored="false" />
-    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379022410377" ignored="false" />
+    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379168398637" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/dev/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084087779" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/util/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084586891" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/prod/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084790118" ignored="false" />
@@ -55,6 +53,7 @@
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/ShareMigration.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379103567652" ignored="false" />
     <file path="/ShareMigration.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379103566414" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/hbase/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379103478800" ignored="false" />
+    <file path="/ShapesWriter.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379170356170" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,16 @@
       <file leaf-file-name="ChoosePointController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="61" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.25031927">
+            <state line="95" column="48" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.8932161">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhoneGap.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/touch/src/device/camera/PhoneGap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cordova.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cordova.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="71" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
+            <state line="52" column="82" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-19.23077">
               <folding />
             </state>
           </provider>
@@ -169,44 +177,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainNav.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/MainNav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Routes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/Routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="65" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="58" column="61" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/HomeController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1379017933928" expanded="true" signature="61:730" placeholder="{&quot;extend&quot;: 'Ext.app.Controller'...}" />
-                <marker date="1379017933928" expanded="true" signature="192:533" placeholder="{...}" />
-                <marker date="1379017933928" expanded="true" signature="205:332" placeholder="{...}" />
-                <marker date="1379017933928" expanded="true" signature="293:328" placeholder="{...}" />
-                <marker date="1379017933928" expanded="true" signature="316:323" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -243,8 +218,8 @@
         <option value="$PROJECT_DIR$/app/view/Home.js" />
         <option value="$PROJECT_DIR$/app/view/ChoosePoint.js" />
         <option value="$PROJECT_DIR$/app/controller/HomeController.js" />
-        <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/build/mobile-client-sencha/android/res/xml/config.xml" />
+        <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
       </list>
     </option>
   </component>
@@ -282,7 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -290,6 +264,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="mobile-client-sencha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -336,6 +314,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,16 +322,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GTFSgenerator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mobile-client" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -378,6 +357,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -406,19 +398,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -586,21 +565,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/SearchPoint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="39" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/touch/microloader/production.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="291" column="12" selection-start="8772" selection-end="8772" vertical-scroll-proportion="0.0" />
@@ -622,11 +586,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="34" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1379017933928" expanded="true" signature="61:730" placeholder="{&quot;extend&quot;: 'Ext.app.Controller'...}" />
-            <marker date="1379017933928" expanded="true" signature="192:533" placeholder="{...}" />
-            <marker date="1379017933928" expanded="true" signature="205:332" placeholder="{...}" />
-            <marker date="1379017933928" expanded="true" signature="293:328" placeholder="{...}" />
-            <marker date="1379017933928" expanded="true" signature="316:323" placeholder="{...}" />
+            <marker date="1379017933928" expanded="true" signature="-1:-1" placeholder="{&quot;extend&quot;: 'Ext.app.Controller'...}" />
+            <marker date="1379017933928" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1379017933928" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1379017933928" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1379017933928" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -659,9 +623,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/touch/microloader/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="82" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-19.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1326" column="0" selection-start="23317" selection-end="23317" vertical-scroll-proportion="0.33333334">
+        <state line="1880" column="22" selection-start="33521" selection-end="33521" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/touch/src/device/camera/PhoneGap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2057" column="24" selection-start="64442" selection-end="64451" vertical-scroll-proportion="43.755936">
           <folding />
         </state>
       </provider>
@@ -669,13 +661,6 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="48" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cordova.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="71" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -689,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="61" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.25031927">
+        <state line="95" column="48" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.8932161">
           <folding />
         </state>
       </provider>

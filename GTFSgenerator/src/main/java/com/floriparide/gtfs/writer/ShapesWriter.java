@@ -51,28 +51,28 @@ public class ShapesWriter extends AbstractGTFSFileWriter<Shape> {
                 switch (intersection) {
 
                     case LAST_FIRST:
-                        if (!nodes.isEmpty())
+                        if (!shape.isEmpty() && !nodes.isEmpty())
                             nodes.remove(0); //remove zero element to exclude duplicates
                         shape.addAll(nodes);
                         break;
 
                     case LAST_LAST:
                         Collections.reverse(nodes);
-                        if (!nodes.isEmpty())
+                        if (!shape.isEmpty() && !nodes.isEmpty())
                             nodes.remove(0);
                         shape.addAll(nodes);
                         break;
 
                     case FIRST_FIRST: //can be only after we added the first way to the shape
                         Collections.reverse(shape);
-                        if (!nodes.isEmpty())
+                        if (!shape.isEmpty() && !nodes.isEmpty())
                             nodes.remove(0);
                         shape.addAll(nodes);
                         break;
                     case FIRST_LAST: //other direction, can be only after we added the first way to the shape
                         Collections.reverse(shape);
                         Collections.reverse(nodes);
-                        if (!nodes.isEmpty())
+                        if (!shape.isEmpty() && !nodes.isEmpty())
                             nodes.remove(0);
                         shape.addAll(nodes);
                         break;
