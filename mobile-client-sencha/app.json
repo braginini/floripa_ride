@@ -114,8 +114,10 @@
     "resources": [
         "resources/images",
         "resources/icons",
-        "resources/startup"
-    ],
+        "resources/startup",
+        "resources/startup",
+		"lib/leaflet-0.6.4/images"
+	],
 
     /**
      * File / directory name matchers to ignore when copying to the builds, must be valid regular expressions
