@@ -6,7 +6,8 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 		views: [
 			'mobile-client-sencha.view.HomeView',
 			'mobile-client-sencha.view.RoutesView',
-			'mobile-client-sencha.view.ChoosePointView'
+			'mobile-client-sencha.view.ChoosePointView',
+			'mobile-client-sencha.view.MapView'
 		],
 
 		control: {
@@ -38,17 +39,29 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 				autoCreate: true,
 				selector: '#choosePointView',
 				xtype: 'ChoosePointView'
+			},
+
+			mapView: {
+				autoCreate: true,
+				selector: '#mapView',
+				xtype: 'MapView'
 			}
 		}
 	},
 
 	onTapHomeBtn: function (button, e, eOpts) {
+		this.changeView(this.getHomeView(), 'slide', 'right');
+	},
+
+	changeView: function (view, type, slideDirection) {
+
 		Ext.Viewport.getLayout().setAnimation({
-			type: 'slide',
-			direction: 'right'
+			type: type,
+			direction: slideDirection
 		});
 
-		Ext.Viewport.setActiveItem(this.getHomeView());
+		Ext.Viewport.setActiveItem(view);
+
 	},
 
 	onTapChoosePointListMenuItem: function (idx) {
@@ -56,6 +69,9 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 		switch (idx) {
 			case 0 :
 				this.getCurrentPosition();
+				break;
+			case 1:
+				this.changeView(this.getMapView(), 'slide', 'left');
 				break;
 			default :
 				break;
@@ -66,34 +82,22 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 
 		document.addEventListener("deviceready", onDeviceReady, false);
 
+		navigator.geolocation.getCurrentPosition(function geolocationSuccess(position) {
+				alert('Latitude: '          + position.coords.latitude          + '\n' +
+					'Longitude: '         + position.coords.longitude         + '\n' +
+					'Altitude: '          + position.coords.altitude          + '\n' +
+					'Accuracy: '          + position.coords.accuracy          + '\n' +
+					'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+					'Heading: '           + position.coords.heading           + '\n' +
+					'Speed: '             + position.coords.speed             + '\n' +
+					'Timestamp: '         + position.timestamp                + '\n');
+			},
+			function(error) {
+				alert(error);
+			});
 
-		/*navigator.camera.getPicture( function (imageData) {
-		   alert(imageData);
-
-		}, function (error) {
-			alert('code: ' + error.code + '\n' +
-				'message: ' + error.message + '\n');
-		});*/
-		// Take picture using device camera and retrieve image as base64-encoded string
-
-
-		/*-------------- Helper Functions -------------- */
 		function onDeviceReady () {
-			navigator.geolocation.getCurrentPosition(function geolocationSuccess(position) {
-					alert('Latitude: '          + position.coords.latitude          + '\n' +
-						'Longitude: '         + position.coords.longitude         + '\n' +
-						'Altitude: '          + position.coords.altitude          + '\n' +
-						'Accuracy: '          + position.coords.accuracy          + '\n' +
-						'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-						'Heading: '           + position.coords.heading           + '\n' +
-						'Speed: '             + position.coords.speed             + '\n' +
-						'Timestamp: '         + position.timestamp                + '\n');
-				},
-				function(error) {
-					alert(error);
-				});
+			console.log("device is ready");
 		}
-
-
 	}
 });

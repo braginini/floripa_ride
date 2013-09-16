@@ -20,20 +20,17 @@ Ext.Loader.setConfig({
 });
 
 Ext.Loader.setPath({
-	'Ext.ux': 'ux',
-    'Ext': 'touch/src'
-
+    'Ext': 'touch/src',
+	'Ext.ux': 'ux'
 });
 
 
 //</debug>
-Ext.require('Ext.ux.LeafletMap');
 Ext.application({
     name: 'mobile-client-sencha',
 
     requires: [
-        'Ext.MessageBox'/*,
-	    'Ext.ux.LeafletMap'*/
+        'Ext.MessageBox'
     ],
 
     views: [

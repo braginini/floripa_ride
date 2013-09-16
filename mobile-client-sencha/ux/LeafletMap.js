@@ -306,6 +306,7 @@ Ext.define('Ext.ux.LeafletMap', {
 
 			me.setTileLayer(new ll.TileLayer(me.getTileLayerUrl(), me.getTileLayerOptions()));
 			tileLayer = me.getTileLayer();
+
 			mapOptions.layers = [tileLayer];
 
 			me.setMap(new ll.Map(element.dom, mapOptions));
@@ -320,6 +321,7 @@ Ext.define('Ext.ux.LeafletMap', {
 			map.on('zoomend', me.onZoomEnd, me);
 			map.on('movestart', me.onMoveStart, me);
 			map.on('moveend', me.onMoveEnd, me);
+			map.on('click', me.onMapClick, me);
 			me.fireEvent('maprender', me, map, tileLayer);
 		}
 	},
@@ -439,6 +441,13 @@ Ext.define('Ext.ux.LeafletMap', {
 			tileLayer = this.getTileLayer();
 
 		this.fireEvent('moveend', this, map, tileLayer);
+	},
+
+	onMapClick: function (e) {
+		var map = this.getMap(),
+			tileLayer = this.getTileLayer();
+
+		this.fireEvent('click', this, map, tileLayer, e);
 	},
 
 	// @private
