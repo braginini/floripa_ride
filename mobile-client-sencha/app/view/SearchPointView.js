@@ -1,9 +1,9 @@
-Ext.define('mobile-client-sencha.view.SearchPoint', {
+Ext.define('mobile-client-sencha.view.SearchPointView', {
 	extend: 'Ext.Panel',
 
 	id: 'searchPointView',
 
-	xtype: 'SearchPoint',
+	xtype: 'SearchPointView',
 
 	config: {
 

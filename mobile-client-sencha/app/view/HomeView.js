@@ -1,7 +1,7 @@
-Ext.define('mobile-client-sencha.view.Home', {
+Ext.define('mobile-client-sencha.view.HomeView', {
 	extend: 'Ext.Panel',
 
-	xtype: 'Home',
+	xtype: 'HomeView',
 
 	id: 'homeView',
 

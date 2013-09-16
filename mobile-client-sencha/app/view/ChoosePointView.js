@@ -20,12 +20,12 @@ Ext.define('ChoosePointMenuStore', {
 	]
 });
 
-Ext.define('mobile-client-sencha.view.ChoosePoint', {
+Ext.define('mobile-client-sencha.view.ChoosePointView', {
     extend: 'Ext.Panel',
 
     id: 'choosePointView',
 
-    xtype: 'ChoosePoint',
+    xtype: 'ChoosePointView',
 
 	requires: [
 		'Ext.List',

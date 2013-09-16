@@ -40,7 +40,13 @@
      */
     "js": [
 		{
-			"path": "cordova.js"
+			"path": "lib/cordova/cordova.js"
+		},
+		{
+			"path": "lib/leaflet-0.6.4/leaflet.js"
+		},
+		{
+			"path": "ux/LeafletMap.js"
 		},
         {
             "path": "touch/sencha-touch.js",
@@ -70,10 +76,14 @@
      *      }
      */
     "css": [
+		{
+			"path": "lib/leaflet-0.6.4/leaflet.css"
+		},
         {
             "path": "resources/css/app.css",
             "update": "delta"
         }
+
     ],
 
     /**

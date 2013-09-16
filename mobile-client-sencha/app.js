@@ -14,24 +14,34 @@
 //@require @packageOverrides
 
 //<debug>
-Ext.Loader.setPath({
-    'Ext': 'touch/src'
-});
-//</debug>
 
+Ext.Loader.setConfig({
+	enabled : true
+});
+
+Ext.Loader.setPath({
+	'Ext.ux': 'ux',
+    'Ext': 'touch/src'
+
+});
+
+
+//</debug>
+Ext.require('Ext.ux.LeafletMap');
 Ext.application({
     name: 'mobile-client-sencha',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox'/*,
+	    'Ext.ux.LeafletMap'*/
     ],
 
     views: [
-        'Home', 'Routes', 'ChoosePoint'
+        'HomeView', 'RoutesView', 'ChoosePointView', 'MapView'
     ],
 
 	controllers: [
-		'HomeController', 'RoutesController', 'ChoosePointController'
+		'HomeController', 'RoutesController', 'ChoosePointController', 'MapController'
 	],
 
     icon: {
@@ -57,7 +67,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('mobile-client-sencha.view.Home'));
+        Ext.Viewport.add(Ext.create('mobile-client-sencha.view.HomeView'));
     },
 
     onUpdated: function() {

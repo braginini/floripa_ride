@@ -1,20 +1,20 @@
 Ext.define('mobile-client-sencha.controller.HomeController', {
 	extend: 'Ext.app.Controller',
 
-	views: [
-		'mobile-client-sencha.view.Home',
-		'mobile-client-sencha.view.Routes'
-	],
-
 	config: {
+		views: [
+			'mobile-client-sencha.view.HomeView',
+			'mobile-client-sencha.view.RoutesView',
+			'mobile-client-sencha.view.MapView'
+		],
+
 		control: {
 			'button[id=routesBtn]': {
 				tap: "onTapRoutesBtn"
 			},
 
 			'button[id=mapBtn]': {
-				tap: function () {
-				}
+				tap: "onTapMapBtn"
 			}
 		},
 
@@ -22,13 +22,19 @@ Ext.define('mobile-client-sencha.controller.HomeController', {
 			homeView: {
 				autoCreate: true,
 				selector: '#homeView',
-				xtype: 'Home'
+				xtype: 'HomeView'
 			},
 
 			routesView: {
 				autoCreate: true,
 				selector: '#routesView',
-				xtype: 'Routes'
+				xtype: 'RoutesView'
+			},
+
+			mapView: {
+				autoCreate: true,
+				selector: '#mapView',
+				xtype: 'MapView'
 			}
 		}
 	},
@@ -41,6 +47,15 @@ Ext.define('mobile-client-sencha.controller.HomeController', {
 
 		Ext.Viewport.setActiveItem(this.getRoutesView());
 	},
+
+	onTapMapBtn: function (button, e, eOpts) {
+		Ext.Viewport.getLayout().setAnimation({
+			type: 'slide',
+			direction: 'left'
+		});
+
+		Ext.Viewport.setActiveItem(this.getMapView());
+	}
 
 
 });

@@ -1,9 +1,9 @@
-Ext.define('mobile-client-sencha.view.Routes', {
+Ext.define('mobile-client-sencha.view.RoutesView', {
     extend: 'Ext.Panel',
 
     id: 'routesView',
 
-    xtype: 'Routes',
+    xtype: 'RoutesView',
 
 	requires: [
 		'Ext.SegmentedButton'
