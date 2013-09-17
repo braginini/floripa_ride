@@ -36,6 +36,8 @@ Ext.define('mobile-client-sencha.view.ChoosePointView', {
 
 	    layout: 'fit',
 
+	    isAFieldTapped: true,
+
         items: [
 
             {
@@ -89,5 +91,13 @@ Ext.define('mobile-client-sencha.view.ChoosePointView', {
 		if (searchField){
 			searchField.setPlaceHolder(text);
 		}
+	},
+
+	isAFieldTapped : function() {
+		return this.getIsAFieldTapped();
+	},
+
+	setFieldTapped : function(bool) {
+		this.setIsAFieldTapped(bool);
 	}
 });

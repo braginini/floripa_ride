@@ -17,7 +17,7 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
                 xtype: 'toolbar',
                 docked: 'top',
                 //cls: 'x-toolbar',
-	            ui: 'light',
+	            /*ui: 'light',*/
                 title: 'Como obter?',
                 /*iconCls: 'home',
                 iconMask: true*/
@@ -99,19 +99,22 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
             }
 
         ]
-    }
+    },
 
-	/*doBubbleTap : function(e, t) {
-		this.fireEvent('tap', this, e, t);
+	setAFieldValue: function (value) {
+		this.setFieldValue(this.down('#aField'), value);
 	},
 
-	addTapEventToField : function(field) {
+	setBFieldValue: function (value) {
+		this.setFieldValue(this.down('#bField'), value);
+	},
 
-		field.element.on('tap', 'doBubbleTap', me);
+	setFieldValue : function (field, value) {
+		field.setValue(value);
+	},
 
-		field.callParent();
-	}*/
-
-
+	setFieldValueById : function (id, value) {
+		this.down(id).setValue(value);
+	}
 
 });

@@ -67,19 +67,25 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		});
 
 		var choosePointView = this.getChoosePointView();
+		var text = '';
+		var isAFieldTapped = false;
 		switch(field) {
 			case 'aField' :
 				text = 'Encontrar o ponto de partida';
+				isAFieldTapped = true;
 				break;
 			case 'bField' :
 				text = 'Encontrar o ponto final';
+				isAFieldTapped = false;
 				break;
 			default :
 				text = 'Encontrar um ponto'
+				isAFieldTapped = false;
 				break;
 		}
 
 		choosePointView.setSearchFieldPlaceHolder(text);
+		choosePointView.setFieldTapped(isAFieldTapped);
 		Ext.Viewport.setActiveItem(choosePointView);
 	}
 });

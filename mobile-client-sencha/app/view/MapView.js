@@ -18,7 +18,7 @@ Ext.define('mobile-client-sencha.view.MapView', {
 				xtype: 'toolbar',
 				docked: 'top',
 				//cls: 'x-toolbar',
-				ui: 'light',
+				/*ui: 'dark',*/
 				/*iconCls: 'home',
 				 iconMask: true*/
 				items: [
@@ -41,8 +41,23 @@ Ext.define('mobile-client-sencha.view.MapView', {
 				mapOptions: {
 					zoom: 15
 				}
-			}
+			},
 
+			{
+				xtype: 'toolbar',
+				docked: 'bottom',
+				//cls: 'x-toolbar',
+				/*ui: 'dark',*/
+
+				items: [
+					{
+						xtype: 'button',
+						ui: 'action',
+						id: 'addMapBtn',
+						text:'Cancelar'
+					}
+				]
+			}
 		]
 	}
 
