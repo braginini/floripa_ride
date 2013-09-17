@@ -96,7 +96,13 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
                         iconMask: true
                     }
                 ]
-            }
+            },
+
+	        {
+		        xtype: 'button',
+		        text: 'Ok',
+		        id: 'searchRouteBtn'
+	        }
 
         ]
     },

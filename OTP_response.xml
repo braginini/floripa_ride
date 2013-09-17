@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+	<plan>
+		<date>2013-09-17T21:10:00-03:00</date>
+		<from>
+			<name>Rua Professor Lauro Caldeira de Andrada</name>
+			<lon>-48.52255145298462</lon>
+			<lat>-27.58382984128569</lat>
+			<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+				[-48.52255145298462,-27.58382984128569]}
+			</geometry>
+		</from>
+		<to>
+			<name>Rua Rui Barbosa</name>
+			<lon>-48.54107553721558</lon>
+			<lat>-27.575723836097186</lat>
+			<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+				[-48.54107553721558,-27.575723836097186]}
+			</geometry>
+		</to>
+		<itineraries>
+			<itinerary>
+				<duration>701000</duration>
+				<startTime>2013-09-17T17:10:00-07:00</startTime>
+				<endTime>2013-09-17T17:21:41-07:00</endTime>
+				<walkTime>25</walkTime>
+				<transitTime>675</transitTime>
+				<waitingTime>1</waitingTime>
+				<walkDistance>31.56684065785504</walkDistance>
+				<elevationLost>0.0</elevationLost>
+				<elevationGained>0.0</elevationGained>
+				<transfers>0</transfers>
+				<legs>
+					<leg mode="BUS" route="133" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="478" agencyId="0" tripId="44627" routeShortName="133"
+					     routeLongName="AGRONOMICA VIA MAURO RAMOS">
+						<startTime>2013-09-17T17:10:00-07:00</startTime>
+						<endTime>2013-09-17T17:21:15-07:00</endTime>
+						<distance>2449.746714273675</distance>
+						<from>
+							<name>TITRI - Terminal Trindade</name>
+							<stopId>
+								<agencyId>0</agencyId>
+								<id>72944878</id>
+							</stopId>
+							<lon>-48.52283428571429</lon>
+							<lat>-27.58406285714286</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.52283428571429,-27.58406285714286]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua Rui Barbosa (06)</name>
+							<stopId>
+								<agencyId>0</agencyId>
+								<id>1649117787</id>
+							</stopId>
+							<lon>-48.54079</lon>
+							<lat>-27.57559</lat>
+							<arrival>2013-09-17T17:21:15-07:00</arrival>
+							<departure>2013-09-17T17:21:15-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54079,-27.57559]}
+							</geometry>
+						</to>
+						<intermediateStops/>
+						<legGeometry>
+							<length>121</length>
+							<points>
+								rojgDfcdgH]JwBn@CBCDKTCHIXIBKDcAXMJIR@TNNZVzDjDd@`@DDo@d@SZOLcAh@}@^IBIB]LOFcAXUDUHSF}Cp@eAMcA[ICSEgBg@OMKUK[GIGEICIAI?ODOHUJi@NSDQFOHkCdBSLMFeAv@o@l@OPMPET@L?JBZ@LLz@@V@x@Gz@GRCDCHMb@q@hAEFML{@v@m@Ri@\]`@A?iAnDaArBCHKXGTwCnJCJOf@Gd@?r@?r@BFJf@BLHNT`@Nj@XdAnA|CFLBHJTZt@\v@Pv@B`@?PEXKn@K`@Kb@AX?^@ZJ`@H\^pADRFT`@vA
+							</points>
+						</legGeometry>
+						<duration>675000</duration>
+					</leg>
+					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
+						<startTime>2013-09-17T17:21:16-07:00</startTime>
+						<endTime>2013-09-17T17:21:27-07:00</endTime>
+						<distance>31.56684065785504</distance>
+						<from>
+							<name>Rua Rui Barbosa</name>
+							<lon>-48.54077726027398</lon>
+							<lat>-27.575623972602738</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54077726027398,-27.575623972602738]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua Rui Barbosa</name>
+							<lon>-48.54107553721558</lon>
+							<lat>-27.575723836097186</lat>
+							<arrival>2013-09-17T17:21:41-07:00</arrival>
+							<departure>2013-09-17T17:21:41-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54107553721558,-27.575723836097186]}
+							</geometry>
+						</to>
+						<legGeometry>
+							<length>4</length>
+							<points>tzhgDzrggHFVBNFR</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>31.56684065785504</distance>
+								<streetName>Rua Rui Barbosa</streetName>
+								<absoluteDirection>SOUTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.54077726027398</lon>
+								<lat>-27.575623972602738</lat>
+								<elevation></elevation>
+							</walkSteps>
+						</steps>
+						<duration>11000</duration>
+					</leg>
+				</legs>
+				<tooSloped>false</tooSloped>
+			</itinerary>
+			<itinerary>
+				<duration>701000</duration>
+				<startTime>2013-09-17T17:26:00-07:00</startTime>
+				<endTime>2013-09-17T17:37:41-07:00</endTime>
+				<walkTime>25</walkTime>
+				<transitTime>675</transitTime>
+				<waitingTime>1</waitingTime>
+				<walkDistance>31.56684065785504</walkDistance>
+				<elevationLost>0.0</elevationLost>
+				<elevationGained>0.0</elevationGained>
+				<transfers>0</transfers>
+				<legs>
+					<leg mode="BUS" route="133" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="478" agencyId="0" tripId="44628" routeShortName="133"
+					     routeLongName="AGRONOMICA VIA MAURO RAMOS">
+						<startTime>2013-09-17T17:26:00-07:00</startTime>
+						<endTime>2013-09-17T17:37:15-07:00</endTime>
+						<distance>2449.746714273675</distance>
+						<from>
+							<name>TITRI - Terminal Trindade</name>
+							<stopId>
+								<agencyId>0</agencyId>
+								<id>72944878</id>
+							</stopId>
+							<lon>-48.52283428571429</lon>
+							<lat>-27.58406285714286</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.52283428571429,-27.58406285714286]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua Rui Barbosa (06)</name>
+							<stopId>
+								<agencyId>0</agencyId>
+								<id>1649117787</id>
+							</stopId>
+							<lon>-48.54079</lon>
+							<lat>-27.57559</lat>
+							<arrival>2013-09-17T17:37:15-07:00</arrival>
+							<departure>2013-09-17T17:37:15-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54079,-27.57559]}
+							</geometry>
+						</to>
+						<intermediateStops/>
+						<legGeometry>
+							<length>121</length>
+							<points>
+								rojgDfcdgH]JwBn@CBCDKTCHIXIBKDcAXMJIR@TNNZVzDjDd@`@DDo@d@SZOLcAh@}@^IBIB]LOFcAXUDUHSF}Cp@eAMcA[ICSEgBg@OMKUK[GIGEICIAI?ODOHUJi@NSDQFOHkCdBSLMFeAv@o@l@OPMPET@L?JBZ@LLz@@V@x@Gz@GRCDCHMb@q@hAEFML{@v@m@Ri@\]`@A?iAnDaArBCHKXGTwCnJCJOf@Gd@?r@?r@BFJf@BLHNT`@Nj@XdAnA|CFLBHJTZt@\v@Pv@B`@?PEXKn@K`@Kb@AX?^@ZJ`@H\^pADRFT`@vA
+							</points>
+						</legGeometry>
+						<duration>675000</duration>
+					</leg>
+					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
+						<startTime>2013-09-17T17:37:16-07:00</startTime>
+						<endTime>2013-09-17T17:37:27-07:00</endTime>
+						<distance>31.56684065785504</distance>
+						<from>
+							<name>Rua Rui Barbosa</name>
+							<lon>-48.54077726027398</lon>
+							<lat>-27.575623972602738</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54077726027398,-27.575623972602738]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua Rui Barbosa</name>
+							<lon>-48.54107553721558</lon>
+							<lat>-27.575723836097186</lat>
+							<arrival>2013-09-17T17:37:41-07:00</arrival>
+							<departure>2013-09-17T17:37:41-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54107553721558,-27.575723836097186]}
+							</geometry>
+						</to>
+						<legGeometry>
+							<length>4</length>
+							<points>tzhgDzrggHFVBNFR</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>31.56684065785504</distance>
+								<streetName>Rua Rui Barbosa</streetName>
+								<absoluteDirection>SOUTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.54077726027398</lon>
+								<lat>-27.575623972602738</lat>
+								<elevation></elevation>
+							</walkSteps>
+						</steps>
+						<duration>11000</duration>
+					</leg>
+				</legs>
+				<tooSloped>false</tooSloped>
+			</itinerary>
+			<itinerary>
+				<duration>701000</duration>
+				<startTime>2013-09-17T17:42:00-07:00</startTime>
+				<endTime>2013-09-17T17:53:41-07:00</endTime>
+				<walkTime>25</walkTime>
+				<transitTime>675</transitTime>
+				<waitingTime>1</waitingTime>
+				<walkDistance>31.56684065785504</walkDistance>
+				<elevationLost>0.0</elevationLost>
+				<elevationGained>0.0</elevationGained>
+				<transfers>0</transfers>
+				<legs>
+					<leg mode="BUS" route="133" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="478" agencyId="0" tripId="44629" routeShortName="133"
+					     routeLongName="AGRONOMICA VIA MAURO RAMOS">
+						<startTime>2013-09-17T17:42:00-07:00</startTime>
+						<endTime>2013-09-17T17:53:15-07:00</endTime>
+						<distance>2449.746714273675</distance>
+						<from>
+							<name>TITRI - Terminal Trindade</name>
+							<stopId>
+								<agencyId>0</agencyId>
+								<id>72944878</id>
+							</stopId>
+							<lon>-48.52283428571429</lon>
+							<lat>-27.58406285714286</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.52283428571429,-27.58406285714286]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua Rui Barbosa (06)</name>
+							<stopId>
+								<agencyId>0</agencyId>
+								<id>1649117787</id>
+							</stopId>
+							<lon>-48.54079</lon>
+							<lat>-27.57559</lat>
+							<arrival>2013-09-17T17:53:15-07:00</arrival>
+							<departure>2013-09-17T17:53:15-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54079,-27.57559]}
+							</geometry>
+						</to>
+						<intermediateStops/>
+						<legGeometry>
+							<length>121</length>
+							<points>
+								rojgDfcdgH]JwBn@CBCDKTCHIXIBKDcAXMJIR@TNNZVzDjDd@`@DDo@d@SZOLcAh@}@^IBIB]LOFcAXUDUHSF}Cp@eAMcA[ICSEgBg@OMKUK[GIGEICIAI?ODOHUJi@NSDQFOHkCdBSLMFeAv@o@l@OPMPET@L?JBZ@LLz@@V@x@Gz@GRCDCHMb@q@hAEFML{@v@m@Ri@\]`@A?iAnDaArBCHKXGTwCnJCJOf@Gd@?r@?r@BFJf@BLHNT`@Nj@XdAnA|CFLBHJTZt@\v@Pv@B`@?PEXKn@K`@Kb@AX?^@ZJ`@H\^pADRFT`@vA
+							</points>
+						</legGeometry>
+						<duration>675000</duration>
+					</leg>
+					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
+						<startTime>2013-09-17T17:53:16-07:00</startTime>
+						<endTime>2013-09-17T17:53:27-07:00</endTime>
+						<distance>31.56684065785504</distance>
+						<from>
+							<name>Rua Rui Barbosa</name>
+							<lon>-48.54077726027398</lon>
+							<lat>-27.575623972602738</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54077726027398,-27.575623972602738]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua Rui Barbosa</name>
+							<lon>-48.54107553721558</lon>
+							<lat>-27.575723836097186</lat>
+							<arrival>2013-09-17T17:53:41-07:00</arrival>
+							<departure>2013-09-17T17:53:41-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.54107553721558,-27.575723836097186]}
+							</geometry>
+						</to>
+						<legGeometry>
+							<length>4</length>
+							<points>tzhgDzrggHFVBNFR</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>31.56684065785504</distance>
+								<streetName>Rua Rui Barbosa</streetName>
+								<absoluteDirection>SOUTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.54077726027398</lon>
+								<lat>-27.575623972602738</lat>
+								<elevation></elevation>
+							</walkSteps>
+						</steps>
+						<duration>11000</duration>
+					</leg>
+				</legs>
+				<tooSloped>false</tooSloped>
+			</itinerary>
+		</itineraries>
+	</plan>
+	<requestParameters>
+		<entry>
+			<key>optimize</key>
+			<value>QUICK</value>
+		</entry>
+		<entry>
+			<key>time</key>
+			<value>5:10pm</value>
+		</entry>
+		<entry>
+			<key>arriveBy</key>
+			<value>false</value>
+		</entry>
+		<entry>
+			<key>maxWalkDistance</key>
+			<value>840</value>
+		</entry>
+		<entry>
+			<key>fromPlace</key>
+			<value>-27.583955,-48.522842</value>
+		</entry>
+		<entry>
+			<key>ui_date</key>
+			<value>9/17/2013</value>
+		</entry>
+		<entry>
+			<key>toPlace</key>
+			<value>-27.575587,-48.541124</value>
+		</entry>
+		<entry>
+			<key>_dc</key>
+			<value>1379448679492</value>
+		</entry>
+		<entry>
+			<key>date</key>
+			<value>2013-09-17</value>
+		</entry>
+		<entry>
+			<key>walkSpeed</key>
+			<value>1.341</value>
+		</entry>
+		<entry>
+			<key>mode</key>
+			<value>TRANSIT,WALK</value>
+		</entry>
+	</requestParameters>
+</response>

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChoosePointView.js" afterPath="$PROJECT_DIR$/app/view/ChoosePointView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapController.js" afterPath="$PROJECT_DIR$/app/controller/MapController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapView.js" afterPath="$PROJECT_DIR$/app/view/MapView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RoutesView.js" afterPath="$PROJECT_DIR$/app/view/RoutesView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +20,7 @@
     <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
     <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
     <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379446913888" ignored="false" />
+    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379449050404" ignored="false" />
     <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
     <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379362695806" ignored="false" />
     <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
@@ -60,7 +56,7 @@
     <file path="/MapController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379446992443" ignored="false" />
     <file path="/sencha.cfg" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379355906032" ignored="false" />
     <file path="/LeafletMap.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379360681524" ignored="false" />
-    <file path="/RoutesView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379447168051" ignored="false" />
+    <file path="/RoutesView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379447485464" ignored="false" />
     <file path="/ChoosePointView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379446904052" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,10 +145,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoutesView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RoutesView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="28" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.7443609">
+            <state line="103" column="35" selection-start="2574" selection-end="2588" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,19 +181,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeafletMap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ux/LeafletMap.js">
+      <file leaf-file-name="RoutesController.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="248" column="44" selection-start="11195" selection-end="11195" vertical-scroll-proportion="4.56">
+            <state line="94" column="87" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.61973685">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <file leaf-file-name="OTP_response.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../OTP_response.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="32" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-25.48">
+            <state line="15" column="65" selection-start="498" selection-end="498" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
@@ -230,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controller/HomeController.js" />
         <option value="$PROJECT_DIR$/app/view/SearchPoint.js" />
         <option value="$PROJECT_DIR$/app/view/HomeView.js" />
         <option value="$PROJECT_DIR$/.sencha/app/sencha.cfg" />
@@ -243,9 +238,10 @@
         <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/view/MapView.js" />
         <option value="$PROJECT_DIR$/app/view/ChoosePointView.js" />
-        <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
         <option value="$PROJECT_DIR$/app/controller/MapController.js" />
         <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
+        <option value="$PROJECT_DIR$/../OTP_response.xml" />
+        <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
       </list>
     </option>
   </component>
@@ -434,7 +430,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mobile-client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OTP_response.xml" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -682,13 +678,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/touch/src/mixin/Observable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="4" selection-start="6322" selection-end="6322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="100" selection-start="1621" selection-end="1621" vertical-scroll-proportion="-20.038462">
@@ -757,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="32" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-25.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="139" column="43" selection-start="3082" selection-end="3082" vertical-scroll-proportion="-20.2">
@@ -787,7 +769,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="28" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.7443609">
+        <state line="103" column="35" selection-start="2574" selection-end="2588" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../OTP_response.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="65" selection-start="498" selection-end="498" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="87" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.61973685">
           <folding />
         </state>
       </provider>

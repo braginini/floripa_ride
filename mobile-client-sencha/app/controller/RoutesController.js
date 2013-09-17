@@ -10,6 +10,11 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	    ],
 
 	    refs: {
+
+		    searchRouteBtn: '#searchRouteBtn',
+		    aField: '#aField',
+		    bField: '#bField',
+
 		    homeView: {
 			    autoCreate: true,
 			    selector: '#homeView',
@@ -45,6 +50,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		        tap: function() {
 			        this.onTapField('bField')
 		        }
+	        } ,
+
+	        searchRouteBtn: {
+		        tap: 'onSearchRouteBtnTap'
 	        }
         }
 
@@ -87,5 +96,18 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		choosePointView.setSearchFieldPlaceHolder(text);
 		choosePointView.setFieldTapped(isAFieldTapped);
 		Ext.Viewport.setActiveItem(choosePointView);
+	},
+
+	onSearchRouteBtnTap : function() {
+
+		if (this.getAField().getValue().length != 0 && this.getBField().getValue().length != 0) {
+			Ext.Ajax.request({
+				url: 'http://localhost:8080/opentripplanner-api-webapp/ws/plan?_dc=1379448679492&arriveBy=false&time=5%3A10pm&ui_date=9%2F17%2F2013&mode=TRANSIT%2CWALK&optimize=QUICK&maxWalkDistance=840&walkSpeed=1.341&date=2013-09-17&toPlace=-27.575587%2C-48.541124&fromPlace=-27.583955%2C-48.522842',
+				timeout: 60000,
+				success: function(response){
+					console.log(response.responseText);
+				}
+			});
+		}
 	}
 });
