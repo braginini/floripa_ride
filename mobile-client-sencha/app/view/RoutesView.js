@@ -11,6 +11,11 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
     config: {
 
+	    aFieldLatLng: null,
+
+	    bFieldLatLng: null,
+
+
         items: [
 
             {
@@ -121,6 +126,22 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 	setFieldValueById : function (id, value) {
 		this.down(id).setValue(value);
+	},
+
+	setAFieldLatLngValue : function (value) {
+		this.setAFieldLatLng(value);
+	},
+
+	setBFieldLatLngValue : function (value) {
+		this.setBFieldLatLng(value);
+	},
+
+	getAFieldLatLngValue : function () {
+		return this.getAFieldLatLng();
+	},
+
+	getBFieldLatLngValue : function () {
+		return this.getBFieldLatLng();
 	}
 
 });

@@ -100,4 +100,5 @@ Ext.define('mobile-client-sencha.view.ChoosePointView', {
 	setFieldTapped : function(bool) {
 		this.setIsAFieldTapped(bool);
 	}
+
 });

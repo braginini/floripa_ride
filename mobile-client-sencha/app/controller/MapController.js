@@ -110,19 +110,56 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 	},
 
 	onTapAddMapBtn: function (button, e, eOpts) {
+
+		var me = this;
+
 		if (this.getToCancel()) {
 			this.changeView(this.getChoosePointView(), 'slide', 'right');
 		} else {
 			var routesView = this.getRoutesView();
 
-			var fieldStr = this.markerLayer.getLayers()[0].getLatLng().lat + ',' + this.markerLayer.getLayers()[0].getLatLng().lng;
-			if (this.getChoosePointView().isAFieldTapped()) {
-				routesView.setAFieldValue(fieldStr);
-			} else {
-				routesView.setBFieldValue(fieldStr);
-			}
+			var point = this.markerLayer.getLayers()[0].getLatLng().lat + ',' + this.markerLayer.getLayers()[0].getLatLng().lng;
+			var fieldStr = point; //by default field value - lat + lng
+			var appKey = 'Fmjtd%7Cluub2501ng%2C2a%3Do5-9uzl00';
+			Ext.data.JsonP.request({
+				url: 'http://www.mapquestapi.com/geocoding/v1/reverse?key=' + appKey,
+				callbackKey: 'callback',
+				async: false,
+				timeout: 20000,
+				params: {
+				 location: point
+				 },
 
-			this.changeView(routesView, 'slide', 'right')
+				success: function (result, request) {
+					var location = result.results[0].locations[0];
+
+					if (location)
+						fieldStr = location.street + ", " + location.adminArea5 + ", "
+							+ location.adminArea3 + ", " + location.adminArea1;
+
+					me.setLocationFieldValue(fieldStr, point);
+					me.changeView(routesView, 'slide', 'right')
+				},
+
+				failure: function (result, request) {
+
+					me.setLocationFieldValue(fieldStr, point);
+					me.changeView(routesView, 'slide', 'right')
+				}
+			});
+		}
+	},
+
+	setLocationFieldValue: function (value, latlng) {
+
+		var routesView = this.getRoutesView();
+
+		if (this.getChoosePointView().isAFieldTapped()) {
+			routesView.setAFieldValue(value);
+			routesView.setAFieldLatLngValue(latlng)
+		} else {
+			routesView.setBFieldValue(value);
+			routesView.setBFieldLatLngValue(latlng)
 		}
 	},
 
