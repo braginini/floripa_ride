@@ -20,7 +20,7 @@
     <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
     <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
     <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379538445524" ignored="false" />
+    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379538957817" ignored="false" />
     <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
     <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379362695806" ignored="false" />
     <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
@@ -131,6 +131,8 @@
     <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379520475255" ignored="false" />
     <file path="/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379513525336" ignored="false" />
     <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379520128207" ignored="false" />
+    <file path="$PROJECT_DIR$/build/mobile-client-sencha/android/assets/www/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379538738635" ignored="false" />
+    <file path="$PROJECT_DIR$/build/mobile-client-sencha/package/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379538738635" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +223,7 @@
       <file leaf-file-name="RoutesController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="57" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.5422277">
+            <state line="99" column="61" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.1872705">
               <folding />
             </state>
           </provider>
@@ -815,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="57" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.5422277">
+        <state line="99" column="61" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.1872705">
           <folding />
         </state>
       </provider>

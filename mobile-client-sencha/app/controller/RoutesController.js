@@ -1,72 +1,72 @@
 Ext.define('mobile-client-sencha.controller.RoutesController', {
-    extend: 'Ext.app.Controller',
+	extend: 'Ext.app.Controller',
 
-    config: {
+	config: {
 
-	    views: [
-		    'mobile-client-sencha.view.HomeView',
-		    'mobile-client-sencha.view.RoutesView',
-		    'mobile-client-sencha.view.ChoosePointView'
-	    ],
+		views: [
+			'mobile-client-sencha.view.HomeView',
+			'mobile-client-sencha.view.RoutesView',
+			'mobile-client-sencha.view.ChoosePointView'
+		],
 
-	    refs: {
+		refs: {
 
-		    searchRouteBtn: '#searchRouteBtn',
-		    aField: '#aField',
-		    bField: '#bField',
+			searchRouteBtn: '#searchRouteBtn',
+			aField: '#aField',
+			bField: '#bField',
 
-		    homeView: {
-			    autoCreate: true,
-			    selector: '#homeView',
-			    xtype: 'HomeView'
-		    },
+			homeView: {
+				autoCreate: true,
+				selector: '#homeView',
+				xtype: 'HomeView'
+			},
 
-		    routesView: {
-			    autoCreate: true,
-			    selector: '#routesView',
-			    xtype: 'RoutesView'
-		    },
+			routesView: {
+				autoCreate: true,
+				selector: '#routesView',
+				xtype: 'RoutesView'
+			},
 
-		    choosePointView: {
-			    autoCreate: true,
-			    selector: '#choosePointView',
-			    xtype: 'ChoosePointView'
-		    }
-	    },
+			choosePointView: {
+				autoCreate: true,
+				selector: '#choosePointView',
+				xtype: 'ChoosePointView'
+			}
+		},
 
-        control: {
+		control: {
 
-            'button[id=homeBtn]': {
-                tap: 'onTapHomeBtn'
-            },
+			'button[id=homeBtn]': {
+				tap: 'onTapHomeBtn'
+			},
 
-	        'textfield[id=aField]': {
-		        tap: function() {
-			    	this.onTapField('aField')
-		        }
-	        },
+			'textfield[id=aField]': {
+				tap: function () {
+					this.onTapField('aField')
+				}
+			},
 
-	        'textfield[id=bField]': {
-		        tap: function() {
-			        this.onTapField('bField')
-		        }
-	        } ,
+			'textfield[id=bField]': {
+				tap: function () {
+					this.onTapField('bField')
+				}
+			},
 
-	        searchRouteBtn: {
-		        tap: 'onSearchRouteBtnTap'
-	        }
-        }
+			searchRouteBtn: {
+				tap: 'onSearchRouteBtnTap'
+			}
+		}
 
-    },
+	},
 
-    onTapHomeBtn: function (button, e, eOpts) {
-        Ext.Viewport.getLayout().setAnimation({
-            type: 'slide',
-            direction: 'right'
-        });
+	onTapHomeBtn: function (button, e, eOpts) {
+		Ext.Viewport.getLayout().setAnimation({
+			type: 'slide',
+			direction: 'right'
+		});
 
-        Ext.Viewport.setActiveItem(this.getHomeView());
-    },
+		Ext.Viewport.setActiveItem(this.getHomeView());
+	},
 
 	onTapField: function (field) {
 
@@ -78,7 +78,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		var choosePointView = this.getChoosePointView();
 		var text = '';
 		var isAFieldTapped = false;
-		switch(field) {
+		switch (field) {
 			case 'aField' :
 				text = 'Encontrar o ponto de partida';
 				isAFieldTapped = true;
@@ -98,12 +98,18 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		Ext.Viewport.setActiveItem(choosePointView);
 	},
 
-	onSearchRouteBtnTap : function() {
+	onSearchRouteBtnTap: function () {
 
 		var aPointLatLng = this.getRoutesView().getAFieldLatLngValue();
 		var bPointLatLng = this.getRoutesView().getBFieldLatLngValue();
 
-		if (aPointLatLng && bPointLatLng && aPointLatLng.length != 0 && bPointLatLng.length != 0) {
+		if (!aPointLatLng)
+			aPointLatLng = this.getAField().getValue();
+
+		if (bPointLatLng)
+			bPointLatLng = this.getBField().getValue();
+
+		if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
 
 			Ext.data.JsonP.request({
 				url: 'http://ec2-54-232-224-233.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
@@ -125,12 +131,12 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 					numItineraries: '6'
 				},
 
-				success: function(result, request) {
+				success: function (result, request) {
 					//todo handle errors sent by server
 					alert(result.plan.itineraries.length + " itineraries found");
 				},
 
-				failure: function(result, request) {
+				failure: function (result, request) {
 					alert("failed");
 				}
 			});
