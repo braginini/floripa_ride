@@ -103,7 +103,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		var aPointLatLng = this.getRoutesView().getAFieldLatLngValue();
 		var bPointLatLng = this.getRoutesView().getBFieldLatLngValue();
 
-		if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
+		if (aPointLatLng && bPointLatLng && aPointLatLng.length != 0 && bPointLatLng.length != 0) {
 
 			Ext.data.JsonP.request({
 				url: 'http://ec2-54-232-224-233.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
