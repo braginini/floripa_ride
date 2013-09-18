@@ -101,11 +101,34 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	onSearchRouteBtnTap : function() {
 
 		if (this.getAField().getValue().length != 0 && this.getBField().getValue().length != 0) {
-			Ext.Ajax.request({
-				url: 'http://localhost:8080/opentripplanner-api-webapp/ws/plan?_dc=1379448679492&arriveBy=false&time=5%3A10pm&ui_date=9%2F17%2F2013&mode=TRANSIT%2CWALK&optimize=QUICK&maxWalkDistance=840&walkSpeed=1.341&date=2013-09-17&toPlace=-27.575587%2C-48.541124&fromPlace=-27.583955%2C-48.522842',
-				timeout: 60000,
-				success: function(response){
-					console.log(response.responseText);
+
+			Ext.data.JsonP.request({
+				url: 'http://localhost:8080/opentripplanner-api-webapp/ws/plan',
+				callbackKey: 'callback',
+				async: false,
+				timeout: 5000,
+				params: {
+					_dc: Date.now(),
+					fromPlace: this.getAField().getValue(),
+					toPlace: this.getBField().getValue(),
+					ui_date: '9/17/2013',
+					arriveBy: 'false',
+					time: '5:10pm',
+					mode: 'TRANSIT,WALK',
+					optimize: 'QUICK',
+					maxWalkDistance: '840',
+					date: '2013-09-17',
+					walkSpeed: '1.341',
+					numItineraries: '6'
+				},
+
+				success: function(result, request) {
+					//todo handle errors sent by server
+					alert(result.plan.itineraries.length + " itineraries found");
+				},
+
+				failure: function(result, request) {
+					alert("failed");
 				}
 			});
 		}

@@ -79,24 +79,30 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 	},
 
 	getCurrentPosition: function () {
-
+		var me = this;
 		document.addEventListener("deviceready", onDeviceReady, false);
 
-		navigator.geolocation.getCurrentPosition(function geolocationSuccess(position) {
-				alert('Latitude: '          + position.coords.latitude          + '\n' +
-					'Longitude: '         + position.coords.longitude         + '\n' +
-					'Altitude: '          + position.coords.altitude          + '\n' +
-					'Accuracy: '          + position.coords.accuracy          + '\n' +
-					'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-					'Heading: '           + position.coords.heading           + '\n' +
-					'Speed: '             + position.coords.speed             + '\n' +
-					'Timestamp: '         + position.timestamp                + '\n');
+		navigator.geolocation.getCurrentPosition(
+			function success(position) {
+
+				var lat = position.coords.latitude;
+				var lng = position.coords.longitude;
+				var routesView = me.getRoutesView();
+
+				var fieldStr = lat + ',' + lng;
+				if (me.getChoosePointView().isAFieldTapped()) {
+					routesView.setAFieldValue(fieldStr);
+				} else {
+					routesView.setBFieldValue(fieldStr);
+				}
+
+				me.changeView(routesView, 'slide', 'right')
 			},
-			function(error) {
+			function error (error) {
 				alert(error);
 			});
 
-		function onDeviceReady () {
+		function onDeviceReady() {
 			console.log("device is ready");
 		}
 	}

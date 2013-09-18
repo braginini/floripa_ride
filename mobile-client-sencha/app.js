@@ -30,7 +30,8 @@ Ext.application({
     name: 'mobile-client-sencha',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+	    'Ext.data.JsonP'
     ],
 
     views: [

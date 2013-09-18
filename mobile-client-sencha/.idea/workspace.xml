@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsonResponse.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ChoosePointController.js" afterPath="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapController.js" afterPath="$PROJECT_DIR$/app/controller/MapController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OTP_response.xml" afterPath="$PROJECT_DIR$/../OTP_response.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RoutesView.js" afterPath="$PROJECT_DIR$/app/view/RoutesView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -11,7 +16,7 @@
     <file path="/app.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378482603397" ignored="false" />
     <file path="/config.rb" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378481680395" ignored="false" />
     <file path="/buttons.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378498250873" ignored="false" />
-    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379175954547" ignored="false" />
+    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379529935356" ignored="false" />
     <file path="/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379355637801" ignored="false" />
     <file path="/MainNav.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378499273352" ignored="false" />
     <file path="/Home.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379012062417" ignored="false" />
@@ -20,12 +25,12 @@
     <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
     <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
     <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379449050404" ignored="false" />
+    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379529710098" ignored="false" />
     <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
     <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379362695806" ignored="false" />
     <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378936653441" ignored="false" />
-    <file path="/fragment.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379102197915" ignored="false" />
+    <file path="/fragment.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379514181432" ignored="false" />
     <file path="/packager.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378938922954" ignored="false" />
     <file path="/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084081813" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/local/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378997907266" ignored="false" />
@@ -38,7 +43,7 @@
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001233349" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-common/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001239850" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-hbase-filters/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001247202" ignored="false" />
-    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379442415982" ignored="false" />
+    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379529202144" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/dev/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084087779" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/util/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084586891" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/prod/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084790118" ignored="false" />
@@ -58,6 +63,79 @@
     <file path="/LeafletMap.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379360681524" ignored="false" />
     <file path="/RoutesView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379447485464" ignored="false" />
     <file path="/ChoosePointView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379446904052" ignored="false" />
+    <file path="$PROJECT_DIR$/build/mobile-client-sencha/android/assets/www/lib/cordova/cordova.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379452137289" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-core/src/main/java/org/opentripplanner/graph_builder/GraphBuilderMain.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379509849902" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379512998414" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/defaults/resources/org/opentripplanner/api/security-application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/a_transfer.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-updater/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/openstreetmap/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-extended/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/rlis_trails_pdx.shp.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/enunciate.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-geocoder/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379513525336" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike_transfer_between_tranist_legs_plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/geo-multi.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/ferry-nl.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/ladds.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/alerts-2.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike-bus-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-graph-builder/src/main/resources/org/opentripplanner/graph_builder/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-web-utils/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/rlis_bike_rte_pdx.shp.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/future-alert.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/ladds-2.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-extended/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/alerts.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike-2.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/src/main/resources/hibernate.cfg.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379512992824" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/transfer-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/interline.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/tram-bus.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-utils/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/src/main/webapp/WEB-INF/wro.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-municoder/src/main/resources/org/opentripplanner/municoder/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/Bicycle_Parking_pdx_Metadata.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/src/main/resources/logback.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-municoder/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/walk-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/sidewalk.dbf.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/geo-zoo.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/src/main/resources/org/opentripplanner/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/Sidewalk_pdx_Metadata.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/geo-error.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/defaults/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/topo-1.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/transit-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-admin-webapp/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-admin-webapp/src/main/webapp/WEB-INF/wro.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-integration/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-graph-builder/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-gui/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/main/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/main/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/main/resources/org/opentripplanner/api/security-application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/defaults/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/src/main/webapp/js/lib/proj4js-1.0.3/build/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-admin-webapp/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-standalone/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/src/main/resources/org/opentripplanner/api_thrift/security-application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/src/main/resources/org/opentripplanner/api_thrift/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/src/main/resources/org/opentripplanner/api_thrift/example-service-config.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379520475255" ignored="false" />
+    <file path="/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379513525336" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379520128207" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +208,7 @@
       <file leaf-file-name="ChoosePointController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="8" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+            <state line="97" column="41" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,7 +217,7 @@
       <file leaf-file-name="MapController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="43" selection-start="3082" selection-end="3082" vertical-scroll-proportion="-20.2">
+            <state line="124" column="57" selection-start="2439" selection-end="2803" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,7 +226,7 @@
       <file leaf-file-name="RoutesView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="35" selection-start="2574" selection-end="2588" vertical-scroll-proportion="0.0">
+            <state line="117" column="4" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,25 +235,7 @@
       <file leaf-file-name="HomeView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="332" selection-end="338" vertical-scroll-proportion="-14.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/HomeController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="65" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="82" selection-start="213" selection-end="213" vertical-scroll-proportion="-5.44">
+            <state line="21" column="27" selection-start="332" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -184,7 +244,25 @@
       <file leaf-file-name="RoutesController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="87" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.61973685">
+            <state line="120" column="39" selection-start="2716" selection-end="2716" vertical-scroll-proportion="0.5728643">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonP.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/touch/src/data/JsonP.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="4" selection-start="4803" selection-end="4803" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="89" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,16 +271,16 @@
       <file leaf-file-name="OTP_response.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../OTP_response.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="65" selection-start="498" selection-end="498" vertical-scroll-proportion="-9.807693">
+            <state line="74" column="130" selection-start="2739" selection-end="2739" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Error.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/touch/src/data/Error.js">
+      <file leaf-file-name="jsonResponse.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsonResponse.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+            <state line="49" column="55" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -226,21 +304,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/view/SearchPoint.js" />
         <option value="$PROJECT_DIR$/app/view/HomeView.js" />
         <option value="$PROJECT_DIR$/.sencha/app/sencha.cfg" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/leaflet-0.6.4/leaflet.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ux/LeafletMap.js" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/view/MapView.js" />
         <option value="$PROJECT_DIR$/app/view/ChoosePointView.js" />
-        <option value="$PROJECT_DIR$/app/controller/MapController.js" />
         <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/../OTP_response.xml" />
+        <option value="$PROJECT_DIR$/jsonResponse.json" />
+        <option value="$PROJECT_DIR$/app/controller/MapController.js" />
+        <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
       </list>
     </option>
@@ -279,6 +357,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,8 +501,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,16 +508,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OTP_response.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OpenTripPlanner" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -472,6 +550,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -498,19 +589,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -588,7 +666,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -609,6 +686,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -678,32 +756,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="100" selection-start="1621" selection-end="1621" vertical-scroll-proportion="-20.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/leaflet-0.6.4/images/marker-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/leaflet-0.6.4/leaflet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="66" selection-end="77" vertical-scroll-proportion="-1.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="61" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="144" column="101" selection-start="5318" selection-end="5318" vertical-scroll-proportion="-24.76923">
@@ -718,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="332" selection-end="338" vertical-scroll-proportion="-14.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/HomeController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="65" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
@@ -734,7 +779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="82" selection-start="213" selection-end="213" vertical-scroll-proportion="-5.44">
+        <state line="14" column="82" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -746,16 +791,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
+    <entry file="file://$PROJECT_DIR$/touch/sencha-touch-all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="43" selection-start="3082" selection-end="3082" vertical-scroll-proportion="-20.2">
+        <state line="84820" column="4" selection-start="2702755" selection-end="2702755" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
+    <entry file="file://$PROJECT_DIR$/app/view/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+        <state line="21" column="27" selection-start="332" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="89" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/touch/src/data/JsonP.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="4" selection-start="4803" selection-end="4803" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../OTP_response.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="130" selection-start="2739" selection-end="2739" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonResponse.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="55" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-14.384615">
           <folding />
         </state>
       </provider>
@@ -769,21 +842,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="35" selection-start="2574" selection-end="2588" vertical-scroll-proportion="0.0">
+        <state line="117" column="4" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../OTP_response.xml">
+    <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="498" selection-end="498" vertical-scroll-proportion="-9.807693">
+        <state line="124" column="57" selection-start="2439" selection-end="2803" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="41" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="87" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.61973685">
+        <state line="120" column="39" selection-start="2716" selection-end="2716" vertical-scroll-proportion="0.5728643">
           <folding />
         </state>
       </provider>

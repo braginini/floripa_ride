@@ -1,0 +1,480 @@
+{
+	"requestParameters": {
+		"optimize": "QUICK",
+		"time": "5:10pm",
+		"arriveBy": "false",
+		"maxWalkDistance": "840",
+		"fromPlace": "-27.598493959106335,-48.55373382568359",
+		"callback": "Ext.data.JsonP.callback3",
+		"ui_date": "9/17/2013",
+		"toPlace": "-27.589300761784113,-48.5430908203125",
+		"_dc": "1379528272025",
+		"date": "2013-09-17",
+		"walkSpeed": "1.341",
+		"mode": "TRANSIT,WALK"
+	},
+	"plan": {
+		"date": 1379463000000,
+		"from": {
+			"name": "Avenida Paulo Fontes",
+			"stopId": null,
+			"stopCode": null,
+			"lon": -48.55334752387279,
+			"lat": -27.597706497722783,
+			"arrival": null,
+			"departure": null,
+			"orig": null,
+			"zoneId": null,
+			"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.55334752387279,-27.597706497722783]}"
+		},
+		"to": {
+			"name": "Avenida Mauro Ramos",
+			"stopId": null,
+			"stopCode": null,
+			"lon": -48.54299,
+			"lat": -27.589300761784113,
+			"arrival": null,
+			"departure": null,
+			"orig": null,
+			"zoneId": null,
+			"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.589300761784113]}"
+		},
+		"itineraries": [
+			{
+				"duration": 566000,
+				"startTime": 1379463840000,
+				"endTime": 1379464406000,
+				"walkTime": 47,
+				"transitTime": 518,
+				"waitingTime": 1,
+				"walkDistance": 62.16384290488778,
+				"elevationLost": 0,
+				"elevationGained": 0,
+				"transfers": 0,
+				"fare": null,
+				"legs": [
+					{
+						"startTime": 1379463840000,
+						"endTime": 1379464358000,
+						"distance": 2450.3948396937467,
+						"mode": "BUS",
+						"route": "330",
+						"agencyName": "TranSol",
+						"agencyUrl": "http://www.thefunbus.org",
+						"agencyTimeZoneOffset": 0,
+						"routeColor": null,
+						"routeId": "531",
+						"routeTextColor": null,
+						"interlineWithPreviousLeg": null,
+						"tripShortName": null,
+						"headsign": null,
+						"agencyId": "TranSol",
+						"tripId": "48475",
+						"from": {
+							"name": "TICEN - Terminal Centro",
+							"stopId": {
+								"agencyId": "TranSol",
+								"id": "43719878"
+							},
+							"stopCode": null,
+							"lon": -48.55419039999999,
+							"lat": -27.5979872,
+							"arrival": null,
+							"departure": null,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.55419039999999,-27.5979872]}"
+						},
+						"to": {
+							"name": "Avenida Mauro Ramos (05)",
+							"stopId": {
+								"agencyId": "TranSol",
+								"id": "1457087115"
+							},
+							"stopCode": null,
+							"lon": -48.54295,
+							"lat": -27.58986,
+							"arrival": 1379464358000,
+							"departure": 1379464358000,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54295,-27.58986]}"
+						},
+						"legGeometry": {
+							"points": "zemgDfejgHjGiCL@VAVC`@Ip@y@Ze@Le@Dc@?OAQASAMKa@Q[UWo@o@OSIUA[?QDSXc@dBeB^e@N[Pc@`@{@`@c@HIRS`BeBLM`CkBjA_ANOPQzAaBtA}APOY[YG_@GoBAK?iEUg@AWAW?a@CMCICaA]iAa@yAi@UISIsAk@_Bc@MESG_A[QG_Cw@cEyAOGQI_@MyBu@UGUCQ@_A@oCIc@AuBKiAGM?OA}@CwBKK?MAqBIeCIIAc@Cy@EYA_@?",
+							"levels": null,
+							"length": 91
+						},
+						"routeShortName": "330",
+						"routeLongName": "LAGOA DA CONCEIГ‡ГѓO",
+						"boardRule": null,
+						"alightRule": null,
+						"rentedBike": null,
+						"duration": 518000,
+						"bogusNonTransitLeg": false,
+						"intermediateStops": []
+					},
+					{
+						"startTime": 1379464359000,
+						"endTime": 1379464359000,
+						"distance": 62.16384290488778,
+						"mode": "WALK",
+						"route": "",
+						"agencyName": null,
+						"agencyUrl": null,
+						"agencyTimeZoneOffset": -25200000,
+						"routeColor": null,
+						"routeId": null,
+						"routeTextColor": null,
+						"interlineWithPreviousLeg": null,
+						"tripShortName": null,
+						"headsign": null,
+						"agencyId": null,
+						"tripId": null,
+						"from": {
+							"name": "Avenida Mauro Ramos",
+							"stopId": null,
+							"stopCode": null,
+							"lon": -48.54299,
+							"lat": -27.58986,
+							"arrival": null,
+							"departure": null,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.58986]}"
+						},
+						"to": {
+							"name": "Avenida Mauro Ramos",
+							"stopId": null,
+							"stopCode": null,
+							"lon": -48.54299,
+							"lat": -27.589300761784113,
+							"arrival": 1379464406000,
+							"departure": 1379464406000,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.589300761784113]}"
+						},
+						"legGeometry": {
+							"points": "rskgDt`hgHmB?",
+							"levels": null,
+							"length": 2
+						},
+						"routeShortName": null,
+						"routeLongName": null,
+						"boardRule": null,
+						"alightRule": null,
+						"rentedBike": null,
+						"duration": 0,
+						"bogusNonTransitLeg": false,
+						"steps": [
+							{
+								"distance": 62.16384290488778,
+								"relativeDirection": null,
+								"streetName": "Avenida Mauro Ramos",
+								"absoluteDirection": "NORTH",
+								"exit": null,
+								"stayOn": false,
+								"bogusName": false,
+								"lon": -48.54299,
+								"lat": -27.58986,
+								"elevation": ""
+							}
+						]
+					}
+				],
+				"tooSloped": false
+			},
+			{
+				"duration": 475000,
+				"startTime": 1379464020000,
+				"endTime": 1379464495000,
+				"walkTime": 47,
+				"transitTime": 427,
+				"waitingTime": 1,
+				"walkDistance": 62.16384290488778,
+				"elevationLost": 0,
+				"elevationGained": 0,
+				"transfers": 0,
+				"fare": null,
+				"legs": [
+					{
+						"startTime": 1379464020000,
+						"endTime": 1379464447000,
+						"distance": 2450.3948396937467,
+						"mode": "BUS",
+						"route": "135",
+						"agencyName": "TranSol",
+						"agencyUrl": "http://www.thefunbus.org",
+						"agencyTimeZoneOffset": 0,
+						"routeColor": null,
+						"routeId": "577",
+						"routeTextColor": null,
+						"interlineWithPreviousLeg": null,
+						"tripShortName": null,
+						"headsign": null,
+						"agencyId": "TranSol",
+						"tripId": "50897",
+						"from": {
+							"name": "TICEN - Terminal Centro",
+							"stopId": {
+								"agencyId": "TranSol",
+								"id": "43719878"
+							},
+							"stopCode": null,
+							"lon": -48.55419039999999,
+							"lat": -27.5979872,
+							"arrival": null,
+							"departure": null,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.55419039999999,-27.5979872]}"
+						},
+						"to": {
+							"name": "Avenida Mauro Ramos (05)",
+							"stopId": {
+								"agencyId": "TranSol",
+								"id": "1457087115"
+							},
+							"stopCode": null,
+							"lon": -48.54295,
+							"lat": -27.58986,
+							"arrival": 1379464447000,
+							"departure": 1379464447000,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54295,-27.58986]}"
+						},
+						"legGeometry": {
+							"points": "zemgDfejgHjGiCL@VAVC`@Ip@y@Ze@Le@Dc@?OAQASAMKa@Q[UWo@o@OSIUA[?QDSXc@dBeB^e@N[Pc@`@{@`@c@HIRS`BeBLM`CkBjA_ANOPQzAaBtA}APOY[YG_@GoBAK?iEUg@AWAW?a@CMCICaA]iAa@yAi@UISIsAk@_Bc@MESG_A[QG_Cw@cEyAOGQI_@MyBu@UGUCQ@_A@oCIc@AuBKiAGM?OA}@CwBKK?MAqBIeCIIAc@Cy@EYA_@?",
+							"levels": null,
+							"length": 91
+						},
+						"routeShortName": "135",
+						"routeLongName": "VOLTA AO MORRO CARVOEIRA NORTE",
+						"boardRule": null,
+						"alightRule": null,
+						"rentedBike": null,
+						"duration": 427000,
+						"bogusNonTransitLeg": false,
+						"intermediateStops": []
+					},
+					{
+						"startTime": 1379464448000,
+						"endTime": 1379464448000,
+						"distance": 62.16384290488778,
+						"mode": "WALK",
+						"route": "",
+						"agencyName": null,
+						"agencyUrl": null,
+						"agencyTimeZoneOffset": -25200000,
+						"routeColor": null,
+						"routeId": null,
+						"routeTextColor": null,
+						"interlineWithPreviousLeg": null,
+						"tripShortName": null,
+						"headsign": null,
+						"agencyId": null,
+						"tripId": null,
+						"from": {
+							"name": "Avenida Mauro Ramos",
+							"stopId": null,
+							"stopCode": null,
+							"lon": -48.54299,
+							"lat": -27.58986,
+							"arrival": null,
+							"departure": null,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.58986]}"
+						},
+						"to": {
+							"name": "Avenida Mauro Ramos",
+							"stopId": null,
+							"stopCode": null,
+							"lon": -48.54299,
+							"lat": -27.589300761784113,
+							"arrival": 1379464495000,
+							"departure": 1379464495000,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.589300761784113]}"
+						},
+						"legGeometry": {
+							"points": "rskgDt`hgHmB?",
+							"levels": null,
+							"length": 2
+						},
+						"routeShortName": null,
+						"routeLongName": null,
+						"boardRule": null,
+						"alightRule": null,
+						"rentedBike": null,
+						"duration": 0,
+						"bogusNonTransitLeg": false,
+						"steps": [
+							{
+								"distance": 62.16384290488778,
+								"relativeDirection": null,
+								"streetName": "Avenida Mauro Ramos",
+								"absoluteDirection": "NORTH",
+								"exit": null,
+								"stayOn": false,
+								"bogusName": false,
+								"lon": -48.54299,
+								"lat": -27.58986,
+								"elevation": ""
+							}
+						]
+					}
+				],
+				"tooSloped": false
+			},
+			{
+				"duration": 608000,
+				"startTime": 1379463900000,
+				"endTime": 1379464508000,
+				"walkTime": 47,
+				"transitTime": 560,
+				"waitingTime": 1,
+				"walkDistance": 62.16384290488778,
+				"elevationLost": 0,
+				"elevationGained": 0,
+				"transfers": 0,
+				"fare": null,
+				"legs": [
+					{
+						"startTime": 1379463900000,
+						"endTime": 1379464460000,
+						"distance": 2450.3948396937467,
+						"mode": "BUS",
+						"route": "133",
+						"agencyName": "TranSol",
+						"agencyUrl": "http://www.thefunbus.org",
+						"agencyTimeZoneOffset": 0,
+						"routeColor": null,
+						"routeId": "478",
+						"routeTextColor": null,
+						"interlineWithPreviousLeg": null,
+						"tripShortName": null,
+						"headsign": null,
+						"agencyId": "TranSol",
+						"tripId": "44691",
+						"from": {
+							"name": "TICEN - Terminal Centro",
+							"stopId": {
+								"agencyId": "TranSol",
+								"id": "43719878"
+							},
+							"stopCode": null,
+							"lon": -48.55419039999999,
+							"lat": -27.5979872,
+							"arrival": null,
+							"departure": null,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.55419039999999,-27.5979872]}"
+						},
+						"to": {
+							"name": "Avenida Mauro Ramos (05)",
+							"stopId": {
+								"agencyId": "TranSol",
+								"id": "1457087115"
+							},
+							"stopCode": null,
+							"lon": -48.54295,
+							"lat": -27.58986,
+							"arrival": 1379464460000,
+							"departure": 1379464460000,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54295,-27.58986]}"
+						},
+						"legGeometry": {
+							"points": "zemgDfejgHjGiCL@VAVC`@Ip@y@Ze@Le@Dc@?OAQASAMKa@Q[UWo@o@OSIUA[?QDSXc@dBeB^e@N[Pc@`@{@`@c@HIRS`BeBLM`CkBjA_ANOPQzAaBtA}APOY[YG_@GoBAK?iEUg@AWAW?a@CMCICaA]iAa@yAi@UISIsAk@_Bc@MESG_A[QG_Cw@cEyAOGQI_@MyBu@UGUCQ@_A@oCIc@AuBKiAGM?OA}@CwBKK?MAqBIeCIIAc@Cy@EYA_@?",
+							"levels": null,
+							"length": 91
+						},
+						"routeShortName": "133",
+						"routeLongName": "AGRONГ”MICA VIA MAURO RAMOS",
+						"boardRule": null,
+						"alightRule": null,
+						"rentedBike": null,
+						"duration": 560000,
+						"bogusNonTransitLeg": false,
+						"intermediateStops": []
+					},
+					{
+						"startTime": 1379464461000,
+						"endTime": 1379464461000,
+						"distance": 62.16384290488778,
+						"mode": "WALK",
+						"route": "",
+						"agencyName": null,
+						"agencyUrl": null,
+						"agencyTimeZoneOffset": -25200000,
+						"routeColor": null,
+						"routeId": null,
+						"routeTextColor": null,
+						"interlineWithPreviousLeg": null,
+						"tripShortName": null,
+						"headsign": null,
+						"agencyId": null,
+						"tripId": null,
+						"from": {
+							"name": "Avenida Mauro Ramos",
+							"stopId": null,
+							"stopCode": null,
+							"lon": -48.54299,
+							"lat": -27.58986,
+							"arrival": null,
+							"departure": null,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.58986]}"
+						},
+						"to": {
+							"name": "Avenida Mauro Ramos",
+							"stopId": null,
+							"stopCode": null,
+							"lon": -48.54299,
+							"lat": -27.589300761784113,
+							"arrival": 1379464508000,
+							"departure": 1379464508000,
+							"orig": null,
+							"zoneId": null,
+							"geometry": "{\"type\": \"Point\", \"coordinates\": [-48.54299,-27.589300761784113]}"
+						},
+						"legGeometry": {
+							"points": "rskgDt`hgHmB?",
+							"levels": null,
+							"length": 2
+						},
+						"routeShortName": null,
+						"routeLongName": null,
+						"boardRule": null,
+						"alightRule": null,
+						"rentedBike": null,
+						"duration": 0,
+						"bogusNonTransitLeg": false,
+						"steps": [
+							{
+								"distance": 62.16384290488778,
+								"relativeDirection": null,
+								"streetName": "Avenida Mauro Ramos",
+								"absoluteDirection": "NORTH",
+								"exit": null,
+								"stayOn": false,
+								"bogusName": false,
+								"lon": -48.54299,
+								"lat": -27.58986,
+								"elevation": ""
+							}
+						]
+					}
+				],
+				"tooSloped": false
+			}
+		]
+	}
+}

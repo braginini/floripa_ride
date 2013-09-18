@@ -122,7 +122,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 				routesView.setBFieldValue(fieldStr);
 			}
 
-			this.changeView(routesView)
+			this.changeView(routesView, 'slide', 'right')
 		}
 	},
 

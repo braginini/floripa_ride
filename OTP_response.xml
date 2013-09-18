@@ -1,308 +1,470 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <response>
 	<plan>
-		<date>2013-09-17T21:10:00-03:00</date>
+		<date>2013-09-18T18:48:00-03:00</date>
 		<from>
-			<name>Rua Professor Lauro Caldeira de Andrada</name>
-			<lon>-48.52255145298462</lon>
-			<lat>-27.58382984128569</lat>
+			<name>Avenida Mauro Ramos</name>
+			<lon>-48.544332441930116</lon>
+			<lat>-27.597311558735438</lat>
 			<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-				[-48.52255145298462,-27.58382984128569]}
+				[-48.544332441930116,-27.597311558735438]}
 			</geometry>
 		</from>
 		<to>
-			<name>Rua Rui Barbosa</name>
-			<lon>-48.54107553721558</lon>
-			<lat>-27.575723836097186</lat>
+			<name>Travessa José Goulart</name>
+			<lon>-48.53278545878004</lon>
+			<lat>-27.60899605656192</lat>
 			<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-				[-48.54107553721558,-27.575723836097186]}
+				[-48.53278545878004,-27.60899605656192]}
 			</geometry>
 		</to>
 		<itineraries>
 			<itinerary>
-				<duration>701000</duration>
-				<startTime>2013-09-17T17:10:00-07:00</startTime>
-				<endTime>2013-09-17T17:21:41-07:00</endTime>
-				<walkTime>25</walkTime>
-				<transitTime>675</transitTime>
-				<waitingTime>1</waitingTime>
-				<walkDistance>31.56684065785504</walkDistance>
+				<duration>1904000</duration>
+				<startTime>2013-09-18T14:51:48-07:00</startTime>
+				<endTime>2013-09-18T15:23:32-07:00</endTime>
+				<walkTime>41</walkTime>
+				<transitTime>1082</transitTime>
+				<waitingTime>781</waitingTime>
+				<walkDistance>49.31739460924299</walkDistance>
 				<elevationLost>0.0</elevationLost>
 				<elevationGained>0.0</elevationGained>
-				<transfers>0</transfers>
+				<transfers>1</transfers>
 				<legs>
-					<leg mode="BUS" route="133" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
-					     agencyTimeZoneOffset="0" routeId="478" agencyId="0" tripId="44627" routeShortName="133"
-					     routeLongName="AGRONOMICA VIA MAURO RAMOS">
-						<startTime>2013-09-17T17:10:00-07:00</startTime>
-						<endTime>2013-09-17T17:21:15-07:00</endTime>
-						<distance>2449.746714273675</distance>
+					<leg mode="BUS" route="330" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="531" agencyId="TranSol" tripId="48426" routeShortName="330"
+					     routeLongName="LAGOA DA CONCEIÇÃO">
+						<startTime>2013-09-18T14:51:48-07:00</startTime>
+						<endTime>2013-09-18T14:57:00-07:00</endTime>
+						<distance>1748.7145656339067</distance>
 						<from>
-							<name>TITRI - Terminal Trindade</name>
+							<name>Avenida Mauro Ramos (12)</name>
 							<stopId>
-								<agencyId>0</agencyId>
-								<id>72944878</id>
+								<agencyId>TranSol</agencyId>
+								<id>1457087118</id>
 							</stopId>
-							<lon>-48.52283428571429</lon>
-							<lat>-27.58406285714286</lat>
+							<lon>-48.54442</lon>
+							<lat>-27.59739</lat>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.52283428571429,-27.58406285714286]}
+								[-48.54442,-27.59739]}
 							</geometry>
 						</from>
 						<to>
-							<name>Rua Rui Barbosa (06)</name>
+							<name>TICEN - Terminal Centro</name>
 							<stopId>
-								<agencyId>0</agencyId>
-								<id>1649117787</id>
+								<agencyId>TranSol</agencyId>
+								<id>43719878</id>
 							</stopId>
-							<lon>-48.54079</lon>
-							<lat>-27.57559</lat>
-							<arrival>2013-09-17T17:21:15-07:00</arrival>
-							<departure>2013-09-17T17:21:15-07:00</departure>
+							<lon>-48.55419039999999</lon>
+							<lat>-27.5979872</lat>
+							<arrival>2013-09-18T15:06:00-07:00</arrival>
+							<departure>2013-09-18T15:06:00-07:00</departure>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54079,-27.57559]}
+								[-48.55419039999999,-27.5979872]}
 							</geometry>
 						</to>
 						<intermediateStops/>
 						<legGeometry>
-							<length>121</length>
+							<length>59</length>
 							<points>
-								rojgDfcdgH]JwBn@CBCDKTCHIXIBKDcAXMJIR@TNNZVzDjDd@`@DDo@d@SZOLcAh@}@^IBIB]LOFcAXUDUHSF}Cp@eAMcA[ICSEgBg@OMKUK[GIGEICIAI?ODOHUJi@NSDQFOHkCdBSLMFeAv@o@l@OPMPET@L?JBZ@LLz@@V@x@Gz@GRCDCHMb@q@hAEFML{@v@m@Ri@\]`@A?iAnDaArBCHKXGTwCnJCJOf@Gd@?r@?r@BFJf@BLHNT`@Nj@XdAnA|CFLBHJTZt@\v@Pv@B`@?PEXKn@K`@Kb@AX?^@ZJ`@H\^pADRFT`@vA
+								xbmgDjihgHtAf@`A^PFt@RRHNB|A`@|B~@xBx@nBt@VFP@ZDP@TBN@Z@z@HfE@f@@d@DXDf@JF@RHzAp@v@\FTDV?RE^Wp@MRSTa@d@GHe@f@ONwGpH]`@[\a@f@MPOP}@`AkAdBiA|As@v@YNSJOBMFUJKHIFeCdCSRqCfA
 							</points>
 						</legGeometry>
-						<duration>675000</duration>
+						<duration>312000</duration>
 					</leg>
-					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
-						<startTime>2013-09-17T17:21:16-07:00</startTime>
-						<endTime>2013-09-17T17:21:27-07:00</endTime>
-						<distance>31.56684065785504</distance>
+					<leg mode="BUS" route="138" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="475" agencyId="TranSol" tripId="44311" routeShortName="138"
+					     routeLongName="VOLTA AO MORRO PANTANAL SUL">
+						<startTime>2013-09-18T15:10:00-07:00</startTime>
+						<endTime>2013-09-18T15:22:50-07:00</endTime>
+						<distance>3979.3054287061527</distance>
 						<from>
-							<name>Rua Rui Barbosa</name>
-							<lon>-48.54077726027398</lon>
-							<lat>-27.575623972602738</lat>
+							<name>TICEN - Terminal Centro</name>
+							<stopId>
+								<agencyId>TranSol</agencyId>
+								<id>43719878</id>
+							</stopId>
+							<lon>-48.55419039999999</lon>
+							<lat>-27.5979872</lat>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54077726027398,-27.575623972602738]}
+								[-48.55419039999999,-27.5979872]}
 							</geometry>
 						</from>
 						<to>
-							<name>Rua Rui Barbosa</name>
-							<lon>-48.54107553721558</lon>
-							<lat>-27.575723836097186</lat>
-							<arrival>2013-09-17T17:21:41-07:00</arrival>
-							<departure>2013-09-17T17:21:41-07:00</departure>
+							<name>Rua João Motta Espezim (03)</name>
+							<stopId>
+								<agencyId>TranSol</agencyId>
+								<id>1424653175</id>
+							</stopId>
+							<lon>-48.5327</lon>
+							<lat>-27.60871</lat>
+							<arrival>2013-09-18T15:22:50-07:00</arrival>
+							<departure>2013-09-18T15:22:50-07:00</departure>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54107553721558,-27.575723836097186]}
+								[-48.5327,-27.60871]}
+							</geometry>
+						</to>
+						<intermediateStops/>
+						<legGeometry>
+							<length>156</length>
+							<points>
+								zemgDfejgHjGiCL@VAVC`@Ip@y@Ze@Le@Dc@?OAQASAMKa@Q[UWo@o@OSIUA[?QDSXc@dBeB^e@N[Pc@`@{@`@c@HIRS`BeBLM`CkBjA_ANOPQzAaBtA}APOF@RHzAp@v@\p@\RDVBfBDL@fA?dB@RDTBf@Vr@d@LFx@b@JFVJv@Xp@d@n@Z`BTX@|BDzBt@p@h@Ln@HxAVv@\\t@RhA@ZIl@Qj@]NKHS@UAQISKMc@m@IQEU?W?W@SDQFSnB}DZo@HKDMJc@@eANy@Xm@P[RSj@c@jBuATOxBcBHOFQ@YEUIQGIMO[_@_DuDqBcC{BaBe@i@k@o@mAs@y@g@qAiAwA_ASQEEKMOQSYMUi@w@QWEGw@oA_@a@c@k@e@m@_@o@GKi@u@}AsCe@q@Me@Q}@MiDA}@AUAW@YDWRk@JYDOx@uBZs@JUVk@DG
+							</points>
+						</legGeometry>
+						<duration>770000</duration>
+					</leg>
+					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
+						<startTime>2013-09-18T15:22:51-07:00</startTime>
+						<endTime>2013-09-18T15:23:04-07:00</endTime>
+						<distance>49.31739460924299</distance>
+						<from>
+							<name>Rua João Motta Espezim</name>
+							<lon>-48.53267230769231</lon>
+							<lat>-27.60866153846154</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.53267230769231,-27.60866153846154]}
+							</geometry>
+						</from>
+						<to>
+							<name>Travessa José Goulart</name>
+							<lon>-48.53278545878004</lon>
+							<lat>-27.60899605656192</lat>
+							<arrival>2013-09-18T15:23:32-07:00</arrival>
+							<departure>2013-09-18T15:23:32-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.53278545878004,-27.60899605656192]}
 							</geometry>
 						</to>
 						<legGeometry>
-							<length>4</length>
-							<points>tzhgDzrggHFVBNFR</points>
+							<length>3</length>
+							<points>diogDf`fgHHUv@j@</points>
 						</legGeometry>
 						<steps>
 							<walkSteps>
-								<distance>31.56684065785504</distance>
-								<streetName>Rua Rui Barbosa</streetName>
+								<distance>11.99499435649337</distance>
+								<streetName>Rua João Motta Espezim</streetName>
+								<absoluteDirection>SOUTHEAST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.53267230769231</lon>
+								<lat>-27.60866153846154</lat>
+								<elevation></elevation>
+							</walkSteps>
+							<walkSteps>
+								<distance>37.32240025274962</distance>
+								<relativeDirection>RIGHT</relativeDirection>
+								<streetName>Travessa José Goulart</streetName>
 								<absoluteDirection>SOUTHWEST</absoluteDirection>
 								<stayOn>false</stayOn>
 								<bogusName>false</bogusName>
-								<lon>-48.54077726027398</lon>
-								<lat>-27.575623972602738</lat>
+								<lon>-48.53257</lon>
+								<lat>-27.60872</lat>
 								<elevation></elevation>
 							</walkSteps>
 						</steps>
-						<duration>11000</duration>
+						<duration>13000</duration>
 					</leg>
 				</legs>
 				<tooSloped>false</tooSloped>
 			</itinerary>
 			<itinerary>
-				<duration>701000</duration>
-				<startTime>2013-09-17T17:26:00-07:00</startTime>
-				<endTime>2013-09-17T17:37:41-07:00</endTime>
-				<walkTime>25</walkTime>
-				<transitTime>675</transitTime>
-				<waitingTime>1</waitingTime>
-				<walkDistance>31.56684065785504</walkDistance>
+				<duration>2204000</duration>
+				<startTime>2013-09-18T14:48:48-07:00</startTime>
+				<endTime>2013-09-18T15:25:32-07:00</endTime>
+				<walkTime>67</walkTime>
+				<transitTime>2135</transitTime>
+				<waitingTime>2</waitingTime>
+				<walkDistance>82.55552368945754</walkDistance>
 				<elevationLost>0.0</elevationLost>
 				<elevationGained>0.0</elevationGained>
 				<transfers>0</transfers>
 				<legs>
-					<leg mode="BUS" route="133" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
-					     agencyTimeZoneOffset="0" routeId="478" agencyId="0" tripId="44628" routeShortName="133"
-					     routeLongName="AGRONOMICA VIA MAURO RAMOS">
-						<startTime>2013-09-17T17:26:00-07:00</startTime>
-						<endTime>2013-09-17T17:37:15-07:00</endTime>
-						<distance>2449.746714273675</distance>
+					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
+						<startTime>2013-09-18T14:48:48-07:00</startTime>
+						<endTime>2013-09-18T14:49:03-07:00</endTime>
+						<distance>19.078880291464152</distance>
 						<from>
-							<name>TITRI - Terminal Trindade</name>
-							<stopId>
-								<agencyId>0</agencyId>
-								<id>72944878</id>
-							</stopId>
-							<lon>-48.52283428571429</lon>
-							<lat>-27.58406285714286</lat>
+							<name>Avenida Mauro Ramos</name>
+							<lon>-48.544332441930116</lon>
+							<lat>-27.597311558735438</lat>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.52283428571429,-27.58406285714286]}
+								[-48.544332441930116,-27.597311558735438]}
 							</geometry>
 						</from>
 						<to>
-							<name>Rua Rui Barbosa (06)</name>
+							<name>Avenida Mauro Ramos (02)</name>
 							<stopId>
-								<agencyId>0</agencyId>
-								<id>1649117787</id>
+								<agencyId>TranSol</agencyId>
+								<id>1457108793</id>
 							</stopId>
-							<lon>-48.54079</lon>
-							<lat>-27.57559</lat>
-							<arrival>2013-09-17T17:37:15-07:00</arrival>
-							<departure>2013-09-17T17:37:15-07:00</departure>
+							<lon>-48.5443</lon>
+							<lat>-27.59752</lat>
+							<arrival>2013-09-18T14:49:04-07:00</arrival>
+							<departure>2013-09-18T14:49:04-07:00</departure>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54079,-27.57559]}
+								[-48.5443,-27.59752]}
+							</geometry>
+						</to>
+						<legGeometry>
+							<length>3</length>
+							<points>fbmgDbihgHPFLD</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>19.078880291464152</distance>
+								<streetName>Avenida Mauro Ramos</streetName>
+								<absoluteDirection>SOUTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.544332441930116</lon>
+								<lat>-27.597311558735438</lat>
+								<elevation></elevation>
+							</walkSteps>
+						</steps>
+						<duration>15000</duration>
+					</leg>
+					<leg mode="BUS" route="135" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="577" agencyId="TranSol" tripId="50888" routeShortName="135"
+					     routeLongName="VOLTA AO MORRO CARVOEIRA NORTE">
+						<startTime>2013-09-18T14:49:04-07:00</startTime>
+						<endTime>2013-09-18T15:24:39-07:00</endTime>
+						<distance>9634.002667986735</distance>
+						<from>
+							<name>Avenida Mauro Ramos (02)</name>
+							<stopId>
+								<agencyId>TranSol</agencyId>
+								<id>1457108793</id>
+							</stopId>
+							<lon>-48.5443</lon>
+							<lat>-27.59752</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.5443,-27.59752]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua João Motta Espezim (10)</name>
+							<stopId>
+								<agencyId>TranSol</agencyId>
+								<id>1254099586</id>
+							</stopId>
+							<lon>-48.53234</lon>
+							<lat>-27.60884</lat>
+							<arrival>2013-09-18T15:24:39-07:00</arrival>
+							<departure>2013-09-18T15:24:39-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.53234,-27.60884]}
 							</geometry>
 						</to>
 						<intermediateStops/>
 						<legGeometry>
-							<length>121</length>
+							<length>474</length>
 							<points>
-								rojgDfcdgH]JwBn@CBCDKTCHIXIBKDcAXMJIR@TNNZVzDjDd@`@DDo@d@SZOLcAh@}@^IBIB]LOFcAXUDUHSF}Cp@eAMcA[ICSEgBg@OMKUK[GIGEICIAI?ODOHUJi@NSDQFOHkCdBSLMFeAv@o@l@OPMPET@L?JBZ@LLz@@V@x@Gz@GRCDCHMb@q@hAEFML{@v@m@Ri@\]`@A?iAnDaArBCHKXGTwCnJCJOf@Gd@?r@?r@BFJf@BLHNT`@Nj@XdAnA|CFLBHJTZt@\v@Pv@B`@?PEXKn@K`@Kb@AX?^@ZJ`@H\^pADRFT`@vA
+								lcmgDbihgHcEyAOGQI_@MyBu@UGUCQ@_A@oCIc@AuBKiAGM?OA}@CwBKK?MAqBIeCIIAc@Cy@EYA_@?cC?iD?Q@mD@g@Dg@JOBc@HwEpAKB_ATkA\QJcD~BMJOHc@Xo@Lm@G]Cw@I]Ke@Yc@Os@Qo@O[IcC[cAKwC[_D]wBY}AUiBY_@Iu@Qu@[eAm@aBcA??MKUUcAmAk@w@g@y@c@u@Yg@a@cASg@ISYu@IQm@gAq@sAO[O[Q_@Sa@a@sAa@oA{@gCI_@Ec@@c@Dc@J[R]VUXSXMxAg@j@]POPWNUEa@E]?E?U?E?SBYFc@HWHWnCaJFQJ[t@eCbA{CDS^a@h@]l@Sz@w@LMDGp@iALc@BIBEFSF{@Ay@AWM{@AMC[AYDULQNQZWRUdAw@LGRMjCeBNIPGREp@Bd@DVDj@PXF|@V|@THBbAZdAL|Cq@RGTId@Kr@SNG\MHCHC|@_@bAi@NMBCNWn@e@NKFCd@Sn@[DCfAi@PGBAVETCP?d@FJ@J@JBPD`A\TFV@NCJARMFGRQ@CHIDGl@k@NORQDCZWVQr@a@VQPMNOHKDEHQJWN]HQLSDIJMNOLILINIPEVGRG\I\I?AXINGPMh@a@PORIPETEL?j@Cb@ENA~AO`AIh@G|@MD?fAQJ?J?D?BADCXCXC|@DR@B?b@Ab@GNCpAUzAYNC^ILCp@MBAD?t@Ox@Q~AYHAh@KVCfAShBBJ?DBDBF?JADALAp@AxFT\@R@L@J?J@P?L@AFBJBFHFF@J?FAHKDG@KCOEIKGGAE?IBIFCFAJMAQ?KAK?MASA]AyFUSGMKCGGKGQIGECKAMBIHEHCJ?JBJHJDBDB?HDl@G^Kh@K`@Sh@S`@S`@}@vAORUb@Mh@Ed@@`@BZHZPb@HTZTpAr@vAv@vDpBRLzEnCnDjBZNVJXFP@LBf@?bAQPCLCEGCE?G@EBGDCYM}B{C@s@@O@?FwC?]V{JDy@J?DEBABG@EAMEIGEEAK@GFCHAD@LHHFBEx@C~@SzH?\IvC?BAJAr@|BzCNXAD?FBDDFD@B?VNZ^RTZ`@PR@@\`@BBHNNZHTBJ^lAZfADJFTL^Nb@BDVl@V^^Zb@V^Nn@TJD`Ad@jAr@n@b@HDTLt@LB@\B@?r@LRDjARX?d@?p@I@AB?j@IHAX?b@D|@N\J\N~@h@p@f@f@d@eAlA}@p@k@j@EF
 							</points>
 						</legGeometry>
-						<duration>675000</duration>
+						<duration>2135000</duration>
 					</leg>
 					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
-						<startTime>2013-09-17T17:37:16-07:00</startTime>
-						<endTime>2013-09-17T17:37:27-07:00</endTime>
-						<distance>31.56684065785504</distance>
+						<startTime>2013-09-18T15:24:40-07:00</startTime>
+						<endTime>2013-09-18T15:25:04-07:00</endTime>
+						<distance>63.4766433979934</distance>
 						<from>
-							<name>Rua Rui Barbosa</name>
-							<lon>-48.54077726027398</lon>
-							<lat>-27.575623972602738</lat>
+							<name>Rua João Motta Espezim</name>
+							<lon>-48.53238946492271</lon>
+							<lat>-27.60889193816885</lat>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54077726027398,-27.575623972602738]}
+								[-48.53238946492271,-27.60889193816885]}
 							</geometry>
 						</from>
 						<to>
-							<name>Rua Rui Barbosa</name>
-							<lon>-48.54107553721558</lon>
-							<lat>-27.575723836097186</lat>
-							<arrival>2013-09-17T17:37:41-07:00</arrival>
-							<departure>2013-09-17T17:37:41-07:00</departure>
+							<name>Travessa José Goulart</name>
+							<lon>-48.53278545878004</lon>
+							<lat>-27.60899605656192</lat>
+							<arrival>2013-09-18T15:25:32-07:00</arrival>
+							<departure>2013-09-18T15:25:32-07:00</departure>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54107553721558,-27.575723836097186]}
+								[-48.53278545878004,-27.60899605656192]}
 							</geometry>
 						</to>
 						<legGeometry>
-							<length>4</length>
-							<points>tzhgDzrggHFVBNFR</points>
+							<length>3</length>
+							<points>rjogDl~egHc@b@v@j@</points>
 						</legGeometry>
 						<steps>
 							<walkSteps>
-								<distance>31.56684065785504</distance>
-								<streetName>Rua Rui Barbosa</streetName>
+								<distance>26.154243145243782</distance>
+								<streetName>Rua João Motta Espezim</streetName>
+								<absoluteDirection>NORTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.53238946492271</lon>
+								<lat>-27.60889193816885</lat>
+								<elevation></elevation>
+							</walkSteps>
+							<walkSteps>
+								<distance>37.32240025274962</distance>
+								<relativeDirection>LEFT</relativeDirection>
+								<streetName>Travessa José Goulart</streetName>
 								<absoluteDirection>SOUTHWEST</absoluteDirection>
 								<stayOn>false</stayOn>
 								<bogusName>false</bogusName>
-								<lon>-48.54077726027398</lon>
-								<lat>-27.575623972602738</lat>
+								<lon>-48.53257</lon>
+								<lat>-27.60872</lat>
 								<elevation></elevation>
 							</walkSteps>
 						</steps>
-						<duration>11000</duration>
+						<duration>24000</duration>
 					</leg>
 				</legs>
 				<tooSloped>false</tooSloped>
 			</itinerary>
 			<itinerary>
-				<duration>701000</duration>
-				<startTime>2013-09-17T17:42:00-07:00</startTime>
-				<endTime>2013-09-17T17:53:41-07:00</endTime>
-				<walkTime>25</walkTime>
-				<transitTime>675</transitTime>
-				<waitingTime>1</waitingTime>
-				<walkDistance>31.56684065785504</walkDistance>
+				<duration>2204000</duration>
+				<startTime>2013-09-18T15:08:48-07:00</startTime>
+				<endTime>2013-09-18T15:45:32-07:00</endTime>
+				<walkTime>67</walkTime>
+				<transitTime>2135</transitTime>
+				<waitingTime>2</waitingTime>
+				<walkDistance>82.55552368945754</walkDistance>
 				<elevationLost>0.0</elevationLost>
 				<elevationGained>0.0</elevationGained>
 				<transfers>0</transfers>
 				<legs>
-					<leg mode="BUS" route="133" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
-					     agencyTimeZoneOffset="0" routeId="478" agencyId="0" tripId="44629" routeShortName="133"
-					     routeLongName="AGRONOMICA VIA MAURO RAMOS">
-						<startTime>2013-09-17T17:42:00-07:00</startTime>
-						<endTime>2013-09-17T17:53:15-07:00</endTime>
-						<distance>2449.746714273675</distance>
+					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
+						<startTime>2013-09-18T15:08:48-07:00</startTime>
+						<endTime>2013-09-18T15:09:03-07:00</endTime>
+						<distance>19.078880291464152</distance>
 						<from>
-							<name>TITRI - Terminal Trindade</name>
-							<stopId>
-								<agencyId>0</agencyId>
-								<id>72944878</id>
-							</stopId>
-							<lon>-48.52283428571429</lon>
-							<lat>-27.58406285714286</lat>
+							<name>Avenida Mauro Ramos</name>
+							<lon>-48.544332441930116</lon>
+							<lat>-27.597311558735438</lat>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.52283428571429,-27.58406285714286]}
+								[-48.544332441930116,-27.597311558735438]}
 							</geometry>
 						</from>
 						<to>
-							<name>Rua Rui Barbosa (06)</name>
+							<name>Avenida Mauro Ramos (02)</name>
 							<stopId>
-								<agencyId>0</agencyId>
-								<id>1649117787</id>
+								<agencyId>TranSol</agencyId>
+								<id>1457108793</id>
 							</stopId>
-							<lon>-48.54079</lon>
-							<lat>-27.57559</lat>
-							<arrival>2013-09-17T17:53:15-07:00</arrival>
-							<departure>2013-09-17T17:53:15-07:00</departure>
+							<lon>-48.5443</lon>
+							<lat>-27.59752</lat>
+							<arrival>2013-09-18T15:09:04-07:00</arrival>
+							<departure>2013-09-18T15:09:04-07:00</departure>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54079,-27.57559]}
+								[-48.5443,-27.59752]}
+							</geometry>
+						</to>
+						<legGeometry>
+							<length>3</length>
+							<points>fbmgDbihgHPFLD</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>19.078880291464152</distance>
+								<streetName>Avenida Mauro Ramos</streetName>
+								<absoluteDirection>SOUTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.544332441930116</lon>
+								<lat>-27.597311558735438</lat>
+								<elevation></elevation>
+							</walkSteps>
+						</steps>
+						<duration>15000</duration>
+					</leg>
+					<leg mode="BUS" route="135" agencyName="TranSol" agencyUrl="http://www.thefunbus.org"
+					     agencyTimeZoneOffset="0" routeId="577" agencyId="TranSol" tripId="50889" routeShortName="135"
+					     routeLongName="VOLTA AO MORRO CARVOEIRA NORTE">
+						<startTime>2013-09-18T15:09:04-07:00</startTime>
+						<endTime>2013-09-18T15:44:39-07:00</endTime>
+						<distance>9634.002667986735</distance>
+						<from>
+							<name>Avenida Mauro Ramos (02)</name>
+							<stopId>
+								<agencyId>TranSol</agencyId>
+								<id>1457108793</id>
+							</stopId>
+							<lon>-48.5443</lon>
+							<lat>-27.59752</lat>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.5443,-27.59752]}
+							</geometry>
+						</from>
+						<to>
+							<name>Rua João Motta Espezim (10)</name>
+							<stopId>
+								<agencyId>TranSol</agencyId>
+								<id>1254099586</id>
+							</stopId>
+							<lon>-48.53234</lon>
+							<lat>-27.60884</lat>
+							<arrival>2013-09-18T15:44:39-07:00</arrival>
+							<departure>2013-09-18T15:44:39-07:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
+								[-48.53234,-27.60884]}
 							</geometry>
 						</to>
 						<intermediateStops/>
 						<legGeometry>
-							<length>121</length>
+							<length>474</length>
 							<points>
-								rojgDfcdgH]JwBn@CBCDKTCHIXIBKDcAXMJIR@TNNZVzDjDd@`@DDo@d@SZOLcAh@}@^IBIB]LOFcAXUDUHSF}Cp@eAMcA[ICSEgBg@OMKUK[GIGEICIAI?ODOHUJi@NSDQFOHkCdBSLMFeAv@o@l@OPMPET@L?JBZ@LLz@@V@x@Gz@GRCDCHMb@q@hAEFML{@v@m@Ri@\]`@A?iAnDaArBCHKXGTwCnJCJOf@Gd@?r@?r@BFJf@BLHNT`@Nj@XdAnA|CFLBHJTZt@\v@Pv@B`@?PEXKn@K`@Kb@AX?^@ZJ`@H\^pADRFT`@vA
+								lcmgDbihgHcEyAOGQI_@MyBu@UGUCQ@_A@oCIc@AuBKiAGM?OA}@CwBKK?MAqBIeCIIAc@Cy@EYA_@?cC?iD?Q@mD@g@Dg@JOBc@HwEpAKB_ATkA\QJcD~BMJOHc@Xo@Lm@G]Cw@I]Ke@Yc@Os@Qo@O[IcC[cAKwC[_D]wBY}AUiBY_@Iu@Qu@[eAm@aBcA??MKUUcAmAk@w@g@y@c@u@Yg@a@cASg@ISYu@IQm@gAq@sAO[O[Q_@Sa@a@sAa@oA{@gCI_@Ec@@c@Dc@J[R]VUXSXMxAg@j@]POPWNUEa@E]?E?U?E?SBYFc@HWHWnCaJFQJ[t@eCbA{CDS^a@h@]l@Sz@w@LMDGp@iALc@BIBEFSF{@Ay@AWM{@AMC[AYDULQNQZWRUdAw@LGRMjCeBNIPGREp@Bd@DVDj@PXF|@V|@THBbAZdAL|Cq@RGTId@Kr@SNG\MHCHC|@_@bAi@NMBCNWn@e@NKFCd@Sn@[DCfAi@PGBAVETCP?d@FJ@J@JBPD`A\TFV@NCJARMFGRQ@CHIDGl@k@NORQDCZWVQr@a@VQPMNOHKDEHQJWN]HQLSDIJMNOLILINIPEVGRG\I\I?AXINGPMh@a@PORIPETEL?j@Cb@ENA~AO`AIh@G|@MD?fAQJ?J?D?BADCXCXC|@DR@B?b@Ab@GNCpAUzAYNC^ILCp@MBAD?t@Ox@Q~AYHAh@KVCfAShBBJ?DBDBF?JADALAp@AxFT\@R@L@J?J@P?L@AFBJBFHFF@J?FAHKDG@KCOEIKGGAE?IBIFCFAJMAQ?KAK?MASA]AyFUSGMKCGGKGQIGECKAMBIHEHCJ?JBJHJDBDB?HDl@G^Kh@K`@Sh@S`@S`@}@vAORUb@Mh@Ed@@`@BZHZPb@HTZTpAr@vAv@vDpBRLzEnCnDjBZNVJXFP@LBf@?bAQPCLCEGCE?G@EBGDCYM}B{C@s@@O@?FwC?]V{JDy@J?DEBABG@EAMEIGEEAK@GFCHAD@LHHFBEx@C~@SzH?\IvC?BAJAr@|BzCNXAD?FBDDFD@B?VNZ^RTZ`@PR@@\`@BBHNNZHTBJ^lAZfADJFTL^Nb@BDVl@V^^Zb@V^Nn@TJD`Ad@jAr@n@b@HDTLt@LB@\B@?r@LRDjARX?d@?p@I@AB?j@IHAX?b@D|@N\J\N~@h@p@f@f@d@eAlA}@p@k@j@EF
 							</points>
 						</legGeometry>
-						<duration>675000</duration>
+						<duration>2135000</duration>
 					</leg>
 					<leg mode="WALK" route="" agencyTimeZoneOffset="-25200000">
-						<startTime>2013-09-17T17:53:16-07:00</startTime>
-						<endTime>2013-09-17T17:53:27-07:00</endTime>
-						<distance>31.56684065785504</distance>
+						<startTime>2013-09-18T15:44:40-07:00</startTime>
+						<endTime>2013-09-18T15:45:04-07:00</endTime>
+						<distance>63.4766433979934</distance>
 						<from>
-							<name>Rua Rui Barbosa</name>
-							<lon>-48.54077726027398</lon>
-							<lat>-27.575623972602738</lat>
+							<name>Rua João Motta Espezim</name>
+							<lon>-48.53238946492271</lon>
+							<lat>-27.60889193816885</lat>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54077726027398,-27.575623972602738]}
+								[-48.53238946492271,-27.60889193816885]}
 							</geometry>
 						</from>
 						<to>
-							<name>Rua Rui Barbosa</name>
-							<lon>-48.54107553721558</lon>
-							<lat>-27.575723836097186</lat>
-							<arrival>2013-09-17T17:53:41-07:00</arrival>
-							<departure>2013-09-17T17:53:41-07:00</departure>
+							<name>Travessa José Goulart</name>
+							<lon>-48.53278545878004</lon>
+							<lat>-27.60899605656192</lat>
+							<arrival>2013-09-18T15:45:32-07:00</arrival>
+							<departure>2013-09-18T15:45:32-07:00</departure>
 							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;:
-								[-48.54107553721558,-27.575723836097186]}
+								[-48.53278545878004,-27.60899605656192]}
 							</geometry>
 						</to>
 						<legGeometry>
-							<length>4</length>
-							<points>tzhgDzrggHFVBNFR</points>
+							<length>3</length>
+							<points>rjogDl~egHc@b@v@j@</points>
 						</legGeometry>
 						<steps>
 							<walkSteps>
-								<distance>31.56684065785504</distance>
-								<streetName>Rua Rui Barbosa</streetName>
+								<distance>26.154243145243782</distance>
+								<streetName>Rua João Motta Espezim</streetName>
+								<absoluteDirection>NORTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<bogusName>false</bogusName>
+								<lon>-48.53238946492271</lon>
+								<lat>-27.60889193816885</lat>
+								<elevation></elevation>
+							</walkSteps>
+							<walkSteps>
+								<distance>37.32240025274962</distance>
+								<relativeDirection>LEFT</relativeDirection>
+								<streetName>Travessa José Goulart</streetName>
 								<absoluteDirection>SOUTHWEST</absoluteDirection>
 								<stayOn>false</stayOn>
 								<bogusName>false</bogusName>
-								<lon>-48.54077726027398</lon>
-								<lat>-27.575623972602738</lat>
+								<lon>-48.53257</lon>
+								<lat>-27.60872</lat>
 								<elevation></elevation>
 							</walkSteps>
 						</steps>
-						<duration>11000</duration>
+						<duration>24000</duration>
 					</leg>
 				</legs>
 				<tooSloped>false</tooSloped>
@@ -316,7 +478,7 @@
 		</entry>
 		<entry>
 			<key>time</key>
-			<value>5:10pm</value>
+			<value>2:48pm</value>
 		</entry>
 		<entry>
 			<key>arriveBy</key>
@@ -328,23 +490,23 @@
 		</entry>
 		<entry>
 			<key>fromPlace</key>
-			<value>-27.583955,-48.522842</value>
+			<value>-27.597234,-48.544498</value>
 		</entry>
 		<entry>
 			<key>ui_date</key>
-			<value>9/17/2013</value>
+			<value>9/18/2013</value>
 		</entry>
 		<entry>
 			<key>toPlace</key>
-			<value>-27.575587,-48.541124</value>
+			<value>-27.609069,-48.532692</value>
 		</entry>
 		<entry>
 			<key>_dc</key>
-			<value>1379448679492</value>
+			<value>1379526680941</value>
 		</entry>
 		<entry>
 			<key>date</key>
-			<value>2013-09-17</value>
+			<value>2013-09-18</value>
 		</entry>
 		<entry>
 			<key>walkSpeed</key>
