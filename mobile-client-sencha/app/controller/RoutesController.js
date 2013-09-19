@@ -106,7 +106,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		if (!aPointLatLng)
 			aPointLatLng = this.getAField().getValue();
 
-		if (bPointLatLng)
+		if (!bPointLatLng)
 			bPointLatLng = this.getBField().getValue();
 
 		if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {

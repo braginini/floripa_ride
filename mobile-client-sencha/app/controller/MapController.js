@@ -98,7 +98,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 					me.changeAddMapButtonMode();
 				}
 				me.setClickCount(0);
-			}, 500);
+			}, 200);
 		}
 	},
 
@@ -127,15 +127,17 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 				async: false,
 				timeout: 20000,
 				params: {
-				 location: point
-				 },
+					location: point
+				},
 
 				success: function (result, request) {
 					var location = result.results[0].locations[0];
 
-					if (location)
-						fieldStr = location.street + ", " + location.adminArea5 + ", "
-							+ location.adminArea3 + ", " + location.adminArea1;
+					if (location) {
+						fieldStr = location.street;
+						if (location.adminArea4 && location.adminArea4.length > 0)
+							fieldStr = fieldStr + ", "  + location.adminArea4;
+					}
 
 					me.setLocationFieldValue(fieldStr, point);
 					me.changeView(routesView, 'slide', 'right')
