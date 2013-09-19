@@ -129,6 +129,8 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 			var point = this.markerLayer.getLayers()[0].getLatLng().lat + ',' + this.markerLayer.getLayers()[0].getLatLng().lng;
 			var fieldStr = point; //by default field value - lat + lng
 			var appKey = 'Fmjtd%7Cluub2501ng%2C2a%3Do5-9uzl00';
+
+			//todo duplicate # 2 move to sep class
 			Ext.data.JsonP.request({
 				url: 'http://www.mapquestapi.com/geocoding/v1/reverse?key=' + appKey,
 				callbackKey: 'callback',
@@ -160,6 +162,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		}
 	},
 
+	//todo duplicate # 0 move to sep class
 	setLocationFieldValue: function (value, latlng) {
 
 		var routesView = this.getRoutesView();
@@ -178,6 +181,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		this.markerLayer.clearLayers();
 	},
 
+	//todo duplicate # 1 move to sep class
 	changeView: function (view, type, slideDirection) {
 
 		Ext.Viewport.getLayout().setAnimation({

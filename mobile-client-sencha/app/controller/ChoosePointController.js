@@ -53,6 +53,7 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 		this.changeView(this.getHomeView(), 'slide', 'right');
 	},
 
+	//todo duplicate # 1 move to sep class
 	changeView: function (view, type, slideDirection) {
 
 		Ext.Viewport.getLayout().setAnimation({
@@ -89,21 +90,60 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 				var lng = position.coords.longitude;
 				var routesView = me.getRoutesView();
 
-				var fieldStr = lat + ',' + lng;
-				if (me.getChoosePointView().isAFieldTapped()) {
-					routesView.setAFieldValue(fieldStr);
-				} else {
-					routesView.setBFieldValue(fieldStr);
-				}
+				var point = lat + ',' + lng;
+				var fieldStr = point;
+				var appKey = 'Fmjtd%7Cluub2501ng%2C2a%3Do5-9uzl00';
 
-				me.changeView(routesView, 'slide', 'right')
+				//todo duplicate # 2 move to sep class
+				Ext.data.JsonP.request({
+					url: 'http://www.mapquestapi.com/geocoding/v1/reverse?key=' + appKey,
+					callbackKey: 'callback',
+					async: false,
+					timeout: 20000,
+					params: {
+						location: point
+					},
+
+					success: function (result, request) {
+						var location = result.results[0].locations[0];
+
+						if (location) {
+							fieldStr = location.street;
+							if (location.adminArea4 && location.adminArea4.length > 0)
+								fieldStr = fieldStr + ", " + location.adminArea4;
+						}
+
+						me.setLocationFieldValue(fieldStr, point);
+						me.changeView(routesView, 'slide', 'right')
+					},
+
+					failure: function (result, request) {
+
+						me.setLocationFieldValue(fieldStr, point);
+						me.changeView(routesView, 'slide', 'right')
+					}
+				});
 			},
-			function error (error) {
+			function error(error) {
 				alert(error);
 			});
 
 		function onDeviceReady() {
 			console.log("device is ready");
+		}
+	},
+
+	//todo duplicate # 0 move to sep class
+	setLocationFieldValue: function (value, latlng) {
+
+		var routesView = this.getRoutesView();
+
+		if (this.getChoosePointView().isAFieldTapped()) {
+			routesView.setAFieldValue(value);
+			routesView.setAFieldLatLngValue(latlng)
+		} else {
+			routesView.setBFieldValue(value);
+			routesView.setBFieldLatLngValue(latlng)
 		}
 	}
 });

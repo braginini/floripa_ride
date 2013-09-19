@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ChoosePointController.js" afterPath="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapController.js" afterPath="$PROJECT_DIR$/app/controller/MapController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapView.js" afterPath="$PROJECT_DIR$/app/view/MapView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
@@ -40,7 +39,7 @@
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001233349" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-common/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001239850" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-hbase-filters/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001247202" ignored="false" />
-    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379529202144" ignored="false" />
+    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379599584467" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/dev/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084087779" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/util/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084586891" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/prod/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084790118" ignored="false" />
@@ -196,7 +195,16 @@
       <file leaf-file-name="MapController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="53" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.5265151">
+            <state line="132" column="50" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.3131313">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChoosePointController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="16" selection-start="1946" selection-end="1984" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,7 +222,7 @@
       <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="5" selection-start="3003" selection-end="3003" vertical-scroll-proportion="0.0">
+            <state line="112" column="12" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -257,10 +265,10 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/../OTP_response.xml" />
         <option value="$PROJECT_DIR$/jsonResponse.json" />
-        <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/view/ChoosePointView.js" />
         <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
         <option value="$PROJECT_DIR$/app/view/MapView.js" />
+        <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
         <option value="$PROJECT_DIR$/app/controller/MapController.js" />
       </list>
@@ -335,46 +343,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaflet-0.6.4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaflet-0.6.4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,13 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="41" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1161" column="7" selection-start="17804" selection-end="17804" vertical-scroll-proportion="0.0">
@@ -792,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="5" selection-start="3003" selection-end="3003" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="51" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
@@ -806,9 +760,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="16" selection-start="1946" selection-end="1984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="12" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="53" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.5265151">
+        <state line="132" column="50" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.3131313">
           <folding />
         </state>
       </provider>
