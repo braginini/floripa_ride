@@ -60,7 +60,4 @@ Ext.define('mobile-client-sencha.view.MapView', {
 			}
 		]
 	}
-
-
-
 });

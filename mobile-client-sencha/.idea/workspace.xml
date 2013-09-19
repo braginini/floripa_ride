@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapController.js" afterPath="$PROJECT_DIR$/app/controller/MapController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapView.js" afterPath="$PROJECT_DIR$/app/view/MapView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -21,7 +22,7 @@
     <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
     <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
     <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379538957817" ignored="false" />
+    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379598456375" ignored="false" />
     <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
     <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379362695806" ignored="false" />
     <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
@@ -53,8 +54,8 @@
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/hbase/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379103478800" ignored="false" />
     <file path="/ShapesWriter.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379170356170" ignored="false" />
     <file path="/index.html" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379348906070" ignored="false" />
-    <file path="/MapView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379435754820" ignored="false" />
-    <file path="/MapController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379596795359" ignored="false" />
+    <file path="/MapView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379598311837" ignored="false" />
+    <file path="/MapController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379598984040" ignored="false" />
     <file path="/sencha.cfg" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379355906032" ignored="false" />
     <file path="/LeafletMap.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379360681524" ignored="false" />
     <file path="/RoutesView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379537521229" ignored="false" />
@@ -195,16 +196,7 @@
       <file leaf-file-name="MapController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="63" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.6670747">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DHTML.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1161" column="7" selection-start="17804" selection-end="17804" vertical-scroll-proportion="0.0">
+            <state line="68" column="53" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.5265151">
               <folding />
             </state>
           </provider>
@@ -222,7 +214,7 @@
       <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="67" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0">
+            <state line="143" column="5" selection-start="3003" selection-end="3003" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -231,7 +223,7 @@
       <file leaf-file-name="MapView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="82" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+            <state line="7" column="51" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,13 +254,13 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ux/LeafletMap.js" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/app/view/MapView.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/../OTP_response.xml" />
         <option value="$PROJECT_DIR$/jsonResponse.json" />
         <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/view/ChoosePointView.js" />
         <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
+        <option value="$PROJECT_DIR$/app/view/MapView.js" />
         <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
         <option value="$PROJECT_DIR$/app/controller/MapController.js" />
       </list>
@@ -786,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="82" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/ChoosePointView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="5" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.83353734">
@@ -809,14 +794,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="67" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0">
+        <state line="143" column="5" selection-start="3003" selection-end="3003" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="51" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="63" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.6670747">
+        <state line="68" column="53" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.5265151">
           <folding />
         </state>
       </provider>

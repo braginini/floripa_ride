@@ -142,5 +142,4 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			});
 		}
 	}
-
 });

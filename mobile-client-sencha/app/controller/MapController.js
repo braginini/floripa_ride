@@ -59,14 +59,22 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 				tap: 'onTapHomeBtn'
 			},
 
+			mapView: {
+				show: 'onShow'
+			},
+
 			addMapBtn: {
 				tap: 'onTapAddMapBtn'
 			}
 		}
 	},
 
-	//todo when the view is opened clear map. Find the event
-	//todo when view is showed - setToCancel = true
+	onShow: function () {
+		console.log(">>>>>> Map showed");
+		this.changeAddMapButtonMode('Cancelar', false);
+		if (this.markerLayer)
+			this.markerLayer.clearLayers();
+	},
 
 	onMapRender: function (component, map, layer) {
 		console.log("map render");
@@ -95,7 +103,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 					var latLng = e.latlng;
 					me.addSingleMarker(latLng.lat, latLng.lng);
 					me.setToCancel(false);
-					me.changeAddMapButtonMode();
+					me.changeAddMapButtonMode('Pronto', false);
 				}
 				me.setClickCount(0);
 			}, 200);
@@ -136,7 +144,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 					if (location) {
 						fieldStr = location.street;
 						if (location.adminArea4 && location.adminArea4.length > 0)
-							fieldStr = fieldStr + ", "  + location.adminArea4;
+							fieldStr = fieldStr + ", " + location.adminArea4;
 					}
 
 					me.setLocationFieldValue(fieldStr, point);
@@ -180,9 +188,9 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		Ext.Viewport.setActiveItem(view);
 	},
 
-	changeAddMapButtonMode: function () {
+	changeAddMapButtonMode: function (text, mode) {
 
-		this.getAddMapBtn().setText('Pronto');
-		this.setToCancel(false);
+		this.getAddMapBtn().setText(text);
+		this.setToCancel(mode);
 	}
 });
