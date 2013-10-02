@@ -7,34 +7,43 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 		fields: [
 
 			{
-				name : 'duration'
+				name: 'duration'
 			} ,
 			{
-				name : 'startTime'
+				name: 'startTime',
+				convert: function (millis) {
+					var date = new Date(+millis);
+					return date.getHours() + ":" + date.getMinutes();
+				}
+
 			} ,
 			{
-				name : 'endTime'
+				name: 'endTime',
+				convert: function (millis) {
+					var date = new Date(+millis);
+					return date.getHours() + ":" + date.getMinutes();
+				}
 			} ,
 			{
-				name : 'fare'
+				name: 'fare'
 			} ,
 			{
-				name : 'transfers'
+				name: 'transfers'
 			},
 			{
-				name : 'transitTime'
+				name: 'transitTime'
 			},
 			{
-				name : 'waitingTime'
+				name: 'waitingTime'
 			},
 			{
-				name : 'walkDistance'
+				name: 'walkDistance'
 			},
 			{
-				name : 'walkTime'
+				name: 'walkTime'
 			},
 			{
-				name : 'legs', type: 'Leg[]'
+				name: 'legs', type: 'Leg[]'
 			}
 		]
 	}

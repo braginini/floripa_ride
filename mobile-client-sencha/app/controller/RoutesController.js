@@ -119,16 +119,16 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				async: false,
 				timeout: 20000,
 				params: {
-					_dc: Date.now(),
-					fromPlace: '-27.59344654677613,-48.552489280700684',//aPointLatLng,
-					toPlace: '-27.60280429553809,-48.464813232421875',//bPointLatLng,
-					ui_date: '9/17/2013',
+					_dc: 1380747025820,
+					fromPlace: '-27.593084,-48.531511',//aPointLatLng,
+					toPlace: '-27.600082,-48.465422',//bPointLatLng,
+					ui_date: '10/2/2013',
 					arriveBy: 'false',
-					time: '5:10pm',
+					time: '4:45pm',
 					mode: 'TRANSIT,WALK',
 					optimize: 'QUICK',
 					maxWalkDistance: '840',
-					date: '2013-09-17',
+					date: '2013-10-02',
 					walkSpeed: '1.341',
 					numItineraries: '6'
 				},
@@ -140,14 +140,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 					if (result.plan && result.plan.itineraries.length > 0) {
 
 						for (var i = 0; i < result.plan.itineraries.length; i++) {
-							var itinerary = Ext.create('mobile-client-sencha.model.Itinerary');
-							itinerary.setData(result.plan.itineraries[i]);
-							itineraries[i] = itinerary;
+							me.getItinerariesList().getStore().add(result.plan.itineraries[i]);
 						}
 
 					}
-
-					me.getItinerariesList().getStore().setData(itineraries);
 				},
 
 				failure: function (result, request) {

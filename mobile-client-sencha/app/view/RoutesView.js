@@ -101,7 +101,7 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 			{
 				xtype: 'list',
 				id: 'itineraries',
-				itemTpl: '{duration}',
+				itemTpl: '{startTime} - {endTime}',
 				margin: 15,
 				store: 'Itinerary',
 				flex: 1
