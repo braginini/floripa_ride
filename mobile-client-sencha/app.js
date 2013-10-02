@@ -42,6 +42,14 @@ Ext.application({
 		'HomeController', 'RoutesController', 'ChoosePointController', 'MapController'
 	],
 
+	models: [
+		'Itinerary', 'Leg', 'Destination'
+	],
+
+	stores:[
+		'Itinerary'
+	],
+
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',

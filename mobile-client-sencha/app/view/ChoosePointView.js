@@ -1,25 +1,3 @@
-Ext.define('ChoosePointMenuModel', {
-	extend: 'Ext.data.Model',
-	config: {
-		fields: ['id', 'title']
-	}
-
-});
-
-Ext.define('ChoosePointMenuStore', {
-	id: 'choosePointMenuStore',
-	model: 'ChoosePointMenuModel',
-	config: {
-		fields: ['title']
-	},
-
-	data: [
-		{id: '0', title: 'Minha Localização'},
-		{id: '1', title: 'Mostrar no mapa'},
-		{id: '2', title: 'Favorito'}
-	]
-});
-
 Ext.define('mobile-client-sencha.view.ChoosePointView', {
     extend: 'Ext.Panel',
 
@@ -65,7 +43,6 @@ Ext.define('mobile-client-sencha.view.ChoosePointView', {
 
 	        {
 		    	xtype: 'list',
-		        /*store: 'ChoosePointMenuStore',*/
 		        itemTpl: '{title}',
 		        margin: 10,
 		        id: 'choosePointMenu',

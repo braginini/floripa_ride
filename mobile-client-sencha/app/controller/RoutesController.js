@@ -14,6 +14,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			searchRouteBtn: '#searchRouteBtn',
 			aField: '#aField',
 			bField: '#bField',
+			itinerariesList: '#itineraries',
 
 			homeView: {
 				autoCreate: true,
@@ -102,6 +103,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 		var aPointLatLng = this.getRoutesView().getAFieldLatLngValue();
 		var bPointLatLng = this.getRoutesView().getBFieldLatLngValue();
+		var me = this;
 
 		if (!aPointLatLng)
 			aPointLatLng = this.getAField().getValue();
@@ -109,17 +111,17 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		if (!bPointLatLng)
 			bPointLatLng = this.getBField().getValue();
 
-		if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
+		//if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
 
 			Ext.data.JsonP.request({
-				url: 'http://ec2-54-232-224-233.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
+				url: 'http://ec2-54-232-241-207.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
 				callbackKey: 'callback',
 				async: false,
 				timeout: 20000,
 				params: {
 					_dc: Date.now(),
-					fromPlace: aPointLatLng,
-					toPlace: bPointLatLng,
+					fromPlace: '-27.59344654677613,-48.552489280700684',//aPointLatLng,
+					toPlace: '-27.60280429553809,-48.464813232421875',//bPointLatLng,
 					ui_date: '9/17/2013',
 					arriveBy: 'false',
 					time: '5:10pm',
@@ -133,13 +135,25 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 				success: function (result, request) {
 					//todo handle errors sent by server
-					alert(result.plan.itineraries.length + " itineraries found");
+					var itineraries = new Array();
+
+					if (result.plan && result.plan.itineraries.length > 0) {
+
+						for (var i = 0; i < result.plan.itineraries.length; i++) {
+							var itinerary = Ext.create('mobile-client-sencha.model.Itinerary');
+							itinerary.setData(result.plan.itineraries[i]);
+							itineraries[i] = itinerary;
+						}
+
+					}
+
+					me.getItinerariesList().getStore().setData(itineraries);
 				},
 
 				failure: function (result, request) {
 					alert("failed");
 				}
 			});
-		}
+		//}
 	}
 });

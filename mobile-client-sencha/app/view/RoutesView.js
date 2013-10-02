@@ -1,116 +1,114 @@
 Ext.define('mobile-client-sencha.view.RoutesView', {
-    extend: 'Ext.Panel',
+	extend: 'Ext.Panel',
 
-    id: 'routesView',
+	id: 'routesView',
 
-    xtype: 'RoutesView',
+	xtype: 'RoutesView',
 
 	requires: [
 		'Ext.SegmentedButton'
 	],
 
-    config: {
+	config: {
 
-	    aFieldLatLng: null,
+		aFieldLatLng: null,
 
-	    bFieldLatLng: null,
+		bFieldLatLng: null,
 
+		fullscreen: true,
 
-        items: [
+		layout: 'vbox',
 
-            {
-                xtype: 'toolbar',
-                docked: 'top',
-                //cls: 'x-toolbar',
-	            /*ui: 'light',*/
-                title: 'Como obter?',
-                /*iconCls: 'home',
-                iconMask: true*/
-                items: [
-                    {
-                        xtype: 'button',
-                        iconCls: 'home',
-                        iconMask: true,
-                        ui: 'action',
-                        id: 'homeBtn'
-                    }
-                ]
-                //ui: 'light'
-            },
+		items: [
+			{
+				xtype: 'container',
+				flex: 0,
+				items: [
+					{
+						xtype: 'toolbar',
+						docked: 'top',
+						title: 'Como obter?',
+						items: [
+							{
+								xtype: 'button',
+								iconCls: 'home',
+								iconMask: true,
+								ui: 'action',
+								id: 'homeBtn'
+							}
+						]
+					},
 
+					{
+						xtype: 'textfield',
+						placeHolder: 'A: Especificar o ponto de partida',
+						name: 'firstName',
+						margin: 15,
+						id: 'aField',
+						disabled: "true",
 
-            {
-                xtype: 'textfield',
-                placeHolder: 'A: Especificar o ponto de partida',
-                name: 'firstName',
-                margin: 15,
-                id: 'aField',
-	            disabled: "true",
+						listeners: {
+							element: 'element',
+							tap: function () {
+								this.fireEvent('tap');
+							}
+						}
+					},
+					{
+						xtype: 'textfield',
+						placeHolder: 'B: Especificar o ponto final',
+						name: 'lastName',
+						margin: 15,
+						id: 'bField',
+						disabled: "true",
 
-	            /*initialize : function() {
-		            var me = this;
+						listeners: {
+							element: 'element',
+							tap: function () {
+								this.fireEvent('tap');
+							}
+						}
+					},
+					{
+						xtype: 'segmentedbutton',
+						allowDepress: true,
+						margin: 15,
+						items: [
 
-		            me.element.on('tap', 'doBubbleTap', me);
+							{
+								pressed: true,
+								iconCls: 'team',
+								iconMask: true
+							},
+							{
+								iconCls: 'team',
+								iconMask: true
+							},
+							{
+								iconCls: 'team',
+								iconMask: true
+							}
+						]
+					},
 
-		            me.callParent();
-	            },
+					{
+						xtype: 'button',
+						text: 'Ok',
+						id: 'searchRouteBtn'
+					}
+				]
+			},
+			{
+				xtype: 'list',
+				id: 'itineraries',
+				itemTpl: '{duration}',
+				margin: 15,
+				store: 'Itinerary',
+				flex: 1
+			}
 
-	            doBubbleTap : function(e, t) {
-		            this.fireEvent('tap', this, e, t);
-	            }*/
-
-	            listeners : {
-		            element : 'element',
-		            tap : function() {
-			            this.fireEvent('tap');
-		            }
-	            }
-            },
-            {
-                xtype: 'textfield',
-                placeHolder: 'B: Especificar o ponto final',
-                name: 'lastName',
-                margin: 15,
-                id: 'bField',
-	            disabled: "true",
-
-	            listeners : {
-		            element : 'element',
-		            tap : function() {
-			            this.fireEvent('tap');
-		            }
-	            }
-            },
-            {
-                xtype: 'segmentedbutton',
-                allowDepress: true,
-                margin: 15,
-                items: [
-
-                    {
-                        pressed: true,
-                        iconCls: 'team',
-                        iconMask: true
-                    },
-                    {
-                        iconCls: 'team',
-                        iconMask: true
-                    },
-                    {
-                        iconCls: 'team',
-                        iconMask: true
-                    }
-                ]
-            },
-
-	        {
-		        xtype: 'button',
-		        text: 'Ok',
-		        id: 'searchRouteBtn'
-	        }
-
-        ]
-    },
+		]
+	},
 
 	setAFieldValue: function (value) {
 		this.setFieldValue(this.down('#aField'), value);
@@ -120,27 +118,27 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 		this.setFieldValue(this.down('#bField'), value);
 	},
 
-	setFieldValue : function (field, value) {
+	setFieldValue: function (field, value) {
 		field.setValue(value);
 	},
 
-	setFieldValueById : function (id, value) {
+	setFieldValueById: function (id, value) {
 		this.down(id).setValue(value);
 	},
 
-	setAFieldLatLngValue : function (value) {
+	setAFieldLatLngValue: function (value) {
 		this.setAFieldLatLng(value);
 	},
 
-	setBFieldLatLngValue : function (value) {
+	setBFieldLatLngValue: function (value) {
 		this.setBFieldLatLng(value);
 	},
 
-	getAFieldLatLngValue : function () {
+	getAFieldLatLngValue: function () {
 		return this.getAFieldLatLng();
 	},
 
-	getBFieldLatLngValue : function () {
+	getBFieldLatLngValue: function () {
 		return this.getBFieldLatLng();
 	}
 
