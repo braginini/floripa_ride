@@ -21,82 +21,77 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 		items: [
 			{
-				xtype: 'container',
-				flex: 0,
+				xtype: 'toolbar',
+				docked: 'top',
+				title: 'Como obter?',
 				items: [
 					{
-						xtype: 'toolbar',
-						docked: 'top',
-						title: 'Como obter?',
-						items: [
-							{
-								xtype: 'button',
-								iconCls: 'home',
-								iconMask: true,
-								ui: 'action',
-								id: 'homeBtn'
-							}
-						]
-					},
-
-					{
-						xtype: 'textfield',
-						placeHolder: 'A: Especificar o ponto de partida',
-						name: 'firstName',
-						margin: 15,
-						id: 'aField',
-						disabled: "true",
-
-						listeners: {
-							element: 'element',
-							tap: function () {
-								this.fireEvent('tap');
-							}
-						}
-					},
-					{
-						xtype: 'textfield',
-						placeHolder: 'B: Especificar o ponto final',
-						name: 'lastName',
-						margin: 15,
-						id: 'bField',
-						disabled: "true",
-
-						listeners: {
-							element: 'element',
-							tap: function () {
-								this.fireEvent('tap');
-							}
-						}
-					},
-					{
-						xtype: 'segmentedbutton',
-						allowDepress: true,
-						margin: 15,
-						items: [
-
-							{
-								pressed: true,
-								iconCls: 'team',
-								iconMask: true
-							},
-							{
-								iconCls: 'team',
-								iconMask: true
-							},
-							{
-								iconCls: 'team',
-								iconMask: true
-							}
-						]
-					},
-
-					{
 						xtype: 'button',
-						text: 'Ok',
-						id: 'searchRouteBtn'
+						iconCls: 'home',
+						iconMask: true,
+						ui: 'action',
+						id: 'homeBtn'
 					}
 				]
+			},
+
+			{
+				xtype: 'textfield',
+				placeHolder: 'A: Especificar o ponto de partida',
+				name: 'firstName',
+				margin: 15,
+				id: 'aField',
+				disabled: "true",
+
+				listeners: {
+					element: 'element',
+					tap: function () {
+						this.fireEvent('tap');
+					}
+				}
+			},
+			{
+				xtype: 'textfield',
+				placeHolder: 'B: Especificar o ponto final',
+				name: 'lastName',
+				margin: 15,
+				id: 'bField',
+				disabled: "true",
+
+				listeners: {
+					element: 'element',
+					tap: function () {
+						this.fireEvent('tap');
+					}
+				}
+			},
+			{
+				xtype: 'segmentedbutton',
+				allowDepress: true,
+				margin: 15,
+				items: [
+
+					{
+						pressed: true,
+						iconCls: 'team',
+						iconMask: true
+					},
+					{
+						iconCls: 'team',
+						iconMask: true
+					},
+					{
+						iconCls: 'team',
+						iconMask: true
+					}
+				]
+			},
+
+			{
+				xtype: 'button',
+				text: 'Ok',
+				margin: 15,
+				id: 'searchRouteBtn'
 			},
 			{
 				xtype: 'list',
