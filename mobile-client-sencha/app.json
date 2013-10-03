@@ -52,6 +52,12 @@
 		{
 			"path": "ux/LeafletMap.js"
 		},
+		{
+			"path": "ux/picker/Time.js"
+		},
+		{
+			"path": "ux/field/TimePicker.js"
+		},
         {
             "path": "app.js",
             "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */

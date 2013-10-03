@@ -6,7 +6,8 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 	xtype: 'RoutesView',
 
 	requires: [
-		'Ext.SegmentedButton'
+		'Ext.SegmentedButton',
+		'Ext.ux.field.TimePicker'
 	],
 
 	config: {
@@ -83,6 +84,33 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 					{
 						iconCls: 'team',
 						iconMask: true
+					}
+				]
+			},
+
+			{
+				xtype: 'container',
+				layout: 'vbox',
+				items: [
+					{
+						xtype: 'selectfield',
+						margin : 15,
+						options: [
+							{text: 'Depart',  value: 0},
+							{text: 'Arrive', value: 1}
+						]
+					},
+
+					{
+						xtype: 'timepickerfield',
+						value: new Date(),
+						margin : 15
+					},
+
+					{
+						xtype: 'datepickerfield',
+						value: new Date(),
+						margin : 15
 					}
 				]
 			},

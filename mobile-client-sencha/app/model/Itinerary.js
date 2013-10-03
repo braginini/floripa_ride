@@ -7,13 +7,20 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 		fields: [
 
 			{
-				name: 'duration'
+				name: 'duration',
+				convert: function (millis) {
+					var minutes =  millis / 1000 / 60;
+					var hours = minutes / 60;
+					return millis;
+				}
 			} ,
 			{
 				name: 'startTime',
 				convert: function (millis) {
 					var date = new Date(+millis);
-					return date.getHours() + ":" + date.getMinutes();
+					var hours = (date.getHours() <10 ? '0' : '') + date.getHours() ;
+					var minutes = (date.getMinutes()< 10 ? '0' : '') + date.getMinutes() ;
+					return  hours + ":" + minutes;
 				}
 
 			} ,
@@ -21,7 +28,9 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 				name: 'endTime',
 				convert: function (millis) {
 					var date = new Date(+millis);
-					return date.getHours() + ":" + date.getMinutes();
+					var hours = (date.getHours().length < 2) ? ("0" + date.getHours()) : date.getHours();
+					var minutes = (date.getMinutes().length < 2) ? ("0" + date.getMinutes()) : date.getMinutes();
+					return  hours + ":" + minutes;
 				}
 			} ,
 			{

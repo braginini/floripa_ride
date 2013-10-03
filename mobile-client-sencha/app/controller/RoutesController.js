@@ -100,10 +100,11 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	},
 
 	onSearchRouteBtnTap: function () {
+		var me = this;
+		me.getItinerariesList().getStore().removeAll();  //empty store
 
 		var aPointLatLng = this.getRoutesView().getAFieldLatLngValue();
 		var bPointLatLng = this.getRoutesView().getBFieldLatLngValue();
-		var me = this;
 
 		if (!aPointLatLng)
 			aPointLatLng = this.getAField().getValue();
@@ -112,14 +113,13 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			bPointLatLng = this.getBField().getValue();
 
 		//if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
-
 			Ext.data.JsonP.request({
 				url: 'http://ec2-54-232-241-207.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
 				callbackKey: 'callback',
 				async: false,
 				timeout: 20000,
 				params: {
-					_dc: 1380747025820,
+					_dc: Date.now(),
 					fromPlace: '-27.593084,-48.531511',//aPointLatLng,
 					toPlace: '-27.600082,-48.465422',//bPointLatLng,
 					ui_date: '10/2/2013',
@@ -142,7 +142,6 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 						for (var i = 0; i < result.plan.itineraries.length; i++) {
 							me.getItinerariesList().getStore().add(result.plan.itineraries[i]);
 						}
-
 					}
 				},
 
