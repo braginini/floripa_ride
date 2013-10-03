@@ -45,6 +45,12 @@
 		{
 			"path": "lib/leaflet-0.6.4/leaflet.js"
 		},
+		{
+			"path": "lib/utils/otp.js"
+		},
+		{
+			"path": "lib/utils/DateUtils.js"
+		},
         {
             "path": "touch/sencha-touch.js",
             "x-bootstrap": true

@@ -15,6 +15,9 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			aField: '#aField',
 			bField: '#bField',
 			itinerariesList: '#itineraries',
+			timeField: '#timeField',
+			dateField: '#dateField',
+			departField: '#departField',
 
 			homeView: {
 				autoCreate: true,
@@ -103,14 +106,18 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		var me = this;
 		me.getItinerariesList().getStore().removeAll();  //empty store
 
-		var aPointLatLng = this.getRoutesView().getAFieldLatLngValue();
-		var bPointLatLng = this.getRoutesView().getBFieldLatLngValue();
+		var aPointLatLng = me.getRoutesView().getAFieldLatLngValue();
+		var bPointLatLng = me.getRoutesView().getBFieldLatLngValue();
+
+		var date = otp.util.DateUtils.dateToIsoDateString(me.getDateField().getValue());
+		var time = otp.util.DateUtils.parseTime(me.getTimeField().getFormattedValue(), "g:ia");
+		var arriveBy = me.getDepartField().getValue() == 0 ? false : true;
 
 		if (!aPointLatLng)
-			aPointLatLng = this.getAField().getValue();
+			aPointLatLng = me.getAField().getValue();
 
 		if (!bPointLatLng)
-			bPointLatLng = this.getBField().getValue();
+			bPointLatLng = me.getBField().getValue();
 
 		//if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
 			Ext.data.JsonP.request({
@@ -120,17 +127,16 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				timeout: 20000,
 				params: {
 					_dc: Date.now(),
-					fromPlace: '-27.593084,-48.531511',//aPointLatLng,
-					toPlace: '-27.600082,-48.465422',//bPointLatLng,
-					ui_date: '10/2/2013',
-					arriveBy: 'false',
-					time: '4:45pm',
+					fromPlace: '-27.593692,-48.543871',//aPointLatLng,
+					toPlace: '-27.589889,-48.516748',//bPointLatLng,
+					ui_date: '10/3/2013',
+					arriveBy: arriveBy,
+					time: time,
 					mode: 'TRANSIT,WALK',
 					optimize: 'QUICK',
 					maxWalkDistance: '840',
-					date: '2013-10-02',
-					walkSpeed: '1.341',
-					numItineraries: '6'
+					date: date,
+					walkSpeed: '1.341'
 				},
 
 				success: function (result, request) {

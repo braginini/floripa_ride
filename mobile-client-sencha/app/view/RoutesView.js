@@ -95,6 +95,7 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 					{
 						xtype: 'selectfield',
 						margin : 15,
+						id: 'departField',
 						options: [
 							{text: 'Depart',  value: 0},
 							{text: 'Arrive', value: 1}
@@ -104,12 +105,14 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 					{
 						xtype: 'timepickerfield',
 						value: new Date(),
+						id: 'timeField',
 						margin : 15
 					},
 
 					{
 						xtype: 'datepickerfield',
 						value: new Date(),
+						id: 'dateField',
 						margin : 15
 					}
 				]

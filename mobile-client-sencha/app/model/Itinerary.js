@@ -17,9 +17,12 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 			{
 				name: 'startTime',
 				convert: function (millis) {
+
 					var date = new Date(+millis);
 					var hours = (date.getHours() <10 ? '0' : '') + date.getHours() ;
 					var minutes = (date.getMinutes()< 10 ? '0' : '') + date.getMinutes() ;
+
+					console.log(new Date(+millis - date.getTimezoneOffset() * 60 * 1000));
 					return  hours + ":" + minutes;
 				}
 
