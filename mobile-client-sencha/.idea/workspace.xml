@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/utils/DateUtils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/utils/otp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Itinerary.js" afterPath="$PROJECT_DIR$/app/model/Itinerary.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RoutesView.js" afterPath="$PROJECT_DIR$/app/view/RoutesView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
@@ -17,7 +13,7 @@
     <file path="/app.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378482603397" ignored="false" />
     <file path="/config.rb" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378481680395" ignored="false" />
     <file path="/buttons.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378498250873" ignored="false" />
-    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380830574163" ignored="false" />
+    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380894372507" ignored="false" />
     <file path="/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379355637801" ignored="false" />
     <file path="/MainNav.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378499273352" ignored="false" />
     <file path="/Home.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379012062417" ignored="false" />
@@ -26,7 +22,7 @@
     <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
     <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
     <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380828127894" ignored="false" />
+    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380908490269" ignored="false" />
     <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
     <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380827069193" ignored="false" />
     <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
@@ -152,7 +148,7 @@
     <file path="/ItinerariesStore.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380663960691" ignored="false" />
     <file path="/Leg.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380664658736" ignored="false" />
     <file path="/Itineraries.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380664813268" ignored="false" />
-    <file path="/Itinerary.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380830303828" ignored="false" />
+    <file path="/Itinerary.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380908845090" ignored="false" />
     <file path="/ItineraryStore.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380725040539" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.server/src/main/java/com/euconecto/eai/server/dao/DAOPerson.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721050834" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/webservice/WebServiceClientImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380808961746" ignored="false" />
@@ -173,7 +169,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -210,6 +205,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -222,7 +218,7 @@
       <file leaf-file-name="RoutesView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="47" selection-start="1632" selection-end="1647" vertical-scroll-proportion="0.0">
+            <state line="123" column="62" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -231,7 +227,7 @@
       <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="51" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0">
+            <state line="126" column="50" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -249,7 +245,7 @@
       <file leaf-file-name="Itinerary.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/model/Itinerary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="61" selection-start="666" selection-end="666" vertical-scroll-proportion="0.6407035">
+            <state line="13" column="66" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2776382">
               <folding />
             </state>
           </provider>
@@ -258,7 +254,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="57" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-13.16">
+            <state line="52" column="57" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -267,7 +263,7 @@
       <file leaf-file-name="packager.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packager.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="54" selection-start="581" selection-end="581" vertical-scroll-proportion="39.980392">
+            <state line="17" column="54" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -276,7 +272,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.615385">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -285,7 +281,7 @@
       <file leaf-file-name="jsonResponse.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsonResponse.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -294,7 +290,7 @@
       <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="27" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-6.1960783">
+            <state line="49" column="27" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -303,7 +299,7 @@
       <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="96" selection-start="2075" selection-end="2075" vertical-scroll-proportion="-13.269231">
+            <state line="54" column="96" selection-start="2075" selection-end="2075" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -338,9 +334,9 @@
         <option value="$PROJECT_DIR$/app/store/1.js" />
         <option value="$PROJECT_DIR$/ux/TimePickerField.js" />
         <option value="$PROJECT_DIR$/ux/picker/Time.js" />
-        <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
         <option value="$PROJECT_DIR$/lib/utils/DateUtils.js" />
         <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
         <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
         <option value="$PROJECT_DIR$/app/model/Itinerary.js" />
       </list>
@@ -380,6 +376,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -541,7 +538,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -556,9 +552,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -591,6 +587,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -617,19 +626,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -801,56 +797,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/model/Destination.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ux/LeafletMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ux/field/TimePicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="51" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ux/picker/Time.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="70" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="70" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/ChoosePointView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="40" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="50" column="40" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/DateUtils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="17" column="30" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="96" selection-start="2075" selection-end="2075" vertical-scroll-proportion="-13.269231">
+        <state line="54" column="96" selection-start="2075" selection-end="2075" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.615385">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -864,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packager.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="581" selection-end="581" vertical-scroll-proportion="39.980392">
+        <state line="17" column="54" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -878,35 +862,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="57" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-13.16">
+        <state line="52" column="57" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="27" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-6.1960783">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="51" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0">
+        <state line="49" column="27" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="47" selection-start="1632" selection-end="1647" vertical-scroll-proportion="0.0">
+        <state line="123" column="62" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="50" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Itinerary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="666" selection-end="666" vertical-scroll-proportion="0.6407035">
+        <state line="13" column="66" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2776382">
           <folding />
         </state>
       </provider>

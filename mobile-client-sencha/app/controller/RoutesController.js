@@ -119,7 +119,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		if (!bPointLatLng)
 			bPointLatLng = me.getBField().getValue();
 
-		//if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
+		if (aPointLatLng.length != 0 && bPointLatLng.length != 0) {
 			Ext.data.JsonP.request({
 				url: 'http://ec2-54-232-241-207.sa-east-1.compute.amazonaws.com:8080/opentripplanner-api-webapp/ws/plan',
 				callbackKey: 'callback',
@@ -127,8 +127,8 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				timeout: 20000,
 				params: {
 					_dc: Date.now(),
-					fromPlace: '-27.593692,-48.543871',//aPointLatLng,
-					toPlace: '-27.589889,-48.516748',//bPointLatLng,
+					fromPlace: aPointLatLng, //'-27.593692,-48.543871',
+					toPlace: bPointLatLng, //'-27.589889,-48.516748',
 					ui_date: '10/3/2013',
 					arriveBy: arriveBy,
 					time: time,
@@ -155,6 +155,6 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 					alert("failed");
 				}
 			});
-		//}
+		}
 	}
 });

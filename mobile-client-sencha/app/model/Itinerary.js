@@ -9,9 +9,15 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 			{
 				name: 'duration',
 				convert: function (millis) {
-					var minutes =  millis / 1000 / 60;
-					var hours = minutes / 60;
-					return millis;
+					var minutes =   Math.floor(millis / 60000);
+					var hours = Math.floor(minutes / 60)
+					minutes = minutes - hours;
+					if (hours > 0) {
+						return Math.floor(hours) + ' ' + ((hours > 1) ? 'hours' : 'hour') + ' '
+							+ minutes + (minutes > 1 ? ' minutes' : 'minute');
+					}
+
+					return minutes + " minutes"
 				}
 			} ,
 			{
