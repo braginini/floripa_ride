@@ -73,7 +73,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('mobile-client-sencha.view.HomeView'));
+        Ext.Viewport.add(Ext.create('mobile-client-sencha.view.RoutesView'));
     },
 
     onUpdated: function() {

@@ -1,4 +1,4 @@
-Ext.define('mobile-client-sencha.view.RoutesView', {
+Ext.define('mobile-client-sencha.view.MainNavView', {
 	extend: 'Ext.NavigationView',
 
 	id: 'routesView',
@@ -6,8 +6,7 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 	xtype: 'RoutesView',
 
 	requires: [
-		'Ext.SegmentedButton',
-		'Ext.ux.field.TimePicker'
+		'mobile-client-sencha.view.RoutesView'
 	],
 
 	config: {

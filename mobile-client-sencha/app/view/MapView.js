@@ -16,12 +16,12 @@ Ext.define('mobile-client-sencha.view.MapView', {
 
 			{
 				xtype: 'toolbar',
-				docked: 'top',
+				docked: 'top'
 				//cls: 'x-toolbar',
 				/*ui: 'dark',*/
 				/*iconCls: 'home',
 				 iconMask: true*/
-				items: [
+				/*items: [
 					{
 						xtype: 'button',
 						iconCls: 'home',
@@ -29,7 +29,7 @@ Ext.define('mobile-client-sencha.view.MapView', {
 						ui: 'action',
 						id: 'mapHomeBtn'
 					}
-				]
+				]*/
 			},
 
 			{

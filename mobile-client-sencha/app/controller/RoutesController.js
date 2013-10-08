@@ -18,6 +18,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			timeField: '#timeField',
 			dateField: '#dateField',
 			departField: '#departField',
+			choosePointSearch: '#choosePointSearch',
 
 			homeView: {
 				autoCreate: true,
@@ -29,6 +30,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				autoCreate: true,
 				selector: '#routesView',
 				xtype: 'RoutesView'
+
 			},
 
 			choosePointView: {
@@ -58,9 +60,61 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 			searchRouteBtn: {
 				tap: 'onSearchRouteBtnTap'
+			},
+
+			routesView: {
+				push: 'onPush',
+				pop: 'onPop',
+				back: 'onBack',
+				activeitemchange: 'onActiveItemChange'
 			}
 		}
 
+
+	},
+
+	onActiveItemChange: function(navView, value, oldValue, eOpts) {
+		console.log(value.getId(), oldValue.getId())
+	},
+
+	onPush: function (navView, view, eOpts) {
+
+		var viewId = view.getId();
+
+		if (view && viewId) {
+
+			if (viewId == this.getChoosePointView().getId()) {
+
+				this.hideDisplayChoosePointSearchField(false);
+			}
+
+			//todo else if(other views)
+		}
+
+	},
+
+	onBack: function (navView, eOpts) {
+
+	},
+
+	onPop: function (navView, view, eOpts) {
+
+		var viewId = view.getId();
+
+		if (view && viewId) {
+
+			if (viewId == this.getChoosePointView().getId()) {
+				this.hideDisplayChoosePointSearchField(true);
+			}
+		}
+
+	},
+
+	hideDisplayChoosePointSearchField: function(toHide) {
+		var search = this.getChoosePointSearch();
+
+		if (search)
+			search.setHidden(toHide);
 	},
 
 	onTapHomeBtn: function (button, e, eOpts) {
@@ -73,11 +127,6 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	},
 
 	onTapField: function (field) {
-
-		Ext.Viewport.getLayout().setAnimation({
-			type: 'slide',
-			direction: 'left'
-		});
 
 		var choosePointView = this.getChoosePointView();
 		var text = '';
@@ -99,7 +148,13 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 		choosePointView.setSearchFieldPlaceHolder(text);
 		choosePointView.setFieldTapped(isAFieldTapped);
-		Ext.Viewport.setActiveItem(choosePointView);
+
+		this.getRoutesView().getLayout().setAnimation({
+			type: 'slide',
+			direction: 'left'
+		});
+
+		this.getRoutesView().push(choosePointView);
 	},
 
 	onSearchRouteBtnTap: function () {
