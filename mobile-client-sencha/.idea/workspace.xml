@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Itinerary.js" afterPath="$PROJECT_DIR$/app/model/Itinerary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RoutesView.js" afterPath="$PROJECT_DIR$/app/view/RoutesView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
@@ -245,7 +242,7 @@
       <file leaf-file-name="Itinerary.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/model/Itinerary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="66" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2776382">
+            <state line="18" column="48" selection-start="455" selection-end="455" vertical-scroll-proportion="0.38442212">
               <folding />
             </state>
           </provider>
@@ -890,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Itinerary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2776382">
+        <state line="18" column="48" selection-start="455" selection-end="455" vertical-scroll-proportion="0.38442212">
           <folding />
         </state>
       </provider>
