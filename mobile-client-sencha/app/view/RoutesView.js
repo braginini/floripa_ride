@@ -18,7 +18,10 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 		fullscreen: true,
 
+		scrollable: true,
+
 		layout: 'vbox',
+
 		items: [
 
 			{

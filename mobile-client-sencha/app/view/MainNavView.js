@@ -11,6 +11,8 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 
 	config: {
 
+		defaultBackButtonText: '',
+
 		navigationBar: {
 			ui: 'dark',
 			docked: 'top',
@@ -23,6 +25,14 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 				type: 'fadeIn',
 				duration: 200
 			},
+
+			backButton: {
+				iconCls:'arrow_left',
+				iconMask: true,
+				ui: 'dark',
+				cls: 'backButton'
+			},
+
 			items: [
 				{
 					hidden: true,
