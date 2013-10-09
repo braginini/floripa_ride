@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/MainNavController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ChoosePointController.js" afterPath="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChoosePointView.js" afterPath="$PROJECT_DIR$/app/view/ChoosePointView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MainNavView.js" afterPath="$PROJECT_DIR$/app/view/MainNavView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapController.js" afterPath="$PROJECT_DIR$/app/controller/MapController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapView.js" afterPath="$PROJECT_DIR$/app/view/MapView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RoutesView.js" afterPath="$PROJECT_DIR$/app/view/RoutesView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="" />
     <ignored path="mobile-client-sencha.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Main.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378492342369" ignored="false" />
