@@ -4,65 +4,49 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 	config: {
 
 		views: [
-			'mobile-client-sencha.view.HomeView',
 			'mobile-client-sencha.view.RoutesView',
 			'mobile-client-sencha.view.ChoosePointView',
-			'mobile-client-sencha.view.MapView'
+			'mobile-client-sencha.view.MapView',
+			'mobile-client-sencha.view.MainNavView'
 		],
 
-		control: {
-			'button[id=homeBtn1]': {
-				tap: 'onTapHomeBtn'
-			},
-
-			'list[id=choosePointMenu]': {
-				itemtap: function (list, idx, target, record, evt) {
-					this.onTapChoosePointListMenuItem(idx);
-				}
-			}
-		},
-
 		refs: {
-			homeView: {
-				autoCreate: true,
-				selector: '#homeView',
-				xtype: 'HomeView'
-			},
+
+			choosePointMenu: 'list[id=choosePointMenu]',
 
 			routesView: {
 				autoCreate: true,
-				selector: '#routesView',
+				selector: '[id=routesView]',
 				xtype: 'RoutesView'
 			},
 
 			choosePointView: {
 				autoCreate: true,
-				selector: '#choosePointView',
+				selector: '[id=choosePointView]',
 				xtype: 'ChoosePointView'
 			},
 
 			mapView: {
 				autoCreate: true,
-				selector: '#mapView',
+				selector: '[id=mapView]',
 				xtype: 'MapView'
+			},
+
+			mainNavView: {
+				autoCreate: true,
+				selector: '[id=mainNavView]',
+				xtype: 'MainNavView'
+			}
+		},
+
+		control: {
+
+			choosePointMenu: {
+				itemtap: function (list, idx, target, record, evt) {
+					this.onTapChoosePointListMenuItem(idx);
+				}
 			}
 		}
-	},
-
-	onTapHomeBtn: function (button, e, eOpts) {
-		this.changeView(this.getHomeView(), 'slide', 'right');
-	},
-
-	//todo duplicate # 1 move to sep class
-	changeView: function (view, type, slideDirection) {
-
-		Ext.Viewport.getLayout().setAnimation({
-			type: type,
-			direction: slideDirection
-		});
-
-		Ext.Viewport.setActiveItem(view);
-
 	},
 
 	onTapChoosePointListMenuItem: function (idx) {
@@ -72,7 +56,7 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 				this.getCurrentPosition();
 				break;
 			case 1:
-				this.changeView(this.getMapView(), 'slide', 'left');
+				this.getMainNavView().push(this.getMapView());
 				break;
 			default :
 				break;
@@ -114,13 +98,13 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 						}
 
 						me.setLocationFieldValue(fieldStr, point);
-						me.changeView(routesView, 'slide', 'right')
+						me.getMainNavView().pop(me.getRoutesView());
 					},
 
 					failure: function (result, request) {
 
 						me.setLocationFieldValue(fieldStr, point);
-						me.changeView(routesView, 'slide', 'right')
+						me.getMainNavView().pop(me.getRoutesView());
 					}
 				});
 			},

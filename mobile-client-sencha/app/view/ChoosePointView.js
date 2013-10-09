@@ -18,12 +18,6 @@ Ext.define('mobile-client-sencha.view.ChoosePointView', {
 
         items: [
 
-	        /*{
-		        xtype: 'searchfield',
-		        flex: 1,
-		        placeHolder: 'Encontrar um ponto'
-	        },*/
-
 	        {
 		    	xtype: 'list',
 		        itemTpl: '{title}',

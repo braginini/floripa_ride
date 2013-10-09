@@ -4,47 +4,43 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	config: {
 
 		views: [
-			'mobile-client-sencha.view.HomeView',
 			'mobile-client-sencha.view.RoutesView',
-			'mobile-client-sencha.view.ChoosePointView'
+			'mobile-client-sencha.view.ChoosePointView',
+			'mobile-client-sencha.view.MainNavView'
 		],
 
 		refs: {
 
-			searchRouteBtn: '#searchRouteBtn',
-			aField: '#aField',
-			bField: '#bField',
-			itinerariesList: '#itineraries',
-			timeField: '#timeField',
-			dateField: '#dateField',
-			departField: '#departField',
-			choosePointSearch: '#choosePointSearch',
-
-			homeView: {
-				autoCreate: true,
-				selector: '#homeView',
-				xtype: 'HomeView'
-			},
+			searchRouteBtn: '[id=searchRouteBtn]',
+			aField: '[id=aField]',
+			bField: '[id=bField]',
+			itinerariesList: '[id=itineraries]',
+			timeField: '[id=timeField]',
+			dateField: '[id=dateField]',
+			departField: '[id=departField]',
+			choosePointSearch: '[id=choosePointSearch]',
 
 			routesView: {
-				autoCreate: true,
-				selector: '#routesView',
+				autoCreate: false,
+				selector: '[id=routesView]',
 				xtype: 'RoutesView'
 
 			},
 
 			choosePointView: {
 				autoCreate: true,
-				selector: '#choosePointView',
+				selector: '[id=choosePointView]',
 				xtype: 'ChoosePointView'
+			},
+
+			mainNavView: {
+				autoCreate: true,
+				selector: '[id=mainNavView]',
+				xtype: 'MainNavView'
 			}
 		},
 
 		control: {
-
-			'button[id=homeBtn]': {
-				tap: 'onTapHomeBtn'
-			},
 
 			'textfield[id=aField]': {
 				tap: function () {
@@ -60,70 +56,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 			searchRouteBtn: {
 				tap: 'onSearchRouteBtnTap'
-			},
-
-			routesView: {
-				push: 'onPush',
-				pop: 'onPop',
-				back: 'onBack',
-				activeitemchange: 'onActiveItemChange'
 			}
 		}
 
 
-	},
-
-	onActiveItemChange: function(navView, value, oldValue, eOpts) {
-		console.log(value.getId(), oldValue.getId())
-	},
-
-	onPush: function (navView, view, eOpts) {
-
-		var viewId = view.getId();
-
-		if (view && viewId) {
-
-			if (viewId == this.getChoosePointView().getId()) {
-
-				this.hideDisplayChoosePointSearchField(false);
-			}
-
-			//todo else if(other views)
-		}
-
-	},
-
-	onBack: function (navView, eOpts) {
-
-	},
-
-	onPop: function (navView, view, eOpts) {
-
-		var viewId = view.getId();
-
-		if (view && viewId) {
-
-			if (viewId == this.getChoosePointView().getId()) {
-				this.hideDisplayChoosePointSearchField(true);
-			}
-		}
-
-	},
-
-	hideDisplayChoosePointSearchField: function(toHide) {
-		var search = this.getChoosePointSearch();
-
-		if (search)
-			search.setHidden(toHide);
-	},
-
-	onTapHomeBtn: function (button, e, eOpts) {
-		Ext.Viewport.getLayout().setAnimation({
-			type: 'slide',
-			direction: 'right'
-		});
-
-		Ext.Viewport.setActiveItem(this.getHomeView());
 	},
 
 	onTapField: function (field) {
@@ -149,12 +85,12 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		choosePointView.setSearchFieldPlaceHolder(text);
 		choosePointView.setFieldTapped(isAFieldTapped);
 
-		this.getRoutesView().getLayout().setAnimation({
+		this.getMainNavView().getLayout().setAnimation({
 			type: 'slide',
 			direction: 'left'
 		});
 
-		this.getRoutesView().push(choosePointView);
+		this.getMainNavView().push(choosePointView);
 	},
 
 	onSearchRouteBtnTap: function () {

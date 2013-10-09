@@ -10,39 +10,38 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		toCancel: true,
 
 		views: [
-			'mobile-client-sencha.view.HomeView',
 			'mobile-client-sencha.view.MapView',
 			'mobile-client-sencha.view.ChoosePointView',
-			'mobile-client-sencha.view.RoutesView'
+			'mobile-client-sencha.view.RoutesView',
+			'mobile-client-sencha.view.MainNavView'
 		],
 
 		refs: {
-			mapCmp: '#leafletmap',
-			homeBtn: '#mapHomeBtn',
-			addMapBtn: '#addMapBtn',
-
-			homeView: {
-				autoCreate: true,
-				selector: '#homeView',
-				xtype: 'HomeView'
-			},
+			mapCmp: '[id=leafletmap]',
+			addMapBtn: '[id=addMapBtn]',
 
 			mapView: {
 				autoCreate: true,
-				selector: '#mapView',
+				selector: '[id=mapView]',
 				xtype: 'MapView'
 			},
 
 			choosePointView: {
 				autoCreate: true,
-				selector: '#choosePointView',
+				selector: '[id=choosePointView]',
 				xtype: 'ChoosePointView'
 			},
 
 			routesView: {
 				autoCreate: true,
-				selector: '#routesView',
+				selector: '[id=routesView]',
 				xtype: 'RoutesView'
+			},
+
+			mainNavView: {
+				autoCreate: true,
+				selector: '[id=mainNavView]',
+				xtype: 'MainNavView'
 			}
 		},
 
@@ -55,12 +54,9 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 				click: 'onMapClick'
 			},
 
-			homeBtn: {
-				tap: 'onTapHomeBtn'
-			},
-
 			mapView: {
-				show: 'onShow'
+				//show: 'onShow',
+				mapOpen: 'onMapOpen'
 			},
 
 			addMapBtn: {
@@ -69,27 +65,32 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		}
 	},
 
+	onMapOpen: function() {
+		console.log("2");
+	},
+
 	onShow: function () {
-		console.log(">>>>>> Map showed");
-		this.changeAddMapButtonMode('Cancelar', false);
-		if (this.markerLayer)
+		console.log("map shown");
+		this.changeAddMapButtonMode('Cancelar', true);
+		if (this.markerLayer) {
 			this.markerLayer.clearLayers();
+			console.log("cleared map");
+		}
 	},
 
 	onMapRender: function (component, map, layer) {
-		console.log("map render");
 		//add the layer for the markers
 		this.markerLayer = L.layerGroup().addTo(map);
 
 	},
+
 	onZoomEnd: function (component, map, layer, zoom) {
-		console.log("zoom end -> new zoom level: " + zoom);
 	},
+
 	onMoveStart: function (component, map, layer) {
-		console.log("move start");
 	},
+
 	onMoveEnd: function (component, map, layer) {
-		console.log("move end");
 	},
 
 	onMapClick: function (component, map, layer, e) {
@@ -122,7 +123,8 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		var me = this;
 
 		if (this.getToCancel()) {
-			this.changeView(this.getChoosePointView(), 'slide', 'right');
+			//me.getMainNavView().pop(me.getChoosePointView());
+			me.getMainNavView().pop();
 		} else {
 			var routesView = this.getRoutesView();
 
@@ -150,13 +152,13 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 					}
 
 					me.setLocationFieldValue(fieldStr, point);
-					me.changeView(routesView, 'slide', 'right')
+					me.getMainNavView().pop(routesView);
 				},
 
 				failure: function (result, request) {
 
 					me.setLocationFieldValue(fieldStr, point);
-					me.changeView(routesView, 'slide', 'right')
+					me.getMainNavView().pop(routesView);
 				}
 			});
 		}
@@ -174,22 +176,6 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 			routesView.setBFieldValue(value);
 			routesView.setBFieldLatLngValue(latlng)
 		}
-	},
-
-	onTapHomeBtn: function (button, e, eOpts) {
-		this.changeView(this.getHomeView(), 'slide', 'right');
-		this.markerLayer.clearLayers();
-	},
-
-	//todo duplicate # 1 move to sep class
-	changeView: function (view, type, slideDirection) {
-
-		Ext.Viewport.getLayout().setAnimation({
-			type: type,
-			direction: slideDirection
-		});
-
-		Ext.Viewport.setActiveItem(view);
 	},
 
 	changeAddMapButtonMode: function (text, mode) {

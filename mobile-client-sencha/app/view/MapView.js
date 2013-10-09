@@ -15,24 +15,6 @@ Ext.define('mobile-client-sencha.view.MapView', {
 		items: [
 
 			{
-				xtype: 'toolbar',
-				docked: 'top'
-				//cls: 'x-toolbar',
-				/*ui: 'dark',*/
-				/*iconCls: 'home',
-				 iconMask: true*/
-				/*items: [
-					{
-						xtype: 'button',
-						iconCls: 'home',
-						iconMask: true,
-						ui: 'action',
-						id: 'mapHomeBtn'
-					}
-				]*/
-			},
-
-			{
 				xtype: 'leafletmap',
 				id: 'leafletmap',
 				useCurrentLocation: true,
@@ -46,8 +28,7 @@ Ext.define('mobile-client-sencha.view.MapView', {
 			{
 				xtype: 'toolbar',
 				docked: 'bottom',
-				//cls: 'x-toolbar',
-				/*ui: 'dark',*/
+				ui: 'dark',
 
 				items: [
 					{
@@ -59,5 +40,10 @@ Ext.define('mobile-client-sencha.view.MapView', {
 				]
 			}
 		]
+	},
+
+	mapOpen: function() {
+		console.log('1');
+		this.fireEvent('mapOpen');
 	}
 });

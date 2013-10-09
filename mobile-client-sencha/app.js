@@ -35,11 +35,11 @@ Ext.application({
     ],
 
     views: [
-        'HomeView', 'RoutesView', 'ChoosePointView', 'MapView'
+        'HomeView', 'RoutesView', 'ChoosePointView', 'MapView', 'MainNavView'
     ],
 
 	controllers: [
-		'HomeController', 'RoutesController', 'ChoosePointController', 'MapController'
+		'HomeController', 'RoutesController', 'ChoosePointController', 'MapController', 'MainNavController'
 	],
 
 	models: [
@@ -73,7 +73,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('mobile-client-sencha.view.RoutesView'));
+        Ext.Viewport.add(Ext.create('mobile-client-sencha.view.MainNavView'));
     },
 
     onUpdated: function() {
