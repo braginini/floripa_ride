@@ -19,6 +19,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			dateField: '[id=dateField]',
 			departField: '[id=departField]',
 			choosePointSearch: '[id=choosePointSearch]',
+			pointsMenu: 'list[id=pointsMenu]',
 
 			routesView: {
 				autoCreate: false,
@@ -42,6 +43,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 		control: {
 
+			routesView: {
+				show: 'onShow'
+			},
+
 			'textfield[id=aField]': {
 				tap: function () {
 					this.onTapField('aField')
@@ -56,10 +61,39 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 			searchRouteBtn: {
 				tap: 'onSearchRouteBtnTap'
+			},
+
+			pointsMenu: {
+				itemtap: function (list, idx, target, record, evt) {
+					setTimeout(function() {
+						list.deselect(idx);
+					}, 100);
+					this.onTapPointMenuItem(idx);
+				}
 			}
 		}
 
 
+	},
+
+	onShow: function() {
+		console.log("sdddsdd");
+	},
+
+	onTapPointMenuItem: function (idx) {
+
+		this.getPointsMenu().setData(0);
+
+		switch (idx) {
+			case 0 :
+				this.onTapField("aField");
+				break;
+			case 1:
+				this.onTapField("bField");
+				break;
+			default :
+				break;
+		}
 	},
 
 	onTapField: function (field) {

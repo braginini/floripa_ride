@@ -18,42 +18,97 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 		fullscreen: true,
 
-		scrollable: true,
-
 		layout: 'vbox',
 
 		items: [
-
 			{
-				xtype: 'textfield',
-				placeHolder: 'A: Especificar o ponto de partida',
-				name: 'firstName',
-				margin: 15,
-				id: 'aField',
-				disabled: "true",
-
-				listeners: {
-					element: 'element',
-					tap: function () {
-						this.fireEvent('tap');
+				xtype: 'list',
+				itemTpl: '{title}<span style="float:right; margin-right:10px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAALRJREFUeNpi/P//P8OkSZMkGBgYtgNxfV5e3iYGLIBZSEhIGkjvB2Id IA4+efLkJXNz85voCpmgNBsSvRpogx+GQqBVT4G0LRDfx6cYbCIexd7oViMrvoOkeB1MMSPI18gA KGEPpA4gCYFs0WBCU6QCpJYiCYFscQPa9osJSZE61CRpJEW2QEV34G6EKtqLpOgRVNF95ADHpsgB WRHMxI9A/AWfIliAvwBJAvFudOuQAUCAAQDiG0runJxCpwAAAABJRU5ErkJggg=="/></span>',
+				height: 95,
+				id: 'pointsMenu',
+				data: [
+					{
+						title: 'A: Especificar o ponto de partida'
+					},
+					{
+						title: 'B: Especificar o ponto final'
 					}
-				}
+				]
 			},
-			{
-				xtype: 'textfield',
-				placeHolder: 'B: Especificar o ponto final',
-				name: 'lastName',
-				margin: 15,
-				id: 'bField',
-				disabled: "true",
+			/*{
+			 xtype: 'fieldset',
+			 items: [
+			 {
+			 xtype: 'textfield',
+			 //margin: 10,
+			 component: {
+			 xtype: 'container',
+			 layout: 'hbox',
+			 items: [
+			 {
+			 xtype: 'textfield',
+			 placeHolder: 'A: Especificar o ponto de partida',
+			 align: 'center',
+			 name: 'firstName',
+			 id: 'aField',
+			 readOnly: true,
+			 flex: 4,
 
-				listeners: {
-					element: 'element',
-					tap: function () {
-						this.fireEvent('tap');
-					}
-				}
-			},
+			 listeners: {
+			 element: 'element',
+			 tap: function () {
+			 this.fireEvent('tap');
+			 }
+			 }
+			 },
+			 {
+			 xtype: 'label',
+			 html: '<span style="float:right; margin-right:10px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAALRJREFUeNpi/P//P8OkSZMkGBgYtgNxfV5e3iYGLIBZSEhIGkjvB2Id IA4+efLkJXNz85voCpmgNBsSvRpogx+GQqBVT4G0LRDfx6cYbCIexd7oViMrvoOkeB1MMSPI18gA KGEPpA4gCYFs0WBCU6QCpJYiCYFscQPa9osJSZE61CRpJEW2QEV34G6EKtqLpOgRVNF95ADHpsgB WRHMxI9A/AWfIliAvwBJAvFudOuQAUCAAQDiG0runJxCpwAAAABJRU5ErkJggg=="/></span>',
+			 padding: '10 0 0 0',
+			 flex: 1
+			 }
+			 ]
+
+			 }
+			 },
+
+			 {
+			 xtype: 'textfield',
+			 //margin: 10,
+			 component: {
+			 xtype: 'container',
+			 layout: 'hbox',
+			 items: [
+			 {
+			 xtype: 'textfield',
+			 placeHolder: 'B: Especificar o ponto final',
+			 align: 'center',
+			 name: 'firstName',
+			 id: 'bField',
+			 readOnly: true,
+			 flex: 4,
+
+			 listeners: {
+			 element: 'element',
+			 tap: function () {
+			 this.fireEvent('tap');
+			 }
+			 }
+			 },
+
+			 {
+			 xtype: 'label',
+			 html: '<span style="float:right; margin-right:10px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAALRJREFUeNpi/P//P8OkSZMkGBgYtgNxfV5e3iYGLIBZSEhIGkjvB2Id IA4+efLkJXNz85voCpmgNBsSvRpogx+GQqBVT4G0LRDfx6cYbCIexd7oViMrvoOkeB1MMSPI18gA KGEPpA4gCYFs0WBCU6QCpJYiCYFscQPa9osJSZE61CRpJEW2QEV34G6EKtqLpOgRVNF95ADHpsgB WRHMxI9A/AWfIliAvwBJAvFudOuQAUCAAQDiG0runJxCpwAAAABJRU5ErkJggg=="/></span>',
+			 padding: '10 0 0 0',
+			 flex: 1
+			 }
+			 ]
+
+			 }
+			 }
+			 ]
+			 },*/
+
 			{
 				xtype: 'segmentedbutton',
 				allowDepress: true,
@@ -124,27 +179,26 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 		]
 	},
 
-	setAFieldValue: function (value) {
-		this.setFieldValue(this.down('#aField'), value);
+	setAPoint: function (value) {
+		this.setPoint(0, value);
 	},
 
-	setBFieldValue: function (value) {
-		this.setFieldValue(this.down('#bField'), value);
+	setBPoint: function (value) {
+		this.setPoint(1, value);
 	},
 
-	setFieldValue: function (field, value) {
-		field.setValue(value);
+	setPoint: function (idx, value) {
+		if (value) {
+			var record = this.down('#pointsMenu').getStore().getAt(idx);
+			record.set('title', value);
+		}
 	},
 
-	setFieldValueById: function (id, value) {
-		this.down(id).setValue(value);
-	},
-
-	setAFieldLatLngValue: function (value) {
+	setAPointLatLng: function (value) {
 		this.setAFieldLatLng(value);
 	},
 
-	setBFieldLatLngValue: function (value) {
+	setBPointLatLng: function (value) {
 		this.setBFieldLatLng(value);
 	},
 

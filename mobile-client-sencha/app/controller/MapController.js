@@ -170,11 +170,11 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 		var routesView = this.getRoutesView();
 
 		if (this.getChoosePointView().isAFieldTapped()) {
-			routesView.setAFieldValue(value);
-			routesView.setAFieldLatLngValue(latlng)
+			routesView.setAPoint(value);
+			routesView.setAPointLatLng(latlng)
 		} else {
-			routesView.setBFieldValue(value);
-			routesView.setBFieldLatLngValue(latlng)
+			routesView.setAPoint(value);
+			routesView.setBPointLatLng(latlng)
 		}
 	},
 

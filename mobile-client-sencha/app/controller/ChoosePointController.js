@@ -43,6 +43,9 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 
 			choosePointMenu: {
 				itemtap: function (list, idx, target, record, evt) {
+					setTimeout(function() {
+						list.deselect(idx);
+					}, 100);
 					this.onTapChoosePointListMenuItem(idx);
 				}
 			}
@@ -123,11 +126,11 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 		var routesView = this.getRoutesView();
 
 		if (this.getChoosePointView().isAFieldTapped()) {
-			routesView.setAFieldValue(value);
-			routesView.setAFieldLatLngValue(latlng)
+			routesView.setAPoint(value);
+			routesView.setAPointLatLng(latlng)
 		} else {
-			routesView.setBFieldValue(value);
-			routesView.setBFieldLatLngValue(latlng)
+			routesView.setBPoint(value);
+			routesView.setBPointLatLng(latlng)
 		}
 	}
 });
