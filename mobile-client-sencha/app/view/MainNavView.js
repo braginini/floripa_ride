@@ -14,6 +14,7 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 		defaultBackButtonText: '',
 
 		navigationBar: {
+
 			ui: 'dark',
 			docked: 'top',
 			layout: {
@@ -45,6 +46,14 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 					flex: 1,
 					placeHolder: 'Encontrar um ponto',
 					id: 'choosePointSearch'
+				},
+
+				{
+					hidden: false,
+					xtype: 'button',
+					align: 'right',
+					iconCls: 'refresh',
+					id: 'changePointsBtn'
 				}
 
 			]
@@ -53,6 +62,7 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 		layout: 'card',
 		items: [
 			{
+				title: 'Como obter?',
 				xtype: 'RoutesView'
 			}
 		]

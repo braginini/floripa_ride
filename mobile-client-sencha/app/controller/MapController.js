@@ -173,9 +173,11 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 			routesView.setAPoint(value);
 			routesView.setAPointLatLng(latlng)
 		} else {
-			routesView.setAPoint(value);
+			routesView.setBPoint(value);
 			routesView.setBPointLatLng(latlng)
 		}
+
+		routesView.fireEvent('pointFieldChange');
 	},
 
 	changeAddMapButtonMode: function (text, mode) {

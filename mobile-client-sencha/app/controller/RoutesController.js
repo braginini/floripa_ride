@@ -51,12 +51,12 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 		control: {
 
-			routeParamsField : {
-				tap: 'onTapRouteParametersField'
+			routesView: {
+				pointFieldChange: 'onPointFieldChange'
 			},
 
-			searchRouteBtn: {
-				tap: 'onSearchRouteBtnTap'
+			routeParamsField : {
+				tap: 'onTapRouteParametersField'
 			},
 
 			pointsMenu: {
@@ -67,6 +67,12 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 					this.onTapPointMenuItem(idx);
 				}
 			}
+		}
+	},
+
+	onPointFieldChange: function() {
+		if (this.getRoutesView().getAFieldLatLngValue() && this.getRoutesView().getBFieldLatLngValue()) {
+			this.findRoute();
 		}
 	},
 
@@ -127,7 +133,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		this.getMainNavView().push(choosePointView);
 	},
 
-	onSearchRouteBtnTap: function () {
+	findRoute: function () {
 
 		console.log("Btn");
 		var me = this;

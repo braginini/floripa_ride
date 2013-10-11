@@ -13,7 +13,7 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 
 		refs: {
 
-			//routeModeBtn: 'segmentedbutton[id=routeModeBtn]',
+			changePointsBtn: 'button[id=changePointsBtn]',
 			choosePointSearch: 'searchField[id=choosePointSearch]',
 
 			routesView: {
@@ -62,18 +62,18 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 			if (newViewId == this.getChoosePointView().getId() ) {
 
 				this.hideDisplayChoosePointSearchField(false);
-				this.hideDisplayRouteModeBtn(true);
+				this.hideChangePointsBtn(true);
 
 			} else if (newViewId == this.getRoutesView().getId()) {
 
 				this.hideDisplayChoosePointSearchField(true);
-				this.hideDisplayRouteModeBtn(false);
+				this.hideChangePointsBtn(false);
 
 			}  else if (newViewId == this.getMapView().getId()) {
 
 				console.log("0");
 				this.hideDisplayChoosePointSearchField(true);
-				this.hideDisplayRouteModeBtn(true);
+				this.hideChangePointsBtn(true);
 				//this.getMapView().fireEvent('mapOpen');
 				this.getMapView().mapOpen();
 			}
@@ -82,11 +82,11 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 		}
 	},
 
-	hideDisplayRouteModeBtn: function(toHide) {
-		/*var cmp = this.getRouteModeBtn();
+	hideChangePointsBtn: function(toHide) {
+		var cmp = this.getChangePointsBtn();
 
 		if (cmp)
-			cmp.setHidden(toHide);*/
+			cmp.setHidden(toHide);
 	},
 
 	hideDisplayChoosePointSearchField: function(toHide) {

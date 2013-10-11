@@ -132,5 +132,7 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 			routesView.setBPoint(value);
 			routesView.setBPointLatLng(latlng)
 		}
+		routesView.fireEvent('pointFieldChange');
+
 	}
 });

@@ -81,17 +81,11 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 				]
 
 			},
-			{
-				xtype: 'button',
-				text: 'Ok',
-				margin: 15,
-				id: 'searchRouteBtn'
-			},
+
 			{
 				xtype: 'list',
 				id: 'itineraries',
 				itemTpl: '{startTime} - {endTime} {transfers} transfers {duration}',
-				margin: 15,
 				store: 'Itinerary',
 				flex: 1
 			}
