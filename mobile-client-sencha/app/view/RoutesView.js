@@ -38,6 +38,8 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 			{
 				xtype: 'textfield',
+				placeHolder: 'A: Especificar o ponto de partida',
+				name: 'firstName',
 				readOnly: true,
 				margin: 10,
 				id: 'routeParamsField'
