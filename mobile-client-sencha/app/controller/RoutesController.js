@@ -7,7 +7,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			'mobile-client-sencha.view.RoutesView',
 			'mobile-client-sencha.view.ChoosePointView',
 			'mobile-client-sencha.view.MainNavView',
-			'mobile-client-sencha.view.RoutesParametersView'
+			'mobile-client-sencha.view.RouteParametersView'
 		],
 
 		refs: {
@@ -30,10 +30,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 			},
 
-			routesParameterView: {
+			routeParametersView: {
 				autoCreate: true,
-				selector: '[id=routesParameterView]',
-				xtype: 'RoutesParametersView'
+				selector: '[id=routeParametersView]',
+				xtype: 'RouteParametersView'
 			},
 
 			choosePointView: {
@@ -51,12 +51,17 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 		control: {
 
-			routeParamsField: {
+			routeParamsField : {
+				tap: 'onTapRouteParametersField'
+			},
+
+
+			/*routeParamsField: {
 				tap: function () {
 					console.log("12121212");
 					this.onTapRouteParametersField();
 				}
-			},
+			},*/
 
 			searchRouteBtn: {
 				tap: 'onSearchRouteBtnTap'
@@ -74,6 +79,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	},
 
 	onTapRouteParametersField: function() {
+		console.log("Field");
 		this.getMainNavView().push(this.getRRoutesParameterView());
 	},
 
@@ -125,6 +131,8 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	},
 
 	onSearchRouteBtnTap: function () {
+
+		console.log("Btn");
 		var me = this;
 		me.getItinerariesList().getStore().removeAll();  //empty store
 

@@ -1,10 +1,10 @@
-Ext.define('mobile-client-sencha.controller.RoutesParametersController', {
+Ext.define('mobile-client-sencha.controller.RouteParametersController', {
 	extend: 'Ext.app.Controller',
 
 	config: {
 
 		views: [
-			'mobile-client-sencha.view.RoutesParametersView',
+			'mobile-client-sencha.view.RouteParametersView',
 			'mobile-client-sencha.view.RoutesView',
 			'mobile-client-sencha.view.MainNavView'
 		],
@@ -28,10 +28,10 @@ Ext.define('mobile-client-sencha.controller.RoutesParametersController', {
 
 			},
 
-			routesParameterView: {
+			routeParameterView: {
 				autoCreate: true,
-				selector: '[id=routesParameterView]',
-				xtype: 'RoutesParametersView'
+				selector: '[id=routeParameterView]',
+				xtype: 'RouteParametersView'
 			},
 
 			mainNavView: {

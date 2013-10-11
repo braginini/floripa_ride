@@ -38,9 +38,9 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 			{
 				xtype: 'textfield',
-				id: 'routeParamsField',
 				readOnly: true,
-				margin: 10
+				margin: 10,
+				id: 'routeParamsField'
 			},
 
 			{

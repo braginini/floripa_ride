@@ -1,9 +1,9 @@
-Ext.define('mobile-client-sencha.view.RoutesParametersView', {
+Ext.define('mobile-client-sencha.view.RouteParametersView', {
 	extend: 'Ext.Panel',
 
-	id: 'routesParametersView',
+	id: 'routeParametersView',
 
-	xtype: 'RoutesParametersView',
+	xtype: 'RouteParametersView',
 
 	requires: [
 		'Ext.ux.field.TimePicker'
@@ -50,7 +50,7 @@ Ext.define('mobile-client-sencha.view.RoutesParametersView', {
 						xtype: 'button',
 						text: 'Ok',
 						margin: 15,
-						id: 'searchRouteBtn'
+						id: 'btn'
 					}
 				]
 			}

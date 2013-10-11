@@ -40,7 +40,7 @@ Ext.application({
 	    'ChoosePointView',
 	    'MapView',
 	    'MainNavView',
-	    'RoutesParametersView'
+	    'RouteParametersView'
     ],
 
 	controllers: [
@@ -49,7 +49,7 @@ Ext.application({
 		'ChoosePointController',
 		'MapController',
 		'MainNavController',
-		'RoutesParametersController'
+		'RouteParametersController'
 	],
 
 	models: [
