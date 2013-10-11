@@ -13,14 +13,8 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 
 		refs: {
 
-			searchRouteBtn: '#searchRouteBtn',
-			aField: '#aField',
-			bField: '#bField',
-			itinerariesList: '#itineraries',
-			timeField: '#timeField',
-			dateField: '#dateField',
-			departField: '#departField',
-			choosePointSearch: '#choosePointSearch',
+			//routeModeBtn: 'segmentedbutton[id=routeModeBtn]',
+			choosePointSearch: 'searchField[id=choosePointSearch]',
 
 			routesView: {
 				autoCreate: true,
@@ -68,21 +62,31 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 			if (newViewId == this.getChoosePointView().getId() ) {
 
 				this.hideDisplayChoosePointSearchField(false);
+				this.hideDisplayRouteModeBtn(true);
 
 			} else if (newViewId == this.getRoutesView().getId()) {
 
 				this.hideDisplayChoosePointSearchField(true);
+				this.hideDisplayRouteModeBtn(false);
 
 			}  else if (newViewId == this.getMapView().getId()) {
 
 				console.log("0");
 				this.hideDisplayChoosePointSearchField(true);
+				this.hideDisplayRouteModeBtn(true);
 				//this.getMapView().fireEvent('mapOpen');
 				this.getMapView().mapOpen();
 			}
 
 			//todo else if(other views)
 		}
+	},
+
+	hideDisplayRouteModeBtn: function(toHide) {
+		/*var cmp = this.getRouteModeBtn();
+
+		if (cmp)
+			cmp.setHidden(toHide);*/
 	},
 
 	hideDisplayChoosePointSearchField: function(toHide) {

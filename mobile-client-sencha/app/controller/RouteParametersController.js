@@ -20,6 +20,7 @@ Ext.define('mobile-client-sencha.controller.RouteParametersController', {
 			departField: '[id=departField]',
 			choosePointSearch: '[id=choosePointSearch]',
 			pointsMenu: 'list[id=pointsMenu]',
+			okParamsBtn: 'button[id=okParamsBtn]',
 
 			routesView: {
 				autoCreate: false,
@@ -43,8 +44,17 @@ Ext.define('mobile-client-sencha.controller.RouteParametersController', {
 
 		control: {
 
+			okParamsBtn: {
+				tap: 'onOkBtnTap'
+			}
+
 		}
 
+	},
+
+	onOkBtnTap: function() {
+		console.log("Ok tap");
+		this.getTimeField().getValue();
 	}
 
 });

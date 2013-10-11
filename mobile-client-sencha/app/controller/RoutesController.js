@@ -55,14 +55,6 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				tap: 'onTapRouteParametersField'
 			},
 
-
-			/*routeParamsField: {
-				tap: function () {
-					console.log("12121212");
-					this.onTapRouteParametersField();
-				}
-			},*/
-
 			searchRouteBtn: {
 				tap: 'onSearchRouteBtnTap'
 			},
@@ -79,8 +71,13 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 	},
 
 	onTapRouteParametersField: function() {
-		console.log("Field");
-		this.getMainNavView().push(this.getRRoutesParameterView());
+
+		this.getMainNavView().getLayout().setAnimation({
+			type: 'slide',
+			direction: 'left'
+		});
+
+		this.getMainNavView().push(this.getRouteParametersView());
 	},
 
 	onTapPointMenuItem: function (idx) {
@@ -139,9 +136,9 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		var aPointLatLng = me.getRoutesView().getAFieldLatLngValue();
 		var bPointLatLng = me.getRoutesView().getBFieldLatLngValue();
 
-		var date = otp.util.DateUtils.dateToIsoDateString(me.getDateField().getValue());
-		var time = otp.util.DateUtils.parseTime(me.getTimeField().getFormattedValue(), "g:ia");
-		var arriveBy = me.getDepartField().getValue() == 0 ? false : true;
+		var date = otp.util.DateUtils.dateToIsoDateString(me.getRouteParametersView().getDateFieldValue());
+		var time = otp.util.DateUtils.parseTime(me.getRouteParametersView().getTimeFieldValue(), "g:ia");
+		var arriveBy = me.getRouteParametersView().getDepartFieldValue() == 0 ? false : true;
 
 		if (!aPointLatLng)
 			aPointLatLng = me.getAField().getValue();

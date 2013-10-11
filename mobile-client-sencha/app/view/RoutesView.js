@@ -35,38 +35,52 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 					}
 				]
 			},
-
 			{
 				xtype: 'textfield',
-				placeHolder: 'A: Especificar o ponto de partida',
-				name: 'firstName',
+				placeHolder: 'Departure 17:46, Mon, 14 Oct.',
 				readOnly: true,
 				margin: 10,
-				id: 'routeParamsField'
-			},
+				id: 'routeParamsField',
 
+				listeners: {
+					element: 'element',
+					tap: function () {
+						this.fireEvent('tap');
+					}
+				}
+			},
 			{
 				xtype: 'segmentedbutton',
-				allowDepress: true,
-				margin: 15,
+				id: 'routeModeBtn',
+				margin: 10,
+
+				layout: {
+					type: 'hbox',
+					pack: 'center',
+					align: 'stretchmax'
+				},
+
 				items: [
 
 					{
 						pressed: true,
 						iconCls: 'team',
+						width: '33.33333333333333%',
 						iconMask: true
 					},
 					{
 						iconCls: 'team',
+						width: '33.33333333333333%',
 						iconMask: true
 					},
 					{
 						iconCls: 'team',
+						width: '33.33333333333333%',
 						iconMask: true
 					}
 				]
-			},
 
+			},
 			{
 				xtype: 'button',
 				text: 'Ok',

@@ -16,11 +16,16 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 		navigationBar: {
 			ui: 'dark',
 			docked: 'top',
-			layout: 'fit',
+			layout: {
+				align:'center',
+				layout: 'fit'
+			},
+
 			hideAnimation: Ext.os.is.Android ? false : {
 				type: 'fadeOut',
 				duration: 200
 			},
+
 			showAnimation: Ext.os.is.Android ? false : {
 				type: 'fadeIn',
 				duration: 200
@@ -41,13 +46,13 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 					placeHolder: 'Encontrar um ponto',
 					id: 'choosePointSearch'
 				}
+
 			]
 		},
 
 		layout: 'card',
 		items: [
 			{
-				title: 'Como obter?',
 				xtype: 'RoutesView'
 			}
 		]
