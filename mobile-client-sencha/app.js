@@ -35,11 +35,21 @@ Ext.application({
     ],
 
     views: [
-        'HomeView', 'RoutesView', 'ChoosePointView', 'MapView', 'MainNavView'
+        'HomeView',
+	    'RoutesView',
+	    'ChoosePointView',
+	    'MapView',
+	    'MainNavView',
+	    'RoutesParametersView'
     ],
 
 	controllers: [
-		'HomeController', 'RoutesController', 'ChoosePointController', 'MapController', 'MainNavController'
+		'HomeController',
+		'RoutesController',
+		'ChoosePointController',
+		'MapController',
+		'MainNavController',
+		'RoutesParametersController'
 	],
 
 	models: [

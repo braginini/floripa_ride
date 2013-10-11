@@ -6,7 +6,8 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		views: [
 			'mobile-client-sencha.view.RoutesView',
 			'mobile-client-sencha.view.ChoosePointView',
-			'mobile-client-sencha.view.MainNavView'
+			'mobile-client-sencha.view.MainNavView',
+			'mobile-client-sencha.view.RoutesParametersView'
 		],
 
 		refs: {
@@ -20,12 +21,19 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			departField: '[id=departField]',
 			choosePointSearch: '[id=choosePointSearch]',
 			pointsMenu: 'list[id=pointsMenu]',
+			routeParamsField: 'textfield[id=routeParamsField]',
 
 			routesView: {
 				autoCreate: false,
 				selector: '[id=routesView]',
 				xtype: 'RoutesView'
 
+			},
+
+			routesParameterView: {
+				autoCreate: true,
+				selector: '[id=routesParameterView]',
+				xtype: 'RoutesParametersView'
 			},
 
 			choosePointView: {
@@ -43,19 +51,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 		control: {
 
-			routesView: {
-				show: 'onShow'
-			},
-
-			'textfield[id=aField]': {
+			routeParamsField: {
 				tap: function () {
-					this.onTapField('aField')
-				}
-			},
-
-			'textfield[id=bField]': {
-				tap: function () {
-					this.onTapField('bField')
+					console.log("12121212");
+					this.onTapRouteParametersField();
 				}
 			},
 
@@ -72,12 +71,10 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				}
 			}
 		}
-
-
 	},
 
-	onShow: function() {
-		console.log("sdddsdd");
+	onTapRouteParametersField: function() {
+		this.getMainNavView().push(this.getRRoutesParameterView());
 	},
 
 	onTapPointMenuItem: function (idx) {

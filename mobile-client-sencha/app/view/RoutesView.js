@@ -35,79 +35,13 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 					}
 				]
 			},
-			/*{
-			 xtype: 'fieldset',
-			 items: [
-			 {
-			 xtype: 'textfield',
-			 //margin: 10,
-			 component: {
-			 xtype: 'container',
-			 layout: 'hbox',
-			 items: [
-			 {
-			 xtype: 'textfield',
-			 placeHolder: 'A: Especificar o ponto de partida',
-			 align: 'center',
-			 name: 'firstName',
-			 id: 'aField',
-			 readOnly: true,
-			 flex: 4,
 
-			 listeners: {
-			 element: 'element',
-			 tap: function () {
-			 this.fireEvent('tap');
-			 }
-			 }
-			 },
-			 {
-			 xtype: 'label',
-			 html: '<span style="float:right; margin-right:10px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAALRJREFUeNpi/P//P8OkSZMkGBgYtgNxfV5e3iYGLIBZSEhIGkjvB2Id IA4+efLkJXNz85voCpmgNBsSvRpogx+GQqBVT4G0LRDfx6cYbCIexd7oViMrvoOkeB1MMSPI18gA KGEPpA4gCYFs0WBCU6QCpJYiCYFscQPa9osJSZE61CRpJEW2QEV34G6EKtqLpOgRVNF95ADHpsgB WRHMxI9A/AWfIliAvwBJAvFudOuQAUCAAQDiG0runJxCpwAAAABJRU5ErkJggg=="/></span>',
-			 padding: '10 0 0 0',
-			 flex: 1
-			 }
-			 ]
-
-			 }
-			 },
-
-			 {
-			 xtype: 'textfield',
-			 //margin: 10,
-			 component: {
-			 xtype: 'container',
-			 layout: 'hbox',
-			 items: [
-			 {
-			 xtype: 'textfield',
-			 placeHolder: 'B: Especificar o ponto final',
-			 align: 'center',
-			 name: 'firstName',
-			 id: 'bField',
-			 readOnly: true,
-			 flex: 4,
-
-			 listeners: {
-			 element: 'element',
-			 tap: function () {
-			 this.fireEvent('tap');
-			 }
-			 }
-			 },
-
-			 {
-			 xtype: 'label',
-			 html: '<span style="float:right; margin-right:10px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAALRJREFUeNpi/P//P8OkSZMkGBgYtgNxfV5e3iYGLIBZSEhIGkjvB2Id IA4+efLkJXNz85voCpmgNBsSvRpogx+GQqBVT4G0LRDfx6cYbCIexd7oViMrvoOkeB1MMSPI18gA KGEPpA4gCYFs0WBCU6QCpJYiCYFscQPa9osJSZE61CRpJEW2QEV34G6EKtqLpOgRVNF95ADHpsgB WRHMxI9A/AWfIliAvwBJAvFudOuQAUCAAQDiG0runJxCpwAAAABJRU5ErkJggg=="/></span>',
-			 padding: '10 0 0 0',
-			 flex: 1
-			 }
-			 ]
-
-			 }
-			 }
-			 ]
-			 },*/
+			{
+				xtype: 'textfield',
+				id: 'routeParamsField',
+				readOnly: true,
+				margin: 10
+			},
 
 			{
 				xtype: 'segmentedbutton',
@@ -127,36 +61,6 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 					{
 						iconCls: 'team',
 						iconMask: true
-					}
-				]
-			},
-
-			{
-				xtype: 'container',
-				layout: 'vbox',
-				items: [
-					{
-						xtype: 'selectfield',
-						margin: 15,
-						id: 'departField',
-						options: [
-							{text: 'Depart', value: 0},
-							{text: 'Arrive', value: 1}
-						]
-					},
-
-					{
-						xtype: 'timepickerfield',
-						value: new Date(),
-						id: 'timeField',
-						margin: 15
-					},
-
-					{
-						xtype: 'datepickerfield',
-						value: new Date(),
-						id: 'dateField',
-						margin: 15
 					}
 				]
 			},
