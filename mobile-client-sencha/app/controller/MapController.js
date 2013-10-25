@@ -66,7 +66,7 @@ Ext.define('mobile-client-sencha.controller.MapController', {
 	},
 
 	onMapOpen: function() {
-		console.log("2");
+		//console.log("2");
 	},
 
 	onShow: function () {

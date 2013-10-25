@@ -116,7 +116,7 @@ Ext.define('mobile-client-sencha.controller.ChoosePointController', {
 			});
 
 		function onDeviceReady() {
-			console.log("device is ready");
+			//console.log("device is ready");
 		}
 	},
 

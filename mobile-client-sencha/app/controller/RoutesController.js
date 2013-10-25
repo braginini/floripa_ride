@@ -56,7 +56,8 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			},
 
 			routeParamsField : {
-				tap: 'onTapRouteParametersField'
+				tap: 'onTapRouteParametersField',
+				initialize: 'onInitializeRouteParametersField'
 			},
 
 			pointsMenu: {
@@ -66,8 +67,33 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 					}, 100);
 					this.onTapPointMenuItem(idx);
 				}
+			},
+
+			itinerariesList: {
+				itemtap: function (list, idx, target, record, evt) {
+					setTimeout(function() {
+						list.deselect(idx);
+					}, 100);
+
+					this.onTapItinerariesListItem(list, idx, target, record, evt)
+				}
 			}
 		}
+	},
+
+	onInitializeRouteParametersField: function() {
+		//this.getRouteParamsField().setDisabled(true);
+		var d = new Date();
+		var date = otp.util.DateUtils.dateToIsoDateString(d);
+		var time = d.getHours() + ":" + d.getMinutes();
+
+		this.getRouteParamsField().setValue("Depart " + time + ", " + date);
+	},
+
+	onTapItinerariesListItem : function(list, idx, target, record, evt) {
+
+		var itinerary = record.getData();
+
 	},
 
 	onPointFieldChange: function() {

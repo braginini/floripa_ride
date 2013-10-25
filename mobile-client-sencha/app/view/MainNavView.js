@@ -49,11 +49,11 @@ Ext.define('mobile-client-sencha.view.MainNavView', {
 				},
 
 				{
-					hidden: false,
+					hidden: true,
 					xtype: 'button',
 					align: 'right',
 					iconCls: 'refresh',
-					id: 'changePointsBtn'
+					id: 'refreshParametersBtn'
 				}
 
 			]

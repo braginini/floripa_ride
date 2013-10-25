@@ -9,9 +9,9 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 			{
 				name: 'duration',
 				convert: function (millis) {
-					var minutes =   Math.floor(millis / 60000);
+					var minutes = Math.floor(millis / 60000);
 					var hours = Math.floor(minutes / 60)
-					minutes = minutes - hours;
+					minutes = minutes - hours * 60;
 					if (hours > 0) {
 						return Math.floor(hours) + ' ' + ((hours > 1) ? 'hours' : 'hour') + ' '
 							+ minutes + (minutes > 1 ? ' minutes' : 'minute');
@@ -25,8 +25,8 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 				convert: function (millis) {
 
 					var date = new Date(+millis);
-					var hours = (date.getHours() <10 ? '0' : '') + date.getHours() ;
-					var minutes = (date.getMinutes()< 10 ? '0' : '') + date.getMinutes() ;
+					var hours = (date.getHours() < 10 ? '0' : '') + date.getHours();
+					var minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
 
 					console.log(new Date(+millis - date.getTimezoneOffset() * 60 * 1000));
 					return  hours + ":" + minutes;
@@ -46,7 +46,14 @@ Ext.define('mobile-client-sencha.model.Itinerary', {
 				name: 'fare'
 			} ,
 			{
-				name: 'transfers'
+				name: 'transfers',
+				convert: function (transfers) {
+					if (transfers == 1)
+						return transfers + " transfer";
+
+					return transfers + " transfers"
+
+				}
 			},
 			{
 				name: 'transitTime'

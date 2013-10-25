@@ -8,13 +8,15 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 			'mobile-client-sencha.view.RoutesView',
 			'mobile-client-sencha.view.ChoosePointView',
 			'mobile-client-sencha.view.MainNavView',
+			'mobile-client-sencha.view.RouteParametersView',
 			'mobile-client-sencha.view.MapView'
 		],
 
 		refs: {
 
-			changePointsBtn: 'button[id=changePointsBtn]',
-			choosePointSearch: 'searchField[id=choosePointSearch]',
+			changePointsBtn: '[id=changePointsBtn]',
+			choosePointSearch: '[id=choosePointSearch]',
+			refreshParametersBtn: '[id=refreshParametersBtn]',
 
 			routesView: {
 				autoCreate: true,
@@ -33,6 +35,12 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 				autoCreate: true,
 				selector: '[id=mapView]',
 				xtype: 'MapView'
+			},
+
+			routeParametersView: {
+				autoCreate: true,
+				selector: '[id=routeParametersView]',
+				xtype: 'RouteParametersView'
 			},
 
 			mainNavView: {
@@ -63,19 +71,24 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 
 				this.hideDisplayChoosePointSearchField(false);
 				this.hideChangePointsBtn(true);
+				this.hideRefreshParametersBtn(true);
 
 			} else if (newViewId == this.getRoutesView().getId()) {
 
+				this.hideRefreshParametersBtn(true);
 				this.hideDisplayChoosePointSearchField(true);
 				this.hideChangePointsBtn(false);
 
 			}  else if (newViewId == this.getMapView().getId()) {
 
-				console.log("0");
+				this.hideRefreshParametersBtn(true);
 				this.hideDisplayChoosePointSearchField(true);
 				this.hideChangePointsBtn(true);
-				//this.getMapView().fireEvent('mapOpen');
-				this.getMapView().mapOpen();
+				this.hideRefreshParametersBtn(true);
+			} else if (newViewId == this.getRouteParametersView().getId()) {
+				this.hideRefreshParametersBtn(false);
+				this.hideDisplayChoosePointSearchField(true);
+				this.hideChangePointsBtn(true);
 			}
 
 			//todo else if(other views)
@@ -84,6 +97,13 @@ Ext.define('mobile-client-sencha.controller.MainNavController', {
 
 	hideChangePointsBtn: function(toHide) {
 		var cmp = this.getChangePointsBtn();
+
+		if (cmp)
+			cmp.setHidden(toHide);
+	},
+
+	hideRefreshParametersBtn: function(toHide) {
+		var cmp = this.getRefreshParametersBtn();
 
 		if (cmp)
 			cmp.setHidden(toHide);

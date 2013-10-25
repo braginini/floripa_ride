@@ -43,7 +43,7 @@ Ext.define('mobile-client-sencha.view.MapView', {
 	},
 
 	mapOpen: function() {
-		console.log('1');
+		//console.log('1');
 		this.fireEvent('mapOpen');
 	}
 });

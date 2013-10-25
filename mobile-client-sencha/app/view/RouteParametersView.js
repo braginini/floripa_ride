@@ -62,7 +62,7 @@ Ext.define('mobile-client-sencha.view.RouteParametersView', {
 						items: [
 							{
 								xtype: 'button',
-								text: 'Cancel',
+								text: 'Reset',
 								margin: 15,
 								id: 'cancelParamsBtn'
 							},

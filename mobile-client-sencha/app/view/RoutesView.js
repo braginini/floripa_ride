@@ -25,6 +25,7 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 				xtype: 'list',
 				itemTpl: '{title}<span style="float:right; margin-right:10px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ bWFnZVJlYWR5ccllPAAAALRJREFUeNpi/P//P8OkSZMkGBgYtgNxfV5e3iYGLIBZSEhIGkjvB2Id IA4+efLkJXNz85voCpmgNBsSvRpogx+GQqBVT4G0LRDfx6cYbCIexd7oViMrvoOkeB1MMSPI18gA KGEPpA4gCYFs0WBCU6QCpJYiCYFscQPa9osJSZE61CRpJEW2QEV34G6EKtqLpOgRVNF95ADHpsgB WRHMxI9A/AWfIliAvwBJAvFudOuQAUCAAQDiG0runJxCpwAAAABJRU5ErkJggg=="/></span>',
 				height: 95,
+				//margin: 10,
 				id: 'pointsMenu',
 				data: [
 					{
@@ -37,9 +38,8 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 			},
 			{
 				xtype: 'textfield',
-				placeHolder: 'Departure 17:46, Mon, 14 Oct.',
 				readOnly: true,
-				margin: 10,
+				margin: '10 0 0 0',
 				id: 'routeParamsField',
 
 				listeners: {
@@ -84,8 +84,10 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 			{
 				xtype: 'list',
+				//margin: 10,
 				id: 'itineraries',
-				itemTpl: '{startTime} - {endTime} {transfers} transfers {duration}',
+				itemTpl: '<div><span>{startTime} - {endTime}</span><span class="duration-hours-mins">{duration}</span></div>' +
+					'<div><span>{transfers}</span></div>',
 				store: 'Itinerary',
 				flex: 1
 			}
@@ -105,6 +107,13 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 		if (value) {
 			var record = this.down('#pointsMenu').getStore().getAt(idx);
 			record.set('title', value);
+		}
+	},
+
+	setRouteParamsFieldValue: function(value) {
+		var field = this.down('#routeParamsField');
+		if (field) {
+			field.setValue(value);
 		}
 	},
 
