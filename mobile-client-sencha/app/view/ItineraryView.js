@@ -1,9 +1,9 @@
-Ext.define('mobile-client-sencha.view.RoutesView', {
+Ext.define('mobile-client-sencha.view.ItineraryView', {
 	extend: 'Ext.Panel',
 
-	id: 'routesView',
+	id: 'itineraryView',
 
-	xtype: 'RoutesView',
+	xtype: 'ItineraryView',
 
 	requires: [
 		'Ext.SegmentedButton',
@@ -12,19 +12,44 @@ Ext.define('mobile-client-sencha.view.RoutesView', {
 
 	config: {
 
-		layout: 'vbox',
+		itinerary: null, //the itinerary object
+
+		plan: null,
+
+		layout: 'fit',
 
 		items: [
 
 			{
 				xtype: 'list',
-				id: 'legsList',
-				store: 'Leg',
-				itemTpl: ''
-
+				id: 'itineraryLegList',
+				store: 'ItineraryListStore',
+				itemTpl: new Ext.XTemplate(
+					'<tpl if="isLeg == true">LEG',
+					'<tpl else>POINT',
+					'</tpl>'
+				)
 			}
 
 		]
+	},
+
+	setItinerary: function (itinerary) {
+		if (itinerary)
+			this.itinerary = itinerary;
+	},
+
+	setPlan: function (plan) {
+		if (plan)
+			this.plan = plan;
+	},
+
+	getItinerary: function () {
+		return this.itinerary;
+	},
+
+	getPlan: function () {
+		return this.plan;
 	}
 
 });

@@ -1,6 +1,6 @@
 Ext.define('mobile-client-sencha.model.Leg', {
 
-	extend: 'Ext.data.Model',
+	extend: 'mobile-client-sencha.model.ItineraryListModel',
 
 	config: {
 

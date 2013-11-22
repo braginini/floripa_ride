@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controller/ItineraryController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/view/ItineraryView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/Leg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/sass/include/custom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ChoosePointController.js" afterPath="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Itinerary.js" afterPath="$PROJECT_DIR$/app/model/Itinerary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MainNavController.js" afterPath="$PROJECT_DIR$/app/controller/MainNavController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MainNavView.js" afterPath="$PROJECT_DIR$/app/view/MainNavView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/MapController.js" afterPath="$PROJECT_DIR$/app/controller/MapController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapView.js" afterPath="$PROJECT_DIR$/app/view/MapView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RouteParametersController.js" afterPath="$PROJECT_DIR$/app/controller/RouteParametersController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RouteParametersView.js" afterPath="$PROJECT_DIR$/app/view/RouteParametersView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/ItineraryListModel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/ItineraryListStore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/PointModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ItineraryController.js" afterPath="$PROJECT_DIR$/app/controller/ItineraryController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ItineraryView.js" afterPath="$PROJECT_DIR$/app/view/ItineraryView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Leg.js" afterPath="$PROJECT_DIR$/app/model/Leg.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/RoutesView.js" afterPath="$PROJECT_DIR$/app/view/RoutesView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
@@ -26,8 +18,8 @@
     <file path="/app.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382562291795" ignored="false" />
     <file path="/config.rb" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378481680395" ignored="false" />
     <file path="/buttons.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378498250873" ignored="false" />
-    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726341621" ignored="false" />
-    <file path="/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381520238844" ignored="false" />
+    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385131579930" ignored="false" />
+    <file path="/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385067643780" ignored="false" />
     <file path="/MainNav.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378499273352" ignored="false" />
     <file path="/Home.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379012062417" ignored="false" />
     <file path="/MainController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378496607429" ignored="false" />
@@ -35,12 +27,12 @@
     <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
     <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
     <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382728754494" ignored="false" />
+    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128026760" ignored="false" />
     <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
     <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381353646368" ignored="false" />
     <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378936653441" ignored="false" />
-    <file path="/fragment.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382722557966" ignored="false" />
+    <file path="/fragment.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385046297327" ignored="false" />
     <file path="/packager.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378938922954" ignored="false" />
     <file path="/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084081813" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/local/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378997907266" ignored="false" />
@@ -152,8 +144,8 @@
     <file path="/PushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721352941" ignored="false" />
     <file path="/AndroidPushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380809255625" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/pushclient/AndroidPushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380823655134" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380659077550" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/manager/PushServerManagerImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/manager/PushServerManagerImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
     <file path="/PushServerManagerImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381418053385" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/PushTest.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/notification/PushNotification.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381417734456" ignored="false" />
@@ -173,21 +165,78 @@
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/BasicMessage.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
     <file path="/BasicMessage.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381413876704" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/notification/PushNotificationBuilder.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381414959507" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/SystemProperties.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381418774475" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/SystemProperties.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/MessageFactory.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
     <file path="/MessageFactory.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381417144817" ignored="false" />
     <file path="/RoutesParametersView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381520201543" ignored="false" />
     <file path="/RouteParametersView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382637514102" ignored="false" />
     <file path="/RouteParametersController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382728082025" ignored="false" />
-    <file path="/ItineraryView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382560843927" ignored="false" />
+    <file path="/ItineraryView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385130091631" ignored="false" />
     <file path="/custom.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382562476273" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-business/src/main/java/com/grupoxango/lockbox/business/service/impl/MidErrorLogService.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382616865668" ignored="false" />
     <file path="/MidErrorLogService.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382616834009" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/proto/action/parser/ActionsFactory.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382621381497" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/impl/FileDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382724152126" ignored="false" />
-    <file path="/FileDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382724140990" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/impl/FileDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383241495800" ignored="false" />
+    <file path="/FileDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383231572314" ignored="false" />
     <file path="/BaseController.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382723779362" ignored="false" />
     <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-controller/src/main/java/com/grupoxango/lockbox/controller/BaseController.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382723780008" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/IconTest.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382995044333" ignored="false" />
+    <file path="/IconTest.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382995041907" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/MovieGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383077591983" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/datastructure/Graph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383074133280" ignored="false" />
+    <file path="/Graph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383074290097" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/datastructure/UndirectedGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383074290889" ignored="false" />
+    <file path="/UndirectedGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383073973154" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/datastructure/Vertex.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383249534777" ignored="false" />
+    <file path="/Vertex.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383249531214" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146368739" ignored="false" />
+    <file path="/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146366795" ignored="false" />
+    <file path="/MovieGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383077589504" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383144554895" ignored="false" />
+    <file path="/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383147021310" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/DFS.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383076142106" ignored="false" />
+    <file path="/DFS.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383076137575" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/RatingSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383077424821" ignored="false" />
+    <file path="/RatingSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383078674979" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/RatingDeapthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383140645801" ignored="false" />
+    <file path="/RatingDeapthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383140461348" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383144379736" ignored="false" />
+    <file path="/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161889751" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146527105" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146542185" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146547101" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146547101" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161889751" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383149272986" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146557663" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/TreeMapRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161561191" ignored="false" />
+    <file path="/TreeMapRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161326070" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/PrecomputedRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253019202" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/RealTimeRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383246682044" ignored="false" />
+    <file path="/RealTimeRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383163365311" ignored="false" />
+    <file path="/PrecomputedRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383252993788" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/BreadthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253732981" ignored="false" />
+    <file path="/BreadthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253731981" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/test/TreeShortPath.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253813279" ignored="false" />
+    <file path="/TreeShortPath.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253810700" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/PushServer.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468180" ignored="false" />
+    <file path="/PushServer.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385036908621" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/products/ArrayProducts.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385042307067" ignored="false" />
+    <file path="/ArrayProducts.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385040581634" ignored="false" />
+    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/Test.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385046595374" ignored="false" />
+    <file path="/Test.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385046595374" ignored="false" />
+    <file path="/PointModel.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128666865" ignored="false" />
+    <file path="/ItineraryListModel.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385123760300" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/manager/PushServerManager.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468180" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/PushSeverLauncher.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385123337180" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128656679" ignored="false" />
+    <file path="/ItineraryController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385129522167" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/pushclient/ApplePushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128656679" ignored="false" />
+    <file path="/ApplePushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126243909" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.dev.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.prod.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.qa.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128656679" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +251,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -238,7 +288,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -248,57 +297,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RoutesView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RoutesView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="52" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.32694763">
-              <folding>
-                <marker date="1382731722046" expanded="true" signature="357:388" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteParametersView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/RouteParametersView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="44" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-16.88">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteParametersController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/RouteParametersController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="61" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="45" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="10" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainNavView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/MainNavView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="22" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -307,16 +309,79 @@
       <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="8" selection-start="3347" selection-end="3440" vertical-scroll-proportion="0.0">
+            <state line="115" column="40" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainNavController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/MainNavController.js">
+      <file leaf-file-name="app.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="500" selection-end="550" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47035572">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PointModel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItineraryController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="73" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItineraryView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouteParametersView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/RouteParametersView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchPointView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -340,24 +405,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/controller/ItineraryController.js" />
-        <option value="$PROJECT_DIR$/app/store/Legs.js" />
-        <option value="$PROJECT_DIR$/app/view/ItineraryView.js" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/sass/include/custom.scss" />
-        <option value="$PROJECT_DIR$/app/model/Itinerary.js" />
-        <option value="$PROJECT_DIR$/app/controller/MapController.js" />
-        <option value="$PROJECT_DIR$/app/view/MapView.js" />
         <option value="$PROJECT_DIR$/app/controller/ChoosePointController.js" />
         <option value="$PROJECT_DIR$/app/controller/MainNavController.js" />
-        <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
         <option value="$PROJECT_DIR$/app/controller/RouteParametersController.js" />
         <option value="$PROJECT_DIR$/app/view/RouteParametersView.js" />
         <option value="$PROJECT_DIR$/app/view/MainNavView.js" />
         <option value="$PROJECT_DIR$/app/view/RoutesView.js" />
+        <option value="$PROJECT_DIR$/app/model/Model.js" />
+        <option value="$PROJECT_DIR$/app/model/TestModel.js" />
+        <option value="$PROJECT_DIR$/app/model/Leg.js" />
+        <option value="$PROJECT_DIR$/app/store/ItineraryListStore.js" />
+        <option value="$PROJECT_DIR$/app/model/ItineraryListModel.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/app/controller/RoutesController.js" />
+        <option value="$PROJECT_DIR$/app/model/PointModel.js" />
+        <option value="$PROJECT_DIR$/app/controller/ItineraryController.js" />
+        <option value="$PROJECT_DIR$/app/view/ItineraryView.js" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -393,7 +461,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,10 +469,6 @@
               <option name="myItemId" value="mobile-client-sencha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -413,202 +477,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="picker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="icons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile-client-sencha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -616,16 +490,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GTFSgenerator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -658,6 +532,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -684,19 +571,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -769,12 +643,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -783,18 +656,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8508876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8505338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09319287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878444" sideWeight="0.6725979" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878444" sideWeight="0.14946619" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -858,7 +732,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -866,107 +740,105 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/store/Leg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/include/buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="517" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/include/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Itinerary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="50" column="39" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="10" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="52" column="7" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+    <entry file="file://$PROJECT_DIR$/app/store/Leg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="45" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="44" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ChoosePointController.js">
+    <entry file="file://$PROJECT_DIR$/app/model/Leg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="14" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/mobile-client-sencha/android/assets/www/app.js">
+    <entry file="file://$PROJECT_DIR$/app/store/ItineraryListStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="547946" selection-start="547946" selection-end="547946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+    <entry file="file://$PROJECT_DIR$/app/model/ItineraryListModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="8" selection-start="3347" selection-end="3440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/RouteParametersController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="61" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/MainNavController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="500" selection-end="550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/MainNavView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="22" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/RouteParametersView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="44" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-16.88">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="52" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.32694763">
-          <folding>
-            <marker date="1382731722046" expanded="true" signature="357:388" placeholder="..." />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="73" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="40" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47035572">
+          <folding />
         </state>
       </provider>
     </entry>

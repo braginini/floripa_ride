@@ -3,11 +3,14 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 	config: {
 
+		plan: null,
+
 		views: [
 			'mobile-client-sencha.view.RoutesView',
 			'mobile-client-sencha.view.ChoosePointView',
 			'mobile-client-sencha.view.MainNavView',
-			'mobile-client-sencha.view.RouteParametersView'
+			'mobile-client-sencha.view.RouteParametersView',
+			'mobile-client-sencha.view.ItineraryView'
 		],
 
 		refs: {
@@ -22,6 +25,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 			choosePointSearch: '[id=choosePointSearch]',
 			pointsMenu: 'list[id=pointsMenu]',
 			routeParamsField: 'textfield[id=routeParamsField]',
+			itineraryLegList: 'list[id=itineraryLegList]',
 
 			routesView: {
 				autoCreate: false,
@@ -46,6 +50,12 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				autoCreate: true,
 				selector: '[id=mainNavView]',
 				xtype: 'MainNavView'
+			},
+
+			itineraryView: {
+				autoCreate: true,
+				selector: '[id=itineraryView]',
+				xtype: 'ItineraryView'
 			}
 		},
 
@@ -55,14 +65,14 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 				pointFieldChange: 'onPointFieldChange'
 			},
 
-			routeParamsField : {
+			routeParamsField: {
 				tap: 'onTapRouteParametersField',
 				initialize: 'onInitializeRouteParametersField'
 			},
 
 			pointsMenu: {
 				itemtap: function (list, idx, target, record, evt) {
-					setTimeout(function() {
+					setTimeout(function () {
 						list.deselect(idx);
 					}, 100);
 					this.onTapPointMenuItem(idx);
@@ -71,7 +81,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 
 			itinerariesList: {
 				itemtap: function (list, idx, target, record, evt) {
-					setTimeout(function() {
+					setTimeout(function () {
 						list.deselect(idx);
 					}, 100);
 
@@ -81,7 +91,7 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		}
 	},
 
-	onInitializeRouteParametersField: function() {
+	onInitializeRouteParametersField: function () {
 		//this.getRouteParamsField().setDisabled(true);
 		var d = new Date();
 		var date = otp.util.DateUtils.dateToIsoDateString(d);
@@ -90,19 +100,29 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 		this.getRouteParamsField().setValue("Depart " + time + ", " + date);
 	},
 
-	onTapItinerariesListItem : function(list, idx, target, record, evt) {
+	onTapItinerariesListItem: function (list, idx, target, record, evt) {
 
 		var itinerary = record.getData();
 
+		this.getItineraryView().setItinerary(itinerary);
+		this.getItineraryView().setPlan(this.plan);
+
+		this.getMainNavView().getLayout().setAnimation({
+			type: 'slide',
+			direction: 'left'
+		});
+
+		this.getMainNavView().push(this.getItineraryView());
+
 	},
 
-	onPointFieldChange: function() {
+	onPointFieldChange: function () {
 		if (this.getRoutesView().getAFieldLatLngValue() && this.getRoutesView().getBFieldLatLngValue()) {
 			this.findRoute();
 		}
 	},
 
-	onTapRouteParametersField: function() {
+	onTapRouteParametersField: function () {
 
 		this.getMainNavView().getLayout().setAnimation({
 			type: 'slide',
@@ -203,7 +223,8 @@ Ext.define('mobile-client-sencha.controller.RoutesController', {
 					var itineraries = new Array();
 
 					if (result.plan && result.plan.itineraries.length > 0) {
-
+						me.plan = result.plan;
+						//this.getItineraryView().setPlan(result.plan);
 						for (var i = 0; i < result.plan.itineraries.length; i++) {
 							me.getItinerariesList().getStore().add(result.plan.itineraries[i]);
 						}

@@ -40,7 +40,8 @@ Ext.application({
 	    'ChoosePointView',
 	    'MapView',
 	    'MainNavView',
-	    'RouteParametersView'
+	    'RouteParametersView',
+	    'ItineraryView'
     ],
 
 	controllers: [
@@ -49,15 +50,16 @@ Ext.application({
 		'ChoosePointController',
 		'MapController',
 		'MainNavController',
-		'RouteParametersController'
+		'RouteParametersController',
+		'ItineraryController'
 	],
 
 	models: [
-		'Itinerary', 'Leg', 'Destination'
+		'Itinerary', 'Leg', 'Destination', 'PointModel', 'ItineraryListModel'
 	],
 
 	stores:[
-		'Itinerary'
+		'Itinerary', 'Leg', 'ItineraryListStore'
 	],
 
     icon: {
