@@ -36,6 +36,8 @@ public class StopsWriter extends AbstractGTFSFileWriter<Node> {
 	@Override
 	protected void writeContents() {
 		List<Node> stops = nodeDao.getNodesWithTag("highway", "bus_stop");
+		List<Node> newStops = nodeDao.getNodesWithTag("bus", "yes");
+		stops.addAll(newStops);
 
 		List<Way> busStations = wayDao.getWaysWithTag("amenity", "bus_station");
 

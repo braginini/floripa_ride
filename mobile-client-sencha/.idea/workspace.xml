@@ -2,241 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/ItineraryListModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/store/ItineraryListStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/model/PointModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ItineraryController.js" afterPath="$PROJECT_DIR$/app/controller/ItineraryController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ItineraryView.js" afterPath="$PROJECT_DIR$/app/view/ItineraryView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/Leg.js" afterPath="$PROJECT_DIR$/app/model/Leg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/RoutesController.js" afterPath="$PROJECT_DIR$/app/controller/RoutesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="DELETED" beforePath="C:\Users\mikhail\Documents\IdeaProjects\floripa_ride\UnityWebPlayer.exe" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobile-client-sencha.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378492342369" ignored="false" />
-    <file path="/app.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382562291795" ignored="false" />
-    <file path="/config.rb" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378481680395" ignored="false" />
-    <file path="/buttons.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378498250873" ignored="false" />
-    <file path="/Dummy.txt" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385131579930" ignored="false" />
-    <file path="/app.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385067643780" ignored="false" />
-    <file path="/MainNav.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378499273352" ignored="false" />
-    <file path="/Home.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379012062417" ignored="false" />
-    <file path="/MainController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378496607429" ignored="false" />
-    <file path="/Routes.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379012733814" ignored="false" />
-    <file path="/HomeController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379176328001" ignored="false" />
-    <file path="/ChoosePoint.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379017744848" ignored="false" />
-    <file path="/RoutesCOntroller.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378663483456" ignored="false" />
-    <file path="/RoutesController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128026760" ignored="false" />
-    <file path="/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379357081482" ignored="false" />
-    <file path="/app.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381353646368" ignored="false" />
-    <file path="/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378937407224" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378936653441" ignored="false" />
-    <file path="/fragment.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385046297327" ignored="false" />
-    <file path="/packager.json" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378938922954" ignored="false" />
-    <file path="/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084081813" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/local/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378997907266" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/local/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1378998098467" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/pp/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379001305702" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726047908" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-controller/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726195598" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-model/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726203017" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-business/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726210567" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726224495" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-common/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726232807" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-hbase-filters/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382726243260" ignored="false" />
-    <file path="/ChoosePointController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381529579028" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/dev/resources/log4j.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084087779" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/util/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084586891" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/prod/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084790118" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/dev/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380722952102" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/configs/pp/resources/connection.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379084767479" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/IShareDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379096704726" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/impl/ShareDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379101075066" ignored="false" />
-    <file path="/ShareDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379100168484" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/ShareMigration.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382617922482" ignored="false" />
-    <file path="/ShareMigration.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379103566414" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/hbase/HBaseConnectionPool.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379103478800" ignored="false" />
-    <file path="/ShapesWriter.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379170356170" ignored="false" />
-    <file path="/index.html" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379348906070" ignored="false" />
-    <file path="/MapView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381348549581" ignored="false" />
-    <file path="/MapController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381530323366" ignored="false" />
-    <file path="/sencha.cfg" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379355906032" ignored="false" />
-    <file path="/LeafletMap.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379360681524" ignored="false" />
-    <file path="/RoutesView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382731588415" ignored="false" />
-    <file path="/ChoosePointView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381354845629" ignored="false" />
-    <file path="$PROJECT_DIR$/build/mobile-client-sencha/android/assets/www/lib/cordova/cordova.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379452137289" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-core/src/main/java/org/opentripplanner/graph_builder/GraphBuilderMain.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379509849902" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379512998414" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/defaults/resources/org/opentripplanner/api/security-application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/a_transfer.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-updater/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/openstreetmap/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-extended/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/rlis_trails_pdx.shp.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/enunciate.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-geocoder/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379513525336" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike_transfer_between_tranist_legs_plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/geo-multi.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/ferry-nl.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/ladds.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/alerts-2.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike-bus-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-graph-builder/src/main/resources/org/opentripplanner/graph_builder/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-web-utils/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/rlis_bike_rte_pdx.shp.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/future-alert.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/ladds-2.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-extended/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/alerts.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike-2.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/src/main/resources/hibernate.cfg.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379512992824" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/transfer-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/interline.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/tram-bus.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-utils/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/src/main/webapp/WEB-INF/wro.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-municoder/src/main/resources/org/opentripplanner/municoder/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/Bicycle_Parking_pdx_Metadata.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/src/main/resources/logback.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-municoder/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/walk-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/sidewalk.dbf.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/geo-zoo.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-routing/src/main/resources/org/opentripplanner/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/test/resources/portland/Sidewalk_pdx_Metadata.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166767" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/geo-error.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/defaults/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/topo-1.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/bike.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/src/main/webapp/js/otp/planner/test/transit-plan.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-admin-webapp/src/main/webapp/WEB-INF/web.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-admin-webapp/src/main/webapp/WEB-INF/wro.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-integration/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-graph-builder/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-gui/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/main/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/main/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/src/main/resources/org/opentripplanner/api/security-application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/defaults/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-analyst-client/src/main/webapp/js/lib/proj4js-1.0.3/build/build.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-rest-api/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-webapp/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-admin-webapp/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/otp-standalone/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/src/main/resources/org/opentripplanner/api_thrift/security-application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/src/main/resources/org/opentripplanner/api_thrift/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-thrift/src/main/resources/org/opentripplanner/api_thrift/example-service-config.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379510166768" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/resources/data-sources.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379520475255" ignored="false" />
-    <file path="/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379513525336" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OpenTripPlanner/opentripplanner-api-webapp/src/main/resources/org/opentripplanner/api/application-context.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1379520128207" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/pushclient/PushSender.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721404116" ignored="false" />
-    <file path="/PushSender.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721392638" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/pushclient/PushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721357266" ignored="false" />
-    <file path="/PushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721352941" ignored="false" />
-    <file path="/AndroidPushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380809255625" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/pushclient/AndroidPushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380823655134" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/pom.xml" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/manager/PushServerManagerImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
-    <file path="/PushServerManagerImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381418053385" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/PushTest.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/notification/PushNotification.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381417734456" ignored="false" />
-    <file path="/PushNotification.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381414876353" ignored="false" />
-    <file path="/ItinerariesStore.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380663960691" ignored="false" />
-    <file path="/Leg.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380664658736" ignored="false" />
-    <file path="/Itineraries.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380664813268" ignored="false" />
-    <file path="/Itinerary.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382635569484" ignored="false" />
-    <file path="/ItineraryStore.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380725040539" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.server/src/main/java/com/euconecto/eai/server/dao/DAOPerson.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380721050834" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/webservice/WebServiceClientImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380808961746" ignored="false" />
-    <file path="/WebServiceClientImpl.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380808960237" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.server/src/main/java/com/euconecto/eai/server/actions/response/Device.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380809026249" ignored="false" />
-    <file path="/Device.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1380809017163" ignored="false" />
-    <file path="/MainNavView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382730912606" ignored="false" />
-    <file path="/MainNavController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382710811636" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/BasicMessage.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
-    <file path="/BasicMessage.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381413876704" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/notification/PushNotificationBuilder.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381414959507" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/SystemProperties.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/message/MessageFactory.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381420748931" ignored="false" />
-    <file path="/MessageFactory.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381417144817" ignored="false" />
-    <file path="/RoutesParametersView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1381520201543" ignored="false" />
-    <file path="/RouteParametersView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382637514102" ignored="false" />
-    <file path="/RouteParametersController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382728082025" ignored="false" />
-    <file path="/ItineraryView.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385130091631" ignored="false" />
-    <file path="/custom.scss" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382562476273" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-business/src/main/java/com/grupoxango/lockbox/business/service/impl/MidErrorLogService.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382616865668" ignored="false" />
-    <file path="/MidErrorLogService.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382616834009" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/proto/action/parser/ActionsFactory.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382621381497" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-data-access/src/main/java/com/grupoxango/lockbox/dataaccess/hbase/impl/FileDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383241495800" ignored="false" />
-    <file path="/FileDAO.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383231572314" ignored="false" />
-    <file path="/BaseController.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382723779362" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop/lockbox-controller/src/main/java/com/grupoxango/lockbox/controller/BaseController.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382723780008" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/lockbox-server-test/src/main/java/com/grupoxango/lockbox/servertest/IconTest.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382995044333" ignored="false" />
-    <file path="/IconTest.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1382995041907" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/MovieGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383077591983" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/datastructure/Graph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383074133280" ignored="false" />
-    <file path="/Graph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383074290097" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/datastructure/UndirectedGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383074290889" ignored="false" />
-    <file path="/UndirectedGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383073973154" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/datastructure/Vertex.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383249534777" ignored="false" />
-    <file path="/Vertex.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383249531214" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146368739" ignored="false" />
-    <file path="/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146366795" ignored="false" />
-    <file path="/MovieGraph.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383077589504" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383144554895" ignored="false" />
-    <file path="/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383147021310" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/DFS.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383076142106" ignored="false" />
-    <file path="/DFS.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383076137575" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/RatingSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383077424821" ignored="false" />
-    <file path="/RatingSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383078674979" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/RatingDeapthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383140645801" ignored="false" />
-    <file path="/RatingDeapthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383140461348" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383144379736" ignored="false" />
-    <file path="/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161889751" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146527105" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146542185" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146547101" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146547101" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/RatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161889751" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/TopHMovies.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383149272986" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/Movie.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383146557663" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/TreeMapRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161561191" ignored="false" />
-    <file path="/TreeMapRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383161326070" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/PrecomputedRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253019202" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/topmovie/RealTimeRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383246682044" ignored="false" />
-    <file path="/RealTimeRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383163365311" ignored="false" />
-    <file path="/PrecomputedRatingFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383252993788" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/algorithms/BreadthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253732981" ignored="false" />
-    <file path="/BreadthFirstSearch.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253731981" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/test/TreeShortPath.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253813279" ignored="false" />
-    <file path="/TreeShortPath.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1383253810700" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/PushServer.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468180" ignored="false" />
-    <file path="/PushServer.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385036908621" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/products/ArrayProducts.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385042307067" ignored="false" />
-    <file path="/ArrayProducts.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385040581634" ignored="false" />
-    <file path="$PROJECT_DIR$/../../AlgorithmsDataStructures/src/main/java/com/test/algorithms/graph/tasks/Test.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385046595374" ignored="false" />
-    <file path="/Test.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385046595374" ignored="false" />
-    <file path="/PointModel.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128666865" ignored="false" />
-    <file path="/ItineraryListModel.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385123760300" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/manager/PushServerManager.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468180" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/.gitignore" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/PushSeverLauncher.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385123337180" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128656679" ignored="false" />
-    <file path="/ItineraryController.js" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385129522167" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/java/com/euconecto/eai/push/pushclient/ApplePushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128656679" ignored="false" />
-    <file path="/ApplePushClient.java" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126243909" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.dev.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.prod.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385126468179" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../PSafe/com-euconecto-eai/com.euconecto.eai.push/src/main/resources/app.qa.properties" changelist="0c1b5358-6335-457b-8193-3f77e7ce4eec" time="1385128656679" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,28 +67,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RoutesView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RoutesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="40" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.0">
+            <state line="213" column="33" selection-start="5160" selection-end="5160" vertical-scroll-proportion="0.0" vertical-offset="3284" max-vertical-offset="4165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47035572">
+            <state line="50" column="31" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2788">
               <folding />
             </state>
           </provider>
@@ -327,7 +88,7 @@
       <file leaf-file-name="PointModel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+            <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
@@ -336,7 +97,7 @@
       <file leaf-file-name="ItineraryController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="73" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0">
+            <state line="17" column="63" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1377">
               <folding />
             </state>
           </provider>
@@ -345,16 +106,7 @@
       <file leaf-file-name="ItineraryView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteParametersView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/RouteParametersView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -363,7 +115,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
+            <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -372,7 +124,25 @@
       <file leaf-file-name="MapView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="18" column="31" selection-start="254" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3281">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeafletMap.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ux/LeafletMap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="138" column="0" selection-start="3235" selection-end="3305" vertical-scroll-proportion="0.0" vertical-offset="2346" max-vertical-offset="8041">
               <folding />
             </state>
           </provider>
@@ -381,7 +151,7 @@
       <file leaf-file-name="SearchPointView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
               <folding />
             </state>
           </provider>
@@ -461,6 +231,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -480,9 +251,144 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeafletMap.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile-client-sencha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,16 +396,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PSafe/JavaBackend/LockBox-2/LockBox-2-develop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../floripa-ride-android" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -518,10 +424,20 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -532,17 +448,7 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -573,19 +479,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -607,6 +511,128 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <list size="0" />
@@ -638,16 +664,23 @@
       <changelist id="0c1b5358-6335-457b-8193-3f77e7ce4eec" name="Default" comment="" />
       <created>1378417187756</created>
       <updated>1378417187756</updated>
+      <workItem from="1386172750870" duration="2533000" />
+      <workItem from="1386588620523" duration="550000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -656,79 +689,36 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8505338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09319287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09319287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878444" sideWeight="0.14946619" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24798061" sideWeight="0.14946619" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8505338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,104 +730,245 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model/Itinerary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="39" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="7" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/store/Leg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Leg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/store/ItineraryListStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/ItineraryListModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/RouteParametersView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="73" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="40" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.0">
+        <state line="213" column="33" selection-start="5160" selection-end="5160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4165">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47035572">
+        <state line="50" column="31" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="63" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="31" selection-start="254" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="3281">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ux/LeafletMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="0" selection-start="3235" selection-end="3305" vertical-scroll-proportion="0.0" vertical-offset="2346" max-vertical-offset="8041">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="40" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="4165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="31" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="63" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="31" selection-start="254" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ux/LeafletMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="93" selection-start="3235" selection-end="3305" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="8041">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="7" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/Leg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Leg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/ItineraryListStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/ItineraryListModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/RouteParametersView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/SearchPointView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="28" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/PointModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="41" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="31" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ItineraryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="63" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ItineraryView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="43" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/RoutesView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RoutesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="33" selection-start="5160" selection-end="5160" vertical-scroll-proportion="0.0" vertical-offset="3284" max-vertical-offset="4165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MapView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="31" selection-start="254" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/MapController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3281">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ux/LeafletMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="0" selection-start="3235" selection-end="3305" vertical-scroll-proportion="0.0" vertical-offset="2346" max-vertical-offset="8041">
           <folding />
         </state>
       </provider>

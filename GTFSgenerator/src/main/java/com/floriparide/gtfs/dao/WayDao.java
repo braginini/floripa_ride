@@ -60,6 +60,8 @@ public class WayDao extends Dao {
                     "AND m.relation_id = " + relationId + " " +
                     "AND m.member_type = 'W' " +
                     "AND m.member_role != 'platform' "  +
+                    "AND m.member_role != 'platform_exit_only' "  +
+                    "AND m.member_role != 'platform_entry_only' "  +
                     "ORDER BY sequence_id ";
 
             Statement stmt = con.createStatement();
