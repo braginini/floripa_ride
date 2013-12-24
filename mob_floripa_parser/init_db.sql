@@ -74,6 +74,10 @@ OIDS=FALSE
 ALTER TABLE calendar
 OWNER TO postgres;
 
+insert into calendar (id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, calendar_name, start_date, end_date) values (0,'t','t','t','t','t','f','f','WEEK',20120101,20200101);
+insert into calendar (id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, calendar_name, start_date, end_date) values (1,'f','f','f','f','f','t','f','SATURDAY',20120101,20200101);
+insert into calendar (id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, calendar_name, start_date, end_date) values (2,'f','f','f','f','f','f','t','SUNDAY',20120101,20200101);
+
 DROP TABLE IF EXISTS trip;
 CREATE TABLE trip
 (

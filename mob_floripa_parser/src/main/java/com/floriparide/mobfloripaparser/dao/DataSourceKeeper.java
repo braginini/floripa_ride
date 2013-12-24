@@ -37,7 +37,7 @@ public class DataSourceKeeper {
 
 		Properties props = new Properties();
 		props.setProperty("Username", "postgres");
-		props.setProperty("Password", "postgres@");
+		props.setProperty("Password", "postgres");
 
 		ObjectPool connectionPool = new GenericObjectPool(null);
 
