@@ -1,2 +1,3 @@
 agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url
 TranSol,http://www.transoltc.com.br/,America/Sao_Paulo,en,(48)3331-0200,
+Insular,http://www.insulartc.com.br/,America/Sao_Paulo,en,0800-482505,

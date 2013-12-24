@@ -1,0 +1,10 @@
+﻿truncate actions;
+truncate node_tags;
+truncate nodes;
+truncate relation_members;
+truncate relation_tags;
+truncate relations;
+truncate users;
+truncate way_nodes;
+truncate way_tags;
+truncate ways;

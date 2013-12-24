@@ -35,7 +35,8 @@ public class RelationDao extends Dao {
 
 			String SQL = "SELECT r.id FROM relations r, relation_tags t " +
 					"WHERE r.id = t.relation_id " +
-                    "AND r.id IN (2521697, 2521698, 2082735, 2168842, 2236714, 2236713, 2089834, 2089835, 3177671, 3195283) " +
+                    "AND r.id IN (2521697, 2521698, 2082735, 2168842, 2236714, 2236713," +
+                    " 2089834, 2089835, 3177671, 3195283, 2562600, 2562599) " +
 					"AND t.k = '" + tagKey +"' " +
 					"AND t.v = '" + tagValue +"' " +
 					"GROUP BY r.id";
