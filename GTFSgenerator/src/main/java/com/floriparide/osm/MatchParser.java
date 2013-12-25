@@ -9,7 +9,7 @@ public class MatchParser {
 
     public static Match parse(String line) {
         String[] split = line.split(SEPARATOR);
-        if (split.length < 3)
+        if (split.length < 2)
             throw new IllegalArgumentException("Wrong line " + line);
 
         Long routeId;
@@ -18,7 +18,7 @@ public class MatchParser {
         try {
             routeId = Long.parseLong(split[0]);
             osmTo = (!split[1].isEmpty()) ? Long.parseLong(split[1]) : null;
-            osmReturn = (!split[2].isEmpty()) ? Long.parseLong(split[2]) : null;
+            osmReturn = (split.length < 3 || split[2].isEmpty()) ? null : Long.parseLong(split[2]);
 
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Invalid input " + line, e);
@@ -29,6 +29,4 @@ public class MatchParser {
 
         return new Match(routeId, osmTo, osmReturn);
     }
-
-
 }
