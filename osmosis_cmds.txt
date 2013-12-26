@@ -1,4 +1,4 @@
 1) create postgis structure
 2) create simple schema using osmis pgsimple scripts (from osmosis package folder)
 3) run to import data
-osmosis.bat --read-xml file="C:\Users\Mike\Documents\IdeaProjects\floripa_ride\FLORIPA_8.23.2013.osm" --write-pgsimp user="postgres" database="floripa_osm_data" password="postgres"
+osmosis.bat --read-xml file="C:\Users\Mike\Documents\IdeaProjects\floripa_ride\FLORIPA_8.23.2013.osm" enableDateParsing=no --write-pgsimp user="postgres" database="floripa_osm_data" password="postgres"
