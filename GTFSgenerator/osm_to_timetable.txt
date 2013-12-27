@@ -25,3 +25,4 @@ route_id,osm_route_id_to,osm_route_id_return
 339,3373025,
 259,3373037,
 368,,3110136
+222,1780784,1770836
